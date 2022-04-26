@@ -1,0 +1,22 @@
+--  Test Bench - User Defined Section 
+   tb : PROCESS
+    variable i : integer; 
+    variable INPUT : std_logic_vector(2 downto 0);
+    BEGIN 
+        for i in 0 to 7 loop
+            INPUT := CONV_STD_LOGIC_VECTOR(i,3);
+            C<= INPUT(2); 
+            B<= INPUT(1); 
+            A<= INPUT(0); 
+        wait for PERIOD; 
+    end loop; 
+    INPUT := "000"; 
+        C<= INPUT(2); 
+        B<= INPUT(1); 
+        A<= INPUT(0); 
+    WAIT; 
+    END PROCESS; 
+
+--  End Test Bench - User Defined Section 
+
+END;
