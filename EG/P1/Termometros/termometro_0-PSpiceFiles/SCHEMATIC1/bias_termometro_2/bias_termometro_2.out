@@ -1,0 +1,62 @@
+
+**** 03/18/22 14:05:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias_termometro_2"  [ D:\Practicas\E_General\termometro_0-PSpiceFiles\SCHEMATIC1\bias_termometro_2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias_termometro_2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TEMP -70
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TERMOMETRO_0
+X_U1         N00280 0 AD1580/AD
+R_R1         N00280 VC+  {n} TC=0,0 
+V_V1         VC+ 0 5
+V_V2         VS- 0 5
+X_U2         N00996 0 AD1580/AD
+R_R2         N00992 VCC  68k TC=0,0 
+R_R3         N00996 N00992  6.8k TC=0,0 
+D_D1         0 N01078 D1N4148 
+V_V3         N01078 0 1.226
+X_U3         N01352 0 AD1580/AD
+R_R4         N01326 V+  68k TC=0,0 
+R_R5         N01352 N01326  6.8k TC=0,0 
+X_U4A         N01352 N02551 V+ V- N02106 LM358
+V_V4         V+ 0 5
+V_V5         V- 0 5
+D_D2         0 N02551 D1N4148 
+Q_Q1         V+ N02106 N03575 Q2N3904
+D_D3         0 N02551 D1N4148 
+Q_Q2         V+ N02106 N02949 Q2N3904
+X_U4B         N03575 N02949 V+ V- N03178 LM358
+R_R6         N02551 N03575  1k TC=0,0 
+R_R7         N02551 N02949  1k TC=0,0 
+.PARAM  n=1
+
+**** RESUMING bias_termometro_2.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node VCC.
+

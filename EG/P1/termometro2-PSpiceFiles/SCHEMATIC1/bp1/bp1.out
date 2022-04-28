@@ -1,0 +1,375 @@
+
+**** 03/09/22 16:16:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bp1"  [ d:\practicas\e_general\termometro2-pspicefiles\schematic1\bp1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bp1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TERMOMETRO2
+D_D2         N02375 0 D1N4148 
+R_R2         N02375 N02451  1k TC=0,0 
+Q_Q2         VCC N02417 N02451 Q2N3904
+R_R3         N02375 N023170  1k TC=0,0 
+X_U1B         N02890 N02375 VCC VSS N02417 LM358
+D_D3         N02375 0 D1N4148 
+V_V4         N02890 0 700mV
+Q_Q3         VCC N02417 N023170 Q2N3904
+
+**** RESUMING bp1.cir ****
+.END
+
+**** 03/09/22 16:16:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bp1"  [ d:\practicas\e_general\termometro2-pspicefiles\schematic1\bp1.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         X_U1B.x_lm358.dx 
+          IS    2.682000E-09  800.000000E-18 
+           N    1.836                        
+         ISR    1.565000E-09                 
+         IKF     .04417                      
+          BV  100                            
+         IBV  100.000000E-06                 
+          RS     .5664          1            
+          TT   11.540000E-09                 
+         CJO    4.000000E-12                 
+          VJ     .5                          
+           M     .3333                       
+
+
+               X_U1B.x_lm358.dy 
+          IS  800.000000E-18 
+          RS    1.000000E-03 
+         CJO   10.000000E-12 
+
+
+**** 03/09/22 16:16:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bp1"  [ d:\practicas\e_general\termometro2-pspicefiles\schematic1\bp1.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         X_U1B.x_lm358.qx 
+               NPN             PNP             
+       LEVEL    1               1            
+          IS    6.734000E-15  800.000000E-18 
+          BF  416.4           166.7          
+          NF    1               1            
+         VAF   74.03                         
+         IKF     .06678                      
+         ISE    6.734000E-15                 
+          NE    1.259                        
+          BR     .7371          1            
+          NR    1               1            
+         ISS    0               0            
+          RB   10                            
+          RE    0               0            
+          RC    1               0            
+         CJE    4.493000E-12    0            
+         VJE     .75             .75         
+         MJE     .2593                       
+         CJC    3.638000E-12    0            
+         VJC     .75             .75         
+         MJC     .3085           .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          TF  301.200000E-12                 
+         XTF    2                            
+         VTF    4                            
+         ITF     .4                          
+          TR  239.500000E-09                 
+         XTB    1.5                          
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 03/09/22 16:16:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bp1"  [ d:\practicas\e_general\termometro2-pspicefiles\schematic1\bp1.sim ] 
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1B.x_lm358.sw2 
+         RON    1            
+        ROFF   10.000000E+06 
+         ION    0            
+        IOFF   -1.000000E-06 
+
+
+               X_U1B.x_lm358.sw1 
+         RON    1            
+        ROFF   10.000000E+06 
+         ION   -1.000000E-06 
+        IOFF    0            
+
+
+               X_U1B.x_lm358.sw3 
+         RON    1            
+        ROFF   10.000000E+06 
+         ION   -1.000000E-06 
+        IOFF    0            
+
+
+               X_U1B.x_lm358.sw4 
+         RON    1            
+        ROFF   10.000000E+06 
+         ION    0            
+        IOFF   -1.000000E-06 
+
+
+**** 03/09/22 16:16:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bp1"  [ d:\practicas\e_general\termometro2-pspicefiles\schematic1\bp1.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    -.7545  (  VSS)   -1.5974  (N02375)     .1206 (N02417)   -1.4382     
+
+(N02451)     .1206 (N02890)     .7000 (N023170)     .1206                       
+
+(X_U1B.x_lm358.6)   -1.4739           (X_U1B.x_lm358.7)     .5923               
+
+(X_U1B.x_lm358.8)     .5923           (X_U1B.x_lm358.9)    0.0000               
+
+(X_U1B.x_lm358.a)    -.7951           (X_U1B.x_lm358.b)    -.0406               
+
+(X_U1B.x_lm358.10)     .7597          (X_U1B.x_lm358.11)   -1.5186              
+
+(X_U1B.x_lm358.12)   -1.5974          (X_U1B.x_lm358.13)     .7321              
+
+(X_U1B.x_lm358.14)     .7597          (X_U1B.x_lm358.53)   -2.2545              
+
+(X_U1B.x_lm358.54)    -.7754          (X_U1B.x_lm358.90)   40.6090              
+
+(X_U1B.x_lm358.91)   40.0000          (X_U1B.x_lm358.92)  -40.0000              
+
+(X_U1B.x_lm358.99)   -1.1759          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V4        -2.298E-12
+    X_U1B.x_lm358.vb  -1.474E-05
+    X_U1B.x_lm358.vc  -4.072E-02
+    X_U1B.x_lm358.ve  -1.078E-04
+    X_U1B.x_lm358.vlim   4.061E-02
+    X_U1B.x_lm358.vlp   1.360E-05
+    X_U1B.x_lm358.vln  -8.061E-11
+
+    TOTAL POWER DISSIPATION   6.06E-02  WATTS
+
+
+**** 03/09/22 16:16:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bp1"  [ d:\practicas\e_general\termometro2-pspicefiles\schematic1\bp1.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED CURRENT SOURCES
+
+
+NAME         X_U1B.x_lm358.ga        X_U1B.x_lm358.gcm     
+I-SOURCE     1.485E-05               1.154E-07            
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_U1B.x_lm358.egnd    
+V-SOURCE    -1.176E+00            
+I-SOURCE    -4.061E-02            
+
+
+**** CURRENT-CONTROLLED CURRENT SOURCES
+
+
+NAME         X_U1B.x_lm358.fb        X_U1B.x_lm358.fpos    
+I-SOURCE    -1.113E-01               4.061E-02            
+
+NAME         X_U1B.x_lm358.fneg    
+I-SOURCE    -4.061E-02            
+
+
+**** CURRENT-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_U1B.x_lm358.hlim    
+V-SOURCE     4.061E+01            
+I-SOURCE    -1.360E-05            
+
+
+**** DIODES
+
+
+NAME         D_D2        D_D3        X_U1B.x_lm358.dc      
+MODEL        D1N4148     D1N4148     X_U1B.x_lm358.dy      
+ID           4.46E-08    4.46E-08    4.07E-02             
+VD           1.21E-01    1.21E-01    8.16E-01             
+REQ          1.01E+06    1.01E+06    6.35E-01             
+CAP          4.40E-12    4.40E-12    1.86E-11             
+
+NAME         X_U1B.x_lm358.de        X_U1B.x_lm358.dlp     
+MODEL        X_U1B.x_lm358.dy        X_U1B.x_lm358.dx      
+ID           1.08E-04                1.36E-05             
+VD           6.63E-01                6.09E-01             
+REQ          2.40E+02                1.90E+03             
+CAP          1.64E-11                0.00E+00             
+
+NAME         X_U1B.x_lm358.dln       X_U1B.x_lm358.dp      
+MODEL        X_U1B.x_lm358.dx        X_U1B.x_lm358.dx      
+ID          -8.06E-11               -8.44E-13             
+VD          -8.06E+01               -8.43E-01             
+REQ          1.00E+12                1.00E+12             
+CAP          0.00E+00                0.00E+00             
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q2        Q_Q3        X_U1B.x_lm358.q1      
+MODEL        Q2N3904     Q2N3904     X_U1B.x_lm358.qx      
+IB          -9.47E-13   -9.47E-13   -8.91E-08             
+IC           5.35E-14    5.35E-14   -1.49E-05             
+VBE         -1.56E+00   -1.56E+00   -6.12E-01             
+VBC         -6.84E-01   -6.84E-01    1.64E+00             
+VCE         -8.75E-01   -8.75E-01   -2.25E+00             
+BETADC      -5.65E-02   -5.65E-02    1.67E+02             
+GM           1.18E-14    1.18E-14    5.74E-04             
+RPI          4.16E+14    4.16E+14    2.90E+05             
+RX           1.00E+01    1.00E+01    0.00E+00             
+RO           1.00E+12    1.00E+12    1.00E+12             
+CBE          3.36E-12    3.36E-12    0.00E+00             
+CBC          2.98E-12    2.98E-12    0.00E+00             
+CJS          0.00E+00    0.00E+00    0.00E+00             
+BETAAC       4.92E+00    4.92E+00    1.67E+02             
+CBX/CBX2     0.00E+00    0.00E+00    0.00E+00             
+FT/FT2       2.97E-04    2.97E-04    9.14E+15             
+
+
+
+NAME         X_U1B.x_lm358.q2      
+MODEL        X_U1B.x_lm358.qx      
+IB           2.30E-12             
+IC          -4.66E-12             
+VBE         -5.97E-02             
+VBC          2.30E+00             
+VCE         -2.36E+00             
+BETADC      -2.03E+00             
+GM           3.11E-13             
+RPI          1.27E+14             
+RX           0.00E+00             
+RO           1.00E+12             
+CBE          0.00E+00             
+CBC          0.00E+00             
+CJS          0.00E+00             
+BETAAC       3.95E+01             
+CBX/CBX2     0.00E+00             
+FT/FT2       4.95E+06             
+
+
+
+
+**** CURRENT CONTROLLED SWITCHES
+
+
+NAME         X_U1B.x_lm358.w2        X_U1B.x_lm358.w1      
+MODEL        X_U1B.x_lm358.sw2       X_U1B.x_lm358.sw1     
+I LOAD       4.06E-02               -7.95E-08             
+V LOAD       4.06E-02               -7.95E-01             
+R LOAD       1.00E+00                1.00E+07             
+I CTRL       4.06E-02                4.06E-02             
+
+NAME         X_U1B.x_lm358.w3        X_U1B.x_lm358.w4      
+MODEL        X_U1B.x_lm358.sw3       X_U1B.x_lm358.sw4     
+I LOAD      -1.56E-07               -4.06E-02             
+V LOAD      -1.56E+00               -4.06E-02             
+R LOAD       1.00E+07                1.00E+00             
+I CTRL       4.06E-02                4.06E-02             
+
+          JOB CONCLUDED
+
+**** 03/09/22 16:16:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bp1"  [ d:\practicas\e_general\termometro2-pspicefiles\schematic1\bp1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

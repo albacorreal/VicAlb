@@ -1,0 +1,45 @@
+
+**** 03/18/22 20:32:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-pbg_1"  [ D:\Practicas\E_General\Termometro_Final-PSpiceFiles\SCHEMATIC1\pbg_1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pbg_1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM p 150k 200k 0.1 
+.TEMP -70 30
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TERMOMETRO_FINAL
+V_V2         VS- 0 5
+R_R1         N05022 VC+  180K TC=0,0 
+V_V1         VC+ 0 5
+X_D1         0 N05026 LM385 
+R_R2         N05026 N05022  8.2K TC=0,0 
+
+**** RESUMING pbg_1.cir ****
+.END
+
+ERROR(ORPSIM-15167): Undefined parameter: p.
+

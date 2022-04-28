@@ -1,0 +1,175 @@
+
+**** 03/18/22 09:23:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bandgap2"  [ D:\Practicas\E_General\termometro_0-PSpiceFiles\SCHEMATIC1\bandgap2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bandgap2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM n 70k 100k 0.1k 
+.TEMP -70 30
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TERMOMETRO_0
+X_U1         N00280 0 AD1580/AD
+R_R1         N00280 VCC  {n} TC=0,0 
+V_V1         VCC 0 5
+V_V2         VSS 0 5
+.PARAM  n=1
+
+**** RESUMING bandgap2.cir ****
+.END
+
+**** 03/18/22 09:23:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bandgap2"  [ D:\Practicas\E_General\termometro_0-PSpiceFiles\SCHEMATIC1\bandgap2.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qn1        X_U1.qn2        X_U1.qp1        
+               NPN             NPN             PNP             
+       LEVEL    1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF  100             100              50.000000E+03 
+          NF    1               1               1            
+         VAF  100             100             100            
+          BR    1               1               1            
+          NR    1               1               1            
+         ISS    0               0               0            
+          RE    0               0               0            
+          RC    0               0               0            
+         CJE    0               0               0            
+         VJE     .75             .75             .75         
+         CJC    0               0               0            
+         VJC     .75             .75             .75         
+         MJC     .33             .33             .33         
+        XCJC    1               1               1            
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.42            2.2          
+           D     .87             .87             .52         
+
+
+**** 03/18/22 09:23:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bandgap2"  [ D:\Practicas\E_General\termometro_0-PSpiceFiles\SCHEMATIC1\bandgap2.sim ] 
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =  -70.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** BJT MODEL PARAMETERS
+
+                  X_U1.qn1       X_U1.qn2       X_U1.qp1    
+
+         BF        1.000E+02      1.000E+02      5.000E+04  
+        ISE        0.000E+00      0.000E+00      0.000E+00  
+        VJE        9.113E-01      9.113E-01      9.113E-01  
+        CJE        0.000E+00      0.000E+00      0.000E+00  
+         RE        0.000E+00      0.000E+00      0.000E+00  
+         RB        0.000E+00      0.000E+00      0.000E+00  
+         BR        1.000E+00      1.000E+00      1.000E+00  
+        ISC        0.000E+00      0.000E+00      0.000E+00  
+        VJC        9.113E-01      9.113E-01      9.113E-01  
+        CJC        0.000E+00      0.000E+00      0.000E+00  
+         RC        0.000E+00      0.000E+00      0.000E+00  
+        RBM        0.000E+00      0.000E+00      0.000E+00  
+         IS        3.908E-26      3.908E-26      3.908E-26  
+        ISS        0.000E+00      0.000E+00      0.000E+00  
+        VJS        9.113E-01      9.113E-01      9.113E-01  
+        CJS        0.000E+00      0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01      1.000E+01  
+
+
+**** 03/18/22 09:23:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bandgap2"  [ D:\Practicas\E_General\termometro_0-PSpiceFiles\SCHEMATIC1\bandgap2.sim ] 
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   30.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** BJT MODEL PARAMETERS
+
+                  X_U1.qn1       X_U1.qn2       X_U1.qp1    
+
+         BF        1.000E+02      1.000E+02      5.000E+04  
+        ISE        0.000E+00      0.000E+00      0.000E+00  
+        VJE        7.448E-01      7.448E-01      7.448E-01  
+        CJE        0.000E+00      0.000E+00      0.000E+00  
+         RE        0.000E+00      0.000E+00      0.000E+00  
+         RB        0.000E+00      0.000E+00      0.000E+00  
+         BR        1.000E+00      1.000E+00      1.000E+00  
+        ISC        0.000E+00      0.000E+00      0.000E+00  
+        VJC        7.448E-01      7.448E-01      7.448E-01  
+        CJC        0.000E+00      0.000E+00      0.000E+00  
+         RC        0.000E+00      0.000E+00      0.000E+00  
+        RBM        0.000E+00      0.000E+00      0.000E+00  
+         IS        1.575E-16      1.575E-16      1.575E-16  
+        ISS        0.000E+00      0.000E+00      0.000E+00  
+        VJS        7.448E-01      7.448E-01      7.448E-01  
+        CJS        0.000E+00      0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01      1.000E+01  
+
+
+
+          JOB CONCLUDED
+
+**** 03/18/22 09:23:01 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bandgap2"  [ D:\Practicas\E_General\termometro_0-PSpiceFiles\SCHEMATIC1\bandgap2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+

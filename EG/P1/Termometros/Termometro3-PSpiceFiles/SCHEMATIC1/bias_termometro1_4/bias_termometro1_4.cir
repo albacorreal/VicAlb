@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-bias_termometro1_4"  [ D:\Practicas\E_General\Termometro3-PSpiceFiles\SCHEMATIC1\bias_termometro1_4.sim ] 
+
+** Creating circuit file "bias_termometro1_4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TEMP -70 -10 30
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

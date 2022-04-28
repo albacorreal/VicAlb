@@ -1,0 +1,29 @@
+Command line:
+   Cuenta_Votos_Cuenta_Votos_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  65315
+
+Thu Apr 21 09:31:57 2022
+
+
+ Elaboration Time: 0.40625 sec
+
+ Current Memory Usage: 5809.99 Meg
+
+ Total Signals          : 135
+ Total Nets             : 58
+ Total Signal Drivers   : 25
+ Total Blocks           : 33
+ Total Primitive Blocks : 27
+ Total Processes        : 25
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 560
+Total Line Count : 43
+
+ Total Simulation Time: 0.5625 sec
+
+ Current Memory Usage: 4708.99 Meg
+
+Thu Apr 21 09:50:53 2022
+

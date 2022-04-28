@@ -1,0 +1,17 @@
+* source TERMOMETRO_0
+R_R1         N00280 VC+  {n} TC=0,0 
+V_V1         VC+ 0 5
+V_V2         VS- 0 5
+D_D3         0 N01078 D1N4148 
+V_V3         N01078 0 1.226
+X_U3         N01352 0 AD1580/AD
+R_R4         N01326 V+  68k TC=0,0 
+R_R5         N01352 N01326  6.8k TC=0,0 
+X_U4A         N01352 N02823 V+ V- N02106 LM358
+V_V4         V+ 0 5
+V_V5         V- 0 5
+D_D2         0 N02823 D1N4148 
+Q_Q1         V+ N02106 N020952 Q2N3904
+R_R6         N02823 N020952  1k TC=0,0 
+X_D1         0 N00280 LM385 
+.PARAM  n=1

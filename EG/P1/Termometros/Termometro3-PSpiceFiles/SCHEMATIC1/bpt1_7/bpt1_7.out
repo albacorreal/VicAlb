@@ -1,0 +1,238 @@
+
+**** 03/18/22 17:31:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bpt1_7"  [ D:\Practicas\E_General\Termometro3-PSpiceFiles\SCHEMATIC1\bpt1_7.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bpt1_7.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_DATA\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TERMOMETRO3
+V_V1         VCC 0 5
+V_V2         VSS 0 5
+X_U2A         N00806 N00502 VCC VSS N00494 LM358
+D_D1         0 N00502 D1N4148 
+R_R3         N00502 N00498  100 TC=0,0 
+Q_Q1         VCC N00494 N00498 Q2N3904
+V_V3         N00806 0 1.2
+
+**** RESUMING bpt1_7.cir ****
+.END
+
+**** 03/18/22 17:31:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bpt1_7"  [ D:\Practicas\E_General\Termometro3-PSpiceFiles\SCHEMATIC1\bpt1_7.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         X_U2A.x_lm358.dx 
+          IS    2.682000E-09  800.000000E-18 
+           N    1.836                        
+         ISR    1.565000E-09                 
+         IKF     .04417                      
+          BV  100                            
+         IBV  100.000000E-06                 
+          RS     .5664          1            
+          TT   11.540000E-09                 
+         CJO    4.000000E-12                 
+          VJ     .5                          
+           M     .3333                       
+
+
+               X_U2A.x_lm358.dy 
+          IS  800.000000E-18 
+          RS    1.000000E-03 
+         CJO   10.000000E-12 
+
+
+**** 03/18/22 17:31:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bpt1_7"  [ D:\Practicas\E_General\Termometro3-PSpiceFiles\SCHEMATIC1\bpt1_7.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         X_U2A.x_lm358.qx 
+               NPN             PNP             
+       LEVEL    1               1            
+          IS    6.734000E-15  800.000000E-18 
+          BF  416.4           166.7          
+          NF    1               1            
+         VAF   74.03                         
+         IKF     .06678                      
+         ISE    6.734000E-15                 
+          NE    1.259                        
+          BR     .7371          1            
+          NR    1               1            
+         ISS    0               0            
+          RB   10                            
+          RE    0               0            
+          RC    1               0            
+         CJE    4.493000E-12    0            
+         VJE     .75             .75         
+         MJE     .2593                       
+         CJC    3.638000E-12    0            
+         VJC     .75             .75         
+         MJC     .3085           .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          TF  301.200000E-12                 
+         XTF    2                            
+         VTF    4                            
+         ITF     .4                          
+          TR  239.500000E-09                 
+         XTB    1.5                          
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 03/18/22 17:31:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bpt1_7"  [ D:\Practicas\E_General\Termometro3-PSpiceFiles\SCHEMATIC1\bpt1_7.sim ] 
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.x_lm358.sw2 
+         RON    1            
+        ROFF   10.000000E+06 
+         ION    0            
+        IOFF   -1.000000E-06 
+
+
+               X_U2A.x_lm358.sw1 
+         RON    1            
+        ROFF   10.000000E+06 
+         ION   -1.000000E-06 
+        IOFF    0            
+
+
+               X_U2A.x_lm358.sw3 
+         RON    1            
+        ROFF   10.000000E+06 
+         ION   -1.000000E-06 
+        IOFF    0            
+
+
+               X_U2A.x_lm358.sw4 
+         RON    1            
+        ROFF   10.000000E+06 
+         ION    0            
+        IOFF   -1.000000E-06 
+
+
+**** 03/18/22 17:31:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bpt1_7"  [ D:\Practicas\E_General\Termometro3-PSpiceFiles\SCHEMATIC1\bpt1_7.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    5.0000  (  VSS)    5.0000  (N00494)    4.6610 (N00498)    4.5902     
+
+(N00502)    4.5902 (N00806)    1.2000 (X_U2A.x_lm358.6)  -58.3200               
+
+(X_U2A.x_lm358.7)    6.6965           (X_U2A.x_lm358.8)    6.6965               
+
+(X_U2A.x_lm358.9)    0.0000           (X_U2A.x_lm358.a)    4.9593               
+
+(X_U2A.x_lm358.b)    -.0407           (X_U2A.x_lm358.10)    1.9358              
+
+(X_U2A.x_lm358.11)    4.9999          (X_U2A.x_lm358.12)    1.9070              
+
+(X_U2A.x_lm358.13)    1.9358          (X_U2A.x_lm358.14)    1.9075              
+
+(X_U2A.x_lm358.53)    3.5000          (X_U2A.x_lm358.54)    5.8220              
+
+(X_U2A.x_lm358.90)   40.7090          (X_U2A.x_lm358.91)   40.0000              
+
+(X_U2A.x_lm358.92)  -40.0000          (X_U2A.x_lm358.99)    5.0000          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         1.350E+02
+    V_V2        -1.350E+02
+    V_V3         5.984E-04
+    X_U2A.x_lm358.vb  -5.832E-04
+    X_U2A.x_lm358.vc  -1.351E+02
+    X_U2A.x_lm358.ve  -1.350E+02
+    X_U2A.x_lm358.vlim   4.071E-02
+    X_U2A.x_lm358.vlp   6.167E-04
+    X_U2A.x_lm358.vln  -8.071E-11
+
+    TOTAL POWER DISSIPATION   3.14E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/18/22 17:31:02 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bpt1_7"  [ D:\Practicas\E_General\Termometro3-PSpiceFiles\SCHEMATIC1\bpt1_7.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

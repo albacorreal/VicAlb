@@ -1,0 +1,3 @@
+select figure at 460 826 8 -branches -sn=1
+update symbols BCD_2_7Seg
+select figure at 1231 1671 8 -branches -sn=1
