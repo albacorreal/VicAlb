@@ -1,0 +1,29 @@
+Command line:
+   Resultado_Votacion_Resultado_Votacion_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  65401
+
+Thu Apr 21 09:42:11 2022
+
+
+ Elaboration Time: 0.375 sec
+
+ Current Memory Usage: 5809.93 Meg
+
+ Total Signals          : 97
+ Total Nets             : 45
+ Total Signal Drivers   : 18
+ Total Blocks           : 22
+ Total Primitive Blocks : 20
+ Total Processes        : 17
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 547
+Total Line Count : 29
+
+ Total Simulation Time: 0.515625 sec
+
+ Current Memory Usage: 4708.93 Meg
+
+Thu Apr 21 09:50:14 2022
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Practicas\E_Digital\Practica_1A\top.ncd
+OUTFILE=D:\Practicas\E_Digital\Practica_1A\top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\Practicas\E_Digital\Practica_1A
+LICENSE=WebPack
+USER_INFO=176074171_0_0_047

@@ -1,0 +1,3 @@
+vhdl work "Remote_Lab.vhd"
+vhdl work "MyDesign.vhf"
+vhdl work "top.vhf"

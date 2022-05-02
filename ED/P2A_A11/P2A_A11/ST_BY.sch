@@ -17,11 +17,11 @@
         <signal name="SST_BY(6)" />
         <signal name="SST_BY(7:0)" />
         <signal name="SST_BY(7)" />
-        <signal name="XLXN_6" />
-        <signal name="Ena0" />
+        <signal name="cnt(0)" />
+        <signal name="Ena" />
         <signal name="cnt(4:0)" />
         <port polarity="Output" name="SST_BY(7:0)" />
-        <port polarity="Input" name="Ena0" />
+        <port polarity="Input" name="Ena" />
         <port polarity="Input" name="cnt(4:0)" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -87,8 +87,8 @@
             <blockpin signalname="SST_BY(7)" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_2">
-            <blockpin signalname="Ena0" name="I0" />
-            <blockpin signalname="XLXN_6" name="I1" />
+            <blockpin signalname="Ena" name="I0" />
+            <blockpin signalname="cnt(0)" name="I1" />
             <blockpin signalname="XLXN_16" name="O" />
         </block>
     </netlist>
@@ -151,19 +151,6 @@
         <bustap x2="1888" y1="608" y2="608" x1="1984" />
         <bustap x2="1888" y1="432" y2="432" x1="1984" />
         <bustap x2="1888" y1="352" y2="352" x1="1984" />
-        <branch name="SST_BY(7:0)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1984" y="560" type="branch" />
-            <wire x2="1984" y1="240" y2="272" x1="1984" />
-            <wire x2="1984" y1="272" y2="352" x1="1984" />
-            <wire x2="1984" y1="352" y2="432" x1="1984" />
-            <wire x2="1984" y1="432" y2="512" x1="1984" />
-            <wire x2="1984" y1="512" y2="560" x1="1984" />
-            <wire x2="1984" y1="560" y2="608" x1="1984" />
-            <wire x2="1984" y1="608" y2="688" x1="1984" />
-            <wire x2="1984" y1="688" y2="768" x1="1984" />
-            <wire x2="1984" y1="768" y2="848" x1="1984" />
-            <wire x2="1984" y1="848" y2="896" x1="1984" />
-        </branch>
         <instance x="1520" y="304" name="XLXI_7" orien="R0" />
         <bustap x2="1888" y1="272" y2="272" x1="1984" />
         <instance x="1520" y="544" name="XLXI_4" orien="R0" />
@@ -176,10 +163,12 @@
         <iomarker fontsize="28" x="1984" y="896" name="SST_BY(7:0)" orien="R90" />
         <bustap x2="400" y1="480" y2="480" x1="304" />
         <instance x="480" y="608" name="XLXI_2" orien="R0" />
-        <branch name="XLXN_6">
-            <wire x2="480" y1="480" y2="480" x1="400" />
+        <branch name="cnt(0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="432" y="480" type="branch" />
+            <wire x2="432" y1="480" y2="480" x1="400" />
+            <wire x2="480" y1="480" y2="480" x1="432" />
         </branch>
-        <branch name="Ena0">
+        <branch name="Ena">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="384" y="656" type="branch" />
             <wire x2="480" y1="544" y2="544" x1="384" />
             <wire x2="384" y1="544" y2="656" x1="384" />
@@ -189,7 +178,7 @@
             <wire x2="304" y1="480" y2="848" x1="304" />
         </branch>
         <iomarker fontsize="28" x="304" y="848" name="cnt(4:0)" orien="R90" />
-        <iomarker fontsize="28" x="384" y="768" name="Ena0" orien="R90" />
+        <iomarker fontsize="28" x="384" y="768" name="Ena" orien="R90" />
         <branch name="XLXN_16">
             <wire x2="1024" y1="512" y2="512" x1="736" />
             <wire x2="1520" y1="512" y2="512" x1="1024" />
@@ -201,6 +190,18 @@
             <wire x2="1024" y1="352" y2="432" x1="1024" />
             <wire x2="1520" y1="432" y2="432" x1="1024" />
             <wire x2="1024" y1="432" y2="512" x1="1024" />
+        </branch>
+        <branch name="SST_BY(7:0)">
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1984" y="560" type="branch" />
+            <wire x2="1984" y1="272" y2="352" x1="1984" />
+            <wire x2="1984" y1="352" y2="432" x1="1984" />
+            <wire x2="1984" y1="432" y2="512" x1="1984" />
+            <wire x2="1984" y1="512" y2="560" x1="1984" />
+            <wire x2="1984" y1="560" y2="608" x1="1984" />
+            <wire x2="1984" y1="608" y2="688" x1="1984" />
+            <wire x2="1984" y1="688" y2="768" x1="1984" />
+            <wire x2="1984" y1="768" y2="848" x1="1984" />
+            <wire x2="1984" y1="848" y2="896" x1="1984" />
         </branch>
     </sheet>
 </drawing>

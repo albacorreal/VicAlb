@@ -1,0 +1,29 @@
+Command line:
+   MSignal_MSignal_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64542
+
+Sun May 01 13:12:15 2022
+
+
+ Elaboration Time: 0.15625 sec
+
+ Current Memory Usage: 5652.71 Meg
+
+ Total Signals          : 305
+ Total Nets             : 128
+ Total Signal Drivers   : 81
+ Total Blocks           : 69
+ Total Primitive Blocks : 63
+ Total Processes        : 80
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 630
+Total Line Count : 194
+
+ Total Simulation Time: 0.515625 sec
+
+ Current Memory Usage: 4708.99 Meg
+
+Sun May 01 13:14:33 2022
+

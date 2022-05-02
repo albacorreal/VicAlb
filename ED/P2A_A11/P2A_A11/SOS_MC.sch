@@ -7,9 +7,7 @@
     </attr>
     <netlist>
         <signal name="cnt(4:0)" />
-        <signal name="cnt(4)" />
         <signal name="cnt(1)" />
-        <signal name="cnt(0)" />
         <signal name="XLXN_12" />
         <signal name="cnt(3)" />
         <signal name="XLXN_13" />
@@ -22,10 +20,12 @@
         <signal name="XLXN_28" />
         <signal name="XLXN_29" />
         <signal name="XLXN_31" />
-        <signal name="Ena1" />
+        <signal name="Ena" />
         <signal name="SOS_MCOD" />
+        <signal name="cnt(4)" />
+        <signal name="cnt(0)" />
         <port polarity="Input" name="cnt(4:0)" />
-        <port polarity="Input" name="Ena1" />
+        <port polarity="Input" name="Ena" />
         <port polarity="Output" name="SOS_MCOD" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -125,7 +125,7 @@
             <blockpin signalname="XLXN_25" name="O" />
         </block>
         <block symbolname="and6" name="XLXI_27">
-            <blockpin signalname="Ena1" name="I0" />
+            <blockpin signalname="Ena" name="I0" />
             <blockpin signalname="XLXN_31" name="I1" />
             <blockpin signalname="XLXN_29" name="I2" />
             <blockpin signalname="XLXN_28" name="I3" />
@@ -135,29 +135,7 @@
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <bustap x2="336" y1="208" y2="304" x1="336" />
-        <bustap x2="368" y1="208" y2="304" x1="368" />
-        <bustap x2="400" y1="208" y2="304" x1="400" />
-        <bustap x2="432" y1="208" y2="304" x1="432" />
-        <bustap x2="464" y1="208" y2="304" x1="464" />
-        <branch name="cnt(4:0)">
-            <wire x2="336" y1="208" y2="208" x1="256" />
-            <wire x2="368" y1="208" y2="208" x1="336" />
-            <wire x2="400" y1="208" y2="208" x1="368" />
-            <wire x2="432" y1="208" y2="208" x1="400" />
-            <wire x2="464" y1="208" y2="208" x1="432" />
-        </branch>
         <iomarker fontsize="28" x="256" y="208" name="cnt(4:0)" orien="R180" />
-        <branch name="cnt(4)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="336" y="320" type="branch" />
-            <wire x2="336" y1="304" y2="320" x1="336" />
-            <wire x2="336" y1="320" y2="416" x1="336" />
-        </branch>
-        <branch name="cnt(0)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="464" y="384" type="branch" />
-            <wire x2="464" y1="304" y2="384" x1="464" />
-            <wire x2="464" y1="384" y2="416" x1="464" />
-        </branch>
         <instance x="432" y="416" name="XLXI_2" orien="R90" />
         <instance x="304" y="416" name="XLXI_1" orien="R90" />
         <instance x="816" y="800" name="XLXI_7" orien="R0" />
@@ -213,17 +191,33 @@
             <wire x2="464" y1="1216" y2="1376" x1="464" />
             <wire x2="816" y1="1376" y2="1376" x1="464" />
         </branch>
+        <branch name="XLXN_12">
+            <wire x2="336" y1="640" y2="672" x1="336" />
+            <wire x2="816" y1="672" y2="672" x1="336" />
+            <wire x2="336" y1="672" y2="1248" x1="336" />
+            <wire x2="816" y1="1248" y2="1248" x1="336" />
+        </branch>
+        <branch name="Ena">
+            <wire x2="1280" y1="1152" y2="1264" x1="1280" />
+        </branch>
+        <iomarker fontsize="28" x="1280" y="1264" name="Ena" orien="R90" />
+        <branch name="SOS_MCOD">
+            <wire x2="1632" y1="992" y2="992" x1="1536" />
+        </branch>
+        <iomarker fontsize="28" x="1632" y="992" name="SOS_MCOD" orien="R0" />
         <branch name="cnt(1)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="432" y="368" type="branch" />
-            <wire x2="432" y1="304" y2="368" x1="432" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="432" y="320" type="branch" />
+            <wire x2="432" y1="304" y2="320" x1="432" />
+            <wire x2="432" y1="320" y2="368" x1="432" />
             <wire x2="432" y1="368" y2="832" x1="432" />
             <wire x2="816" y1="832" y2="832" x1="432" />
             <wire x2="432" y1="832" y2="992" x1="432" />
             <wire x2="816" y1="992" y2="992" x1="432" />
         </branch>
         <branch name="cnt(2)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="400" y="352" type="branch" />
-            <wire x2="400" y1="304" y2="352" x1="400" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="400" y="320" type="branch" />
+            <wire x2="400" y1="304" y2="320" x1="400" />
+            <wire x2="400" y1="320" y2="352" x1="400" />
             <wire x2="400" y1="352" y2="768" x1="400" />
             <wire x2="816" y1="768" y2="768" x1="400" />
             <wire x2="400" y1="768" y2="928" x1="400" />
@@ -234,27 +228,35 @@
             <wire x2="528" y1="1312" y2="1312" x1="400" />
         </branch>
         <branch name="cnt(3)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="368" y="336" type="branch" />
-            <wire x2="368" y1="304" y2="336" x1="368" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="368" y="320" type="branch" />
+            <wire x2="368" y1="304" y2="320" x1="368" />
+            <wire x2="368" y1="320" y2="336" x1="368" />
             <wire x2="368" y1="336" y2="736" x1="368" />
             <wire x2="528" y1="736" y2="736" x1="368" />
             <wire x2="368" y1="736" y2="1088" x1="368" />
             <wire x2="816" y1="1088" y2="1088" x1="368" />
         </branch>
-        <branch name="XLXN_12">
-            <wire x2="336" y1="640" y2="672" x1="336" />
-            <wire x2="816" y1="672" y2="672" x1="336" />
-            <wire x2="336" y1="672" y2="1248" x1="336" />
-            <wire x2="816" y1="1248" y2="1248" x1="336" />
+        <bustap x2="336" y1="208" y2="304" x1="336" />
+        <bustap x2="368" y1="208" y2="304" x1="368" />
+        <bustap x2="400" y1="208" y2="304" x1="400" />
+        <bustap x2="432" y1="208" y2="304" x1="432" />
+        <bustap x2="464" y1="208" y2="304" x1="464" />
+        <branch name="cnt(4)">
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="336" y="320" type="branch" />
+            <wire x2="336" y1="304" y2="320" x1="336" />
+            <wire x2="336" y1="320" y2="416" x1="336" />
         </branch>
-        <branch name="Ena1">
-            <wire x2="1280" y1="1152" y2="1264" x1="1280" />
+        <branch name="cnt(0)">
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="464" y="320" type="branch" />
+            <wire x2="464" y1="304" y2="320" x1="464" />
+            <wire x2="464" y1="320" y2="416" x1="464" />
         </branch>
-        <iomarker fontsize="28" x="1280" y="1264" name="Ena1" orien="R90" />
-        <branch name="SOS_MCOD">
-            <wire x2="1600" y1="992" y2="992" x1="1536" />
-            <wire x2="1632" y1="992" y2="992" x1="1600" />
+        <branch name="cnt(4:0)">
+            <wire x2="336" y1="208" y2="208" x1="256" />
+            <wire x2="368" y1="208" y2="208" x1="336" />
+            <wire x2="400" y1="208" y2="208" x1="368" />
+            <wire x2="432" y1="208" y2="208" x1="400" />
+            <wire x2="464" y1="208" y2="208" x1="432" />
         </branch>
-        <iomarker fontsize="28" x="1632" y="992" name="SOS_MCOD" orien="R0" />
     </sheet>
 </drawing>

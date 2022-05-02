@@ -1,3 +1,8 @@
+USE ieee.std_logic_arith.ALL;
+
+END COMPONENT; 
+CONSTANT PERIOD: TIME:= 50 ns;
+
 --  Test Bench - User Defined Section 
    tb : PROCESS
     variable i : integer; 
