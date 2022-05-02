@@ -1,0 +1,4 @@
+Con este circuito obtenemos un pulso cuando se pasa de tener el Nivel desactivado (a 0)
+ a tenerlo a 1 al mismo tiempo que el flanco de bajada de ck, es decir, la secuencia de
+ alternancia de pulsos de un periodo de duracion sería pasar de Nivel:0,ck:1 a Nivel:1,
+ck:0. Si estando el pulso activo (Nivel:1,ck:0) se activa ck:1 se desactiva el pulso.
