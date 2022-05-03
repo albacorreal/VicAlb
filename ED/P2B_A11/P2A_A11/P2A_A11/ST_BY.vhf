@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ST_BY.vhf
--- /___/   /\     Timestamp : 05/02/2022 18:45:55
+-- /___/   /\     Timestamp : 05/03/2022 13:11:12
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Z:/P2A_A11/P2A_A11/ST_BY.vhf -w Z:/P2A_A11/P2A_A11/ST_BY.sch
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/ST_BY.vhf -w C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/ST_BY.sch
 --Design Name: ST_BY
 --Device: spartan6
 --Purpose:

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "Z:/P2A_A11/P2A_A11/Nivel_a_Pulso_Nivel_a_Pulso_sch_tb2_isim_beh.exe" -prj "Z:/P2A_A11/P2A_A11/Nivel_a_Pulso_Nivel_a_Pulso_sch_tb2_beh.prj" "work.Nivel_a_Pulso_Nivel_a_Pulso_sch_tb2" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/Nivel_a_Pulso_Nivel_a_Pulso_sch_tb_isim_beh.exe" -prj "C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/Nivel_a_Pulso_Nivel_a_Pulso_sch_tb_beh.prj" "work.Nivel_a_Pulso_Nivel_a_Pulso_sch_tb" 

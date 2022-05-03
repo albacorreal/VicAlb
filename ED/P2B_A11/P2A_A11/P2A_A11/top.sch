@@ -80,21 +80,21 @@
             <line x2="464" y1="-96" y2="-96" x1="400" />
         </blockdef>
         <blockdef name="MyDesign">
-            <timestamp>2022-5-2T16:54:22</timestamp>
-            <rect width="288" x="64" y="-320" height="320" />
+            <timestamp>2022-5-3T11:27:30</timestamp>
+            <rect width="320" x="64" y="-320" height="320" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <rect width="64" x="0" y="-236" height="24" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="416" y1="-288" y2="-288" x1="352" />
-            <rect width="64" x="352" y="-300" height="24" />
-            <line x2="416" y1="-32" y2="-32" x1="352" />
-            <rect width="64" x="352" y="-44" height="24" />
-            <line x2="416" y1="-96" y2="-96" x1="352" />
-            <rect width="64" x="352" y="-108" height="24" />
-            <line x2="416" y1="-160" y2="-160" x1="352" />
-            <rect width="64" x="352" y="-172" height="24" />
-            <line x2="416" y1="-224" y2="-224" x1="352" />
-            <rect width="64" x="352" y="-236" height="24" />
+            <line x2="448" y1="-288" y2="-288" x1="384" />
+            <rect width="64" x="384" y="-300" height="24" />
+            <line x2="448" y1="-32" y2="-32" x1="384" />
+            <rect width="64" x="384" y="-44" height="24" />
+            <line x2="448" y1="-96" y2="-96" x1="384" />
+            <rect width="64" x="384" y="-108" height="24" />
+            <line x2="448" y1="-160" y2="-160" x1="384" />
+            <rect width="64" x="384" y="-172" height="24" />
+            <line x2="448" y1="-224" y2="-224" x1="384" />
+            <rect width="64" x="384" y="-236" height="24" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
             <rect width="64" x="0" y="-300" height="24" />
         </blockdef>
@@ -222,35 +222,43 @@
         </branch>
         <branch name="sw_out(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="560" y="1152" type="branch" />
-            <wire x2="704" y1="1152" y2="1152" x1="560" />
+            <wire x2="576" y1="1152" y2="1152" x1="560" />
+            <wire x2="704" y1="1152" y2="1152" x1="576" />
         </branch>
         <branch name="btn_out(4:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="560" y="1216" type="branch" />
-            <wire x2="704" y1="1216" y2="1216" x1="560" />
+            <wire x2="576" y1="1216" y2="1216" x1="560" />
+            <wire x2="704" y1="1216" y2="1216" x1="576" />
         </branch>
         <branch name="clk_out">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="560" y="1280" type="branch" />
-            <wire x2="704" y1="1280" y2="1280" x1="560" />
+            <wire x2="576" y1="1280" y2="1280" x1="560" />
+            <wire x2="704" y1="1280" y2="1280" x1="576" />
         </branch>
         <branch name="LedsIn(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1392" y="1152" type="branch" />
-            <wire x2="1392" y1="1152" y2="1152" x1="1120" />
+            <wire x2="1376" y1="1152" y2="1152" x1="1152" />
+            <wire x2="1392" y1="1152" y2="1152" x1="1376" />
         </branch>
         <branch name="SevenSeg3(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1392" y="1216" type="branch" />
-            <wire x2="1392" y1="1216" y2="1216" x1="1120" />
+            <wire x2="1376" y1="1216" y2="1216" x1="1152" />
+            <wire x2="1392" y1="1216" y2="1216" x1="1376" />
         </branch>
         <branch name="SevenSeg2(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1392" y="1280" type="branch" />
-            <wire x2="1392" y1="1280" y2="1280" x1="1120" />
+            <wire x2="1376" y1="1280" y2="1280" x1="1152" />
+            <wire x2="1392" y1="1280" y2="1280" x1="1376" />
         </branch>
         <branch name="SevenSeg1(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="1344" type="branch" />
-            <wire x2="1408" y1="1344" y2="1344" x1="1120" />
+            <wire x2="1392" y1="1344" y2="1344" x1="1152" />
+            <wire x2="1408" y1="1344" y2="1344" x1="1392" />
         </branch>
         <branch name="SevenSeg0(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="1408" type="branch" />
-            <wire x2="1408" y1="1408" y2="1408" x1="1120" />
+            <wire x2="1392" y1="1408" y2="1408" x1="1152" />
+            <wire x2="1408" y1="1408" y2="1408" x1="1392" />
         </branch>
         <instance x="704" y="1440" name="XLXI_241" orien="R0">
         </instance>

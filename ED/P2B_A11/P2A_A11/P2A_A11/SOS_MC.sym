@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="SOS_MC">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2022-5-1T9:39:29</timestamp>
+    <timestamp>2022-5-3T11:15:29</timestamp>
     <pin polarity="Input" x="0" y="-96" name="cnt(4:0)" />
     <pin polarity="Input" x="0" y="-32" name="Ena" />
     <pin polarity="Output" x="384" y="-96" name="SOS_MCOD" />

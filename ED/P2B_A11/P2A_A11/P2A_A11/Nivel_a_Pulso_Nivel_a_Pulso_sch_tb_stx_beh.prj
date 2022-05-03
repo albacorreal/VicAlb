@@ -1,0 +1,2 @@
+vhdl isim_temp "Nivel_a_Pulso.vhf"
+vhdl isim_temp "../../../P2A_A11/P2A_A11/Nivel_a_Pulso_tb.vhd"

@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MSignal.vhf
--- /___/   /\     Timestamp : 05/02/2022 18:45:56
+-- /___/   /\     Timestamp : 05/03/2022 13:25:43
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Z:/P2A_A11/P2A_A11/MSignal.vhf -w Z:/P2A_A11/P2A_A11/MSignal.sch
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/MSignal.vhf -w C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/MSignal.sch
 --Design Name: MSignal
 --Device: spartan6
 --Purpose:
@@ -242,7 +242,7 @@ architecture BEHAVIORAL of Sh_LM_MUSER_MSignal is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_60 : label is "XLXI_60_81";
+   attribute HU_SET of XLXI_60 : label is "XLXI_60_0";
 begin
    XLXI_59 : GND
       port map (G=>XLXN_154);
@@ -363,7 +363,7 @@ architecture BEHAVIORAL of Sh_RM_MUSER_MSignal is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_62 : label is "XLXI_62_82";
+   attribute HU_SET of XLXI_62 : label is "XLXI_62_1";
 begin
    XLXI_59 : GND
       port map (G=>XLXN_154);
@@ -482,7 +482,7 @@ architecture BEHAVIORAL of SOS_MC_MUSER_MSignal is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_83";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_2";
 begin
    XLXI_1 : INV
       port map (I=>cnt(4),
@@ -708,15 +708,15 @@ architecture BEHAVIORAL of MSignal is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_84";
-   attribute HU_SET of XLXI_12_0 : label is "XLXI_12_0_92";
-   attribute HU_SET of XLXI_12_1 : label is "XLXI_12_1_91";
-   attribute HU_SET of XLXI_12_2 : label is "XLXI_12_2_90";
-   attribute HU_SET of XLXI_12_3 : label is "XLXI_12_3_89";
-   attribute HU_SET of XLXI_12_4 : label is "XLXI_12_4_88";
-   attribute HU_SET of XLXI_12_5 : label is "XLXI_12_5_87";
-   attribute HU_SET of XLXI_12_6 : label is "XLXI_12_6_86";
-   attribute HU_SET of XLXI_12_7 : label is "XLXI_12_7_85";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_3";
+   attribute HU_SET of XLXI_12_0 : label is "XLXI_12_0_11";
+   attribute HU_SET of XLXI_12_1 : label is "XLXI_12_1_10";
+   attribute HU_SET of XLXI_12_2 : label is "XLXI_12_2_9";
+   attribute HU_SET of XLXI_12_3 : label is "XLXI_12_3_8";
+   attribute HU_SET of XLXI_12_4 : label is "XLXI_12_4_7";
+   attribute HU_SET of XLXI_12_5 : label is "XLXI_12_5_6";
+   attribute HU_SET of XLXI_12_6 : label is "XLXI_12_6_5";
+   attribute HU_SET of XLXI_12_7 : label is "XLXI_12_7_4";
 begin
    XLXI_1 : ST_BY_MUSER_MSignal
       port map (cnt(4 downto 0)=>cnt(4 downto 0),

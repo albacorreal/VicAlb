@@ -7,106 +7,17 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : top.vhf
--- /___/   /\     Timestamp : 05/02/2022 19:07:48
+-- /___/   /\     Timestamp : 05/03/2022 13:27:54
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Z:/P2A_A11/P2A_A11/top.vhf -w Z:/P2A_A11/P2A_A11/top.sch
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/top.vhf -w C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/top.sch
 --Design Name: top
 --Device: spartan6
 --Purpose:
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
------ CELL CB4CE_HXILINX_top -----
-
-
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
-
-entity CB4CE_HXILINX_top is
-  
-port (
-    CEO  : out STD_LOGIC;
-    Q0   : out STD_LOGIC;
-    Q1   : out STD_LOGIC;
-    Q2   : out STD_LOGIC;
-    Q3   : out STD_LOGIC;
-    TC   : out STD_LOGIC;
-    C    : in STD_LOGIC;
-    CE   : in STD_LOGIC;
-    CLR  : in STD_LOGIC
-    );
-end CB4CE_HXILINX_top;
-
-architecture Behavioral of CB4CE_HXILINX_top is
-
-  signal COUNT : STD_LOGIC_VECTOR(3 downto 0) := (others => '0');
-  constant TERMINAL_COUNT : STD_LOGIC_VECTOR(3 downto 0) := (others => '1');
-  
-begin
-
-process(C, CLR)
-begin
-  if (CLR='1') then
-    COUNT <= (others => '0');
-  elsif (C'event and C = '1') then
-    if (CE='1') then 
-      COUNT <= COUNT+1;
-    end if;
-  end if;
-end process;
-
-TC   <= '1' when (COUNT = TERMINAL_COUNT) else '0';
-CEO  <= '1' when ((COUNT = TERMINAL_COUNT) and CE='1') else '0';
-
-Q3 <= COUNT(3);
-Q2 <= COUNT(2);
-Q1 <= COUNT(1);
-Q0 <= COUNT(0);
-
-end Behavioral;
-
------ CELL FTC_HXILINX_top -----
-
-
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
-entity FTC_HXILINX_top is
-generic(
-    INIT : bit := '0'
-    );
-
-  port (
-    Q   : out STD_LOGIC := '0';
-    C   : in STD_LOGIC;
-    CLR : in STD_LOGIC;
-    T   : in STD_LOGIC
-    );
-end FTC_HXILINX_top;
-
-architecture Behavioral of FTC_HXILINX_top is
-signal q_tmp : std_logic := TO_X01(INIT);
-begin
-
-process(C, CLR)
-begin
-  if (CLR='1') then
-    q_tmp <= '0';
-  elsif (C'event and C = '1') then
-    if(T='1') then
-      q_tmp <= not q_tmp;
-    end if;
-  end if;  
-end process;
-
-Q <= q_tmp;
-
-end Behavioral;
-
 ----- CELL D3_8E_HXILINX_top -----
   
 library IEEE;
@@ -299,53 +210,6 @@ architecture AND6_HXILINX_top_V of AND6_HXILINX_top is
 begin
   O <= I0 and I1 and I2 and I3 and I4 and I5;
 end AND6_HXILINX_top_V;
------ CELL CB2CE_HXILINX_top -----
-
-
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
-
-entity CB2CE_HXILINX_top is
-  
-port (
-    CEO  : out STD_LOGIC;
-    Q0   : out STD_LOGIC;
-    Q1   : out STD_LOGIC;
-    TC   : out STD_LOGIC;
-    C    : in STD_LOGIC;
-    CE   : in STD_LOGIC;
-    CLR  : in STD_LOGIC
-    );
-end CB2CE_HXILINX_top;
-
-architecture Behavioral of CB2CE_HXILINX_top is
-
-  signal COUNT : STD_LOGIC_VECTOR(1 downto 0) := (others => '0');
-  constant TERMINAL_COUNT : STD_LOGIC_VECTOR(1 downto 0) := (others => '1');
-  
-begin
-
-process(C, CLR)
-begin
-  if (CLR='1') then
-    COUNT <= (others => '0');
-  elsif (C'event and C = '1') then
-    if (CE='1') then 
-      COUNT <= COUNT+1;
-    end if;
-  end if;
-end process;
-
-TC   <= '1' when (COUNT = TERMINAL_COUNT) else '0';
-CEO  <= '1' when ((COUNT = TERMINAL_COUNT) and CE='1') else '0';
-
-Q1 <= COUNT(1);
-Q0 <= COUNT(0);
-
-end Behavioral;
-
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -392,22 +256,22 @@ architecture BEHAVIORAL of VDisplays_MUSER_top is
              SEG : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1_0 : label is "XLXI_1_0_69";
-   attribute HU_SET of XLXI_1_1 : label is "XLXI_1_1_68";
-   attribute HU_SET of XLXI_1_2 : label is "XLXI_1_2_67";
-   attribute HU_SET of XLXI_1_3 : label is "XLXI_1_3_66";
-   attribute HU_SET of XLXI_1_4 : label is "XLXI_1_4_65";
-   attribute HU_SET of XLXI_1_5 : label is "XLXI_1_5_64";
-   attribute HU_SET of XLXI_1_6 : label is "XLXI_1_6_63";
-   attribute HU_SET of XLXI_1_7 : label is "XLXI_1_7_62";
-   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_77";
-   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_76";
-   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_75";
-   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_74";
-   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_73";
-   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_72";
-   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_71";
-   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_70";
+   attribute HU_SET of XLXI_1_0 : label is "XLXI_1_0_63";
+   attribute HU_SET of XLXI_1_1 : label is "XLXI_1_1_62";
+   attribute HU_SET of XLXI_1_2 : label is "XLXI_1_2_61";
+   attribute HU_SET of XLXI_1_3 : label is "XLXI_1_3_60";
+   attribute HU_SET of XLXI_1_4 : label is "XLXI_1_4_59";
+   attribute HU_SET of XLXI_1_5 : label is "XLXI_1_5_58";
+   attribute HU_SET of XLXI_1_6 : label is "XLXI_1_6_57";
+   attribute HU_SET of XLXI_1_7 : label is "XLXI_1_7_56";
+   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_71";
+   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_70";
+   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_69";
+   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_68";
+   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_67";
+   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_66";
+   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_65";
+   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_64";
 begin
    XLXI_1_0 : M2_1_HXILINX_top
       port map (D0=>z,
@@ -594,7 +458,7 @@ architecture BEHAVIORAL of Sh_LM_MUSER_top is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_60 : label is "XLXI_60_78";
+   attribute HU_SET of XLXI_60 : label is "XLXI_60_72";
 begin
    XLXI_59 : GND
       port map (G=>XLXN_154);
@@ -715,7 +579,7 @@ architecture BEHAVIORAL of Sh_RM_MUSER_top is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_62 : label is "XLXI_62_79";
+   attribute HU_SET of XLXI_62 : label is "XLXI_62_73";
 begin
    XLXI_59 : GND
       port map (G=>XLXN_154);
@@ -834,7 +698,7 @@ architecture BEHAVIORAL of SOS_MC_MUSER_top is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_80";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_74";
 begin
    XLXI_1 : INV
       port map (I=>cnt(4),
@@ -1060,15 +924,15 @@ architecture BEHAVIORAL of MSignal_MUSER_top is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_81";
-   attribute HU_SET of XLXI_12_0 : label is "XLXI_12_0_89";
-   attribute HU_SET of XLXI_12_1 : label is "XLXI_12_1_88";
-   attribute HU_SET of XLXI_12_2 : label is "XLXI_12_2_87";
-   attribute HU_SET of XLXI_12_3 : label is "XLXI_12_3_86";
-   attribute HU_SET of XLXI_12_4 : label is "XLXI_12_4_85";
-   attribute HU_SET of XLXI_12_5 : label is "XLXI_12_5_84";
-   attribute HU_SET of XLXI_12_6 : label is "XLXI_12_6_83";
-   attribute HU_SET of XLXI_12_7 : label is "XLXI_12_7_82";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_75";
+   attribute HU_SET of XLXI_12_0 : label is "XLXI_12_0_83";
+   attribute HU_SET of XLXI_12_1 : label is "XLXI_12_1_82";
+   attribute HU_SET of XLXI_12_2 : label is "XLXI_12_2_81";
+   attribute HU_SET of XLXI_12_3 : label is "XLXI_12_3_80";
+   attribute HU_SET of XLXI_12_4 : label is "XLXI_12_4_79";
+   attribute HU_SET of XLXI_12_5 : label is "XLXI_12_5_78";
+   attribute HU_SET of XLXI_12_6 : label is "XLXI_12_6_77";
+   attribute HU_SET of XLXI_12_7 : label is "XLXI_12_7_76";
 begin
    XLXI_1 : ST_BY_MUSER_top
       port map (cnt(4 downto 0)=>cnt(4 downto 0),
@@ -1224,197 +1088,6 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity cb5c_MUSER_top is
-   port ( ck  : in    std_logic; 
-          Clr : in    std_logic; 
-          cnt : out   std_logic_vector (4 downto 0));
-end cb5c_MUSER_top;
-
-architecture BEHAVIORAL of cb5c_MUSER_top is
-   attribute HU_SET     : string ;
-   attribute BOX_TYPE   : string ;
-   signal XLXN_3 : std_logic;
-   signal XLXN_6 : std_logic;
-   component CB4CE_HXILINX_top
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             CEO : out   std_logic; 
-             Q0  : out   std_logic; 
-             Q1  : out   std_logic; 
-             Q2  : out   std_logic; 
-             Q3  : out   std_logic; 
-             TC  : out   std_logic);
-   end component;
-   
-   component FTC_HXILINX_top
-      port ( C   : in    std_logic; 
-             CLR : in    std_logic; 
-             T   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   
-   component VCC
-      port ( P : out   std_logic);
-   end component;
-   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_90";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_91";
-begin
-   XLXI_1 : CB4CE_HXILINX_top
-      port map (C=>ck,
-                CE=>XLXN_6,
-                CLR=>Clr,
-                CEO=>open,
-                Q0=>cnt(0),
-                Q1=>cnt(1),
-                Q2=>cnt(2),
-                Q3=>cnt(3),
-                TC=>XLXN_3);
-   
-   XLXI_2 : FTC_HXILINX_top
-      port map (C=>ck,
-                CLR=>Clr,
-                T=>XLXN_3,
-                Q=>cnt(4));
-   
-   XLXI_3 : VCC
-      port map (P=>XLXN_6);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity Nivel_a_Pulso_MUSER_top is
-   port ( ck    : in    std_logic; 
-          Nivel : in    std_logic; 
-          Pulso : out   std_logic);
-end Nivel_a_Pulso_MUSER_top;
-
-architecture BEHAVIORAL of Nivel_a_Pulso_MUSER_top is
-   attribute BOX_TYPE   : string ;
-   signal XLXN_3 : std_logic;
-   component FD
-      generic( INIT : bit :=  '0');
-      port ( C : in    std_logic; 
-             D : in    std_logic; 
-             Q : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FD : component is "BLACK_BOX";
-   
-   component AND2B1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
-   
-begin
-   XLXI_1 : FD
-      port map (C=>ck,
-                D=>Nivel,
-                Q=>XLXN_3);
-   
-   XLXI_2 : AND2B1
-      port map (I0=>XLXN_3,
-                I1=>Nivel,
-                O=>Pulso);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity Ctrl_MUSER_top is
-   port ( CK1     : in    std_logic; 
-          Clear   : in    std_logic; 
-          Mod_sel : in    std_logic; 
-          cnt     : out   std_logic_vector (4 downto 0); 
-          S       : out   std_logic_vector (1 downto 0));
-end Ctrl_MUSER_top;
-
-architecture BEHAVIORAL of Ctrl_MUSER_top is
-   attribute HU_SET     : string ;
-   attribute BOX_TYPE   : string ;
-   signal Sel     : std_logic;
-   signal XLXN_1  : std_logic;
-   component CB2CE_HXILINX_top
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             CEO : out   std_logic; 
-             Q0  : out   std_logic; 
-             Q1  : out   std_logic; 
-             TC  : out   std_logic);
-   end component;
-   
-   component Nivel_a_Pulso_MUSER_top
-      port ( ck    : in    std_logic; 
-             Nivel : in    std_logic; 
-             Pulso : out   std_logic);
-   end component;
-   
-   component cb5c_MUSER_top
-      port ( ck  : in    std_logic; 
-             Clr : in    std_logic; 
-             cnt : out   std_logic_vector (4 downto 0));
-   end component;
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_92";
-begin
-   XLXI_1 : CB2CE_HXILINX_top
-      port map (C=>CK1,
-                CE=>Sel,
-                CLR=>Clear,
-                CEO=>open,
-                Q0=>S(0),
-                Q1=>S(1),
-                TC=>open);
-   
-   XLXI_2 : Nivel_a_Pulso_MUSER_top
-      port map (ck=>CK1,
-                Nivel=>Mod_sel,
-                Pulso=>Sel);
-   
-   XLXI_3 : cb5c_MUSER_top
-      port map (ck=>CK1,
-                Clr=>XLXN_1,
-                cnt(4 downto 0)=>cnt(4 downto 0));
-   
-   XLXI_4 : OR2
-      port map (I0=>Sel,
-                I1=>Clear,
-                O=>XLXN_1);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
 entity MyDesign_MUSER_top is
    port ( btn       : in    std_logic_vector (4 downto 0); 
           Ck        : in    std_logic; 
@@ -1432,7 +1105,7 @@ architecture BEHAVIORAL of MyDesign_MUSER_top is
    signal XLXN_1    : std_logic_vector (4 downto 0);
    signal XLXN_2    : std_logic_vector (1 downto 0);
    signal XLXN_21   : std_logic;
-   component Ctrl_MUSER_top
+   component Ctrl
       port ( CK1     : in    std_logic; 
              Clear   : in    std_logic; 
              cnt     : out   std_logic_vector (4 downto 0); 
@@ -1467,7 +1140,7 @@ architecture BEHAVIORAL of MyDesign_MUSER_top is
    attribute BOX_TYPE of BUFG : component is "BLACK_BOX";
    
 begin
-   XLXI_1 : Ctrl_MUSER_top
+   XLXI_1 : Ctrl
       port map (CK1=>CK1,
                 Clear=>btn(1),
                 Mod_sel=>btn(0),

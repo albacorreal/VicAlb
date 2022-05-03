@@ -12,10 +12,7 @@
         <signal name="Sel" />
         <signal name="S(0)" />
         <signal name="S(1)" />
-        <signal name="XLXN_8" />
-        <signal name="XLXN_9" />
         <signal name="Clear" />
-        <signal name="XLXN_18" />
         <signal name="cnt(4:0)" />
         <signal name="S(1:0)" />
         <port polarity="Input" name="Mod_sel" />
@@ -39,14 +36,14 @@
             <line x2="320" y1="-320" y2="-320" x1="384" />
         </blockdef>
         <blockdef name="Nivel_a_Pulso">
-            <timestamp>2022-5-2T14:37:40</timestamp>
+            <timestamp>2022-5-3T11:19:36</timestamp>
             <rect width="256" x="64" y="-128" height="128" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
         <blockdef name="cb5c">
-            <timestamp>2022-5-2T14:38:32</timestamp>
+            <timestamp>2022-5-3T11:19:57</timestamp>
             <rect width="256" x="64" y="-128" height="128" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />

@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Sh_LM.vhf
--- /___/   /\     Timestamp : 05/02/2022 18:45:56
+-- /___/   /\     Timestamp : 05/03/2022 13:11:13
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Z:/P2A_A11/P2A_A11/Sh_LM.vhf -w Z:/P2A_A11/P2A_A11/Sh_LM.sch
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/Sh_LM.vhf -w C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/Sh_LM.sch
 --Design Name: Sh_LM
 --Device: spartan6
 --Purpose:
@@ -135,7 +135,7 @@ architecture BEHAVIORAL of Sh_LM is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_60 : label is "XLXI_60_80";
+   attribute HU_SET of XLXI_60 : label is "XLXI_60_23";
 begin
    XLXI_59 : GND
       port map (G=>XLXN_154);

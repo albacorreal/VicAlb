@@ -105,43 +105,43 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\ST_BY.vhf" into library work
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\ST_BY.vhf" into library work
 Parsing entity <ST_BY>.
 Parsing architecture <BEHAVIORAL> of entity <st_by>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\SOS_MC.vhf" into library work
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\SOS_MC.vhf" into library work
 Parsing entity <AND6_HXILINX_SOS_MC>.
 Parsing architecture <AND6_HXILINX_SOS_MC_V> of entity <and6_hxilinx_sos_mc>.
 Parsing entity <SOS_MC>.
 Parsing architecture <BEHAVIORAL> of entity <sos_mc>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\Sh_RM.vhf" into library work
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Sh_RM.vhf" into library work
 Parsing entity <D3_8E_HXILINX_Sh_RM>.
 Parsing architecture <D3_8E_HXILINX_Sh_RM_V> of entity <d3_8e_hxilinx_sh_rm>.
 Parsing entity <Sh_RM>.
 Parsing architecture <BEHAVIORAL> of entity <sh_rm>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\Sh_LM.vhf" into library work
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Sh_LM.vhf" into library work
 Parsing entity <D3_8E_HXILINX_Sh_LM>.
 Parsing architecture <D3_8E_HXILINX_Sh_LM_V> of entity <d3_8e_hxilinx_sh_lm>.
 Parsing entity <Sh_LM>.
 Parsing architecture <BEHAVIORAL> of entity <sh_lm>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\Nivel_a_Pulso.vhf" into library work
-Parsing entity <Nivel_a_Pulso>.
-Parsing architecture <BEHAVIORAL> of entity <nivel_a_pulso>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\Hex7Seg.vhd" into library work
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Hex7Seg.vhd" into library work
 Parsing entity <Hex7Seg>.
 Parsing architecture <Behavioral> of entity <hex7seg>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\cb5c.vhf" into library work
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Nivel_a_Pulso.vhf" into library work
+Parsing entity <Nivel_a_Pulso>.
+Parsing architecture <BEHAVIORAL> of entity <nivel_a_pulso>.
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\cb5c.vhf" into library work
 Parsing entity <CB4CE_HXILINX_cb5c>.
 Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_cb5c>.
 Parsing entity <FTC_HXILINX_cb5c>.
 Parsing architecture <Behavioral> of entity <ftc_hxilinx_cb5c>.
 Parsing entity <cb5c>.
 Parsing architecture <BEHAVIORAL> of entity <cb5c>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\VDisplays.vhf" into library work
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\VDisplays.vhf" into library work
 Parsing entity <M2_1_HXILINX_VDisplays>.
 Parsing architecture <M2_1_HXILINX_VDisplays_V> of entity <m2_1_hxilinx_vdisplays>.
 Parsing entity <VDisplays>.
 Parsing architecture <BEHAVIORAL> of entity <vdisplays>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\MSignal.vhf" into library work
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\MSignal.vhf" into library work
 Parsing entity <D3_8E_HXILINX_MSignal>.
 Parsing architecture <D3_8E_HXILINX_MSignal_V> of entity <d3_8e_hxilinx_msignal>.
 Parsing entity <M4_1E_HXILINX_MSignal>.
@@ -160,7 +160,7 @@ Parsing entity <ST_BY_MUSER_MSignal>.
 Parsing architecture <BEHAVIORAL> of entity <st_by_muser_msignal>.
 Parsing entity <MSignal>.
 Parsing architecture <BEHAVIORAL> of entity <msignal>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\Ctrl.vhf" into library work
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Ctrl.vhf" into library work
 Parsing entity <CB4CE_HXILINX_Ctrl>.
 Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_ctrl>.
 Parsing entity <FTC_HXILINX_Ctrl>.
@@ -173,17 +173,13 @@ Parsing entity <Nivel_a_Pulso_MUSER_Ctrl>.
 Parsing architecture <BEHAVIORAL> of entity <nivel_a_pulso_muser_ctrl>.
 Parsing entity <Ctrl>.
 Parsing architecture <BEHAVIORAL> of entity <ctrl>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\clk_div.vhd" into library work
+Parsing VHDL file "C:\VicAlb\ED\P2A_A11\P2A_A11\clk_div.vhd" into library work
 Parsing entity <clk_div>.
 Parsing architecture <Behavioral> of entity <clk_div>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\Remote_Lab.vhd" into library work
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Remote_Lab.vhd" into library work
 Parsing entity <Remote_Lab>.
 Parsing architecture <Behavioral> of entity <remote_lab>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\MyDesign.vhf" into library work
-Parsing entity <CB4CE_HXILINX_MyDesign>.
-Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_mydesign>.
-Parsing entity <FTC_HXILINX_MyDesign>.
-Parsing architecture <Behavioral> of entity <ftc_hxilinx_mydesign>.
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\MyDesign.vhf" into library work
 Parsing entity <D3_8E_HXILINX_MyDesign>.
 Parsing architecture <D3_8E_HXILINX_MyDesign_V> of entity <d3_8e_hxilinx_mydesign>.
 Parsing entity <M4_1E_HXILINX_MyDesign>.
@@ -194,8 +190,6 @@ Parsing entity <M2_1_HXILINX_MyDesign>.
 Parsing architecture <M2_1_HXILINX_MyDesign_V> of entity <m2_1_hxilinx_mydesign>.
 Parsing entity <AND6_HXILINX_MyDesign>.
 Parsing architecture <AND6_HXILINX_MyDesign_V> of entity <and6_hxilinx_mydesign>.
-Parsing entity <CB2CE_HXILINX_MyDesign>.
-Parsing architecture <Behavioral> of entity <cb2ce_hxilinx_mydesign>.
 Parsing entity <VDisplays_MUSER_MyDesign>.
 Parsing architecture <BEHAVIORAL> of entity <vdisplays_muser_mydesign>.
 Parsing entity <Sh_LM_MUSER_MyDesign>.
@@ -208,19 +202,9 @@ Parsing entity <ST_BY_MUSER_MyDesign>.
 Parsing architecture <BEHAVIORAL> of entity <st_by_muser_mydesign>.
 Parsing entity <MSignal_MUSER_MyDesign>.
 Parsing architecture <BEHAVIORAL> of entity <msignal_muser_mydesign>.
-Parsing entity <cb5c_MUSER_MyDesign>.
-Parsing architecture <BEHAVIORAL> of entity <cb5c_muser_mydesign>.
-Parsing entity <Nivel_a_Pulso_MUSER_MyDesign>.
-Parsing architecture <BEHAVIORAL> of entity <nivel_a_pulso_muser_mydesign>.
-Parsing entity <Ctrl_MUSER_MyDesign>.
-Parsing architecture <BEHAVIORAL> of entity <ctrl_muser_mydesign>.
 Parsing entity <MyDesign>.
 Parsing architecture <BEHAVIORAL> of entity <mydesign>.
-Parsing VHDL file "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" into library work
-Parsing entity <CB4CE_HXILINX_top>.
-Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_top>.
-Parsing entity <FTC_HXILINX_top>.
-Parsing architecture <Behavioral> of entity <ftc_hxilinx_top>.
+Parsing VHDL file "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf" into library work
 Parsing entity <D3_8E_HXILINX_top>.
 Parsing architecture <D3_8E_HXILINX_top_V> of entity <d3_8e_hxilinx_top>.
 Parsing entity <M4_1E_HXILINX_top>.
@@ -231,8 +215,6 @@ Parsing entity <M2_1_HXILINX_top>.
 Parsing architecture <M2_1_HXILINX_top_V> of entity <m2_1_hxilinx_top>.
 Parsing entity <AND6_HXILINX_top>.
 Parsing architecture <AND6_HXILINX_top_V> of entity <and6_hxilinx_top>.
-Parsing entity <CB2CE_HXILINX_top>.
-Parsing architecture <Behavioral> of entity <cb2ce_hxilinx_top>.
 Parsing entity <VDisplays_MUSER_top>.
 Parsing architecture <BEHAVIORAL> of entity <vdisplays_muser_top>.
 Parsing entity <Sh_LM_MUSER_top>.
@@ -245,12 +227,6 @@ Parsing entity <ST_BY_MUSER_top>.
 Parsing architecture <BEHAVIORAL> of entity <st_by_muser_top>.
 Parsing entity <MSignal_MUSER_top>.
 Parsing architecture <BEHAVIORAL> of entity <msignal_muser_top>.
-Parsing entity <cb5c_MUSER_top>.
-Parsing architecture <BEHAVIORAL> of entity <cb5c_muser_top>.
-Parsing entity <Nivel_a_Pulso_MUSER_top>.
-Parsing architecture <BEHAVIORAL> of entity <nivel_a_pulso_muser_top>.
-Parsing entity <Ctrl_MUSER_top>.
-Parsing architecture <BEHAVIORAL> of entity <ctrl_muser_top>.
 Parsing entity <MyDesign_MUSER_top>.
 Parsing architecture <BEHAVIORAL> of entity <mydesign_muser_top>.
 Parsing entity <top>.
@@ -266,24 +242,24 @@ Elaborating entity <Remote_Lab> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <MyDesign_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
 
-Elaborating entity <Ctrl_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+Elaborating entity <Ctrl> (architecture <BEHAVIORAL>) from library <work>.
 
-Elaborating entity <CB2CE_HXILINX_top> (architecture <Behavioral>) from library <work>.
+Elaborating entity <CB2CE_HXILINX_Ctrl> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <Nivel_a_Pulso_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+Elaborating entity <Nivel_a_Pulso_MUSER_Ctrl> (architecture <BEHAVIORAL>) from library <work>.
 
-Elaborating entity <cb5c_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
+Elaborating entity <cb5c_MUSER_Ctrl> (architecture <BEHAVIORAL>) from library <work>.
 
-Elaborating entity <CB4CE_HXILINX_top> (architecture <Behavioral>) from library <work>.
+Elaborating entity <CB4CE_HXILINX_Ctrl> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <FTC_HXILINX_top> (architecture <Behavioral>) with generics from library <work>.
+Elaborating entity <FTC_HXILINX_Ctrl> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <clk_div> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <VDisplays_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <M2_1_HXILINX_top> (architecture <M2_1_HXILINX_top_V>) from library <work>.
-INFO:HDLCompiler:679 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" Line 275. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf" Line 186. Case statement is complete. others clause is never selected
 
 Elaborating entity <Hex7Seg> (architecture <Behavioral>) from library <work>.
 
@@ -298,28 +274,28 @@ Elaborating entity <AND6_HXILINX_top> (architecture <AND6_HXILINX_top_V>) from l
 Elaborating entity <Sh_RM_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <D3_8E_HXILINX_top> (architecture <D3_8E_HXILINX_top_V>) from library <work>.
-INFO:HDLCompiler:679 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" Line 153. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf" Line 64. Case statement is complete. others clause is never selected
 
 Elaborating entity <Sh_LM_MUSER_top> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <D2_4E_HXILINX_top> (architecture <D2_4E_HXILINX_top_V>) from library <work>.
-INFO:HDLCompiler:679 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" Line 241. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf" Line 152. Case statement is complete. others clause is never selected
 
 Elaborating entity <M4_1E_HXILINX_top> (architecture <M4_1E_HXILINX_top_V>) from library <work>.
-INFO:HDLCompiler:679 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" Line 202. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf" Line 113. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
     Summary:
 	no macro.
 Unit <top> synthesized.
 
 Synthesizing Unit <Remote_Lab>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\Remote_Lab.vhd".
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Remote_Lab.vhd".
     Found 8-bit register for signal <regEppAdr>.
     Found 8-bit register for signal <sw>.
     Found 8-bit register for signal <btn>.
@@ -345,69 +321,69 @@ Synthesizing Unit <Remote_Lab>.
 Unit <Remote_Lab> synthesized.
 
 Synthesizing Unit <MyDesign_MUSER_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
 WARNING:Xst:647 - Input <btn<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <btn<4:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <sw> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" line 1477: Output port <div_1hz> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf" line 1150: Output port <div_1hz> of the instance <XLXI_2> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <SevenSeg2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <SevenSeg3> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <MyDesign_MUSER_top> synthesized.
 
-Synthesizing Unit <Ctrl_MUSER_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
-    Set property "HU_SET = XLXI_1_92" for instance <XLXI_1>.
-INFO:Xst:3210 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" line 1384: Output port <CEO> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" line 1384: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+Synthesizing Unit <Ctrl>.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Ctrl.vhf".
+    Set property "HU_SET = XLXI_1_2" for instance <XLXI_1>.
+INFO:Xst:3210 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Ctrl.vhf" line 321: Output port <CEO> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Ctrl.vhf" line 321: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
-Unit <Ctrl_MUSER_top> synthesized.
+Unit <Ctrl> synthesized.
 
-Synthesizing Unit <CB2CE_HXILINX_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
+Synthesizing Unit <CB2CE_HXILINX_Ctrl>.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Ctrl.vhf".
     Found 2-bit register for signal <COUNT>.
-    Found 2-bit adder for signal <COUNT[1]_GND_19_o_add_0_OUT> created at line 336.
+    Found 2-bit adder for signal <COUNT[1]_GND_19_o_add_0_OUT> created at line 144.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   2 D-type flip-flop(s).
-Unit <CB2CE_HXILINX_top> synthesized.
+Unit <CB2CE_HXILINX_Ctrl> synthesized.
 
-Synthesizing Unit <Nivel_a_Pulso_MUSER_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
+Synthesizing Unit <Nivel_a_Pulso_MUSER_Ctrl>.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Ctrl.vhf".
     Summary:
 	no macro.
-Unit <Nivel_a_Pulso_MUSER_top> synthesized.
+Unit <Nivel_a_Pulso_MUSER_Ctrl> synthesized.
 
-Synthesizing Unit <cb5c_MUSER_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
-    Set property "HU_SET = XLXI_1_90" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_91" for instance <XLXI_2>.
-INFO:Xst:3210 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" line 1265: Output port <CEO> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+Synthesizing Unit <cb5c_MUSER_Ctrl>.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Ctrl.vhf".
+    Set property "HU_SET = XLXI_1_0" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_1" for instance <XLXI_2>.
+INFO:Xst:3210 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Ctrl.vhf" line 202: Output port <CEO> of the instance <XLXI_1> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
-Unit <cb5c_MUSER_top> synthesized.
+Unit <cb5c_MUSER_Ctrl> synthesized.
 
-Synthesizing Unit <CB4CE_HXILINX_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
+Synthesizing Unit <CB4CE_HXILINX_Ctrl>.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Ctrl.vhf".
     Found 4-bit register for signal <COUNT>.
     Found 4-bit adder for signal <COUNT[3]_GND_22_o_add_0_OUT> created at line 57.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   4 D-type flip-flop(s).
-Unit <CB4CE_HXILINX_top> synthesized.
+Unit <CB4CE_HXILINX_Ctrl> synthesized.
 
-Synthesizing Unit <FTC_HXILINX_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
+Synthesizing Unit <FTC_HXILINX_Ctrl>.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Ctrl.vhf".
         INIT = '0'
     Found 1-bit register for signal <q_tmp>.
     Summary:
 	inferred   1 D-type flip-flop(s).
-Unit <FTC_HXILINX_top> synthesized.
+Unit <FTC_HXILINX_Ctrl> synthesized.
 
 Synthesizing Unit <clk_div>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\clk_div.vhd".
+    Related source file is "C:\VicAlb\ED\P2A_A11\P2A_A11\clk_div.vhd".
     Found 32-bit register for signal <cnt1>.
     Found 1-bit register for signal <div_1hz>.
     Found 1-bit register for signal <div2_temp>.
@@ -425,109 +401,109 @@ Synthesizing Unit <clk_div>.
 Unit <clk_div> synthesized.
 
 Synthesizing Unit <VDisplays_MUSER_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
-    Set property "HU_SET = XLXI_1_0_69" for instance <XLXI_1_0>.
-    Set property "HU_SET = XLXI_1_1_68" for instance <XLXI_1_1>.
-    Set property "HU_SET = XLXI_1_2_67" for instance <XLXI_1_2>.
-    Set property "HU_SET = XLXI_1_3_66" for instance <XLXI_1_3>.
-    Set property "HU_SET = XLXI_1_4_65" for instance <XLXI_1_4>.
-    Set property "HU_SET = XLXI_1_5_64" for instance <XLXI_1_5>.
-    Set property "HU_SET = XLXI_1_6_63" for instance <XLXI_1_6>.
-    Set property "HU_SET = XLXI_1_7_62" for instance <XLXI_1_7>.
-    Set property "HU_SET = XLXI_2_0_77" for instance <XLXI_2_0>.
-    Set property "HU_SET = XLXI_2_1_76" for instance <XLXI_2_1>.
-    Set property "HU_SET = XLXI_2_2_75" for instance <XLXI_2_2>.
-    Set property "HU_SET = XLXI_2_3_74" for instance <XLXI_2_3>.
-    Set property "HU_SET = XLXI_2_4_73" for instance <XLXI_2_4>.
-    Set property "HU_SET = XLXI_2_5_72" for instance <XLXI_2_5>.
-    Set property "HU_SET = XLXI_2_6_71" for instance <XLXI_2_6>.
-    Set property "HU_SET = XLXI_2_7_70" for instance <XLXI_2_7>.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
+    Set property "HU_SET = XLXI_1_0_63" for instance <XLXI_1_0>.
+    Set property "HU_SET = XLXI_1_1_62" for instance <XLXI_1_1>.
+    Set property "HU_SET = XLXI_1_2_61" for instance <XLXI_1_2>.
+    Set property "HU_SET = XLXI_1_3_60" for instance <XLXI_1_3>.
+    Set property "HU_SET = XLXI_1_4_59" for instance <XLXI_1_4>.
+    Set property "HU_SET = XLXI_1_5_58" for instance <XLXI_1_5>.
+    Set property "HU_SET = XLXI_1_6_57" for instance <XLXI_1_6>.
+    Set property "HU_SET = XLXI_1_7_56" for instance <XLXI_1_7>.
+    Set property "HU_SET = XLXI_2_0_71" for instance <XLXI_2_0>.
+    Set property "HU_SET = XLXI_2_1_70" for instance <XLXI_2_1>.
+    Set property "HU_SET = XLXI_2_2_69" for instance <XLXI_2_2>.
+    Set property "HU_SET = XLXI_2_3_68" for instance <XLXI_2_3>.
+    Set property "HU_SET = XLXI_2_4_67" for instance <XLXI_2_4>.
+    Set property "HU_SET = XLXI_2_5_66" for instance <XLXI_2_5>.
+    Set property "HU_SET = XLXI_2_6_65" for instance <XLXI_2_6>.
+    Set property "HU_SET = XLXI_2_7_64" for instance <XLXI_2_7>.
     Summary:
 	no macro.
 Unit <VDisplays_MUSER_top> synthesized.
 
 Synthesizing Unit <M2_1_HXILINX_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <M2_1_HXILINX_top> synthesized.
 
 Synthesizing Unit <Hex7Seg>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\Hex7Seg.vhd".
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\Hex7Seg.vhd".
     Summary:
 	inferred   2 Multiplexer(s).
 Unit <Hex7Seg> synthesized.
 
 Synthesizing Unit <MSignal_MUSER_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
-    Set property "HU_SET = XLXI_10_81" for instance <XLXI_10>.
-    Set property "HU_SET = XLXI_12_0_89" for instance <XLXI_12_0>.
-    Set property "HU_SET = XLXI_12_1_88" for instance <XLXI_12_1>.
-    Set property "HU_SET = XLXI_12_2_87" for instance <XLXI_12_2>.
-    Set property "HU_SET = XLXI_12_3_86" for instance <XLXI_12_3>.
-    Set property "HU_SET = XLXI_12_4_85" for instance <XLXI_12_4>.
-    Set property "HU_SET = XLXI_12_5_84" for instance <XLXI_12_5>.
-    Set property "HU_SET = XLXI_12_6_83" for instance <XLXI_12_6>.
-    Set property "HU_SET = XLXI_12_7_82" for instance <XLXI_12_7>.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
+    Set property "HU_SET = XLXI_10_75" for instance <XLXI_10>.
+    Set property "HU_SET = XLXI_12_0_83" for instance <XLXI_12_0>.
+    Set property "HU_SET = XLXI_12_1_82" for instance <XLXI_12_1>.
+    Set property "HU_SET = XLXI_12_2_81" for instance <XLXI_12_2>.
+    Set property "HU_SET = XLXI_12_3_80" for instance <XLXI_12_3>.
+    Set property "HU_SET = XLXI_12_4_79" for instance <XLXI_12_4>.
+    Set property "HU_SET = XLXI_12_5_78" for instance <XLXI_12_5>.
+    Set property "HU_SET = XLXI_12_6_77" for instance <XLXI_12_6>.
+    Set property "HU_SET = XLXI_12_7_76" for instance <XLXI_12_7>.
     Summary:
 	no macro.
 Unit <MSignal_MUSER_top> synthesized.
 
 Synthesizing Unit <ST_BY_MUSER_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
 WARNING:Xst:647 - Input <cnt<4:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <ST_BY_MUSER_top> synthesized.
 
 Synthesizing Unit <SOS_MC_MUSER_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
-    Set property "HU_SET = XLXI_27_80" for instance <XLXI_27>.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
+    Set property "HU_SET = XLXI_27_74" for instance <XLXI_27>.
     Summary:
 	no macro.
 Unit <SOS_MC_MUSER_top> synthesized.
 
 Synthesizing Unit <AND6_HXILINX_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
     Summary:
 	no macro.
 Unit <AND6_HXILINX_top> synthesized.
 
 Synthesizing Unit <Sh_RM_MUSER_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
-    Set property "HU_SET = XLXI_62_79" for instance <XLXI_62>.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
+    Set property "HU_SET = XLXI_62_73" for instance <XLXI_62>.
 WARNING:Xst:647 - Input <cnt<4:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" line 723: Output port <D5> of the instance <XLXI_62> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" line 723: Output port <D7> of the instance <XLXI_62> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf" line 587: Output port <D5> of the instance <XLXI_62> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf" line 587: Output port <D7> of the instance <XLXI_62> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Sh_RM_MUSER_top> synthesized.
 
 Synthesizing Unit <D3_8E_HXILINX_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <D3_8E_HXILINX_top> synthesized.
 
 Synthesizing Unit <Sh_LM_MUSER_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
-    Set property "HU_SET = XLXI_60_78" for instance <XLXI_60>.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
+    Set property "HU_SET = XLXI_60_72" for instance <XLXI_60>.
 WARNING:Xst:647 - Input <cnt<4:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" line 602: Output port <D5> of the instance <XLXI_60> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf" line 602: Output port <D7> of the instance <XLXI_60> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf" line 466: Output port <D5> of the instance <XLXI_60> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf" line 466: Output port <D7> of the instance <XLXI_60> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Sh_LM_MUSER_top> synthesized.
 
 Synthesizing Unit <D2_4E_HXILINX_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <D2_4E_HXILINX_top> synthesized.
 
 Synthesizing Unit <M4_1E_HXILINX_top>.
-    Related source file is "\\vboxsvr\github\P2A_A11\P2A_A11\top.vhf".
-    Found 1-bit 4-to-1 multiplexer for signal <S1_D3_Mux_0_o> created at line 197.
+    Related source file is "C:\VicAlb\ED\P2B_A11\P2A_A11\P2A_A11\top.vhf".
+    Found 1-bit 4-to-1 multiplexer for signal <S1_D3_Mux_0_o> created at line 108.
     Summary:
 	inferred   2 Multiplexer(s).
 Unit <M4_1E_HXILINX_top> synthesized.
@@ -569,13 +545,13 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <CB2CE_HXILINX_top>.
+Synthesizing (advanced) Unit <CB2CE_HXILINX_Ctrl>.
 The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
-Unit <CB2CE_HXILINX_top> synthesized (advanced).
+Unit <CB2CE_HXILINX_Ctrl> synthesized (advanced).
 
-Synthesizing (advanced) Unit <CB4CE_HXILINX_top>.
+Synthesizing (advanced) Unit <CB4CE_HXILINX_Ctrl>.
 The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
-Unit <CB4CE_HXILINX_top> synthesized (advanced).
+Unit <CB4CE_HXILINX_Ctrl> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Remote_Lab>.
 The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
@@ -640,11 +616,11 @@ Optimizing unit <top> ...
 
 Optimizing unit <clk_div> ...
 
-Optimizing unit <CB2CE_HXILINX_top> ...
+Optimizing unit <CB2CE_HXILINX_Ctrl> ...
 
-Optimizing unit <CB4CE_HXILINX_top> ...
+Optimizing unit <CB4CE_HXILINX_Ctrl> ...
 
-Optimizing unit <FTC_HXILINX_top> ...
+Optimizing unit <FTC_HXILINX_Ctrl> ...
 
 Optimizing unit <VDisplays_MUSER_top> ...
 
@@ -1103,11 +1079,11 @@ clk            |    3.779|         |         |         |
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.42 secs
+Total CPU time to Xst completion: 6.57 secs
  
 --> 
 
-Total memory usage is 4489660 kilobytes
+Total memory usage is 276372 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   45 (   0 filtered)

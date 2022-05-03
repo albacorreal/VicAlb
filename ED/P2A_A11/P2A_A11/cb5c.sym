@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="cb5c">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2022-5-2T14:38:27</timestamp>
+    <timestamp>2022-5-3T11:19:55</timestamp>
     <pin polarity="Input" x="0" y="-96" name="ck" />
     <pin polarity="Input" x="0" y="-32" name="Clr" />
     <pin polarity="Output" x="384" y="-96" name="cnt(4:0)" />

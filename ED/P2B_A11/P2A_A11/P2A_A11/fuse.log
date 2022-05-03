@@ -1,0 +1,24 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/Nivel_a_Pulso_Nivel_a_Pulso_sch_tb_isim_beh.exe -prj C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/Nivel_a_Pulso_Nivel_a_Pulso_sch_tb_beh.prj work.Nivel_a_Pulso_Nivel_a_Pulso_sch_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/Nivel_a_Pulso.vhf" into library work
+Parsing VHDL file "C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/../../../P2A_A11/P2A_A11/Nivel_a_Pulso_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package vcomponents
+Compiling architecture fd_v of entity FD [\FD('0')\]
+Compiling architecture and2b1_v of entity AND2B1 [and2b1_default]
+Compiling architecture behavioral of entity Nivel_a_Pulso [nivel_a_pulso_default]
+Compiling architecture behavioral of entity nivel_a_pulso_nivel_a_pulso_sch_...
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Built simulation executable C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/Nivel_a_Pulso_Nivel_a_Pulso_sch_tb_isim_beh.exe
+Fuse Memory Usage: 50592 KB
+Fuse CPU Usage: 467 ms

@@ -29,67 +29,41 @@ ARCHITECTURE behavioral OF Nivel_a_Pulso_Nivel_a_Pulso_sch_tb IS
    END COMPONENT;
 
 --   SIGNAL Nivel	:	STD_LOGIC;
---   SIGNAL ck	:	STD_LOGIC;
+   SIGNAL ck	:	STD_LOGIC;
    SIGNAL Pulso	:	STD_LOGIC;
-	SIGNAL INPUT   :  STD_LOGIC_VECTOR(1 downto 0);
+	SIGNAL INPUT   :  STD_LOGIC;
 	CONSTANT period: TIME := 20 ns;
 
 BEGIN
 
    UUT: Nivel_a_Pulso PORT MAP(
-		Nivel => INPUT(1), 
-		ck => INPUT(0), 
+		Nivel => INPUT, 
+		ck => ck,
 		Pulso => Pulso
    );
 
 -- *** Test Bench - User Defined Section ***
    tb : PROCESS
---	    VARIABLE i : INTEGER; 
---		 VARIABLE INPUT : std_logic_vector(1 downto 0);
+		    VARIABLE i : INTEGER; 
+		 VARIABLE INPUT : std_logic_vector(1 downto 0);
    BEGIN
---	FOR i IN 0 TO 7 LOOP
---        INPUT := CONV_STD_LOGIC_VECTOR(i,2);
---        Nivel<= INPUT(1); 
---        ck<= INPUT(0);
---        WAIT FOR PERIOD; 
-		INPUT <= "00";
-		WAIT FOR period;
-		INPUT <= "01";
-		WAIT FOR period;
-		INPUT <= "10";
-		WAIT FOR period;
-		INPUT <= "01";
-		WAIT FOR period;
-		INPUT <= "10";
-		WAIT FOR period;
-		INPUT <= "10";
-		WAIT FOR period;
-		INPUT <= "01";
-		WAIT FOR period;
-		INPUT <= "10";
-		WAIT FOR period;
-		INPUT <= "10";
-		WAIT FOR period;
-		INPUT <= "10";
-		WAIT FOR period;
-		INPUT <= "01";
-		WAIT FOR period;
-		INPUT <= "10";
-		WAIT FOR period;
-		INPUT <= "10";
-		WAIT FOR period;
-		INPUT <= "10";
-		WAIT FOR period;
-		INPUT <= "10";
-		WAIT FOR period;
-		INPUT <= "11";
-		WAIT FOR period;
+	FOR i IN 0 TO 7 LOOP
+	n=i;
+	IF (i%2==0) THEN
+		INPUT<= "0"; 
+		ck<="0";
+	ELSE
+		ck<="1";
+		FOR j IN 0 TO n LOOP
+			INPUT 
+			Nivel<= INPUT(1); 
+			WAIT FOR PERIOD;
+	
+    END LOOP; 
+    INPUT := "00"; 
+    Nivel<= INPUT(1);
+    ck<= INPUT(0);  
 
---    END LOOP; 
---    INPUT := "00"; 
---        Nivel<= INPUT(1);
---        ck<= INPUT(0);  
-		INPUT <= "00";
 
       WAIT; -- will wait forever
    END PROCESS;

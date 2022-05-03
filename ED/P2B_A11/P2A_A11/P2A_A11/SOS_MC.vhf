@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : SOS_MC.vhf
--- /___/   /\     Timestamp : 05/02/2022 18:45:55
+-- /___/   /\     Timestamp : 05/03/2022 13:11:13
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Z:/P2A_A11/P2A_A11/SOS_MC.vhf -w Z:/P2A_A11/P2A_A11/SOS_MC.sch
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/SOS_MC.vhf -w C:/VicAlb/ED/P2B_A11/P2A_A11/P2A_A11/SOS_MC.sch
 --Design Name: SOS_MC
 --Device: spartan6
 --Purpose:
@@ -98,7 +98,7 @@ architecture BEHAVIORAL of SOS_MC is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_78";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_21";
 begin
    XLXI_1 : INV
       port map (I=>cnt(4),
