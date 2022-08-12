@@ -1,8 +1,0 @@
-xst -intstyle ise -ifn "D:/Practicas/VicAlb/ED/P2A_A11/P2A_A11/top.xst" -ofn "D:/Practicas/VicAlb/ED/P2A_A11/P2A_A11/top.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
-xst -intstyle ise -ifn "D:/Practicas/VicAlb/ED/P2A_A11/P2A_A11/top.xst" -ofn "D:/Practicas/VicAlb/ED/P2A_A11/P2A_A11/top.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  
-xst -intstyle ise -ifn "D:/Practicas/VicAlb/ED/P2A_A11/P2A_A11/top.xst" -ofn "D:/Practicas/VicAlb/ED/P2A_A11/P2A_A11/top.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 top.ngc top.ngd  

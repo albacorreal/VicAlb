@@ -1,9 +1,0 @@
-MODULE Cuenta_Votos
-	SUBMODULE Sumador_Completo_2bits
-		INSTANCE XLXI_1
-	SUBMODULE Sumador_Completo_2bits
-		INSTANCE XLXI_2
-	SUBMODULE Sumador_Completo_2bits
-		INSTANCE XLXI_3
-	SUBMODULE Sumador_Completo_2bits
-		INSTANCE XLXI_4

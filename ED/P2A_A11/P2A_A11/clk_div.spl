@@ -1,6 +1,0 @@
-[Inputs]
-clk_in
-[Outputs]
-div_1hz
-div_4hz
-[BiDir]

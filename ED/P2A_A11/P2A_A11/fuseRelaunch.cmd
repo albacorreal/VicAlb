@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/Practicas/VicAlb/ED/P2A_A11/P2A_A11/MSignal_MSignal_sch_tb_isim_beh.exe" -prj "D:/Practicas/VicAlb/ED/P2A_A11/P2A_A11/MSignal_MSignal_sch_tb_beh.prj" "work.MSignal_MSignal_sch_tb" 

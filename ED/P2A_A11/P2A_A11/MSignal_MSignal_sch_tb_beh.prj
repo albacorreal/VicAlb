@@ -1,6 +1,0 @@
-vhdl work "ST_BY.vhf"
-vhdl work "SOS_MC.vhf"
-vhdl work "Sh_RM.vhf"
-vhdl work "Sh_LM.vhf"
-vhdl work "MSignal.vhf"
-vhdl work "MSignal_tb.vhd"

@@ -1,2 +1,0 @@
-Se observa como al activarse el Nivel: 1 y producirse el flanco de bajada de ck
- se activa el pulso. Si estando el pulso activo se activa ck este se desactiva.

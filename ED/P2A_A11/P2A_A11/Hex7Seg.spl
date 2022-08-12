@@ -1,6 +1,0 @@
-[Inputs]
-ena
-=X[3:0]=
-[Outputs]
-=SEG[7:0]=
-[BiDir]
