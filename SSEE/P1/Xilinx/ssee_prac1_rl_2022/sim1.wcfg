@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/prac1_top_prac1_top_sch_tb_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="Z:/ssee_prac1_rl_2022/prac1_top_prac1_top_sch_tb_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="bip_usecase_utils_pkg_v2_0" />
             <top_module name="bip_utils_pkg_v2_0" />
@@ -27,39 +27,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="35" />
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/ck_100mhz_pad" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">ck_100mhz_pad</obj_property>
-      <obj_property name="ObjectShortName">ck_100mhz_pad</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/ck_5mhz" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">ck_5mhz</obj_property>
-      <obj_property name="ObjectShortName">ck_5mhz</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/ck_20khz" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">ck_20khz</obj_property>
-      <obj_property name="ObjectShortName">ck_20khz</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/cuenta_dcm" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">cuenta_dcm[15:0]</obj_property>
-      <obj_property name="ObjectShortName">cuenta_dcm[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/reset_pad" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">reset_pad</obj_property>
-      <obj_property name="ObjectShortName">reset_pad</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/reset" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">reset</obj_property>
-      <obj_property name="ObjectShortName">reset</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/reset_i" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">reset_i</obj_property>
-      <obj_property name="ObjectShortName">reset_i</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/locked_ok" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">locked_ok</obj_property>
-      <obj_property name="ObjectShortName">locked_ok</obj_property>
-   </wvobject>
+   <WVObjectSize size="26" />
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/fila_pad" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">fila_pad[4:1]</obj_property>
       <obj_property name="ObjectShortName">fila_pad[4:1]</obj_property>
@@ -67,6 +35,14 @@
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/col_pad" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">col_pad[4:1]</obj_property>
       <obj_property name="ObjectShortName">col_pad[4:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/reset_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_pad</obj_property>
+      <obj_property name="ObjectShortName">reset_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/boton_der_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_der_pad</obj_property>
+      <obj_property name="ObjectShortName">boton_der_pad</obj_property>
    </wvobject>
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/boton_izq_pad" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">boton_izq_pad</obj_property>
@@ -83,6 +59,10 @@
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/sw_pad" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">sw_pad[7:0]</obj_property>
       <obj_property name="ObjectShortName">sw_pad[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/ck_100mhz_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck_100mhz_pad</obj_property>
+      <obj_property name="ObjectShortName">ck_100mhz_pad</obj_property>
    </wvobject>
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/display_pad" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">display_pad[7:0]</obj_property>
@@ -136,37 +116,20 @@
       <obj_property name="ElementShortName">anodo_pad[3:0]</obj_property>
       <obj_property name="ObjectShortName">anodo_pad[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/uart_tx_pad" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">uart_tx_pad</obj_property>
-      <obj_property name="ObjectShortName">uart_tx_pad</obj_property>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/ck_5mhz" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck_5mhz</obj_property>
+      <obj_property name="ObjectShortName">ck_5mhz</obj_property>
    </wvobject>
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/cuenta_2b" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">cuenta_2b[7:0]</obj_property>
       <obj_property name="ObjectShortName">cuenta_2b[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/salida_pwm_2b" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">salida_pwm_2b</obj_property>
-      <obj_property name="ObjectShortName">salida_pwm_2b</obj_property>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/cuenta_4b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta_4b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta_4b[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/boton_der_pad" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">boton_der_pad</obj_property>
-      <obj_property name="ObjectShortName">boton_der_pad</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_der" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">boton_der</obj_property>
-      <obj_property name="ObjectShortName">boton_der</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_der_i" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">boton_der_i</obj_property>
-      <obj_property name="ObjectShortName">boton_der_i</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_der_pulso" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">boton_der_pulso</obj_property>
-      <obj_property name="ObjectShortName">boton_der_pulso</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_der_sinc" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">boton_der_sinc</obj_property>
-      <obj_property name="ObjectShortName">boton_der_sinc</obj_property>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/uart_tx_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_tx_pad</obj_property>
+      <obj_property name="ObjectShortName">uart_tx_pad</obj_property>
    </wvobject>
 </wave_config>

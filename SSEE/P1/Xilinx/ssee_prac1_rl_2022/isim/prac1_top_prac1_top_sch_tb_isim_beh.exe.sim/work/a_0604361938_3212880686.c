@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/prac1_top.vhf";
+static const char *ng0 = "//VBoxSvr/VMSF/ssee_prac1_rl_2022/prac1_top.vhf";
 
 
 
@@ -39,7 +39,7 @@ static void work_a_0604361938_3212880686_p_0(char *t0)
     char *t10;
     char *t11;
 
-LAB0:    xsi_set_current_line(755, ng0);
+LAB0:    xsi_set_current_line(498, ng0);
 
 LAB3:    t1 = (t0 + 2952U);
     t2 = *((char **)t1);

@@ -1,21 +1,23 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/prac1_top_prac1_top_sch_tb_isim_beh.exe -prj C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/prac1_top_prac1_top_sch_tb_beh.prj work.prac1_top_prac1_top_sch_tb 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o Z:/ssee_prac1_rl_2022/prac1_top_prac1_top_sch_tb_isim_beh.exe -prj Z:/ssee_prac1_rl_2022/prac1_top_prac1_top_sch_tb_beh.prj work.prac1_top_prac1_top_sch_tb 
 ISim P.20131013 (signature 0x7708f090)
-Number of CPUs detected in this system: 16
-Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/ipcore_dir/dcm_100m_5m.vhd" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/ipcore_dir/cont_16bits.vhd" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/ipcore_dir/cont_8bits_ud.vhd" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/ipcore_dir/cont_2bits_ce.vhd" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/bcd_7seg_neg.vhd" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/sincroniza.vhf" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/Remote_Lab.vhd" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/pwm_2bits.vhf" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/nivel_a_pulso.vhf" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/displays_7seg_nexys3_RemLab.vhf" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/cont_8b_up_down_lim.vhf" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/prac1_top.vhf" into library work
-Parsing VHDL file "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/sim_prac1_rl.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/ipcore_dir/dcm_100m_5m.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/ipcore_dir/cont_16bits.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/ipcore_dir/cont_8bits_ud.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/ipcore_dir/cont_2bits_ce.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/ipcore_dir/cont_4bits_ce.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/bcd_7seg_neg.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/sincroniza.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/Remote_Lab.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/pwm_4bits.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/pwm_2bits.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/nivel_a_pulso.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/displays_7seg_nexys3_RemLab.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/cont_8b_up_down_lim.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/prac1_top.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac1_rl_2022/sim_prac1_rl.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -92,11 +94,17 @@ Compiling architecture behavioral of entity Genera_Tono [genera_tono_default]
 Compiling architecture behavioral of entity Division [division_default]
 Compiling architecture behavioral of entity Modulo [modulo_default]
 Compiling architecture behavioral of entity Remote_Lab [remote_lab_default]
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(4,"0","0",1,0,1,...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(4,4,4,0,3...]
+Compiling architecture behavioral of entity c_counter_binary_v11_0_legacy [\c_counter_binary_v11_0_legacy("...]
+Compiling architecture behavioral of entity c_counter_binary_v11_0 [\c_counter_binary_v11_0(0,0,"spa...]
+Compiling architecture cont_4bits_ce_a of entity cont_4bits_ce [cont_4bits_ce_default]
+Compiling architecture compm4_hxilinx_prac1_top_v of entity COMPM4_HXILINX_prac1_top [compm4_hxilinx_prac1_top_default]
+Compiling architecture behavioral of entity pwm_4bits_MUSER_prac1_top [pwm_4bits_muser_prac1_top_defaul...]
 Compiling architecture behavioral of entity prac1_top [prac1_top_default]
 Compiling architecture behavioral of entity prac1_top_prac1_top_sch_tb
 Time Resolution for simulation is 1ps.
-Waiting for 31 sub-compilation(s) to finish...
-Compiled 132 VHDL Units
-Built simulation executable C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/prac1_top_prac1_top_sch_tb_isim_beh.exe
-Fuse Memory Usage: 69848 KB
-Fuse CPU Usage: 1765 ms
+Compiled 146 VHDL Units
+Built simulation executable Z:/ssee_prac1_rl_2022/prac1_top_prac1_top_sch_tb_isim_beh.exe
+Fuse Memory Usage: 71540 KB
+Fuse CPU Usage: 2265 ms

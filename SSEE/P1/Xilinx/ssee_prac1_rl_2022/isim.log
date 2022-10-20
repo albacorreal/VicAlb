@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\albertod\Documents\_Doc_\Xilinx\ssee_prac1_rl_2022\prac1_top_prac1_top_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/prac1_top_prac1_top_sch_tb_isim_beh.wdb 
+Running: Z:\ssee_prac1_rl_2022\prac1_top_prac1_top_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Z:/ssee_prac1_rl_2022/prac1_top_prac1_top_sch_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -12,8 +12,5 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /prac1_top_prac1_top_sch_tb/UUT/XLXI_792/XLXI_2/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.
-# restart
 # run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 9015254 ns : File "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/Remote_Lab.vhd" Line 172
+Stopped at time : 26995564 ns : File "//VBoxSvr/VMSF/ssee_prac1_rl_2022/Remote_Lab.vhd" Line 298

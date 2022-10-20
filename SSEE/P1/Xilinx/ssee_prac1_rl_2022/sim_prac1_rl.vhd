@@ -115,6 +115,9 @@ BEGIN
   
   
    tb : PROCESS
+	
+	VARIABLE i: INTEGER;
+	
    BEGIN
 		reset_pad <= transport '1';
 		EppASTB <= transport '0';			-- Entrada al módulo Remote Lab (no tocar)
@@ -135,32 +138,55 @@ BEGIN
 
 -- Damos las pulsaciones de tecla derecha (4 veces)	
 
-      boton_der_pad <= transport '1';
-		WAIT FOR 300 us;
+		FOR i IN 0 TO 3 LOOP
 
-      boton_der_pad <= transport '0';
-		WAIT FOR 300 us;
+			boton_der_pad <= transport '1';
+			WAIT FOR 300 us;
+
+			boton_der_pad <= transport '0';
+			WAIT FOR 300 us;
 		
-      boton_der_pad <= transport '1';
-		WAIT FOR 300 us;
-
-      boton_der_pad <= transport '0';
-		WAIT FOR 300 us;		
-
-      boton_der_pad <= transport '1';
-		WAIT FOR 300 us;
-
-      boton_der_pad <= transport '0';
-		WAIT FOR 300 us;	
-
-      boton_der_pad <= transport '1';
-		WAIT FOR 300 us;
-
-      boton_der_pad <= transport '0';
-		WAIT FOR 300 us;	
-
+      END LOOP;
 	
 	
+-- Damos las pulsaciones de tecla izquierda (4 veces)	
+
+		FOR i IN 0 TO 3 LOOP
+
+			boton_izq_pad <= transport '1';
+			WAIT FOR 300 us;
+
+			boton_izq_pad <= transport '0';
+			WAIT FOR 300 us;
+		
+      END LOOP;	
+
+
+-- Damos las pulsaciones de tecla arriba (16 veces)	
+
+		FOR i IN 0 TO 15 LOOP
+
+			boton_arr_pad <= transport '1';
+			WAIT FOR 300 us;
+
+			boton_arr_pad <= transport '0';
+			WAIT FOR 300 us;
+		
+      END LOOP;	
+
+
+-- Damos las pulsaciones de tecla abajo (16 veces)	
+
+		FOR i IN 0 TO 15 LOOP
+
+			boton_aba_pad <= transport '1';
+			WAIT FOR 300 us;
+
+			boton_aba_pad <= transport '0';
+			WAIT FOR 300 us;
+		
+      END LOOP;
+
 	
 	
 	

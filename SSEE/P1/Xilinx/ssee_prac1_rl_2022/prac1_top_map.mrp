@@ -11,40 +11,40 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Oct 17 12:51:03 2022
+Mapped Date    : Wed Oct 19 22:24:51 2022
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    2
 Slice Logic Utilization:
-  Number of Slice Registers:                   138 out of  18,224    1%
-    Number used as Flip Flops:                 138
+  Number of Slice Registers:                   229 out of  18,224    1%
+    Number used as Flip Flops:                 229
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        199 out of   9,112    2%
-    Number used as logic:                      195 out of   9,112    2%
-      Number using O6 output only:             142
-      Number using O5 output only:              41
-      Number using O5 and O6:                   12
+  Number of Slice LUTs:                        350 out of   9,112    3%
+    Number used as logic:                      344 out of   9,112    3%
+      Number using O6 output only:             261
+      Number using O5 output only:              63
+      Number using O5 and O6:                   20
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:      4
+    Number used exclusively as route-thrus:      6
       Number with same-slice register load:      0
-      Number with same-slice carry load:         4
+      Number with same-slice carry load:         6
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    82 out of   2,278    3%
-  Number of MUXCYs used:                        64 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          228
-    Number with an unused Flip Flop:            91 out of     228   39%
-    Number with an unused LUT:                  29 out of     228   12%
-    Number of fully used LUT-FF pairs:         108 out of     228   47%
-    Number of unique control sets:              11
+  Number of occupied Slices:                   127 out of   2,278    5%
+  Number of MUXCYs used:                       100 out of   4,556    2%
+  Number of LUT Flip Flop pairs used:          378
+    Number with an unused Flip Flop:           151 out of     378   39%
+    Number with an unused LUT:                  28 out of     378    7%
+    Number of fully used LUT-FF pairs:         199 out of     378   52%
+    Number of unique control sets:              16
     Number of slice register sites lost
-      to control set restrictions:              14 out of  18,224    1%
+      to control set restrictions:              27 out of  18,224    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -55,7 +55,7 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                        70 out of     232   30%
     Number of LOCed IOBs:                       70 out of      70  100%
-    IOB Flip Flops:                              3
+    IOB Flip Flops:                              5
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -72,8 +72,8 @@ Specific Feature Utilization:
   Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
     Number used as DCMs:                         1
     Number used as DCM_CLKGENs:                  0
-  Number of ILOGIC2/ISERDES2s:                   2 out of     248    1%
-    Number used as ILOGIC2s:                     2
+  Number of ILOGIC2/ISERDES2s:                   4 out of     248    1%
+    Number used as ILOGIC2s:                     4
     Number used as ISERDES2s:                    0
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
   Number of OLOGIC2/OSERDES2s:                   1 out of     248    1%
@@ -92,11 +92,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            1 out of       1  100%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.15
+Average Fanout of Non-Clock Nets:                3.43
 
-Peak Memory Usage:  4513 MB
-Total REAL time to MAP completion:  7 secs 
-Total CPU time to MAP completion:   7 secs 
+Peak Memory Usage:  4512 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   5 secs 
 
 Table of Contents
 -----------------
@@ -138,8 +138,6 @@ INFO:LIT:243 - Logical network sw_pad<3>_IBUF has no load.
 INFO:LIT:243 - Logical network sw_pad<2>_IBUF has no load.
 INFO:LIT:243 - Logical network sw_pad<1>_IBUF has no load.
 INFO:LIT:243 - Logical network sw_pad<0>_IBUF has no load.
-INFO:LIT:243 - Logical network boton_aba_pad_IBUF has no load.
-INFO:LIT:243 - Logical network boton_arr_pad_IBUF has no load.
 INFO:LIT:243 - Logical network uart_rx_pad_IBUF has no load.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -159,9 +157,9 @@ INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
 Section 4 - Removed Logic Summary
 ---------------------------------
   38 block(s) removed
-  47 block(s) optimized away
+  40 block(s) optimized away
   35 signal(s) removed
-  57 Block(s) redundant
+  85 Block(s) redundant
 
 Section 5 - Removed Logic
 -------------------------
@@ -264,7 +262,6 @@ GND 		XLXI_288_4/XST_GND
 VCC 		XLXI_309/blk00000001/blk00000002
 GND 		XLXI_309/blk00000001/blk00000003
 GND 		XLXI_35/XST_GND
-GND 		XLXI_797
 VCC 		XLXI_854/XLXI_4/blk00000001/blk00000002
 GND 		XLXI_854/XLXI_4/blk00000001/blk00000003
 BUF 		XLXI_864/XLXI_46
@@ -278,13 +275,6 @@ INV 		XLXI_864/XLXI_50_3
 INV 		XLXI_864/XLXI_50_4
 INV 		XLXI_864/XLXI_50_5
 INV 		XLXI_864/XLXI_50_6
-INV 		XLXI_864/XLXI_51_0
-INV 		XLXI_864/XLXI_51_1
-INV 		XLXI_864/XLXI_51_2
-INV 		XLXI_864/XLXI_51_3
-INV 		XLXI_864/XLXI_51_4
-INV 		XLXI_864/XLXI_51_5
-INV 		XLXI_864/XLXI_51_6
 INV 		XLXI_864/XLXI_52_0
 INV 		XLXI_864/XLXI_52_1
 INV 		XLXI_864/XLXI_52_2
@@ -293,17 +283,16 @@ INV 		XLXI_864/XLXI_52_4
 INV 		XLXI_864/XLXI_52_5
 INV 		XLXI_864/XLXI_52_6
 INV 		XLXI_864/XLXI_53_1
-LUT5 		XLXI_865/Mmux_busEppInternal7_SW0
-   optimized to 1
 LUT5 		XLXI_865/Mmux_busEppInternal8_SW0
    optimized to 1
 LUT4 		XLXI_865/mux7_61
    optimized to 1
-LUT6 		XLXI_865/seg<1>1
-   optimized to 0
 LUT6 		XLXI_865/seg<7>1
    optimized to 1
-VCC 		XLXI_866
+GND 		XLXI_871
+VCC 		XLXI_872
+VCC 		XLXI_889/XLXI_7/blk00000001/blk00000002
+GND 		XLXI_889/XLXI_7/blk00000001/blk00000003
 
 Redundant Block(s):
 TYPE 		BLOCK
@@ -313,6 +302,13 @@ INV 		XLXI_864/XLXI_53_4
 INV 		XLXI_864/XLXI_53_3
 INV 		XLXI_864/XLXI_53_0
 INV 		XLXI_864/XLXI_53_2
+INV 		XLXI_864/XLXI_51_6
+INV 		XLXI_864/XLXI_51_5
+INV 		XLXI_864/XLXI_51_4
+INV 		XLXI_864/XLXI_51_3
+INV 		XLXI_864/XLXI_51_2
+INV 		XLXI_864/XLXI_51_1
+INV 		XLXI_864/XLXI_51_0
 LUT1 		XLXI_865/Mcount_cnt_cy<15>_rt
 LUT1 		XLXI_865/Mcount_cnt_cy<14>_rt
 LUT1 		XLXI_865/Mcount_cnt_cy<13>_rt
@@ -328,6 +324,26 @@ LUT1 		XLXI_865/Mcount_cnt_cy<4>_rt
 LUT1 		XLXI_865/Mcount_cnt_cy<3>_rt
 LUT1 		XLXI_865/Mcount_cnt_cy<2>_rt
 LUT1 		XLXI_865/Mcount_cnt_cy<1>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<20>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<19>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<18>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<17>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<16>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<15>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<14>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<13>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<12>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<11>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<10>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<9>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<8>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<7>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<6>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<5>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<4>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<3>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<2>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<1>_rt
 LUT1 		XLXI_865/U1/Mcount_counter_cy<20>_rt
 LUT1 		XLXI_865/U1/Mcount_counter_cy<19>_rt
 LUT1 		XLXI_865/U1/Mcount_counter_cy<18>_rt
@@ -349,6 +365,7 @@ LUT1 		XLXI_865/U1/Mcount_counter_cy<3>_rt
 LUT1 		XLXI_865/U1/Mcount_counter_cy<2>_rt
 LUT1 		XLXI_865/U1/Mcount_counter_cy<1>_rt
 LUT1 		XLXI_865/Mcount_cnt_xor<16>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_xor<21>_rt
 LUT1 		XLXI_865/U1/Mcount_counter_xor<21>_rt
 INV 		XLXI_865/EppWRITE_inv1_INV_0
 INV 		XLXI_864/XLXI_40/Mram_SEGMENTO_NEG61_INV_0
@@ -361,9 +378,9 @@ LUT1 		XLXI_309/blk00000001/blk0000003e
 LUT1 		XLXI_309/blk00000001/blk0000003f
 LUT1 		XLXI_309/blk00000001/blk00000040
 INV 		XLXI_792/XLXI_1/blk00000001/blk00000021
-LUT4 		XLXI_865/Mmux_busEppInternal4_SW0
-LUT4 		XLXI_865/Mmux_busEppInternal2_SW0
-LUT4 		XLXI_865/Mmux_busEppInternal3_SW0
+INV 		XLXI_867/XLXI_1/blk00000001/blk00000021
+LUT1 		XLXI_889/XLXI_7/blk00000001/blk0000000f
+LUT1 		XLXI_889/XLXI_7/blk00000001/blk00000010
 
 Section 6 - IOB Properties
 --------------------------
@@ -388,8 +405,8 @@ Section 6 - IOB Properties
 | anodo_pad<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | anodo_pad<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | anodo_pad<3>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
-| boton_aba_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
-| boton_arr_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| boton_aba_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| boton_arr_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
 | boton_der_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
 | boton_izq_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
 | ce_display_neg_pad<1>              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
@@ -511,14 +528,19 @@ Section 12 - Control Set Information
 | EppDSTB_IBUF_BUFG |                                  |            | XLXI_865/_n0123_inv       | 2                | 8              |
 | EppDSTB_IBUF_BUFG |                                  |            | XLXI_865/_n0129_inv       | 2                | 8              |
 +-----------------------------------------------------------------------------------------------------------------------------------+
-| ck_100MHz         |                                  |            |                           | 7                | 20             |
+| ck_100MHz         |                                  |            |                           | 9                | 23             |
 | ck_100MHz         |                                  |            | XLXI_865/U1/flanco_bajada | 6                | 22             |
 | ck_100MHz         |                                  |            | XLXI_865/U1/flanco_subida | 6                | 22             |
+| ck_100MHz         |                                  |            | XLXI_865/U2/flanco_bajada | 6                | 22             |
+| ck_100MHz         |                                  |            | XLXI_865/U2/flanco_subida | 6                | 22             |
 | ck_100MHz         | XLXI_865/U1/flanco_subida        |            |                           | 6                | 22             |
 | ck_100MHz         | XLXI_865/U1/limite_led_AND_147_o |            |                           | 2                | 4              |
+| ck_100MHz         | XLXI_865/U2/flanco_subida        |            |                           | 6                | 22             |
+| ck_100MHz         | XLXI_865/U2/limite_led_AND_147_o |            |                           | 2                | 4              |
 +-----------------------------------------------------------------------------------------------------------------------------------+
-| ck_5MHz           |                                  |            |                           | 5                | 8              |
+| ck_5MHz           |                                  |            |                           | 10               | 18             |
 | ck_5MHz           |                                  |            | XLXI_792/ce_contador      | 2                | 8              |
+| ck_5MHz           |                                  |            | XLXI_867/ce_contador      | 2                | 8              |
 | ck_5MHz           | XLXN_1                           |            |                           | 2                | 8              |
 +-----------------------------------------------------------------------------------------------------------------------------------+
 
@@ -527,7 +549,7 @@ Section 13 - Utilization by Hierarchy
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Module             | Partition | Slices*       | Slice Reg     | LUTs          | LUTRAM        | BRAM/FIFO | DSP48A1 | BUFG  | BUFIO | BUFR  | DCM   | PLL_ADV   | Full Hierarchical Name                 |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| prac1_top/         |           | 1/107         | 0/138         | 1/199         | 0/0           | 0/0       | 0/0     | 3/6   | 0/0   | 0/0   | 0/1   | 0/0       | prac1_top                              |
+| prac1_top/         |           | 1/181         | 0/229         | 1/350         | 0/0           | 0/0       | 0/0     | 3/6   | 0/0   | 0/0   | 0/1   | 0/0       | prac1_top                              |
 | +XLXI_180          |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_180                     |
 | +XLXI_306          |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 3/3   | 0/0   | 0/0   | 1/1   | 0/0       | prac1_top/XLXI_306                     |
 | +XLXI_309          |           | 0/2           | 0/8           | 0/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_309                     |
@@ -545,12 +567,29 @@ Section 13 - Utilization by Hierarchy
 | ++XLXI_4           |           | 0/1           | 0/2           | 0/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_854/XLXI_4              |
 | +++blk00000001     |           | 1/1           | 2/2           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_854/XLXI_4/blk00000001  |
 | ++XLXI_6           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_854/XLXI_6              |
-| +XLXI_864          |           | 0/2           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_864                     |
+| +XLXI_864          |           | 0/6           | 0/0           | 0/6           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_864                     |
+| ++XLXI_38          |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_864/XLXI_38             |
 | ++XLXI_40          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_864/XLXI_40             |
-| +XLXI_865          |           | 27/89         | 41/114        | 53/171        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865                     |
-| ++U1               |           | 22/62         | 73/73         | 32/118        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U1                  |
-| +++U1              |           | 36/40         | 0/0           | 79/86         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U1/U1               |
+| +XLXI_865          |           | 30/146        | 41/187        | 62/298        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865                     |
+| ++U1               |           | 24/57         | 73/73         | 32/118        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U1                  |
+| +++U1              |           | 29/33         | 0/0           | 79/86         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U1/U1               |
 | ++++U1             |           | 4/4           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U1/U1/U1            |
+| ++U2               |           | 25/59         | 73/73         | 32/118        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U2                  |
+| +++U1              |           | 30/34         | 0/0           | 79/86         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U2/U1               |
+| ++++U1             |           | 4/4           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U2/U1/U1            |
+| +XLXI_867          |           | 1/5           | 0/8           | 2/14          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_867                     |
+| ++XLXI_1           |           | 0/2           | 0/8           | 0/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_867/XLXI_1              |
+| +++blk00000001     |           | 2/2           | 8/8           | 8/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_867/XLXI_1/blk00000001  |
+| ++XLXI_2           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_867/XLXI_2              |
+| ++XLXI_5           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_867/XLXI_5              |
+| +XLXI_873          |           | 2/2           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_873                     |
+| +XLXI_874          |           | 2/2           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_874                     |
+| +XLXI_875          |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_875                     |
+| +XLXI_876          |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_876                     |
+| +XLXI_889          |           | 0/2           | 0/4           | 0/6           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_889                     |
+| ++XLXI_7           |           | 0/1           | 0/4           | 0/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_889/XLXI_7              |
+| +++blk00000001     |           | 1/1           | 4/4           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_889/XLXI_7/blk00000001  |
+| ++XLXI_9           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_889/XLXI_9              |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 * Slices can be packed with basic elements from multiple hierarchies.

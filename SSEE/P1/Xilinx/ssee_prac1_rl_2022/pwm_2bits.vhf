@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : pwm_2bits.vhf
--- /___/   /\     Timestamp : 10/16/2022 12:24:12
+-- /___/   /\     Timestamp : 10/19/2022 18:08:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/ipcore_dir -intstyle ise -family spartan6 -flat -suppress -vhdl C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/pwm_2bits.vhf -w C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/pwm_2bits.sch
+--Command: sch2hdl -sympath Z:/ssee_prac1_rl_2022/ipcore_dir -intstyle ise -family spartan6 -flat -suppress -vhdl Z:/ssee_prac1_rl_2022/pwm_2bits.vhf -w Z:/ssee_prac1_rl_2022/pwm_2bits.sch
 --Design Name: pwm_2bits
 --Device: spartan6
 --Purpose:
@@ -85,7 +85,7 @@ architecture BEHAVIORAL of pwm_2bits is
              LT : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_17";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_1";
 begin
    XLXI_4 : cont_2bits_ce
       port map (ce=>ce,

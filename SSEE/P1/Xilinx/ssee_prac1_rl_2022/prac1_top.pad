@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Oct 17 12:51:20 2022
+Wed Oct 19 22:25:07 2022
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -26,7 +26,7 @@ A4||IOBS|IO_L5N_0|UNUSED||0|||||||||
 A5||IOBS|IO_L6N_0|UNUSED||0|||||||||
 A6||IOBS|IO_L8N_VREF_0|UNUSED||0|||||||||
 A7||IOBS|IO_L10N_0|UNUSED||0|||||||||
-A8|boton_arr_pad|IOB|IO_L33N_0|INPUT|LVCMOS33|0||||NONE||LOCATED|NO|NONE|
+A8|boton_arr_pad|IOB|IO_L33N_0|INPUT|LVCMOS33|0||||NONE||LOCATED|YES|NONE|
 A9||IOBS|IO_L35N_GCLK16_0|UNUSED||0|||||||||
 A10||IOBS|IO_L37N_GCLK12_0|UNUSED||0|||||||||
 A11||IOBS|IO_L39N_0|UNUSED||0|||||||||
@@ -63,7 +63,7 @@ C5||IOBM|IO_L6P_0|UNUSED||0|||||||||
 C6||IOBS|IO_L3N_0|UNUSED||0|||||||||
 C7||IOBM|IO_L10P_0|UNUSED||0|||||||||
 C8||IOBS|IO_L11N_0|UNUSED||0|||||||||
-C9|boton_aba_pad|IOB|IO_L34N_GCLK18_0|INPUT|LVCMOS33|0||||NONE||LOCATED|NO|NONE|
+C9|boton_aba_pad|IOB|IO_L34N_GCLK18_0|INPUT|LVCMOS33|0||||NONE||LOCATED|YES|NONE|
 C10||IOBM|IO_L37P_GCLK13_0|UNUSED||0|||||||||
 C11||IOBS|IO_L36N_GCLK14_0|UNUSED||0|||||||||
 C12|fila_pad<3>|IOB|IO_L47N_0|TRISTATE|LVCMOS33|0|12|SLOW|PULLDOWN|||LOCATED|NO|NONE|

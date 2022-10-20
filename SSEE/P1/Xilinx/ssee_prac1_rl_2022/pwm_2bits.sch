@@ -102,7 +102,6 @@
             <wire x2="992" y1="704" y2="704" x1="848" />
             <wire x2="1120" y1="704" y2="704" x1="992" />
         </branch>
-        <text style="fontsize:56;fontname:Arial" x="276" y="84">Control de PWM, pone la salida a 1 tantos ciclos como indique tiempo_on(1:0)</text>
         <iomarker fontsize="28" x="816" y="1632" name="ce" orien="R180" />
         <iomarker fontsize="28" x="816" y="1712" name="ck" orien="R180" />
         <iomarker fontsize="28" x="816" y="1792" name="reset" orien="R180" />
@@ -127,5 +126,6 @@
             <wire x2="1808" y1="704" y2="704" x1="1648" />
         </branch>
         <text style="fontsize:56;fontname:Arial" x="2260" y="196">pwm_2bits.sch</text>
+        <text style="fontsize:56;fontname:Arial" x="276" y="84">Control de PWM, pone la salida a 1 tantos ciclos como indique tiempo_on(1:0)</text>
     </sheet>
 </drawing>

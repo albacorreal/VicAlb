@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/prac1_top.vhf";
+static const char *ng0 = "//VBoxSvr/VMSF/ssee_prac1_rl_2022/prac1_top.vhf";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_3620187407;
 
@@ -154,10 +154,10 @@ static void work_a_0375616778_3349245932_p_2(char *t0)
 LAB0:    xsi_set_current_line(50, ng0);
     t1 = (t0 + 1992U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7112U);
+    t1 = (t0 + 6748U);
     t3 = (t0 + 2152U);
     t4 = *((char **)t3);
-    t3 = (t0 + 7128U);
+    t3 = (t0 + 6764U);
     t5 = ieee_std_logic_unsigned_greater_stdv_stdv(IEEE_P_3620187407, t2, t1, t4, t3);
     if (t5 != 0)
         goto LAB3;
@@ -210,10 +210,10 @@ static void work_a_0375616778_3349245932_p_3(char *t0)
 LAB0:    xsi_set_current_line(51, ng0);
     t1 = (t0 + 1992U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7112U);
+    t1 = (t0 + 6748U);
     t3 = (t0 + 2152U);
     t4 = *((char **)t3);
-    t3 = (t0 + 7128U);
+    t3 = (t0 + 6764U);
     t5 = ieee_p_3620187407_sub_1742983514_3965413181(IEEE_P_3620187407, t2, t1, t4, t3);
     if (t5 != 0)
         goto LAB3;

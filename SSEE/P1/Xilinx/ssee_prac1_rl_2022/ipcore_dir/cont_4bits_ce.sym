@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="cont_4bits_ce">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2022-10-19T16:28:32</timestamp>
+    <pin polarity="Input" x="0" y="304" name="sclr" />
+    <pin polarity="Output" x="576" y="176" name="q(3:0)" />
+    <pin polarity="Input" x="0" y="240" name="clk" />
+    <pin polarity="Input" x="0" y="176" name="ce" />
+    <graph>
+        <rect width="512" x="32" y="128" height="216" />
+        <line x2="32" y1="304" y2="304" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="304" type="pin sclr" />
+        <line x2="544" y1="176" y2="176" style="linewidth:W" x1="576" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="544" y="176" type="pin q(3:0)" />
+        <text style="fontsize:40;fontname:Arial" x="32" y="100">cont_4bits_ce</text>
+        <line x2="32" y1="240" y2="240" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="240" type="pin clk" />
+        <line x2="32" y1="176" y2="176" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="176" type="pin ce" />
+    </graph>
+</symbol>

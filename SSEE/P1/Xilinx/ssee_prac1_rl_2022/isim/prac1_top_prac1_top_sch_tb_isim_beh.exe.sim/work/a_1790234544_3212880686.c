@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/prac1_top.vhf";
+static const char *ng0 = "//VBoxSvr/VMSF/ssee_prac1_rl_2022/prac1_top.vhf";
 
 
 
@@ -41,7 +41,7 @@ static void work_a_1790234544_3212880686_p_0(char *t0)
     char *t12;
     char *t13;
 
-LAB0:    xsi_set_current_line(110, ng0);
+LAB0:    xsi_set_current_line(146, ng0);
     t2 = (t0 + 1632U);
     t3 = xsi_signal_has_event(t2);
     if (t3 == 1)
@@ -57,7 +57,7 @@ LAB3:    t2 = (t0 + 3792);
     *((int *)t2) = 1;
 
 LAB1:    return;
-LAB2:    xsi_set_current_line(111, ng0);
+LAB2:    xsi_set_current_line(147, ng0);
     t4 = (t0 + 2312U);
     t8 = *((char **)t4);
     t9 = *((unsigned char *)t8);
@@ -68,7 +68,7 @@ LAB2:    xsi_set_current_line(111, ng0);
     t13 = *((char **)t12);
     *((unsigned char *)t13) = t9;
     xsi_driver_first_trans_fast_port(t4);
-    xsi_set_current_line(112, ng0);
+    xsi_set_current_line(148, ng0);
     t2 = (t0 + 2152U);
     t4 = *((char **)t2);
     t1 = *((unsigned char *)t4);
@@ -79,7 +79,7 @@ LAB2:    xsi_set_current_line(111, ng0);
     t11 = *((char **)t10);
     *((unsigned char *)t11) = t1;
     xsi_driver_first_trans_fast_port(t2);
-    xsi_set_current_line(113, ng0);
+    xsi_set_current_line(149, ng0);
     t2 = (t0 + 1992U);
     t4 = *((char **)t2);
     t1 = *((unsigned char *)t4);
@@ -90,7 +90,7 @@ LAB2:    xsi_set_current_line(111, ng0);
     t11 = *((char **)t10);
     *((unsigned char *)t11) = t1;
     xsi_driver_first_trans_fast_port(t2);
-    xsi_set_current_line(114, ng0);
+    xsi_set_current_line(150, ng0);
     t2 = (t0 + 1832U);
     t4 = *((char **)t2);
     t1 = *((unsigned char *)t4);

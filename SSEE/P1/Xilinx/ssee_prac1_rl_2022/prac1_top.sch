@@ -55,7 +55,6 @@
         <signal name="boton_der_i" />
         <signal name="boton_izq_i" />
         <signal name="sw_i(7:0)" />
-        <signal name="uno(7:0)" />
         <signal name="display(7:0)" />
         <signal name="display_pad(7:0)" />
         <signal name="ce_display_neg(4:1)" />
@@ -73,7 +72,7 @@
         <signal name="EppWRITE" />
         <signal name="boton_der_i,boton_aba_i,boton_izq_i,boton_arr_i,reset_i" />
         <signal name="reset_i" />
-        <signal name="led(7:1),salida_pwm_2b" />
+        <signal name="led(7:2),salida_pwm_4b,salida_pwm_2b" />
         <signal name="uart_rx_pad" />
         <signal name="EppWAIT" />
         <signal name="DB(7:0)" />
@@ -86,6 +85,21 @@
         <signal name="uart_tx_pad" />
         <signal name="uart_tx" />
         <signal name="led(7:0)" />
+        <signal name="boton_arr_pulso" />
+        <signal name="cuenta_4b(7:0)" />
+        <signal name="cuenta_4b(3:0)" />
+        <signal name="boton_arr" />
+        <signal name="boton_arr_sinc" />
+        <signal name="boton_aba" />
+        <signal name="boton_aba_sinc" />
+        <signal name="boton_aba_pulso" />
+        <signal name="XLXN_1894" />
+        <signal name="XLXN_1895" />
+        <signal name="XLXN_1896" />
+        <signal name="XLXN_1897(7:0)" />
+        <signal name="XLXN_1898(7:0)" />
+        <signal name="uno(7:0)" />
+        <signal name="salida_pwm_4b" />
         <port polarity="BiDirectional" name="fila_pad(4:1)" />
         <port polarity="Input" name="col_pad(4:1)" />
         <port polarity="Input" name="reset_pad" />
@@ -361,6 +375,16 @@
             <rect width="64" x="400" y="-364" height="24" />
             <line x2="464" y1="-352" y2="-352" x1="400" />
         </blockdef>
+        <blockdef name="pwm_4bits">
+            <timestamp>2022-10-19T20:22:37</timestamp>
+            <rect width="384" x="64" y="-256" height="256" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="512" y1="-224" y2="-224" x1="448" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <rect width="64" x="0" y="-236" height="24" />
+        </blockdef>
         <block symbolname="obuft" name="XLXI_114(4:1)">
             <blockpin signalname="XLXN_406(4:1)" name="I" />
             <blockpin signalname="XLXN_407(4:1)" name="T" />
@@ -497,7 +521,7 @@
         </block>
         <block symbolname="displays_7seg_nexys3_RemLab" name="XLXI_864">
             <blockpin signalname="ceros(3:0)" name="mill_bcd(3:0)" />
-            <blockpin signalname="ceros(3:0)" name="cent_bcd(3:0)" />
+            <blockpin signalname="cuenta_4b(3:0)" name="cent_bcd(3:0)" />
             <blockpin signalname="ceros(3:0)" name="dec_bcd(3:0)" />
             <blockpin signalname="ceros(3:2),cuenta_2b(1:0)" name="unid_bcd(3:0)" />
             <blockpin signalname="ck_20KHz" name="ck_display" />
@@ -507,12 +531,6 @@
             <blockpin signalname="seg2(7:0)" name="siete_seg2(7:0)" />
             <blockpin signalname="seg1(7:0)" name="siete_seg1(7:0)" />
             <blockpin signalname="seg0(7:0)" name="siete_seg0(7:0)" />
-        </block>
-        <block symbolname="gnd" name="XLXI_708(3:0)">
-            <blockpin signalname="ceros(3:0)" name="G" />
-        </block>
-        <block symbolname="vcc" name="XLXI_860(7:0)">
-            <blockpin signalname="uno(7:0)" name="P" />
         </block>
         <block symbolname="ofd" name="XLXI_288(4:1)">
             <blockpin signalname="ck_20KHz" name="C" />
@@ -573,7 +591,7 @@
             <blockpin signalname="uart_tx" name="TxInternal" />
             <blockpin signalname="sw_i(7:0)" name="sw(7:0)" />
             <blockpin signalname="boton_der_i,boton_aba_i,boton_izq_i,boton_arr_i,reset_i" name="btn(4:0)" />
-            <blockpin signalname="led(7:1),salida_pwm_2b" name="LedInternal(7:0)" />
+            <blockpin signalname="led(7:2),salida_pwm_4b,salida_pwm_2b" name="LedInternal(7:0)" />
             <blockpin signalname="seg3(7:0)" name="SevenSeg3(7:0)" />
             <blockpin signalname="seg2(7:0)" name="SevenSeg2(7:0)" />
             <blockpin signalname="seg1(7:0)" name="SevenSeg1(7:0)" />
@@ -593,6 +611,73 @@
         </block>
         <block symbolname="gnd" name="XLXI_518(7:0)">
             <blockpin signalname="led(7:0)" name="G" />
+        </block>
+        <block symbolname="cont_8b_up_down_lim" name="XLXI_867">
+            <blockpin signalname="XLXN_1897(7:0)" name="lim_superior(7:0)" />
+            <blockpin signalname="boton_arr_pulso" name="subir" />
+            <blockpin signalname="XLXN_1898(7:0)" name="lim_inferior(7:0)" />
+            <blockpin signalname="boton_aba_pulso" name="bajar" />
+            <blockpin signalname="ck_5MHz" name="ck" />
+            <blockpin signalname="XLXN_1896" name="reset" />
+            <blockpin signalname="cuenta_4b(7:0)" name="cuenta(7:0)" />
+        </block>
+        <block symbolname="gnd" name="XLXI_868">
+            <blockpin signalname="XLXN_1896" name="G" />
+        </block>
+        <block symbolname="constant" name="XLXI_869">
+            <attr value="00000000" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_1898(7:0)" name="O" />
+        </block>
+        <block symbolname="constant" name="XLXI_870">
+            <attr value="0000000F" name="CValue">
+                <trait delete="all:1 sym:0" />
+                <trait editname="all:1 sch:0" />
+                <trait valuetype="BitVector 32 Hexadecimal" />
+            </attr>
+            <blockpin signalname="XLXN_1897(7:0)" name="O" />
+        </block>
+        <block symbolname="gnd" name="XLXI_871">
+            <blockpin signalname="XLXN_1895" name="G" />
+        </block>
+        <block symbolname="vcc" name="XLXI_872">
+            <blockpin signalname="XLXN_1894" name="P" />
+        </block>
+        <block symbolname="sincroniza" name="XLXI_873">
+            <blockpin signalname="boton_arr_sinc" name="dato_sinc" />
+            <blockpin signalname="ck_5MHz" name="ck" />
+            <blockpin signalname="boton_arr" name="dato_ent" />
+        </block>
+        <block symbolname="sincroniza" name="XLXI_874">
+            <blockpin signalname="boton_aba_sinc" name="dato_sinc" />
+            <blockpin signalname="ck_5MHz" name="ck" />
+            <blockpin signalname="boton_aba" name="dato_ent" />
+        </block>
+        <block symbolname="nivel_a_pulso" name="XLXI_875">
+            <blockpin signalname="boton_arr_pulso" name="salida" />
+            <blockpin signalname="ck_5MHz" name="ck" />
+            <blockpin signalname="boton_arr_sinc" name="entrada" />
+        </block>
+        <block symbolname="nivel_a_pulso" name="XLXI_876">
+            <blockpin signalname="boton_aba_pulso" name="salida" />
+            <blockpin signalname="ck_5MHz" name="ck" />
+            <blockpin signalname="boton_aba_sinc" name="entrada" />
+        </block>
+        <block symbolname="pwm_4bits" name="XLXI_889">
+            <blockpin signalname="XLXN_1894" name="ce" />
+            <blockpin signalname="ck_5MHz" name="ck" />
+            <blockpin signalname="XLXN_1895" name="reset" />
+            <blockpin signalname="salida_pwm_4b" name="salida_pwm" />
+            <blockpin signalname="cuenta_4b(3:0)" name="tiempo_on(3:0)" />
+        </block>
+        <block symbolname="gnd" name="XLXI_708(3:0)">
+            <blockpin signalname="ceros(3:0)" name="G" />
+        </block>
+        <block symbolname="vcc" name="XLXI_860(7:0)">
+            <blockpin signalname="uno(7:0)" name="P" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
@@ -708,7 +793,6 @@
         <iomarker fontsize="28" x="2160" y="4912" name="boton_arr_pad" orien="R180" />
         <iomarker fontsize="28" x="2160" y="4976" name="boton_aba_pad" orien="R180" />
         <iomarker fontsize="28" x="2160" y="4224" name="sw_pad(7:0)" orien="R180" />
-        <rect style="linestyle:Dash" width="6572" x="80" y="68" height="1932" />
         <text style="fontsize:56;fontname:Arial" x="1232" y="152">Control de un contador UP-DOWN limitado, muestra la cuenta por los displays 7 segmentos y genera senal PWM</text>
         <instance x="192" y="5008" name="XLXI_747(4:1)" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="80" y="-88" type="instance" />
@@ -918,7 +1002,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5200" y="400" type="branch" />
             <wire x2="5312" y1="400" y2="400" x1="5200" />
         </branch>
-        <branch name="ceros(3:0)">
+        <branch name="cuenta_4b(3:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5200" y="464" type="branch" />
             <wire x2="5312" y1="464" y2="464" x1="5200" />
         </branch>
@@ -956,20 +1040,6 @@
         <branch name="seg0(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5840" y="720" type="branch" />
             <wire x2="5840" y1="720" y2="720" x1="5776" />
-        </branch>
-        <instance x="5328" y="1248" name="XLXI_708(3:0)" orien="R0" />
-        <branch name="ceros(3:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5312" y="1072" type="branch" />
-            <wire x2="5312" y1="1072" y2="1072" x1="5248" />
-            <wire x2="5392" y1="1072" y2="1072" x1="5312" />
-            <wire x2="5392" y1="1072" y2="1120" x1="5392" />
-        </branch>
-        <instance x="5504" y="1088" name="XLXI_860(7:0)" orien="R0" />
-        <branch name="uno(7:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5632" y="1264" type="branch" />
-            <wire x2="5568" y1="1088" y2="1264" x1="5568" />
-            <wire x2="5632" y1="1264" y2="1264" x1="5568" />
-            <wire x2="5744" y1="1264" y2="1264" x1="5632" />
         </branch>
         <branch name="display(7:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="6064" y="3520" type="branch" />
@@ -1115,7 +1185,7 @@
         <instance x="1168" y="3968" name="XLXI_138" orien="R0">
         </instance>
         <text style="fontsize:56;fontname:Arial" x="580" y="4088">Modulo de STARTUP</text>
-        <branch name="led(7:1),salida_pwm_2b">
+        <branch name="led(7:2),salida_pwm_4b,salida_pwm_2b">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3136" y="3456" type="branch" />
             <wire x2="3232" y1="3456" y2="3456" x1="3136" />
         </branch>
@@ -1203,5 +1273,143 @@
             <wire x2="2672" y1="3504" y2="3504" x1="2496" />
         </branch>
         <text style="fontsize:36;fontname:Arial" x="2316" y="3876">Senales de salida</text>
+        <instance x="2352" y="1632" name="XLXI_867" orien="R0">
+        </instance>
+        <instance x="2176" y="1680" name="XLXI_868" orien="R0" />
+        <branch name="boton_arr_pulso">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2272" y="1328" type="branch" />
+            <wire x2="2272" y1="1328" y2="1328" x1="2144" />
+            <wire x2="2352" y1="1328" y2="1328" x1="2272" />
+        </branch>
+        <instance x="1952" y="1344" name="XLXI_869" orien="R0">
+        </instance>
+        <instance x="1952" y="1248" name="XLXI_870" orien="R0">
+        </instance>
+        <branch name="cuenta_4b(7:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3008" y="1280" type="branch" />
+            <wire x2="3008" y1="1280" y2="1280" x1="2864" />
+            <wire x2="3136" y1="1280" y2="1280" x1="3008" />
+        </branch>
+        <branch name="cuenta_4b(3:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3648" y="1280" type="branch" />
+            <wire x2="3648" y1="1280" y2="1280" x1="3488" />
+            <wire x2="3808" y1="1280" y2="1280" x1="3648" />
+        </branch>
+        <branch name="ck_5MHz">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3648" y="1408" type="branch" />
+            <wire x2="3648" y1="1408" y2="1408" x1="3488" />
+            <wire x2="3808" y1="1408" y2="1408" x1="3648" />
+        </branch>
+        <instance x="3424" y="1616" name="XLXI_871" orien="R0" />
+        <instance x="3312" y="1312" name="XLXI_872" orien="R0" />
+        <instance x="368" y="1376" name="XLXI_873" orien="R0">
+        </instance>
+        <branch name="boton_arr">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="304" y="1280" type="branch" />
+            <wire x2="304" y1="1280" y2="1280" x1="176" />
+            <wire x2="368" y1="1280" y2="1280" x1="304" />
+        </branch>
+        <branch name="ck_5MHz">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="304" y="1344" type="branch" />
+            <wire x2="304" y1="1344" y2="1344" x1="176" />
+            <wire x2="368" y1="1344" y2="1344" x1="304" />
+        </branch>
+        <branch name="boton_arr_sinc">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="848" y="1280" type="branch" />
+            <wire x2="848" y1="1280" y2="1280" x1="752" />
+            <wire x2="976" y1="1280" y2="1280" x1="848" />
+        </branch>
+        <instance x="368" y="1632" name="XLXI_874" orien="R0">
+        </instance>
+        <branch name="boton_aba">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="304" y="1536" type="branch" />
+            <wire x2="304" y1="1536" y2="1536" x1="176" />
+            <wire x2="368" y1="1536" y2="1536" x1="304" />
+        </branch>
+        <branch name="ck_5MHz">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="304" y="1600" type="branch" />
+            <wire x2="304" y1="1600" y2="1600" x1="176" />
+            <wire x2="368" y1="1600" y2="1600" x1="304" />
+        </branch>
+        <branch name="boton_aba_sinc">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="848" y="1536" type="branch" />
+            <wire x2="848" y1="1536" y2="1536" x1="752" />
+            <wire x2="976" y1="1536" y2="1536" x1="848" />
+        </branch>
+        <instance x="976" y="1376" name="XLXI_875" orien="R0">
+        </instance>
+        <instance x="976" y="1632" name="XLXI_876" orien="R0">
+        </instance>
+        <branch name="ck_5MHz">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="912" y="1344" type="branch" />
+            <wire x2="912" y1="1344" y2="1344" x1="784" />
+            <wire x2="976" y1="1344" y2="1344" x1="912" />
+        </branch>
+        <branch name="ck_5MHz">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="912" y="1600" type="branch" />
+            <wire x2="912" y1="1600" y2="1600" x1="784" />
+            <wire x2="976" y1="1600" y2="1600" x1="912" />
+        </branch>
+        <branch name="boton_arr_pulso">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1520" y="1280" type="branch" />
+            <wire x2="1520" y1="1280" y2="1280" x1="1360" />
+            <wire x2="1632" y1="1280" y2="1280" x1="1520" />
+        </branch>
+        <branch name="boton_aba_pulso">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1520" y="1536" type="branch" />
+            <wire x2="1520" y1="1536" y2="1536" x1="1360" />
+            <wire x2="1632" y1="1536" y2="1536" x1="1520" />
+        </branch>
+        <branch name="XLXN_1894">
+            <wire x2="3376" y1="1312" y2="1328" x1="3376" />
+            <wire x2="3376" y1="1328" y2="1344" x1="3376" />
+            <wire x2="3808" y1="1344" y2="1344" x1="3376" />
+        </branch>
+        <branch name="XLXN_1895">
+            <wire x2="3808" y1="1472" y2="1472" x1="3488" />
+            <wire x2="3488" y1="1472" y2="1488" x1="3488" />
+        </branch>
+        <branch name="XLXN_1896">
+            <wire x2="2352" y1="1520" y2="1520" x1="2240" />
+            <wire x2="2240" y1="1520" y2="1552" x1="2240" />
+        </branch>
+        <branch name="XLXN_1897(7:0)">
+            <wire x2="2352" y1="1280" y2="1280" x1="2096" />
+        </branch>
+        <branch name="XLXN_1898(7:0)">
+            <wire x2="2352" y1="1376" y2="1376" x1="2096" />
+        </branch>
+        <branch name="boton_aba_pulso">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2272" y="1424" type="branch" />
+            <wire x2="2272" y1="1424" y2="1424" x1="2080" />
+            <wire x2="2352" y1="1424" y2="1424" x1="2272" />
+        </branch>
+        <branch name="ck_5MHz">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2272" y="1472" type="branch" />
+            <wire x2="2272" y1="1472" y2="1472" x1="2144" />
+            <wire x2="2352" y1="1472" y2="1472" x1="2272" />
+        </branch>
+        <instance x="3808" y="1504" name="XLXI_889" orien="R0">
+        </instance>
+        <instance x="5392" y="1328" name="XLXI_708(3:0)" orien="R0" />
+        <branch name="ceros(3:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5376" y="1152" type="branch" />
+            <wire x2="5376" y1="1152" y2="1152" x1="5312" />
+            <wire x2="5456" y1="1152" y2="1152" x1="5376" />
+            <wire x2="5456" y1="1152" y2="1200" x1="5456" />
+        </branch>
+        <instance x="5568" y="1168" name="XLXI_860(7:0)" orien="R0" />
+        <branch name="uno(7:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5696" y="1344" type="branch" />
+            <wire x2="5632" y1="1168" y2="1344" x1="5632" />
+            <wire x2="5696" y1="1344" y2="1344" x1="5632" />
+            <wire x2="5808" y1="1344" y2="1344" x1="5696" />
+        </branch>
+        <rect style="linestyle:Dash" width="6572" x="80" y="68" height="1932" />
+        <branch name="salida_pwm_4b">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4432" y="1280" type="branch" />
+            <wire x2="4432" y1="1280" y2="1280" x1="4320" />
+            <wire x2="4560" y1="1280" y2="1280" x1="4432" />
+        </branch>
     </sheet>
 </drawing>

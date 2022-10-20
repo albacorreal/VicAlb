@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac1_rl_2022/Remote_Lab.vhd";
+static const char *ng0 = "//VBoxSvr/VMSF/ssee_prac1_rl_2022/Remote_Lab.vhd";
 extern char *IEEE_P_3620187407;
 extern char *IEEE_P_2592010699;
 
@@ -81,7 +81,7 @@ LAB2:    xsi_set_current_line(290, ng0);
 LAB10:    xsi_set_current_line(293, ng0);
     t2 = (t0 + 1512U);
     t3 = *((char **)t2);
-    t2 = (t0 + 10228U);
+    t2 = (t0 + 9604U);
     t7 = ieee_p_3620187407_sub_436279890_3965413181(IEEE_P_3620187407, t17, t3, t2, 1);
     t8 = (t17 + 12U);
     t18 = *((unsigned int *)t8);
@@ -146,10 +146,10 @@ static void work_a_3341522975_3212880686_p_1(char *t0)
 LAB0:    xsi_set_current_line(298, ng0);
     t1 = (t0 + 1512U);
     t2 = *((char **)t1);
-    t1 = (t0 + 10228U);
+    t1 = (t0 + 9604U);
     t3 = (t0 + 3248U);
     t4 = *((char **)t3);
-    t3 = (t0 + 10292U);
+    t3 = (t0 + 9668U);
     t5 = ieee_std_logic_unsigned_equal_stdv_stdv(IEEE_P_3620187407, t2, t1, t4, t3);
     if (t5 != 0)
         goto LAB3;
@@ -524,7 +524,7 @@ LAB5:    t2 = (t0 + 1152U);
     goto LAB7;
 
 LAB8:    xsi_set_current_line(337, ng0);
-    t8 = (t0 + 10416);
+    t8 = (t0 + 9792);
     t16 = (t0 + 6792);
     t17 = (t16 + 56U);
     t18 = *((char **)t17);
@@ -542,7 +542,7 @@ LAB11:    t8 = (t0 + 1032U);
     goto LAB13;
 
 LAB14:    xsi_set_current_line(339, ng0);
-    t2 = (t0 + 10420);
+    t2 = (t0 + 9796);
     t12 = (t0 + 6792);
     t15 = (t12 + 56U);
     t16 = *((char **)t15);

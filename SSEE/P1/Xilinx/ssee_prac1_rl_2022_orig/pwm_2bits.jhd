@@ -1,0 +1,3 @@
+MODULE pwm_2bits
+	SUBMODULE cont_2bits_ce
+		INSTANCE XLXI_4

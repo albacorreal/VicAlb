@@ -2,29 +2,28 @@ Command line:
    prac1_top_prac1_top_sch_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  54181
+     -socket  49829
 
-Mon Oct 17 12:52:00 2022
+Thu Oct 20 20:36:59 2022
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.09375 sec
 
- Current Memory Usage: 5164.82 Meg
+ Current Memory Usage: 5009.49 Meg
 
- Total Signals          : 1551
- Total Nets             : 2581
- Total Signal Drivers   : 784
- Total Blocks           : 455
- Total Primitive Blocks : 370
- Total Processes        : 656
- Total Traceable Variables  : 888
- Total Scalar Nets and Variables : 9097
-Total Line Count : 2829
-Total Line Count : 2829
+ Total Signals          : 2075
+ Total Nets             : 3280
+ Total Signal Drivers   : 1009
+ Total Blocks           : 648
+ Total Primitive Blocks : 517
+ Total Processes        : 863
+ Total Traceable Variables  : 1296
+ Total Scalar Nets and Variables : 10458
+Total Line Count : 3622
 
- Total Simulation Time: 19.6719 sec
+ Total Simulation Time: 52.8281 sec
 
- Current Memory Usage: 5007.53 Meg
+ Current Memory Usage: 4694.92 Meg
 
-Mon Oct 17 12:53:26 2022
+Thu Oct 20 20:48:58 2022
 

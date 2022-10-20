@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="prac1_sol" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/bloque_media C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|bloque_media.sch</ClosedNode>
+         <ClosedNode>/cont_8b_up_down_lim C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|cont_8b_up_down_lim.sch</ClosedNode>
+         <ClosedNode>/displays_7seg_nexys3 C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|displays_7seg_nexys3.sch</ClosedNode>
+         <ClosedNode>/media_nexys3_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|media_nexys3_top.sch/XLXI_1 - teclado_hexa_completo</ClosedNode>
+         <ClosedNode>/media_nexys3_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|media_nexys3_top.sch/XLXI_155 - bloque_media</ClosedNode>
+         <ClosedNode>/media_nexys3_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|media_nexys3_top.sch/XLXI_175 - sinc_entrada</ClosedNode>
+         <ClosedNode>/media_nexys3_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|media_nexys3_top.sch/XLXI_2 - modulo_displays_7seg</ClosedNode>
+         <ClosedNode>/prac1_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|prac1_top.sch/XLXI_1 - teclado_hexa_completo</ClosedNode>
+         <ClosedNode>/prac1_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|prac1_top.sch/XLXI_155 - bloque_media</ClosedNode>
+         <ClosedNode>/prac1_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|prac1_top.sch/XLXI_175 - sinc_entrada</ClosedNode>
+         <ClosedNode>/prac1_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|prac1_top.sch/XLXI_2 - modulo_displays_7seg</ClosedNode>
+         <ClosedNode>/prac1_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|prac1_top.sch/XLXI_679 - cont_8b_up_down_lim</ClosedNode>
+         <ClosedNode>/prac1_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|prac1_top.sch/XLXI_766 - pwm_4bits</ClosedNode>
+         <ClosedNode>/prac1_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|prac1_top.sch/XLXI_792 - cont_8b_up_down_lim</ClosedNode>
+         <ClosedNode>/prac1_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|prac1_top.sch/XLXI_854 - pwm_2bits</ClosedNode>
+         <ClosedNode>/teclado_hexa_completo C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|teclado_hexa_completo.sch/XLXI_1 - teclado_4x4</ClosedNode>
+         <ClosedNode>/teclado_hexa_completo C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|teclado_hexa_completo.sch/XLXI_39 - codif_tecla</ClosedNode>
+         <ClosedNode>/top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|top.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e9000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e90000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>XLXI_305 - displays_7seg_nexys3 (C:/Users/albertod/Documents/_Doc_/Xilinx/prac1_sol/displays_7seg_nexys3.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000038e000000040101000100000000000000000000000064ffffffff000000810000000000000004000000c50000000100000000000000fe0000000100000000000000760000000100000000000001550000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>codif_tecla.sch</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000118000000010001000100000000000000000000000064ffffffff000000810000000000000001000001180000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/bloque_media_bloque_media_sch_tb - behavioral C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|simul_ent_sal.vhd</ClosedNode>
+         <ClosedNode>/modulo_displays_7seg C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|modulo_displays_7seg.sch</ClosedNode>
+         <ClosedNode>/prac1_top C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|prac1_top.sch</ClosedNode>
+         <ClosedNode>/prac1_top_prac1_top_sch_tb - behavioral C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|sim_prac1.vhd</ClosedNode>
+         <ClosedNode>/sinc_entrada C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|sinc_entrada.sch</ClosedNode>
+         <ClosedNode>/teclado_hexa_completo C:|Users|albertod|Documents|_Doc_|Xilinx|prac1_sol|teclado_hexa_completo.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>prac1_top_prac1_top_sch_tb - behavioral (C:/Users/albertod/Documents/_Doc_/Xilinx/prac1_sol/sim_prac1.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000020a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000020a0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>prac1_top_prac1_top_sch_tb - behavioral (C:/Users/albertod/Documents/_Doc_/Xilinx/prac1_sol/sim_prac1.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001390000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" ></ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+</Project>
