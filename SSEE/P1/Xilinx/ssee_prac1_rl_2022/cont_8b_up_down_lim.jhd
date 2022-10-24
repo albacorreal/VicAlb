@@ -1,0 +1,3 @@
+MODULE cont_8b_up_down_lim
+	SUBMODULE cont_8bits_ud
+		INSTANCE XLXI_1

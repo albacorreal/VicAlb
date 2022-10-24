@@ -1,5 +1,6 @@
 ISim log file
-Running: D:\Practicas\3\VicAlb\SSEE\P1\Xilinx\ssee_prac1_rl_2022_mejora\prac1_top_prac1_top_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022_mejora/prac1_top_prac1_top_sch_tb_isim_beh.wdb 
+Running: Z:\ssee_prac1_rl_2022_mejora\prac1_top_prac1_top_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Z:/ssee_prac1_rl_2022_mejora/prac1_top_prac1_top_sch_tb_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -12,13 +13,3 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /prac1_top_prac1_top_sch_tb/UUT/XLXI_792/XLXI_2/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 47854064 ns : File "//VBoxSvr/VMSF/ssee_prac1_rl_2022_mejoras/Remote_Lab.vhd" Line 302
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 29756969 ns : File "//VBoxSvr/VMSF/ssee_prac1_rl_2022_mejoras/sim_prac1_rl.vhd" Line 111

@@ -1,0 +1,3 @@
+MODULE displays_7seg_nexys3
+	SUBMODULE bcd_7seg_neg
+		INSTANCE XLXI_16

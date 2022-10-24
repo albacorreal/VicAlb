@@ -1,0 +1,602 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'prac1_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail
+-ir off -pr off -lc off -power off -o prac1_top_map.ncd prac1_top.ngd
+prac1_top.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Wed Oct 19 22:24:51 2022
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    2
+Slice Logic Utilization:
+  Number of Slice Registers:                   229 out of  18,224    1%
+    Number used as Flip Flops:                 229
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        350 out of   9,112    3%
+    Number used as logic:                      344 out of   9,112    3%
+      Number using O6 output only:             261
+      Number using O5 output only:              63
+      Number using O5 and O6:                   20
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   2,176    0%
+    Number used exclusively as route-thrus:      6
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         6
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   127 out of   2,278    5%
+  Number of MUXCYs used:                       100 out of   4,556    2%
+  Number of LUT Flip Flop pairs used:          378
+    Number with an unused Flip Flop:           151 out of     378   39%
+    Number with an unused LUT:                  28 out of     378    7%
+    Number of fully used LUT-FF pairs:         199 out of     378   52%
+    Number of unique control sets:              16
+    Number of slice register sites lost
+      to control set restrictions:              27 out of  18,224    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        70 out of     232   30%
+    Number of LOCed IOBs:                       70 out of      70  100%
+    IOB Flip Flops:                              5
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
+    Number used as BUFIO2FBs:                    1
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       6 out of      16   37%
+    Number used as BUFGs:                        6
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
+    Number used as DCMs:                         1
+    Number used as DCM_CLKGENs:                  0
+  Number of ILOGIC2/ISERDES2s:                   4 out of     248    1%
+    Number used as ILOGIC2s:                     4
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   1 out of     248    1%
+    Number used as OLOGIC2s:                     1
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.43
+
+Peak Memory Usage:  4512 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   5 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:41 - All members of TNM group "cuenta_dcm<15>" have been
+   optimized out of the design.
+WARNING:MapLib:50 - The period specification "TS_cuenta_dcm_15_" has been
+   discarded because the group "cuenta_dcm<15>" has been optimized away.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network col_pad<4>_IBUF has no load.
+INFO:LIT:243 - Logical network col_pad<3>_IBUF has no load.
+INFO:LIT:243 - Logical network col_pad<2>_IBUF has no load.
+INFO:LIT:243 - Logical network col_pad<1>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<7>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<6>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<5>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<4>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<3>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<2>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<1>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<0>_IBUF has no load.
+INFO:LIT:243 - Logical network uart_rx_pad_IBUF has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp XLXI_306/dcm_sp_inst,
+   consult the device Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  38 block(s) removed
+  40 block(s) optimized away
+  35 signal(s) removed
+  85 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "XLXI_314" (CKBUF) removed.
+ The signal "cuenta_dcm<15>" is loadless and has been removed.
+  Loadless block "XLXI_309/blk00000001/blk00000023" (SFF) removed.
+   The signal "XLXI_309/blk00000001/sig00000024" is loadless and has been removed.
+    Loadless block "XLXI_309/blk00000001/blk00000020" (XOR) removed.
+     The signal "XLXI_309/blk00000001/sig00000025" is loadless and has been removed.
+      Loadless block "XLXI_309/blk00000001/blk00000005" (MUX) removed.
+       The signal "XLXI_309/blk00000001/sig00000026" is loadless and has been removed.
+        Loadless block "XLXI_309/blk00000001/blk00000007" (MUX) removed.
+         The signal "XLXI_309/blk00000001/sig00000027" is loadless and has been removed.
+          Loadless block "XLXI_309/blk00000001/blk00000009" (MUX) removed.
+           The signal "XLXI_309/blk00000001/sig00000028" is loadless and has been removed.
+            Loadless block "XLXI_309/blk00000001/blk0000000b" (MUX) removed.
+             The signal "XLXI_309/blk00000001/sig00000029" is loadless and has been removed.
+              Loadless block "XLXI_309/blk00000001/blk0000000d" (MUX) removed.
+               The signal "XLXI_309/blk00000001/sig0000002a" is loadless and has been removed.
+                Loadless block "XLXI_309/blk00000001/blk0000000f" (MUX) removed.
+                 The signal "XLXI_309/blk00000001/sig0000002b" is loadless and has been removed.
+                  Loadless block "XLXI_309/blk00000001/blk00000011" (MUX) removed.
+                   The signal "XLXI_309/blk00000001/sig0000002c" is loadless and has been removed.
+                    Loadless block "XLXI_309/blk00000001/blk00000013" (MUX) removed.
+                   The signal "XLXI_309/blk00000001/sig0000003b" is loadless and has been removed.
+                    Loadless block "XLXI_309/blk00000001/blk00000039" (ROM) removed.
+                     The signal "XLXI_309/q<8>" is loadless and has been removed.
+                      Loadless block "XLXI_309/blk00000001/blk0000002a" (SFF) removed.
+                       The signal "XLXI_309/blk00000001/sig0000001d" is loadless and has been removed.
+                        Loadless block "XLXI_309/blk00000001/blk00000010" (XOR) removed.
+                 The signal "XLXI_309/blk00000001/sig0000003a" is loadless and has been removed.
+                  Loadless block "XLXI_309/blk00000001/blk00000038" (ROM) removed.
+                   The signal "XLXI_309/q<9>" is loadless and has been removed.
+                    Loadless block "XLXI_309/blk00000001/blk00000029" (SFF) removed.
+                     The signal "XLXI_309/blk00000001/sig0000001e" is loadless and has been removed.
+                      Loadless block "XLXI_309/blk00000001/blk0000000e" (XOR) removed.
+               The signal "XLXI_309/blk00000001/sig00000039" is loadless and has been removed.
+                Loadless block "XLXI_309/blk00000001/blk00000037" (ROM) removed.
+                 The signal "XLXI_309/q<10>" is loadless and has been removed.
+                  Loadless block "XLXI_309/blk00000001/blk00000028" (SFF) removed.
+                   The signal "XLXI_309/blk00000001/sig0000001f" is loadless and has been removed.
+                    Loadless block "XLXI_309/blk00000001/blk0000000c" (XOR) removed.
+             The signal "XLXI_309/blk00000001/sig00000038" is loadless and has been removed.
+              Loadless block "XLXI_309/blk00000001/blk00000036" (ROM) removed.
+               The signal "XLXI_309/q<11>" is loadless and has been removed.
+                Loadless block "XLXI_309/blk00000001/blk00000027" (SFF) removed.
+                 The signal "XLXI_309/blk00000001/sig00000020" is loadless and has been removed.
+                  Loadless block "XLXI_309/blk00000001/blk0000000a" (XOR) removed.
+           The signal "XLXI_309/blk00000001/sig00000037" is loadless and has been removed.
+            Loadless block "XLXI_309/blk00000001/blk00000035" (ROM) removed.
+             The signal "XLXI_309/q<12>" is loadless and has been removed.
+              Loadless block "XLXI_309/blk00000001/blk00000026" (SFF) removed.
+               The signal "XLXI_309/blk00000001/sig00000021" is loadless and has been removed.
+                Loadless block "XLXI_309/blk00000001/blk00000008" (XOR) removed.
+         The signal "XLXI_309/blk00000001/sig00000036" is loadless and has been removed.
+          Loadless block "XLXI_309/blk00000001/blk00000034" (ROM) removed.
+           The signal "XLXI_309/q<13>" is loadless and has been removed.
+            Loadless block "XLXI_309/blk00000001/blk00000025" (SFF) removed.
+             The signal "XLXI_309/blk00000001/sig00000022" is loadless and has been removed.
+              Loadless block "XLXI_309/blk00000001/blk00000006" (XOR) removed.
+       The signal "XLXI_309/blk00000001/sig00000035" is loadless and has been removed.
+        Loadless block "XLXI_309/blk00000001/blk00000033" (ROM) removed.
+         The signal "XLXI_309/q<14>" is loadless and has been removed.
+          Loadless block "XLXI_309/blk00000001/blk00000024" (SFF) removed.
+           The signal "XLXI_309/blk00000001/sig00000023" is loadless and has been removed.
+            Loadless block "XLXI_309/blk00000001/blk00000004" (XOR) removed.
+Loadless block "XLXI_864/XLXI_26" (AND) removed.
+ The signal "XLXI_864/anodo_DUMMY<3>" is loadless and has been removed.
+  Loadless block "XLXI_864/XLXI_32" (SFF) removed.
+   The signal "XLXI_864/anodo_DUMMY<2>" is loadless and has been removed.
+    Loadless block "XLXI_864/XLXI_31" (SFF) removed.
+     The signal "XLXI_864/anodo_DUMMY<1>" is loadless and has been removed.
+      Loadless block "XLXI_864/XLXI_30" (SFF) removed.
+       The signal "XLXI_864/anodo_DUMMY<0>" is loadless and has been removed.
+        Loadless block "XLXI_864/XLXI_7" (FF) removed.
+Loadless block "XLXI_864/XLXI_27" (AND) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+INV 		XLXI_118_1
+INV 		XLXI_118_2
+INV 		XLXI_118_3
+INV 		XLXI_118_4
+GND 		XLXI_165/XST_GND
+GND 		XLXI_288_1/XST_GND
+GND 		XLXI_288_2/XST_GND
+GND 		XLXI_288_3/XST_GND
+GND 		XLXI_288_4/XST_GND
+VCC 		XLXI_309/blk00000001/blk00000002
+GND 		XLXI_309/blk00000001/blk00000003
+GND 		XLXI_35/XST_GND
+VCC 		XLXI_854/XLXI_4/blk00000001/blk00000002
+GND 		XLXI_854/XLXI_4/blk00000001/blk00000003
+BUF 		XLXI_864/XLXI_46
+BUF 		XLXI_864/XLXI_47
+BUF 		XLXI_864/XLXI_48
+BUF 		XLXI_864/XLXI_49
+INV 		XLXI_864/XLXI_50_0
+INV 		XLXI_864/XLXI_50_1
+INV 		XLXI_864/XLXI_50_2
+INV 		XLXI_864/XLXI_50_3
+INV 		XLXI_864/XLXI_50_4
+INV 		XLXI_864/XLXI_50_5
+INV 		XLXI_864/XLXI_50_6
+INV 		XLXI_864/XLXI_52_0
+INV 		XLXI_864/XLXI_52_1
+INV 		XLXI_864/XLXI_52_2
+INV 		XLXI_864/XLXI_52_3
+INV 		XLXI_864/XLXI_52_4
+INV 		XLXI_864/XLXI_52_5
+INV 		XLXI_864/XLXI_52_6
+INV 		XLXI_864/XLXI_53_1
+LUT5 		XLXI_865/Mmux_busEppInternal8_SW0
+   optimized to 1
+LUT4 		XLXI_865/mux7_61
+   optimized to 1
+LUT6 		XLXI_865/seg<7>1
+   optimized to 1
+GND 		XLXI_871
+VCC 		XLXI_872
+VCC 		XLXI_889/XLXI_7/blk00000001/blk00000002
+GND 		XLXI_889/XLXI_7/blk00000001/blk00000003
+
+Redundant Block(s):
+TYPE 		BLOCK
+INV 		XLXI_304
+INV 		XLXI_864/XLXI_53_5
+INV 		XLXI_864/XLXI_53_4
+INV 		XLXI_864/XLXI_53_3
+INV 		XLXI_864/XLXI_53_0
+INV 		XLXI_864/XLXI_53_2
+INV 		XLXI_864/XLXI_51_6
+INV 		XLXI_864/XLXI_51_5
+INV 		XLXI_864/XLXI_51_4
+INV 		XLXI_864/XLXI_51_3
+INV 		XLXI_864/XLXI_51_2
+INV 		XLXI_864/XLXI_51_1
+INV 		XLXI_864/XLXI_51_0
+LUT1 		XLXI_865/Mcount_cnt_cy<15>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<14>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<13>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<12>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<11>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<10>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<9>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<8>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<7>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<6>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<5>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<4>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<3>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<2>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<1>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<20>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<19>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<18>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<17>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<16>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<15>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<14>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<13>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<12>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<11>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<10>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<9>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<8>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<7>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<6>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<5>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<4>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<3>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<2>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_cy<1>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<20>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<19>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<18>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<17>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<16>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<15>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<14>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<13>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<12>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<11>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<10>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<9>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<8>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<7>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<6>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<5>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<4>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<3>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<2>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_cy<1>_rt
+LUT1 		XLXI_865/Mcount_cnt_xor<16>_rt
+LUT1 		XLXI_865/U2/Mcount_counter_xor<21>_rt
+LUT1 		XLXI_865/U1/Mcount_counter_xor<21>_rt
+INV 		XLXI_865/EppWRITE_inv1_INV_0
+INV 		XLXI_864/XLXI_40/Mram_SEGMENTO_NEG61_INV_0
+INV 		XLXI_864/XLXI_53_6
+LUT1 		XLXI_309/blk00000001/blk0000003a
+LUT1 		XLXI_309/blk00000001/blk0000003b
+LUT1 		XLXI_309/blk00000001/blk0000003c
+LUT1 		XLXI_309/blk00000001/blk0000003d
+LUT1 		XLXI_309/blk00000001/blk0000003e
+LUT1 		XLXI_309/blk00000001/blk0000003f
+LUT1 		XLXI_309/blk00000001/blk00000040
+INV 		XLXI_792/XLXI_1/blk00000001/blk00000021
+INV 		XLXI_867/XLXI_1/blk00000001/blk00000021
+LUT1 		XLXI_889/XLXI_7/blk00000001/blk0000000f
+LUT1 		XLXI_889/XLXI_7/blk00000001/blk00000010
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DB<0>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<1>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<2>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<3>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<4>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<5>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<6>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<7>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| EppASTB                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| EppDSTB                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| EppWAIT                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| EppWRITE                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| anodo_pad<0>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| anodo_pad<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| anodo_pad<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| anodo_pad<3>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| boton_aba_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| boton_arr_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| boton_der_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| boton_izq_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| ce_display_neg_pad<1>              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ce_display_neg_pad<2>              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ce_display_neg_pad<3>              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ce_display_neg_pad<4>              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ck_100MHz_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ck_display_externo_pad             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | ODDR         |          |          |
+| col_pad<1>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| col_pad<2>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| col_pad<3>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| col_pad<4>                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| display_pad<0>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<1>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<2>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<3>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<4>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<5>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<6>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<7>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| fila_pad<1>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| fila_pad<2>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| fila_pad<3>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| fila_pad<4>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| led_pad<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<4>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<5>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<6>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<7>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| reset_pad                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| seg_pad<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<4>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<5>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<6>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<7>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| signo_sal_pad                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sw_pad<0>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<1>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<2>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<3>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<4>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<5>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<6>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<7>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| uart_rx_pad                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| uart_tx_pad                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+DCM "XLXI_306/dcm_sp_inst":
+CLKDV_DIVIDE:10.0
+CLKIN_DIVIDE_BY_2:TRUE
+CLKOUT_PHASE_SHIFT:NONE
+CLK_FEEDBACK:2X
+DESKEW_ADJUST:5
+DFS_FREQUENCY_MODE:LOW
+DLL_FREQUENCY_MODE:LOW
+DSS_MODE:NONE
+DUTY_CYCLE_CORRECTION:TRUE
+STARTUP_WAIT:FALSE
+VERY_HIGH_FREQUENCY:FALSE
+CLKFX_DIVIDE = 20
+CLKFX_MULTIPLY = 2
+CLKIN_PERIOD = 10.000000
+PHASE_SHIFT = 0
+
+
+
+Section 12 - Control Set Information
+------------------------------------
++-----------------------------------------------------------------------------------------------------------------------------------+
+| Clock Signal      | Reset Signal                     | Set Signal | Enable Signal             | Slice Load Count | Bel Load Count |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| EppASTB_IBUF_BUFG |                                  |            | XLXI_865/EppWRITE_inv     | 2                | 8              |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| EppDSTB_IBUF_BUFG |                                  |            | XLXI_865/_n0123_inv       | 2                | 8              |
+| EppDSTB_IBUF_BUFG |                                  |            | XLXI_865/_n0129_inv       | 2                | 8              |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| ck_100MHz         |                                  |            |                           | 9                | 23             |
+| ck_100MHz         |                                  |            | XLXI_865/U1/flanco_bajada | 6                | 22             |
+| ck_100MHz         |                                  |            | XLXI_865/U1/flanco_subida | 6                | 22             |
+| ck_100MHz         |                                  |            | XLXI_865/U2/flanco_bajada | 6                | 22             |
+| ck_100MHz         |                                  |            | XLXI_865/U2/flanco_subida | 6                | 22             |
+| ck_100MHz         | XLXI_865/U1/flanco_subida        |            |                           | 6                | 22             |
+| ck_100MHz         | XLXI_865/U1/limite_led_AND_147_o |            |                           | 2                | 4              |
+| ck_100MHz         | XLXI_865/U2/flanco_subida        |            |                           | 6                | 22             |
+| ck_100MHz         | XLXI_865/U2/limite_led_AND_147_o |            |                           | 2                | 4              |
++-----------------------------------------------------------------------------------------------------------------------------------+
+| ck_5MHz           |                                  |            |                           | 10               | 18             |
+| ck_5MHz           |                                  |            | XLXI_792/ce_contador      | 2                | 8              |
+| ck_5MHz           |                                  |            | XLXI_867/ce_contador      | 2                | 8              |
+| ck_5MHz           | XLXN_1                           |            |                           | 2                | 8              |
++-----------------------------------------------------------------------------------------------------------------------------------+
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices*       | Slice Reg     | LUTs          | LUTRAM        | BRAM/FIFO | DSP48A1 | BUFG  | BUFIO | BUFR  | DCM   | PLL_ADV   | Full Hierarchical Name                 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| prac1_top/         |           | 1/181         | 0/229         | 1/350         | 0/0           | 0/0       | 0/0     | 3/6   | 0/0   | 0/0   | 0/1   | 0/0       | prac1_top                              |
+| +XLXI_180          |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_180                     |
+| +XLXI_306          |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 3/3   | 0/0   | 0/0   | 1/1   | 0/0       | prac1_top/XLXI_306                     |
+| +XLXI_309          |           | 0/2           | 0/8           | 0/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_309                     |
+| ++blk00000001      |           | 2/2           | 8/8           | 8/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_309/blk00000001         |
+| +XLXI_792          |           | 1/5           | 0/8           | 2/14          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_792                     |
+| ++XLXI_1           |           | 0/2           | 0/8           | 0/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_792/XLXI_1              |
+| +++blk00000001     |           | 2/2           | 8/8           | 8/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_792/XLXI_1/blk00000001  |
+| ++XLXI_2           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_792/XLXI_2              |
+| ++XLXI_5           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_792/XLXI_5              |
+| +XLXI_842          |           | 2/2           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_842                     |
+| +XLXI_843          |           | 2/2           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_843                     |
+| +XLXI_844          |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_844                     |
+| +XLXI_845          |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_845                     |
+| +XLXI_854          |           | 0/2           | 0/2           | 0/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_854                     |
+| ++XLXI_4           |           | 0/1           | 0/2           | 0/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_854/XLXI_4              |
+| +++blk00000001     |           | 1/1           | 2/2           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_854/XLXI_4/blk00000001  |
+| ++XLXI_6           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_854/XLXI_6              |
+| +XLXI_864          |           | 0/6           | 0/0           | 0/6           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_864                     |
+| ++XLXI_38          |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_864/XLXI_38             |
+| ++XLXI_40          |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_864/XLXI_40             |
+| +XLXI_865          |           | 30/146        | 41/187        | 62/298        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865                     |
+| ++U1               |           | 24/57         | 73/73         | 32/118        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U1                  |
+| +++U1              |           | 29/33         | 0/0           | 79/86         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U1/U1               |
+| ++++U1             |           | 4/4           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U1/U1/U1            |
+| ++U2               |           | 25/59         | 73/73         | 32/118        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U2                  |
+| +++U1              |           | 30/34         | 0/0           | 79/86         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U2/U1               |
+| ++++U1             |           | 4/4           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_865/U2/U1/U1            |
+| +XLXI_867          |           | 1/5           | 0/8           | 2/14          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_867                     |
+| ++XLXI_1           |           | 0/2           | 0/8           | 0/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_867/XLXI_1              |
+| +++blk00000001     |           | 2/2           | 8/8           | 8/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_867/XLXI_1/blk00000001  |
+| ++XLXI_2           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_867/XLXI_2              |
+| ++XLXI_5           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_867/XLXI_5              |
+| +XLXI_873          |           | 2/2           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_873                     |
+| +XLXI_874          |           | 2/2           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_874                     |
+| +XLXI_875          |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_875                     |
+| +XLXI_876          |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_876                     |
+| +XLXI_889          |           | 0/2           | 0/4           | 0/6           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_889                     |
+| ++XLXI_7           |           | 0/1           | 0/4           | 0/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_889/XLXI_7              |
+| +++blk00000001     |           | 1/1           | 4/4           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_889/XLXI_7/blk00000001  |
+| ++XLXI_9           |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac1_top/XLXI_889/XLXI_9              |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

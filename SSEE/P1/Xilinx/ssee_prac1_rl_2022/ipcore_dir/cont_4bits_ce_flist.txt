@@ -1,0 +1,17 @@
+# Output products list for <cont_4bits_ce>
+_xmsgs\pn_parser.xmsgs
+cont_4bits_ce.asy
+cont_4bits_ce.gise
+cont_4bits_ce.ngc
+cont_4bits_ce.sym
+cont_4bits_ce.vhd
+cont_4bits_ce.vho
+cont_4bits_ce.xco
+cont_4bits_ce.xise
+cont_4bits_ce\doc\c_counter_binary_v11_0_readme.txt
+cont_4bits_ce\doc\c_counter_binary_v11_0_vinfo.html
+cont_4bits_ce\doc\ds215_counter.pdf
+cont_4bits_ce_flist.txt
+cont_4bits_ce_xmdf.tcl
+core_resources.txt
+gui_latency.txt

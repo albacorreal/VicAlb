@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="Z:/ssee_prac1_rl_2022_mejoras/prac1_top_prac1_top_sch_tb_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="Z:/ssee_prac1_rl_2022_mejora/prac1_top_prac1_top_sch_tb_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="bip_usecase_utils_pkg_v2_0" />
             <top_module name="bip_utils_pkg_v2_0" />
@@ -27,7 +27,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="26" />
+   <WVObjectSize size="60" />
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/fila_pad" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">fila_pad[4:1]</obj_property>
       <obj_property name="ObjectShortName">fila_pad[4:1]</obj_property>
@@ -35,6 +35,30 @@
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/col_pad" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">col_pad[4:1]</obj_property>
       <obj_property name="ObjectShortName">col_pad[4:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/sw_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sw_pad[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_pad[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/display_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">display_pad[7:0]</obj_property>
+      <obj_property name="ObjectShortName">display_pad[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/led_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led_pad[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_pad[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/seg_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seg_pad[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_pad[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/anodo_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">anodo_pad[3:0]</obj_property>
+      <obj_property name="ObjectShortName">anodo_pad[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/ce_display_neg_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ce_display_neg_pad[4:1]</obj_property>
+      <obj_property name="ObjectShortName">ce_display_neg_pad[4:1]</obj_property>
    </wvobject>
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/reset_pad" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">reset_pad</obj_property>
@@ -44,33 +68,173 @@
       <obj_property name="ElementShortName">boton_der_pad</obj_property>
       <obj_property name="ObjectShortName">boton_der_pad</obj_property>
    </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_der_sinc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_der_sinc</obj_property>
+      <obj_property name="ObjectShortName">boton_der_sinc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_der_pulso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_der_pulso</obj_property>
+      <obj_property name="ObjectShortName">boton_der_pulso</obj_property>
+   </wvobject>
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/boton_izq_pad" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">boton_izq_pad</obj_property>
       <obj_property name="ObjectShortName">boton_izq_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_izq_sinc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_izq_sinc</obj_property>
+      <obj_property name="ObjectShortName">boton_izq_sinc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_izq_pulso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_izq_pulso</obj_property>
+      <obj_property name="ObjectShortName">boton_izq_pulso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_792/lim_inferior" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lim_inferior[7:0]</obj_property>
+      <obj_property name="ObjectShortName">lim_inferior[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_792/lim_superior" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lim_superior[7:0]</obj_property>
+      <obj_property name="ObjectShortName">lim_superior[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_792/cuenta" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/cuenta_2b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta_2b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta_2b[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_854/tiempo_on" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tiempo_on[2:0]</obj_property>
+      <obj_property name="ObjectShortName">tiempo_on[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_854/cuenta_pwm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta_pwm[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta_pwm[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_854/salida_pwm_comp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">salida_pwm_comp</obj_property>
+      <obj_property name="ObjectShortName">salida_pwm_comp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_854/salida_pwm" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">salida_pwm</obj_property>
+      <obj_property name="ObjectShortName">salida_pwm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/salida_pwm_2b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">salida_pwm_2b</obj_property>
+      <obj_property name="ObjectShortName">salida_pwm_2b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_854/ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_864/unid_bcd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">unid_bcd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">unid_bcd[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/seg0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seg0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_864/dec_bcd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dec_bcd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dec_bcd[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/seg1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seg1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg1[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/boton_arr_pad" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">boton_arr_pad</obj_property>
       <obj_property name="ObjectShortName">boton_arr_pad</obj_property>
    </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_arr_sinc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_arr_sinc</obj_property>
+      <obj_property name="ObjectShortName">boton_arr_sinc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_arr_pulso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_arr_pulso</obj_property>
+      <obj_property name="ObjectShortName">boton_arr_pulso</obj_property>
+   </wvobject>
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/boton_aba_pad" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">boton_aba_pad</obj_property>
       <obj_property name="ObjectShortName">boton_aba_pad</obj_property>
    </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/sw_pad" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">sw_pad[7:0]</obj_property>
-      <obj_property name="ObjectShortName">sw_pad[7:0]</obj_property>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_aba_sinc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_aba_sinc</obj_property>
+      <obj_property name="ObjectShortName">boton_aba_sinc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/boton_aba_pulso" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_aba_pulso</obj_property>
+      <obj_property name="ObjectShortName">boton_aba_pulso</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_867/lim_inferior" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lim_inferior[7:0]</obj_property>
+      <obj_property name="ObjectShortName">lim_inferior[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_867/lim_superior" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lim_superior[7:0]</obj_property>
+      <obj_property name="ObjectShortName">lim_superior[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_867/cuenta" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/cuenta_4b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta_4b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta_4b[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_889/tiempo_on" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tiempo_on[4:0]</obj_property>
+      <obj_property name="ObjectShortName">tiempo_on[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_889/cuenta_pwm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta_pwm[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta_pwm[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_889/salida_pwm_comp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">salida_pwm_comp</obj_property>
+      <obj_property name="ObjectShortName">salida_pwm_comp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_889/salida_pwm" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">salida_pwm</obj_property>
+      <obj_property name="ObjectShortName">salida_pwm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/salida_pwm_4b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">salida_pwm_4b</obj_property>
+      <obj_property name="ObjectShortName">salida_pwm_4b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_889/ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_864/cent_bcd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cent_bcd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cent_bcd[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/seg2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seg2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_864/mill_bcd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mill_bcd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mill_bcd[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/seg3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seg3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/ck_5mhz" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck_5mhz</obj_property>
+      <obj_property name="ObjectShortName">ck_5mhz</obj_property>
    </wvobject>
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/ck_100mhz_pad" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">ck_100mhz_pad</obj_property>
       <obj_property name="ObjectShortName">ck_100mhz_pad</obj_property>
    </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/display_pad" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">display_pad[7:0]</obj_property>
-      <obj_property name="ObjectShortName">display_pad[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/ce_display_neg_pad" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">ce_display_neg_pad[4:1]</obj_property>
-      <obj_property name="ObjectShortName">ce_display_neg_pad[4:1]</obj_property>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/db" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">db[7:0]</obj_property>
+      <obj_property name="ObjectShortName">db[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/signo_sal_pad" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">signo_sal_pad</obj_property>
@@ -92,41 +256,13 @@
       <obj_property name="ElementShortName">eppwrite</obj_property>
       <obj_property name="ObjectShortName">eppwrite</obj_property>
    </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/uart_rx_pad" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">uart_rx_pad</obj_property>
-      <obj_property name="ObjectShortName">uart_rx_pad</obj_property>
-   </wvobject>
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/eppwait" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">eppwait</obj_property>
       <obj_property name="ObjectShortName">eppwait</obj_property>
    </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/db" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">db[7:0]</obj_property>
-      <obj_property name="ObjectShortName">db[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/led_pad" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">led_pad[7:0]</obj_property>
-      <obj_property name="ObjectShortName">led_pad[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/seg_pad" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">seg_pad[7:0]</obj_property>
-      <obj_property name="ObjectShortName">seg_pad[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/anodo_pad" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">anodo_pad[3:0]</obj_property>
-      <obj_property name="ObjectShortName">anodo_pad[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/ck_5mhz" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">ck_5mhz</obj_property>
-      <obj_property name="ObjectShortName">ck_5mhz</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/cuenta_2b" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">cuenta_2b[7:0]</obj_property>
-      <obj_property name="ObjectShortName">cuenta_2b[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/cuenta_4b" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">cuenta_4b[7:0]</obj_property>
-      <obj_property name="ObjectShortName">cuenta_4b[7:0]</obj_property>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/uart_rx_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_rx_pad</obj_property>
+      <obj_property name="ObjectShortName">uart_rx_pad</obj_property>
    </wvobject>
    <wvobject fp_name="/prac1_top_prac1_top_sch_tb/uart_tx_pad" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">uart_tx_pad</obj_property>
