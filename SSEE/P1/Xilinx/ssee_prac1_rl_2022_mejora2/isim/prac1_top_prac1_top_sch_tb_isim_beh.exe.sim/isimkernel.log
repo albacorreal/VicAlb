@@ -1,0 +1,10 @@
+Command line:
+   prac1_top_prac1_top_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51065
+
+Sun Oct 23 18:38:53 2022
+
+
+ Elaboration Time: 2.6875 sec

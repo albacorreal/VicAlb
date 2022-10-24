@@ -1,0 +1,216 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Oct 23 12:52:18 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "anodo_pad<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "anodo_pad<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "anodo_pad<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "anodo_pad<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "seg_pad<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg_pad<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg_pad<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg_pad<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg_pad<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg_pad<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg_pad<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "seg_pad<7>" LOCATE = SITE "M13" LEVEL 1;
+COMP "fila_pad<1>" LOCATE = SITE "E12" LEVEL 1;
+COMP "fila_pad<2>" LOCATE = SITE "F12" LEVEL 1;
+COMP "fila_pad<3>" LOCATE = SITE "C12" LEVEL 1;
+COMP "fila_pad<4>" LOCATE = SITE "D12" LEVEL 1;
+COMP "EppASTB" LOCATE = SITE "H1" LEVEL 1;
+PIN EppASTB_pin<0> = BEL "EppASTB" PINNAME PAD;
+PIN "EppASTB_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "EppDSTB" LOCATE = SITE "K4" LEVEL 1;
+PIN EppDSTB_pin<0> = BEL "EppDSTB" PINNAME PAD;
+PIN "EppDSTB_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "EppWAIT" LOCATE = SITE "C2" LEVEL 1;
+COMP "signo_sal_pad" LOCATE = SITE "L4" LEVEL 1;
+COMP "DB<0>" LOCATE = SITE "E1" LEVEL 1;
+COMP "DB<1>" LOCATE = SITE "F4" LEVEL 1;
+COMP "DB<2>" LOCATE = SITE "F3" LEVEL 1;
+COMP "DB<3>" LOCATE = SITE "D2" LEVEL 1;
+COMP "DB<4>" LOCATE = SITE "D1" LEVEL 1;
+COMP "DB<5>" LOCATE = SITE "H7" LEVEL 1;
+COMP "DB<6>" LOCATE = SITE "G6" LEVEL 1;
+COMP "DB<7>" LOCATE = SITE "E4" LEVEL 1;
+COMP "EppWRITE" LOCATE = SITE "F5" LEVEL 1;
+COMP "col_pad<1>" LOCATE = SITE "E11" LEVEL 1;
+COMP "col_pad<2>" LOCATE = SITE "F11" LEVEL 1;
+COMP "col_pad<3>" LOCATE = SITE "F10" LEVEL 1;
+COMP "col_pad<4>" LOCATE = SITE "G11" LEVEL 1;
+COMP "ck_100MHz_pad" LOCATE = SITE "V10" LEVEL 1;
+COMP "ck_display_externo_pad" LOCATE = SITE "L3" LEVEL 1;
+COMP "reset_pad" LOCATE = SITE "B8" LEVEL 1;
+COMP "led_pad<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "led_pad<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "led_pad<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "led_pad<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "led_pad<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "led_pad<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "led_pad<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "led_pad<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "ce_display_neg_pad<1>" LOCATE = SITE "J3" LEVEL 1;
+COMP "ce_display_neg_pad<2>" LOCATE = SITE "J1" LEVEL 1;
+COMP "display_pad<0>" LOCATE = SITE "H3" LEVEL 1;
+COMP "ce_display_neg_pad<3>" LOCATE = SITE "K3" LEVEL 1;
+COMP "display_pad<1>" LOCATE = SITE "L7" LEVEL 1;
+COMP "ce_display_neg_pad<4>" LOCATE = SITE "K5" LEVEL 1;
+COMP "display_pad<2>" LOCATE = SITE "K6" LEVEL 1;
+COMP "display_pad<3>" LOCATE = SITE "G3" LEVEL 1;
+COMP "display_pad<4>" LOCATE = SITE "G1" LEVEL 1;
+COMP "display_pad<5>" LOCATE = SITE "J7" LEVEL 1;
+COMP "display_pad<6>" LOCATE = SITE "J6" LEVEL 1;
+COMP "display_pad<7>" LOCATE = SITE "F2" LEVEL 1;
+COMP "boton_aba_pad" LOCATE = SITE "C9" LEVEL 1;
+COMP "uart_rx_pad" LOCATE = SITE "N17" LEVEL 1;
+COMP "uart_tx_pad" LOCATE = SITE "N18" LEVEL 1;
+COMP "boton_der_pad" LOCATE = SITE "D9" LEVEL 1;
+COMP "sw_pad<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "sw_pad<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "sw_pad<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "sw_pad<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "sw_pad<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "sw_pad<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "sw_pad<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "sw_pad<7>" LOCATE = SITE "T5" LEVEL 1;
+COMP "boton_arr_pad" LOCATE = SITE "A8" LEVEL 1;
+COMP "boton_izq_pad" LOCATE = SITE "C4" LEVEL 1;
+TIMEGRP XLXI_306_clkfx = BEL "XLXI_874/XLXI_2" BEL "XLXI_874/XLXI_1" BEL
+        "XLXI_873/XLXI_2" BEL "XLXI_873/XLXI_1" BEL "XLXI_843/XLXI_2" BEL
+        "XLXI_843/XLXI_1" BEL "XLXI_842/XLXI_2" BEL "XLXI_842/XLXI_1" BEL
+        "XLXI_876/XLXI_1" BEL "XLXI_875/XLXI_1" BEL "XLXI_845/XLXI_1" BEL
+        "XLXI_844/XLXI_1" BEL "XLXI_306/clkout2_buf" BEL
+        "XLXI_309/blk00000001/blk0000002b" BEL
+        "XLXI_309/blk00000001/blk0000002c" BEL
+        "XLXI_309/blk00000001/blk0000002d" BEL
+        "XLXI_309/blk00000001/blk0000002e" BEL
+        "XLXI_309/blk00000001/blk0000002f" BEL
+        "XLXI_309/blk00000001/blk00000030" BEL
+        "XLXI_309/blk00000001/blk00000031" BEL
+        "XLXI_309/blk00000001/blk00000032" BEL
+        "XLXI_792/XLXI_1/blk00000001/blk00000011" BEL
+        "XLXI_792/XLXI_1/blk00000001/blk00000012" BEL
+        "XLXI_792/XLXI_1/blk00000001/blk00000013" BEL
+        "XLXI_792/XLXI_1/blk00000001/blk00000014" BEL
+        "XLXI_792/XLXI_1/blk00000001/blk00000015" BEL
+        "XLXI_792/XLXI_1/blk00000001/blk00000016" BEL
+        "XLXI_792/XLXI_1/blk00000001/blk00000017" BEL
+        "XLXI_792/XLXI_1/blk00000001/blk00000018" BEL
+        "XLXI_867/XLXI_1/blk00000001/blk00000011" BEL
+        "XLXI_867/XLXI_1/blk00000001/blk00000012" BEL
+        "XLXI_867/XLXI_1/blk00000001/blk00000013" BEL
+        "XLXI_867/XLXI_1/blk00000001/blk00000014" BEL
+        "XLXI_867/XLXI_1/blk00000001/blk00000015" BEL
+        "XLXI_867/XLXI_1/blk00000001/blk00000016" BEL
+        "XLXI_867/XLXI_1/blk00000001/blk00000017" BEL
+        "XLXI_867/XLXI_1/blk00000001/blk00000018" BEL
+        "XLXI_854/XLXI_4/blk00000001/blk00000007" BEL
+        "XLXI_854/XLXI_4/blk00000001/blk00000008" BEL
+        "XLXI_889/XLXI_7/blk00000001/blk0000000b" BEL
+        "XLXI_889/XLXI_7/blk00000001/blk0000000c" BEL
+        "XLXI_889/XLXI_7/blk00000001/blk0000000d" BEL
+        "XLXI_889/XLXI_7/blk00000001/blk0000000e";
+PIN XLXI_142_pins<1> = BEL "XLXI_142" PINNAME CK0;
+PIN XLXI_142_pins<2> = BEL "XLXI_142" PINNAME CK1;
+TIMEGRP cuenta_dcm<7> = BEL "XLXI_14" BEL "XLXI_180/Q2" BEL "XLXI_180/Q1" BEL
+        "XLXI_180/Q0" BEL "XLXI_180/Q3" BEL "XLXI_309/blk00000001/blk0000002b"
+        PIN "XLXI_142_pins<1>" PIN "XLXI_142_pins<2>" PIN "XLXI_142_pins<1>"
+        PIN "XLXI_142_pins<2>";
+PIN SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1> = BEL
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1" PINNAME O;
+PIN XLXI_306/dcm_sp_inst_pins<1> = BEL "XLXI_306/dcm_sp_inst" PINNAME CLKFB;
+TIMEGRP XLXI_306_clk2x = BEL "XLXI_306/clkout1_buf" BEL "XLXI_865/cnt_16" BEL
+        "XLXI_865/cnt_15" BEL "XLXI_865/cnt_14" BEL "XLXI_865/cnt_13" BEL
+        "XLXI_865/cnt_12" BEL "XLXI_865/cnt_11" BEL "XLXI_865/cnt_10" BEL
+        "XLXI_865/cnt_9" BEL "XLXI_865/cnt_8" BEL "XLXI_865/cnt_7" BEL
+        "XLXI_865/cnt_6" BEL "XLXI_865/cnt_5" BEL "XLXI_865/cnt_4" BEL
+        "XLXI_865/cnt_3" BEL "XLXI_865/cnt_2" BEL "XLXI_865/cnt_1" BEL
+        "XLXI_865/cnt_0" BEL "XLXI_865/U2/counter_21" BEL
+        "XLXI_865/U2/counter_20" BEL "XLXI_865/U2/counter_19" BEL
+        "XLXI_865/U2/counter_18" BEL "XLXI_865/U2/counter_17" BEL
+        "XLXI_865/U2/counter_16" BEL "XLXI_865/U2/counter_15" BEL
+        "XLXI_865/U2/counter_14" BEL "XLXI_865/U2/counter_13" BEL
+        "XLXI_865/U2/counter_12" BEL "XLXI_865/U2/counter_11" BEL
+        "XLXI_865/U2/counter_10" BEL "XLXI_865/U2/counter_9" BEL
+        "XLXI_865/U2/counter_8" BEL "XLXI_865/U2/counter_7" BEL
+        "XLXI_865/U2/counter_6" BEL "XLXI_865/U2/counter_5" BEL
+        "XLXI_865/U2/counter_4" BEL "XLXI_865/U2/counter_3" BEL
+        "XLXI_865/U2/counter_2" BEL "XLXI_865/U2/counter_1" BEL
+        "XLXI_865/U2/counter_0" BEL "XLXI_865/U2/periodo_21" BEL
+        "XLXI_865/U2/periodo_20" BEL "XLXI_865/U2/periodo_19" BEL
+        "XLXI_865/U2/periodo_18" BEL "XLXI_865/U2/periodo_17" BEL
+        "XLXI_865/U2/periodo_16" BEL "XLXI_865/U2/periodo_15" BEL
+        "XLXI_865/U2/periodo_14" BEL "XLXI_865/U2/periodo_13" BEL
+        "XLXI_865/U2/periodo_12" BEL "XLXI_865/U2/periodo_11" BEL
+        "XLXI_865/U2/periodo_10" BEL "XLXI_865/U2/periodo_9" BEL
+        "XLXI_865/U2/periodo_8" BEL "XLXI_865/U2/periodo_7" BEL
+        "XLXI_865/U2/periodo_6" BEL "XLXI_865/U2/periodo_5" BEL
+        "XLXI_865/U2/periodo_4" BEL "XLXI_865/U2/periodo_3" BEL
+        "XLXI_865/U2/periodo_2" BEL "XLXI_865/U2/periodo_1" BEL
+        "XLXI_865/U2/periodo_0" BEL "XLXI_865/U2/tiempo_on_21" BEL
+        "XLXI_865/U2/tiempo_on_20" BEL "XLXI_865/U2/tiempo_on_19" BEL
+        "XLXI_865/U2/tiempo_on_18" BEL "XLXI_865/U2/tiempo_on_17" BEL
+        "XLXI_865/U2/tiempo_on_16" BEL "XLXI_865/U2/tiempo_on_15" BEL
+        "XLXI_865/U2/tiempo_on_14" BEL "XLXI_865/U2/tiempo_on_13" BEL
+        "XLXI_865/U2/tiempo_on_12" BEL "XLXI_865/U2/tiempo_on_11" BEL
+        "XLXI_865/U2/tiempo_on_10" BEL "XLXI_865/U2/tiempo_on_9" BEL
+        "XLXI_865/U2/tiempo_on_8" BEL "XLXI_865/U2/tiempo_on_7" BEL
+        "XLXI_865/U2/tiempo_on_6" BEL "XLXI_865/U2/tiempo_on_5" BEL
+        "XLXI_865/U2/tiempo_on_4" BEL "XLXI_865/U2/tiempo_on_3" BEL
+        "XLXI_865/U2/tiempo_on_2" BEL "XLXI_865/U2/tiempo_on_1" BEL
+        "XLXI_865/U2/tiempo_on_0" BEL "XLXI_865/U2/led_reg2" BEL
+        "XLXI_865/U2/led_reg1" BEL "XLXI_865/U1/counter_21" BEL
+        "XLXI_865/U1/counter_20" BEL "XLXI_865/U1/counter_19" BEL
+        "XLXI_865/U1/counter_18" BEL "XLXI_865/U1/counter_17" BEL
+        "XLXI_865/U1/counter_16" BEL "XLXI_865/U1/counter_15" BEL
+        "XLXI_865/U1/counter_14" BEL "XLXI_865/U1/counter_13" BEL
+        "XLXI_865/U1/counter_12" BEL "XLXI_865/U1/counter_11" BEL
+        "XLXI_865/U1/counter_10" BEL "XLXI_865/U1/counter_9" BEL
+        "XLXI_865/U1/counter_8" BEL "XLXI_865/U1/counter_7" BEL
+        "XLXI_865/U1/counter_6" BEL "XLXI_865/U1/counter_5" BEL
+        "XLXI_865/U1/counter_4" BEL "XLXI_865/U1/counter_3" BEL
+        "XLXI_865/U1/counter_2" BEL "XLXI_865/U1/counter_1" BEL
+        "XLXI_865/U1/counter_0" BEL "XLXI_865/U1/periodo_21" BEL
+        "XLXI_865/U1/periodo_20" BEL "XLXI_865/U1/periodo_19" BEL
+        "XLXI_865/U1/periodo_18" BEL "XLXI_865/U1/periodo_17" BEL
+        "XLXI_865/U1/periodo_16" BEL "XLXI_865/U1/periodo_15" BEL
+        "XLXI_865/U1/periodo_14" BEL "XLXI_865/U1/periodo_13" BEL
+        "XLXI_865/U1/periodo_12" BEL "XLXI_865/U1/periodo_11" BEL
+        "XLXI_865/U1/periodo_10" BEL "XLXI_865/U1/periodo_9" BEL
+        "XLXI_865/U1/periodo_8" BEL "XLXI_865/U1/periodo_7" BEL
+        "XLXI_865/U1/periodo_6" BEL "XLXI_865/U1/periodo_5" BEL
+        "XLXI_865/U1/periodo_4" BEL "XLXI_865/U1/periodo_3" BEL
+        "XLXI_865/U1/periodo_2" BEL "XLXI_865/U1/periodo_1" BEL
+        "XLXI_865/U1/periodo_0" BEL "XLXI_865/U1/tiempo_on_21" BEL
+        "XLXI_865/U1/tiempo_on_20" BEL "XLXI_865/U1/tiempo_on_19" BEL
+        "XLXI_865/U1/tiempo_on_18" BEL "XLXI_865/U1/tiempo_on_17" BEL
+        "XLXI_865/U1/tiempo_on_16" BEL "XLXI_865/U1/tiempo_on_15" BEL
+        "XLXI_865/U1/tiempo_on_14" BEL "XLXI_865/U1/tiempo_on_13" BEL
+        "XLXI_865/U1/tiempo_on_12" BEL "XLXI_865/U1/tiempo_on_11" BEL
+        "XLXI_865/U1/tiempo_on_10" BEL "XLXI_865/U1/tiempo_on_9" BEL
+        "XLXI_865/U1/tiempo_on_8" BEL "XLXI_865/U1/tiempo_on_7" BEL
+        "XLXI_865/U1/tiempo_on_6" BEL "XLXI_865/U1/tiempo_on_5" BEL
+        "XLXI_865/U1/tiempo_on_4" BEL "XLXI_865/U1/tiempo_on_3" BEL
+        "XLXI_865/U1/tiempo_on_2" BEL "XLXI_865/U1/tiempo_on_1" BEL
+        "XLXI_865/U1/tiempo_on_0" BEL "XLXI_865/U1/led_reg2" BEL
+        "XLXI_865/U1/led_reg1" BEL "XLXI_865/U2/tono_3" BEL
+        "XLXI_865/U2/tono_2" BEL "XLXI_865/U2/tono_1" BEL "XLXI_865/U2/tono_0"
+        BEL "XLXI_865/U1/tono_3" BEL "XLXI_865/U1/tono_2" BEL
+        "XLXI_865/U1/tono_1" BEL "XLXI_865/U1/tono_0" BEL
+        "XLXI_865/U2/guardaDivision" BEL "XLXI_865/U1/guardaDivision" BEL
+        "XLXI_306/clkf_buf" PIN "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1>"
+        PIN "XLXI_306/dcm_sp_inst_pins<1>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN XLXI_306/dcm_sp_inst_pins<3> = BEL "XLXI_306/dcm_sp_inst" PINNAME CLKIN;
+TIMEGRP ck_100MHz_pad = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "XLXI_306/dcm_sp_inst_pins<3>";
+TS_ck_100MHz_pad = PERIOD TIMEGRP "ck_100MHz_pad" 100 MHz HIGH 50%;
+TS_cuenta_dcm_7_ = PERIOD TIMEGRP "cuenta_dcm<7>" 0.02 MHz HIGH 50%;
+TS_XLXI_306_clk2x = PERIOD TIMEGRP "XLXI_306_clk2x" TS_ck_100MHz_pad HIGH 50%;
+TS_XLXI_306_clkfx = PERIOD TIMEGRP "XLXI_306_clkfx" TS_ck_100MHz_pad * 0.05
+        HIGH 50%;
+SCHEMATIC END;
+

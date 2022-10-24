@@ -1,0 +1,2 @@
+sch2hdl,-sympath,D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022/pwm_2bits.vhf,-w,D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022/pwm_2bits.sch
+sch2hdl,-sympath,D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022/prac1_top.vhf,-w,D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022/prac1_top.sch

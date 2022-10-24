@@ -1,3 +1,0 @@
-MODULE pwm_4bits
-	SUBMODULE cont_4bits_ce
-		INSTANCE XLXI_7

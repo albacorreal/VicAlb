@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022_mejora/prac1_top_prac1_top_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="c_compare_v11_0_comp" />
+            <top_module name="c_counter_binary_v11_0_pkg" />
+            <top_module name="c_mux_bus_v11_0_comp" />
+            <top_module name="c_reg_fd_v11_0_comp" />
+            <top_module name="numeric_std" />
+            <top_module name="prac1_top_prac1_top_sch_tb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+            <top_module name="xbip_counter_v2_0_pkg" />
+            <top_module name="xbip_counter_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/boton_der_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_der_pad</obj_property>
+      <obj_property name="ObjectShortName">boton_der_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/boton_izq_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_izq_pad</obj_property>
+      <obj_property name="ObjectShortName">boton_izq_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/cuenta_2b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta_2b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta_2b[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_854/cuenta_pwm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta_pwm[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta_pwm[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/salida_pwm_2b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">salida_pwm_2b</obj_property>
+      <obj_property name="ObjectShortName">salida_pwm_2b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/boton_arr_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_arr_pad</obj_property>
+      <obj_property name="ObjectShortName">boton_arr_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/boton_aba_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_aba_pad</obj_property>
+      <obj_property name="ObjectShortName">boton_aba_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/cuenta_4b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta_4b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta_4b[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/XLXI_889/cuenta_pwm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta_pwm[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta_pwm[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/salida_pwm_4b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">salida_pwm_4b</obj_property>
+      <obj_property name="ObjectShortName">salida_pwm_4b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/UUT/ck_5mhz" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck_5mhz</obj_property>
+      <obj_property name="ObjectShortName">ck_5mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac1_top_prac1_top_sch_tb/ck_100mhz_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck_100mhz_pad</obj_property>
+      <obj_property name="ObjectShortName">ck_100mhz_pad</obj_property>
+   </wvobject>
+</wave_config>

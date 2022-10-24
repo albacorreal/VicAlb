@@ -1,0 +1,2 @@
+¿por qué no reseteamos la cuenta_pwm en cada cambio de cuenta_4b?
+En algún punto la señal pwm no estaría equiespaciada, pero evitaríamos que si un pulso es demasiado corto no sea capaz de aumentar la cuenta

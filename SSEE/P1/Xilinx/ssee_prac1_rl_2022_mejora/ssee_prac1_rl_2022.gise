@@ -185,7 +185,7 @@
       <outfile xil_pn:name="prac1_top_prac1_top_sch_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1666290103" xil_pn:in_ck="1872748236158576850" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2347565125473326459" xil_pn:start_ts="1666290102">
+    <transform xil_pn:end_ts="1666514411" xil_pn:in_ck="1872748236158576850" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2347565125473326459" xil_pn:start_ts="1666514410">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>

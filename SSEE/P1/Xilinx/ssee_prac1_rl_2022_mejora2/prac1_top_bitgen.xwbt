@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Practicas\3\VicAlb\SSEE\P1\Xilinx\ssee_prac1_rl_2022\prac1_top.ncd
+OUTFILE=D:\Practicas\3\VicAlb\SSEE\P1\Xilinx\ssee_prac1_rl_2022\prac1_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\Practicas\3\VicAlb\SSEE\P1\Xilinx\ssee_prac1_rl_2022
+LICENSE=WebPack
+USER_INFO=176074171_0_0_047

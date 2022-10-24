@@ -1,0 +1,17 @@
+# Output products list for <CONT2>
+CONT2.asy
+CONT2.gise
+CONT2.ngc
+CONT2.sym
+CONT2.vhd
+CONT2.vho
+CONT2.xco
+CONT2.xise
+CONT2\doc\c_accum_v11_0_readme.txt
+CONT2\doc\c_accum_v11_0_vinfo.html
+CONT2\doc\ds213_accum.pdf
+CONT2_flist.txt
+CONT2_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+core_resources.txt
+gui_latency.txt

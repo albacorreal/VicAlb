@@ -1,0 +1,2 @@
+vhdtdtfi -lib work COMPME4.vhd -prj ssee_prac1_rl_2022 -o COMPME4.spl -module COMPME4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w COMPME4.spl D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022/COMPME4.sym 

@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=Z:\ssee_prac1_rl_2022\prac1_top.ncd
-OUTFILE=Z:\ssee_prac1_rl_2022\prac1_top.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=Z:\ssee_prac1_rl_2022
-LICENSE=WebPack
-USER_INFO=210912321_0_0_241
