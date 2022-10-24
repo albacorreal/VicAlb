@@ -1,0 +1,47 @@
+# Design: Design prac2_factorial already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -e 100 -work prac2_factorial -2002  $dsn/src/control_bcd_bin.asf
+# Loading State Diagram data...
+# Generating c:\Users\albertod\Documents\_Doc_\Aldec_Designs\prac2_factorial\prac2_factorial\compile\control_bcd_bin.vhd from c:\Users\albertod\Documents\_Doc_\Aldec_Designs\prac2_factorial\prac2_factorial\src\control_bcd_bin.asf
+# Synthesis attributes will be generated for Synopsys FPGA Express
+# Warning: FSM2HDL_4028 control_bcd_bin.asf : Attribute ENUM_ENCODING is not supported for Symbolic encoding.
+# Generating interface file...
+# HDL code generation completed. 0 error(s), 1 warning(s)
+# Double-click on error/warning line to see the source of error/warning.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/Users/albertod/Documents/_Doc_/Aldec_Designs/prac2_factorial/prac2_factorial/compile/control_bcd_bin.vhd
+# Compile Entity "control_bcd_bin"
+# Compile Architecture "control_bcd_bin_arch" of Entity "control_bcd_bin"
+# Top-level unit(s) detected:
+# Entity => control_bcd_bin
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work prac2_factorial -2002  $dsn/src/control_bin_bcd.asf
+# Loading State Diagram data...
+# Generating c:\Users\albertod\Documents\_Doc_\Aldec_Designs\prac2_factorial\prac2_factorial\compile\control_bin_bcd.vhd from c:\Users\albertod\Documents\_Doc_\Aldec_Designs\prac2_factorial\prac2_factorial\src\control_bin_bcd.asf
+# Synthesis attributes will be generated for Synopsys FPGA Express
+# Warning: FSM2HDL_4028 control_bin_bcd.asf : Attribute ENUM_ENCODING is not supported for Symbolic encoding.
+# Generating interface file...
+# HDL code generation completed. 0 error(s), 1 warning(s)
+# Double-click on error/warning line to see the source of error/warning.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/Users/albertod/Documents/_Doc_/Aldec_Designs/prac2_factorial/prac2_factorial/compile/control_bin_bcd.vhd
+# Compile Entity "control_bin_bcd"
+# Compile Architecture "control_bin_bcd_arch" of Entity "control_bin_bcd"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work prac2_factorial -2002  $dsn/src/ctrl_entz_sal.asf
+# Loading State Diagram data...
+# Generating c:\Users\albertod\Documents\_Doc_\Aldec_Designs\prac2_factorial\prac2_factorial\compile\ctrl_entz_sal.vhd from c:\Users\albertod\Documents\_Doc_\Aldec_Designs\prac2_factorial\prac2_factorial\src\ctrl_entz_sal.asf
+# Synthesis attributes will be generated for Synopsys FPGA Express
+# Warning: FSM2HDL_4028 ctrl_entz_sal.asf : Attribute ENUM_ENCODING is not supported for Symbolic encoding.
+# Generating interface file...
+# HDL code generation completed. 0 error(s), 1 warning(s)
+# Double-click on error/warning line to see the source of error/warning.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/Users/albertod/Documents/_Doc_/Aldec_Designs/prac2_factorial/prac2_factorial/compile/ctrl_entz_sal.vhd
+# Compile Entity "ctrl_entz_sal"
+# Compile Architecture "ctrl_entz_sal_arch" of Entity "ctrl_entz_sal"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]

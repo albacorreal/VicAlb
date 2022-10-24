@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: c:/Users/albertod/Documents/_Doc_/Aldec_Designs/prac2_factorial/prac2_factorial/compile/ctrl_entz_sal.vhd" 
+MESSAGE "Compile Entity "ctrl_entz_sal"" 
+MESSAGE "Compile Architecture "ctrl_entz_sal_arch" of Entity "ctrl_entz_sal"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 

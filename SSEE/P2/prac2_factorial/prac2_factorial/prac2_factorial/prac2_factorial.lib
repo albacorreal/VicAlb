@@ -1,0 +1,48 @@
+timestamp=1635766099714
+
+[~A]
+ModifyID=9
+Version=74
+
+[~MFT]
+0=7|0prac2_factorial.mgf|7248|0
+1=1|1prac2_factorial.mgf|2490|0
+3=1|3prac2_factorial.mgf|1228|0
+
+[control_bcd_bin]
+A/control_bcd_bin_arch=23|../src/control_bcd_bin.asf|10000|1*0
+BinI32/control_bcd_bin_arch=3*0
+I=0*746
+I/control_bcd_bin_arch=0*2329
+M=11|0|ve4|1635766075542|../compile/control_bcd_bin.vhd|0*233*0xdd725190e73f5d4665bae42f36e20de1bb881816|0*647*0x23b75c12e3e89f2ef000564498faa8c2
+M/control_bcd_bin_arch=21|0|ve4|1635766075544|../compile/control_bcd_bin.vhd|0*1035*0x2be822f5a394230fd97da83df4b261a84a0bce34|0*2206*0x20116f55b147878295aeff36dce7fc50
+R=../compile/control_bcd_bin.vhd|27
+Version=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|32a7f93321c210042ce968918780eebcab30a50467ae57c2007fe4b363aa6c5ba4cdf9d1bb82e18922551522c7a33235
+Version/control_bcd_bin_arch=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|32a7f93321c210042ce968918780eebcbf7f135dfd4e9eee94019aea812cfa72605f35f5fc4e4cba7378f33cebfca8d8
+
+[control_bin_bcd]
+A/control_bin_bcd_arch=23|../src/control_bin_bcd.asf|10000|1*1216
+BinI32/control_bin_bcd_arch=3*587
+I=0*3411
+I/control_bin_bcd_arch=0*5102
+M=11|0|ve4|1635766091434|../compile/control_bin_bcd.vhd|0*2874*0x814c32ebc381c668a39a292f0c8b0821556e90e2|0*3312*0x23b75c12e3e89f2ef000564498faa8c2
+M/control_bin_bcd_arch=21|0|ve4|1635766091436|../compile/control_bin_bcd.vhd|0*3700*0xa93f694e7617e5c140bf5f51c1da8efe686fadd5|0*4979*0x20116f55b147878295aeff36dce7fc50
+R=../compile/control_bin_bcd.vhd|27
+Version=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|1ea254211300dc03487ba198d0bd8c0e73effd003c5331dbaf5d74df9aa4557d8bafa38333e08fde62567c4ad07f038c
+Version/control_bin_bcd_arch=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|1ea254211300dc03487ba198d0bd8c0ea1e4ae4d8f918ccb840859a09cdb16937ef5bace73fd82ab78570db2ee8582e7
+
+[ctrl_entz_sal]
+A/ctrl_entz_sal_arch=23|../src/ctrl_entz_sal.asf|10000|1*2490
+BinI32/ctrl_entz_sal_arch=3*1228
+I=0*6125
+I/ctrl_entz_sal_arch=0*7248
+M=11|0|ve4|1635766099688|../compile/ctrl_entz_sal.vhd|0*5635*0x4e9e4e98821b517792022cbbf0d3fb066ee48c50|0*6030*0x23b75c12e3e89f2ef000564498faa8c2
+M/ctrl_entz_sal_arch=21|0|ve4|1635766099690|../compile/ctrl_entz_sal.vhd|0*6412*0x438fd497a721d49f6baa3eaf9dce83a59606cc2c|0*7131*0x20116f55b147878295aeff36dce7fc50
+R=../compile/ctrl_entz_sal.vhd|27
+Version=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|383b5717cbabdeb8d80eb66638447c5c640ec12d5b1950ccd8c521e1ba9ba7ceb386228d589851e8b62e9f721d6dca33
+Version/ctrl_entz_sal_arch=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|383b5717cbabdeb8d80eb66638447c5cd013747b822d6d3cba2f7312e3054b5440fb9b0be643e4e2f9efa2db4ad547a7
+
+[~U]
+control_bcd_bin=11|0*0|
+control_bin_bcd=11|0*2639|
+ctrl_entz_sal=11|0*5412|
