@@ -1,0 +1,7 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: D:/Practicas/3/VicAlb/SSEE/prueba_1/Design_1/compile/ctrlfact.vhd" 
+MESSAGE "Compile Entity "ctrlfact"" 
+MESSAGE "Compile Architecture "ctrlfact_arch" of Entity "ctrlfact"" 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity => ctrlfact" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]" 

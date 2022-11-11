@@ -1,0 +1,1 @@
+-w -erf D:/Practicas/3/VicAlb/SSEE/prueba_1/Design_1/compile/Design_1.erf -d D:/Practicas/3/VicAlb/SSEE/prueba_1/Design_1/compile -s D:/Practicas/3/VicAlb/SSEE/prueba_1/library.cfg -j D:/Practicas/3/VicAlb/SSEE/prueba_1/Design_1/projlib.cfg -work Design_1 -reorder -O3 -e 100 -work Design_1 -2002 D:/Practicas/3/VicAlb/SSEE/prueba_1/Design_1/compile/ctrlfact.vhd 

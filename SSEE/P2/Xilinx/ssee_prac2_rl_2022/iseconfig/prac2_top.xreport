@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-10-24T13:05:28</DateModified>
+  <DateModified>2022-11-08T12:31:22</DateModified>
   <ModuleName>prac2_top</ModuleName>
   <SummaryTimeStamp>2022-10-24T13:04:57</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac2_rl_2022/iseconfig/prac2_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac2_rl_2022\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/Practicas/3/VicAlb/SSEE/P2/Xilinx/ssee_prac2_rl_2022/iseconfig/prac2_top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Practicas/3/VicAlb/SSEE/P2/Xilinx/ssee_prac2_rl_2022\</ImplementationReportsDirectory>
   <DateInitialized>2021-10-31T17:21:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

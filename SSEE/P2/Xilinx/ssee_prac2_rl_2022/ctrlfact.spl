@@ -1,0 +1,9 @@
+[Inputs]
+rst
+clk
+Ent1
+Ent2
+[Outputs]
+fin
+=dato[3:0]=
+[BiDir]

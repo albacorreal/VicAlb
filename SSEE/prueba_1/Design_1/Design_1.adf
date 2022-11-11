@@ -1,0 +1,28 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Design_1
+[Library]
+Design_1=.\Design_1\Design_1.lib
+[$LibMap$]
+Design_1=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/ctrlfact.asf=-1
+[Files.Data]
+.\src\ctrlfact.asf=State Diagram
+[file_out:/ctrlfact.asf]
+/..\compile\ctrlfact.vhd=-1
+[HierarchyViewer]
+HierarchyInformation=ctrlfact|ctrlfact_arch|0
+ShowHide=ShowTopLevel
+Selected=

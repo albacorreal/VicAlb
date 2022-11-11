@@ -9,10 +9,10 @@ SET_PREFERENCE verilogsim false
 SET_PREFERENCE vhdlsim true
 SET_PREFERENCE simulationfiles Behavioral
 SET_PREFERENCE busformat BusFormatAngleBracketNotRipped
-SET_PREFERENCE outputdirectory Z:/ssee_prac1_rl_2022_mejora/ipcore_dir/
-SET_PREFERENCE workingdirectory Z:/ssee_prac1_rl_2022_mejora/ipcore_dir/tmp/
-SET_PREFERENCE subworkingdirectory Z:/ssee_prac1_rl_2022_mejora/ipcore_dir/tmp/_cg/
-SET_PREFERENCE transientdirectory Z:/ssee_prac1_rl_2022_mejora/ipcore_dir/tmp/_cg/_dbg/
+SET_PREFERENCE outputdirectory D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022_mejora/ipcore_dir/
+SET_PREFERENCE workingdirectory D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022_mejora/ipcore_dir/tmp/
+SET_PREFERENCE subworkingdirectory D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022_mejora/ipcore_dir/tmp/_cg/
+SET_PREFERENCE transientdirectory D:/Practicas/3/VicAlb/SSEE/P1/Xilinx/ssee_prac1_rl_2022_mejora/ipcore_dir/tmp/_cg/_dbg/
 SET_PREFERENCE designentry VHDL
 SET_PREFERENCE flowvendor Other
 SET_PREFERENCE addpads false

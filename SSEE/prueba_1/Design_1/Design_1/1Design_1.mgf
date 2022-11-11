@@ -1,0 +1,31 @@
+V 000054 55 1058          1667907010964 ctrlfact_arch
+(_unit VHDL(ctrlfact 0 27(ctrlfact_arch 0 38))
+	(_version vef)
+	(_time 1667907010967 2022.11.08 12:30:10)
+	(_source(\../compile/ctrlfact.vhd\))
+	(_parameters tan)
+	(_code 71247671742727672777672b217772767577727675)
+	(_ent
+		(_time 1667907010940)
+	)
+	(_object
+		(_port(_int rst -1 0 29(_ent(_in)(_event))))
+		(_port(_int clk -1 0 30(_ent(_in)(_event))))
+		(_type(_int ~STD_LOGIC_VECTOR{3~downto~0}~12 0 31(_array -1((_dto i 3 i 0)))))
+		(_port(_int dato 0 0 31(_ent(_out))))
+		(_port(_int fin -1 0 32(_ent(_out))))
+		(_port(_int Ent1 -1 0 33(_ent(_in))))
+		(_port(_int Ent2 -1 0 34(_ent(_in))))
+		(_type(_int Sreg0_type 0 42(_enum1 S1 S2 S3 S4 (_to i 0 i 3))))
+		(_sig(_int Sreg0 1 0 51(_arch(_uni))))
+		(_prcs
+			(Sreg0_machine(_arch 0 0 68(_prcs(_trgt(6)(2)(3))(_sens(0)(1)(6)(4)(5))(_dssslsensitivity 2))))
+		)
+		(_type(_ext ieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard))(ieee(std_logic_arith))(ieee(STD_LOGIC_UNSIGNED)))
+	(_static
+		(33686018)
+	)
+	(_model . ctrlfact_arch 1 -1)
+)

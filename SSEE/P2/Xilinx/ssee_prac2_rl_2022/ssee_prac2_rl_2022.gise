@@ -29,6 +29,7 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Conversor_Bin_BCD.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Conversor_Bin_BCD_decim.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Remote_Lab.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="bloque_factorial.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="codif_tecla.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="cont_8b_up_down_lim.sym" xil_pn:origination="imported"/>
@@ -36,10 +37,17 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="control_bcd_bin.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="control_bin_bcd.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ctrl_entz_sal.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ctrlfact.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ctrlfact.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ctrlfact.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ctrlfact.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ctrlfact.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ctrlfact_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="dcm_100m_5m.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="detector.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="displays_7seg_nexys3_RemLab.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ipcore_dir/cont_3b.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="modulo_displays_7seg.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="nivel_a_pulso.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="prac2_top_guide.ncd" xil_pn:origination="imported"/>
@@ -50,8 +58,30 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sincroniza.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="teclado_4x4.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="teclado_hexa_completo.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1667907144" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1667907144">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1667907144" xil_pn:in_ck="-4559454677755915922" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1667907144">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Remote_Lab.vhd"/>
+      <outfile xil_pn:name="bcd_7seg_neg.vhd"/>
+      <outfile xil_pn:name="control_bcd_bin.vhd"/>
+      <outfile xil_pn:name="control_bin_bcd.vhd"/>
+      <outfile xil_pn:name="ctrl_entz_sal.vhd"/>
+      <outfile xil_pn:name="ctrlfact.vhd"/>
+      <outfile xil_pn:name="sim_bloque_factorial.vhd"/>
+    </transform>
+    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
 
 </generated_project>

@@ -1,0 +1,27 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Built-in symbols=0
+Design_1=0
+[COMPILESTATUS|.\src\ctrlfact.asf]
+FileTimeLow=3717693772
+FileTimeHigh=30995300
+Status=Error
+[COMPILESTATUS|.\src\ctrlfact.asf]
+FileTimeLow=2294392158
+FileTimeHigh=30995302
+Status=Modified
+[COMPILESTATUS|.\compile\ctrlfact.vhd]
+FileTimeLow=1980019767
+FileTimeHigh=30995301
+Status=Modified
+[General]
+CurrentVersion=103
+[CACHEDOC|Aldec.Project.Generic.7|.\Design_1\Design_1.adf|]
+Path=
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\Design_1\compile/ctrlfact.vhd|]
+CurrentLine=11
+CurrentColumn=104
+Bookmarks=-1
+BookmarksLength=3
+ZoomFactor=0
+Frame=0
+WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////80AAACZAAAA/wUAAIoCAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAAAAAAAAQAAAA=="

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ctrlfact.vhd -prj ssee_prac2_rl_2022 -o ctrlfact.spl -module ctrlfact -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w ctrlfact.spl D:/Practicas/3/VicAlb/SSEE/P2/Xilinx/ssee_prac2_rl_2022/ctrlfact.sym 

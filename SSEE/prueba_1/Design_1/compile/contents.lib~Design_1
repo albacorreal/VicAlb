@@ -1,0 +1,3 @@
+3
+~E 1 "../compile/ctrlfact.vhd" 27 ctrlfact
+~A 1 "../compile/ctrlfact.vhd" 38 ctrlfact_arch
