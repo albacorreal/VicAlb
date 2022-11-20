@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="control_factorial">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2022-11-20T17:59:57</timestamp>
+    <pin polarity="Input" x="0" y="-176" name="ck" />
+    <pin polarity="Input" x="0" y="-128" name="reset" />
+    <pin polarity="Input" x="0" y="-224" name="inicio" />
+    <pin polarity="Input" x="0" y="-352" name="dato(7:0)" />
+    <pin polarity="Output" x="432" y="0" name="factorial_calculado" />
+    <pin polarity="Output" x="432" y="-192" name="CE_Mult" />
+    <pin polarity="Output" x="432" y="-96" name="es_directo" />
+    <pin polarity="Output" x="432" y="-48" name="es_cero" />
+    <pin polarity="Output" x="432" y="-288" name="mux1" />
+    <pin polarity="Output" x="432" y="-240" name="mux2" />
+    <pin polarity="Output" x="432" y="-144" name="CE_Reg" />
+    <pin polarity="Output" x="432" y="-352" name="cuenta(4:0)" />
+    <pin polarity="Input" x="0" y="-288" name="desbordamiento" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="216" y="-392" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-176" type="pin ck" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-128" type="pin reset" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin inicio" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin dato(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="0" type="pin factorial_calculado" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-192" type="pin CE_Mult" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-96" type="pin es_directo" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-48" type="pin es_cero" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-288" type="pin mux1" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-240" type="pin mux2" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-144" type="pin CE_Reg" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-352" type="pin cuenta(4:0)" />
+        <rect width="64" x="0" y="-364" height="24" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <rect width="64" x="368" y="-364" height="24" />
+        <line x2="432" y1="-352" y2="-352" x1="368" />
+        <line x2="0" y1="-176" y2="-176" x1="64" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <line x2="0" y1="-128" y2="-128" x1="64" />
+        <line x2="432" y1="-288" y2="-288" x1="368" />
+        <line x2="432" y1="-240" y2="-240" x1="368" />
+        <line x2="432" y1="-192" y2="-192" x1="368" />
+        <line x2="432" y1="-144" y2="-144" x1="368" />
+        <line x2="432" y1="-96" y2="-96" x1="368" />
+        <line x2="432" y1="-48" y2="-48" x1="368" />
+        <line x2="432" y1="0" y2="0" x1="368" />
+        <rect width="304" x="64" y="-384" height="420" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin desbordamiento" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+    </graph>
+</symbol>

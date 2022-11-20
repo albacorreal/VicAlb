@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Practicas/3/VicAlb/SSEE/T3/ssee_t3_ac/ssee_t3_ac/test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/test/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/wr_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_clk</obj_property>
+      <obj_property name="ObjectShortName">wr_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/wr_data_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_data_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data_count[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/din" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">din[17:0]</obj_property>
+      <obj_property name="ObjectShortName">din[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/rd_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_clk</obj_property>
+      <obj_property name="ObjectShortName">rd_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/rd_data_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_data_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data_count[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dout[17:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/wr_clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_clk_period</obj_property>
+      <obj_property name="ObjectShortName">wr_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/rd_clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_clk_period</obj_property>
+      <obj_property name="ObjectShortName">rd_clk_period</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "Z:/ssee_prac2_rl_2022_conFD/Calculo_factorial_Calculo_factorial_sch_tb_isim_beh.exe" -prj "Z:/ssee_prac2_rl_2022_conFD/Calculo_factorial_Calculo_factorial_sch_tb_beh.prj" "work.Calculo_factorial_Calculo_factorial_sch_tb" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Practicas/3/VicAlb/SSEE/T3/ssee_t3_ac/ssee_t3_ac/test_isim_beh.exe" -prj "D:/Practicas/3/VicAlb/SSEE/T3/ssee_t3_ac/ssee_t3_ac/test_beh.prj" "work.test" 

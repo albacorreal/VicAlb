@@ -1,7 +1,0 @@
-9
-~E 1 "../compile/control_bcd_bin.vhd" 27 control_bcd_bin
-~A 1 "../compile/control_bcd_bin.vhd" 38 control_bcd_bin_arch
-~E 1 "../compile/control_bin_bcd.vhd" 27 control_bin_bcd
-~A 1 "../compile/control_bin_bcd.vhd" 39 control_bin_bcd_arch
-~E 1 "../compile/ctrl_entz_sal.vhd" 27 ctrl_entz_sal
-~A 1 "../compile/ctrl_entz_sal.vhd" 37 ctrl_entz_sal_arch

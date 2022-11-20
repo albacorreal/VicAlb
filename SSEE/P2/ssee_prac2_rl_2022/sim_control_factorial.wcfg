@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/ssee_prac2_rl_2022/control_factorial_test_bench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="control_factorial_test_bench" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/control_factorial_test_bench/ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_factorial_test_bench/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_factorial_test_bench/inicio" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">inicio</obj_property>
+      <obj_property name="ObjectShortName">inicio</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_factorial_test_bench/dato" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_factorial_test_bench/cuenta" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_factorial_test_bench/factorial_calculado" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">factorial_calculado</obj_property>
+      <obj_property name="ObjectShortName">factorial_calculado</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_factorial_test_bench/ce_mult" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce_mult</obj_property>
+      <obj_property name="ObjectShortName">ce_mult</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_factorial_test_bench/es_directo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">es_directo</obj_property>
+      <obj_property name="ObjectShortName">es_directo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_factorial_test_bench/es_cero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">es_cero</obj_property>
+      <obj_property name="ObjectShortName">es_cero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_factorial_test_bench/es_mayor" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">es_mayor</obj_property>
+      <obj_property name="ObjectShortName">es_mayor</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_factorial_test_bench/ck_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ck_period</obj_property>
+      <obj_property name="ObjectShortName">ck_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/control_factorial_test_bench/uut/sreg0" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">sreg0</obj_property>
+      <obj_property name="ObjectShortName">sreg0</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,2 @@
+vhdl work "ipcore_dir/FIFOGenerator.vhd"
+vhdl work "test.vhd"

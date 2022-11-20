@@ -1,0 +1,15 @@
+# Output products list for <MULT18X18C2>
+MULT18X18C2.asy
+MULT18X18C2.gise
+MULT18X18C2.ngc
+MULT18X18C2.sym
+MULT18X18C2.vhd
+MULT18X18C2.vho
+MULT18X18C2.xco
+MULT18X18C2.xise
+MULT18X18C2\doc\mult_gen_ds255.pdf
+MULT18X18C2\doc\mult_gen_v11_2_readme.txt
+MULT18X18C2\doc\mult_gen_v11_2_vinfo.html
+MULT18X18C2_flist.txt
+MULT18X18C2_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

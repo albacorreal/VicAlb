@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "Z:/ssee_prac2_rl_2022_conFD/prac2_top.xst" -ofn "Z:/ssee_prac2_rl_2022_conFD/prac2_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc prac2_top.ucf -p xc6slx16-csg324-3 prac2_top.ngc prac2_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o prac2_top_map.ncd prac2_top.ngd prac2_top.pcf 
+par -w -intstyle ise -ol high -mt off prac2_top_map.ncd prac2_top.ncd prac2_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml prac2_top.twx prac2_top.ncd -o prac2_top.twr prac2_top.pcf -ucf prac2_top.ucf 
+bitgen -intstyle ise -f prac2_top.ut prac2_top.ncd 
+xst -intstyle ise -ifn "Z:/ssee_prac2_rl_2022_mejora/prac2_top.xst" -ofn "Z:/ssee_prac2_rl_2022_mejora/prac2_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc prac2_top.ucf -p xc6slx16-csg324-3 prac2_top.ngc prac2_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o prac2_top_map.ncd prac2_top.ngd prac2_top.pcf 
+par -w -intstyle ise -ol high -mt off prac2_top_map.ncd prac2_top.ncd prac2_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml prac2_top.twx prac2_top.ncd -o prac2_top.twr prac2_top.pcf -ucf prac2_top.ucf 
+bitgen -intstyle ise -f prac2_top.ut prac2_top.ncd 

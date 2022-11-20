@@ -1,0 +1,783 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'prac2_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail
+-ir off -pr off -lc off -power off -o prac2_top_map.ncd prac2_top.ngd
+prac2_top.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Sun Nov 20 20:07:55 2022
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    2
+Slice Logic Utilization:
+  Number of Slice Registers:                   368 out of  18,224    2%
+    Number used as Flip Flops:                 368
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        390 out of   9,112    4%
+    Number used as logic:                      375 out of   9,112    4%
+      Number using O6 output only:             310
+      Number using O5 output only:              28
+      Number using O5 and O6:                   37
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   2,176    0%
+    Number used exclusively as route-thrus:     15
+      Number with same-slice register load:     12
+      Number with same-slice carry load:         3
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   155 out of   2,278    6%
+  Number of MUXCYs used:                        40 out of   4,556    1%
+  Number of LUT Flip Flop pairs used:          459
+    Number with an unused Flip Flop:           108 out of     459   23%
+    Number with an unused LUT:                  69 out of     459   15%
+    Number of fully used LUT-FF pairs:         282 out of     459   61%
+    Number of unique control sets:              36
+    Number of slice register sites lost
+      to control set restrictions:             120 out of  18,224    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        70 out of     232   30%
+    Number of LOCed IOBs:                       70 out of      70  100%
+    IOB Flip Flops:                              7
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
+    Number used as BUFIO2FBs:                    1
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       7 out of      16   43%
+    Number used as BUFGs:                        7
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
+    Number used as DCMs:                         1
+    Number used as DCM_CLKGENs:                  0
+  Number of ILOGIC2/ISERDES2s:                   6 out of     248    2%
+    Number used as ILOGIC2s:                     6
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   1 out of     248    1%
+    Number used as OLOGIC2s:                     1
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            1 out of      32    3%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                2.93
+
+Peak Memory Usage:  4521 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   6 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:41 - All members of TNM group "cuenta_dcm<15>" have been
+   optimized out of the design.
+WARNING:MapLib:50 - The period specification "TS_cuenta_dcm_15_" has been
+   discarded because the group "cuenta_dcm<15>" has been optimized away.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network sw_pad<7>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<6>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<5>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<4>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<3>_IBUF has no load.
+INFO:LIT:243 - Logical network sw_pad<2>_IBUF has no load.
+INFO:LIT:243 - Logical network boton_aba_pad_IBUF has no load.
+INFO:LIT:243 - Logical network boton_arr_pad_IBUF has no load.
+INFO:LIT:243 - Logical network boton_der_pad_IBUF has no load.
+INFO:LIT:243 - Logical network boton_izq_pad_IBUF has no load.
+INFO:LIT:243 - Logical network uart_rx_pad_IBUF has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp XLXI_306/dcm_sp_inst,
+   consult the device Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  39 block(s) removed
+  24 block(s) optimized away
+  13 signal(s) removed
+  73 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "XLXI_314" (CKBUF) removed.
+ The signal "cuenta_dcm<15>" is loadless and has been removed.
+  Loadless block "XLXI_309/blk00000001/blk00000023" (SFF) removed.
+   The signal "XLXI_309/blk00000001/sig00000024" is loadless and has been removed.
+    Loadless block "XLXI_309/blk00000001/blk00000020" (XOR) removed.
+     The signal "XLXI_309/blk00000001/sig00000025" is loadless and has been removed.
+      Loadless block "XLXI_309/blk00000001/blk00000005" (MUX) removed.
+       The signal "XLXI_309/blk00000001/sig00000026" is loadless and has been removed.
+        Loadless block "XLXI_309/blk00000001/blk00000007" (MUX) removed.
+       The signal "XLXI_309/blk00000001/sig00000035" is loadless and has been removed.
+        Loadless block "XLXI_309/blk00000001/blk00000033" (ROM) removed.
+         The signal "XLXI_309/q<14>" is loadless and has been removed.
+          Loadless block "XLXI_309/blk00000001/blk00000024" (SFF) removed.
+           The signal "XLXI_309/blk00000001/sig00000023" is loadless and has been removed.
+            Loadless block "XLXI_309/blk00000001/blk00000004" (XOR) removed.
+Loadless block "XLXI_864/XLXI_26" (AND) removed.
+ The signal "XLXI_864/anodo_DUMMY<3>" is loadless and has been removed.
+  Loadless block "XLXI_864/XLXI_32" (SFF) removed.
+   The signal "XLXI_864/anodo_DUMMY<2>" is loadless and has been removed.
+    Loadless block "XLXI_864/XLXI_31" (SFF) removed.
+     The signal "XLXI_864/anodo_DUMMY<1>" is loadless and has been removed.
+      Loadless block "XLXI_864/XLXI_30" (SFF) removed.
+       The signal "XLXI_864/anodo_DUMMY<0>" is loadless and has been removed.
+        Loadless block "XLXI_864/XLXI_7" (FF) removed.
+Loadless block "XLXI_864/XLXI_27" (AND) removed.
+Loadless block "XLXI_868/XLXI_1/XLXI_45" (FF) removed.
+ The signal "XLXI_868/XLXI_1/ce_letra_b" is loadless and has been removed.
+  Loadless block "XLXI_868/XLXI_1/XLXI_44" (AND) removed.
+   The signal "XLXI_868/XLXI_1/XLXN_181" is loadless and has been removed.
+    Loadless block "XLXI_868/XLXI_1/XLXI_43/EQ1" (ROM) removed.
+Loadless block "XLXI_868/XLXI_6/XLXI_21_0" (SFF) removed.
+Loadless block "XLXI_868/XLXI_6/XLXI_21_1" (SFF) removed.
+Loadless block "XLXI_868/XLXI_6/XLXI_21_2" (SFF) removed.
+Loadless block "XLXI_868/XLXI_6/XLXI_21_3" (SFF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_18" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_19" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_20" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_21" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_22" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_23" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_24" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_25" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_26" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_27" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_28" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_29" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_30" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_31" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_32" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_33" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_34" (FF) removed.
+Loadless block "XLXI_868/XLXI_78/XLXI_142_35" (FF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+VCC 		XLXI_1/XLXI_1/XLXI_3/blk00000001/blk00000002
+GND 		XLXI_1/XLXI_1/XLXI_3/blk00000001/blk00000003
+GND 		XLXI_165/XST_GND
+GND 		XLXI_288_1/XST_GND
+GND 		XLXI_288_2/XST_GND
+GND 		XLXI_288_3/XST_GND
+GND 		XLXI_288_4/XST_GND
+VCC 		XLXI_309/blk00000001/blk00000002
+GND 		XLXI_309/blk00000001/blk00000003
+GND 		XLXI_35/XST_GND
+BUF 		XLXI_864/XLXI_46
+BUF 		XLXI_864/XLXI_47
+BUF 		XLXI_864/XLXI_48
+BUF 		XLXI_864/XLXI_49
+LUT5 		XLXI_865/Mmux_busEppInternal8_SW0
+   optimized to 1
+LUT4 		XLXI_865/mux7_61
+   optimized to 1
+LUT6 		XLXI_865/seg<7>1
+   optimized to 1
+VCC 		XLXI_866
+AND2 		XLXI_868/XLXI_3/XLXI_1/XLXI_65
+AND2 		XLXI_868/XLXI_3/XLXI_1/XLXI_66
+AND2 		XLXI_868/XLXI_3/XLXI_1/XLXI_9
+VCC 		XLXI_868/XLXI_78/XLXI_39/blk00000001/blk00000002
+GND 		XLXI_868/XLXI_78/XLXI_39/blk00000001/blk00000003
+GND 		XLXI_871_7
+
+Redundant Block(s):
+TYPE 		BLOCK
+INV 		XLXI_304
+BUF 		XLXI_868/XLXI_7/XLXI_71/XLXI_6
+INV 		XLXI_868/XLXI_7/XLXI_121/XLXI_11
+INV 		XLXI_868/XLXI_7/XLXI_119/XLXI_11
+INV 		XLXI_868/XLXI_7/XLXI_118/XLXI_11
+INV 		XLXI_868/XLXI_7/XLXI_117/XLXI_11
+INV 		XLXI_868/XLXI_7/XLXI_116/XLXI_11
+INV 		XLXI_868/XLXI_7/XLXI_114/XLXI_11
+INV 		XLXI_868/XLXI_7/XLXI_93/XLXI_11
+INV 		XLXI_868/XLXI_7/XLXI_92/XLXI_11
+INV 		XLXI_868/XLXI_7/XLXI_3/XLXI_11
+INV 		XLXI_868/XLXI_7/XLXI_2/XLXI_11
+INV 		XLXI_868/XLXI_7/XLXI_1/XLXI_11
+INV 		XLXI_864/XLXI_53_6
+INV 		XLXI_864/XLXI_53_5
+INV 		XLXI_864/XLXI_53_4
+INV 		XLXI_864/XLXI_53_3
+INV 		XLXI_864/XLXI_53_2
+INV 		XLXI_864/XLXI_53_1
+INV 		XLXI_864/XLXI_53_0
+INV 		XLXI_864/XLXI_50_6
+INV 		XLXI_864/XLXI_50_5
+INV 		XLXI_864/XLXI_50_4
+INV 		XLXI_864/XLXI_50_3
+INV 		XLXI_864/XLXI_50_2
+INV 		XLXI_864/XLXI_50_1
+INV 		XLXI_864/XLXI_50_0
+INV 		XLXI_864/XLXI_52_6
+INV 		XLXI_864/XLXI_52_5
+INV 		XLXI_864/XLXI_52_4
+INV 		XLXI_864/XLXI_52_3
+INV 		XLXI_864/XLXI_52_2
+INV 		XLXI_864/XLXI_52_1
+INV 		XLXI_864/XLXI_52_0
+INV 		XLXI_864/XLXI_51_6
+INV 		XLXI_864/XLXI_51_5
+INV 		XLXI_864/XLXI_51_4
+INV 		XLXI_864/XLXI_51_3
+INV 		XLXI_864/XLXI_51_2
+INV 		XLXI_864/XLXI_51_1
+INV 		XLXI_864/XLXI_51_0
+LUT1 		XLXI_865/Mcount_cnt_cy<15>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<14>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<13>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<12>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<11>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<10>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<9>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<8>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<7>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<6>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<5>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<4>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<3>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<2>_rt
+LUT1 		XLXI_865/Mcount_cnt_cy<1>_rt
+LUT1 		XLXI_865/Mcount_cnt_xor<16>_rt
+INV 		XLXI_865/EppWRITE_inv1_INV_0
+LUT1 		XLXI_309/blk00000001/blk00000034
+LUT1 		XLXI_309/blk00000001/blk00000035
+LUT1 		XLXI_309/blk00000001/blk00000036
+LUT1 		XLXI_309/blk00000001/blk00000037
+LUT1 		XLXI_309/blk00000001/blk00000038
+LUT1 		XLXI_309/blk00000001/blk00000039
+LUT1 		XLXI_309/blk00000001/blk0000003a
+LUT1 		XLXI_309/blk00000001/blk0000003b
+LUT1 		XLXI_309/blk00000001/blk0000003c
+LUT1 		XLXI_309/blk00000001/blk0000003d
+LUT1 		XLXI_309/blk00000001/blk0000003e
+LUT1 		XLXI_309/blk00000001/blk0000003f
+LUT1 		XLXI_309/blk00000001/blk00000040
+LUT1 		XLXI_1/XLXI_1/XLXI_3/blk00000001/blk0000000c
+XOR2 		XLXI_868/XLXI_3/XLXI_1/XLXI_63
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DB<0>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<1>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<2>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<3>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<4>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<5>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<6>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DB<7>                              | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| EppASTB                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| EppDSTB                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| EppWAIT                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| EppWRITE                           | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| anodo_pad<0>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| anodo_pad<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| anodo_pad<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| anodo_pad<3>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| boton_aba_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| boton_arr_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| boton_der_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| boton_izq_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ce_display_neg_pad<1>              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ce_display_neg_pad<2>              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ce_display_neg_pad<3>              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ce_display_neg_pad<4>              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| ck_100MHz_pad                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| ck_display_externo_pad             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | ODDR         |          |          |
+| col_pad<1>                         | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| col_pad<2>                         | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| col_pad<3>                         | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| col_pad<4>                         | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| display_pad<0>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<1>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<2>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<3>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<4>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<5>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<6>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| display_pad<7>                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| fila_pad<1>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| fila_pad<2>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| fila_pad<3>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| fila_pad<4>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| led_pad<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<4>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<5>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<6>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led_pad<7>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| reset_pad                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| seg_pad<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<4>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<5>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<6>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| seg_pad<7>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| signo_sal_pad                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| sw_pad<0>                          | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| sw_pad<1>                          | IOB              | INPUT     | LVCMOS33             |       |          |      | IFF          |          |          |
+| sw_pad<2>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<3>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<4>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<5>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<6>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| sw_pad<7>                          | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| uart_rx_pad                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| uart_tx_pad                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+DCM "XLXI_306/dcm_sp_inst":
+CLKDV_DIVIDE:10.0
+CLKIN_DIVIDE_BY_2:TRUE
+CLKOUT_PHASE_SHIFT:NONE
+CLK_FEEDBACK:2X
+DESKEW_ADJUST:5
+DFS_FREQUENCY_MODE:LOW
+DLL_FREQUENCY_MODE:LOW
+DSS_MODE:NONE
+DUTY_CYCLE_CORRECTION:TRUE
+STARTUP_WAIT:FALSE
+VERY_HIGH_FREQUENCY:FALSE
+CLKFX_DIVIDE = 20
+CLKFX_MULTIPLY = 2
+CLKIN_PERIOD = 10.000000
+PHASE_SHIFT = 0
+
+
+
+Section 12 - Control Set Information
+------------------------------------
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Clock Signal      | Reset Signal                       | Set Signal | Enable Signal                                 | Slice Load Count | Bel Load Count |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| EppASTB_IBUF_BUFG |                                    |            | XLXI_865/EppWRITE_inv                         | 2                | 8              |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| EppDSTB_IBUF_BUFG |                                    |            | XLXI_865/_n0123_inv                           | 2                | 8              |
+| EppDSTB_IBUF_BUFG |                                    |            | XLXI_865/_n0129_inv                           | 2                | 8              |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ck_100MHz         |                                    |            |                                               | 19               | 47             |
+| ck_100MHz         |                                    |            | XLXI_868/XLXI_1/ce_carga_cifra                | 1                | 4              |
+| ck_100MHz         |                                    |            | XLXI_868/XLXI_3/XLXI_22/ce_reg_salida         | 2                | 8              |
+| ck_100MHz         |                                    |            | XLXI_868/XLXI_3/XLXI_22/ldZ                   | 1                | 8              |
+| ck_100MHz         |                                    |            | XLXI_868/XLXI_7/XLXI_46/ce_reg_salida         | 11               | 44             |
+| ck_100MHz         |                                    |            | XLXI_868/XLXI_7/XLXI_71/ce_total              | 9                | 36             |
+| ck_100MHz         |                                    |            | XLXI_868/XLXI_78/XLXI_123/CE_Reg              | 5                | 18             |
+| ck_100MHz         |                                    |            | XLXI_868/XLXI_78/XLXI_123/factorial_calculado | 9                | 36             |
+| ck_100MHz         | XLXI_868/XLXI_3/XLXI_22/dato_nuevo |            | XLXI_868/carga_cifra                          | 2                | 12             |
+| ck_100MHz         | XLXI_868/XLXI_7/XLXI_1/init        |            |                                               | 1                | 4              |
+| ck_100MHz         | XLXI_868/XLXI_7/XLXI_114/init      |            |                                               | 1                | 4              |
+| ck_100MHz         | XLXI_868/XLXI_7/XLXI_116/init      |            |                                               | 1                | 4              |
+| ck_100MHz         | XLXI_868/XLXI_7/XLXI_117/init      |            |                                               | 1                | 4              |
+| ck_100MHz         | XLXI_868/XLXI_7/XLXI_118/init      |            |                                               | 1                | 4              |
+| ck_100MHz         | XLXI_868/XLXI_7/XLXI_119/init      |            |                                               | 1                | 4              |
+| ck_100MHz         | XLXI_868/XLXI_7/XLXI_121/init      |            |                                               | 2                | 4              |
+| ck_100MHz         | XLXI_868/XLXI_7/XLXI_2/init        |            |                                               | 1                | 4              |
+| ck_100MHz         | XLXI_868/XLXI_7/XLXI_3/init        |            |                                               | 1                | 4              |
+| ck_100MHz         | XLXI_868/XLXI_7/XLXI_92/init       |            |                                               | 1                | 4              |
+| ck_100MHz         | XLXI_868/XLXI_7/XLXI_93/init       |            |                                               | 1                | 4              |
+| ck_100MHz         | XLXI_868/letra_c                   |            |                                               | 6                | 11             |
+| ck_100MHz         | XLXI_868/letra_c                   |            | XLXI_868/XLXI_78/XLXI_123/_n0185_inv          | 2                | 5              |
+| ck_100MHz         | n0020<0>                           |            |                                               | 8                | 14             |
+| ck_100MHz         | n0020<0>                           |            | XLXI_868/XLXI_3/XLXI_22/_n0054_inv            | 1                | 4              |
+| ck_100MHz         | n0020<0>                           |            | XLXI_868/XLXI_7/XLXI_46/_n0061_inv            | 2                | 6              |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ck_300Hz          |                                    |            |                                               | 3                | 9              |
+| ck_300Hz          |                                    |            | XLXI_1/XLXI_1/XLXN_13                         | 2                | 4              |
+| ck_300Hz          |                                    |            | XLXI_1/XLXI_1/XLXN_45                         | 2                | 4              |
+| ck_300Hz          |                                    |            | XLXI_1/XLXI_1/XLXN_61                         | 2                | 4              |
+| ck_300Hz          |                                    |            | XLXI_1/XLXI_1/XLXN_77                         | 2                | 4              |
+| ck_300Hz          |                                    |            | XLXI_1/XLXI_1/ce_cuenta                       | 2                | 4              |
+| ck_300Hz          |                                    |            | XLXI_1/XLXI_39/ce_tecla_pulsada               | 2                | 4              |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ck_5MHz           | XLXN_1                             |            |                                               | 4                | 14             |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices*       | Slice Reg     | LUTs          | LUTRAM        | BRAM/FIFO | DSP48A1 | BUFG  | BUFIO | BUFR  | DCM   | PLL_ADV   | Full Hierarchical Name                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| prac2_top/         |           | 3/371         | 0/368         | 5/390         | 0/0           | 0/0       | 0/1     | 4/7   | 0/0   | 0/0   | 0/1   | 0/0       | prac2_top                                       |
+| +XLXI_1            |           | 0/27          | 0/33          | 0/22          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1                                |
+| ++XLXI_1           |           | 2/13          | 0/23          | 5/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_1                         |
+| +++XLXI_1          |           | 2/2           | 4/4           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_1/XLXI_1                  |
+| +++XLXI_12         |           | 2/2           | 4/4           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_1/XLXI_12                 |
+| +++XLXI_15         |           | 2/2           | 4/4           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_1/XLXI_15                 |
+| +++XLXI_2          |           | 2/2           | 4/4           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_1/XLXI_2                  |
+| +++XLXI_3          |           | 0/1           | 0/3           | 0/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_1/XLXI_3                  |
+| ++++blk00000001    |           | 1/1           | 3/3           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_1/XLXI_3/blk00000001      |
+| +++XLXI_9          |           | 2/2           | 4/4           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_1/XLXI_9                  |
+| ++XLXI_39          |           | 1/10          | 1/6           | 1/14          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_39                        |
+| +++XLXI_1          |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_39/XLXI_1                 |
+| +++XLXI_10         |           | 2/2           | 4/4           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_39/XLXI_10                |
+| +++XLXI_13         |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_39/XLXI_13                |
+| +++XLXI_14         |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_39/XLXI_14                |
+| +++XLXI_3          |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_39/XLXI_3                 |
+| +++XLXI_4          |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_39/XLXI_4                 |
+| +++XLXI_41         |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_39/XLXI_41                |
+| +++XLXI_5          |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_39/XLXI_5                 |
+| ++XLXI_5           |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_5                         |
+| ++XLXI_6           |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_6                         |
+| ++XLXI_7           |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_7                         |
+| ++XLXI_8           |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_1/XLXI_8                         |
+| +XLXI_279_1        |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_279_1                            |
+| +XLXI_279_2        |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_279_2                            |
+| +XLXI_279_3        |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_279_3                            |
+| +XLXI_279_4        |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_279_4                            |
+| +XLXI_306          |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 3/3   | 0/0   | 0/0   | 1/1   | 0/0       | prac2_top/XLXI_306                              |
+| +XLXI_309          |           | 0/4           | 0/14          | 0/14          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_309                              |
+| ++blk00000001      |           | 4/4           | 14/14         | 14/14         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_309/blk00000001                  |
+| +XLXI_387          |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_387                              |
+| +XLXI_864          |           | 0/13          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_864                              |
+| ++XLXI_16          |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_864/XLXI_16                      |
+| ++XLXI_38          |           | 2/2           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_864/XLXI_38                      |
+| ++XLXI_39          |           | 3/3           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_864/XLXI_39                      |
+| ++XLXI_40          |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_864/XLXI_40                      |
+| +XLXI_865          |           | 32/32         | 41/41         | 63/63         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_865                              |
+| +XLXI_867          |           | 0/8           | 0/11          | 0/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_867                              |
+| ++XLXI_10          |           | 2/2           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_867/XLXI_10                      |
+| ++XLXI_17_0        |           | 1/1           | 2/2           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_867/XLXI_17_0                    |
+| ++XLXI_17_1        |           | 1/1           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_867/XLXI_17_1                    |
+| ++XLXI_17_2        |           | 1/1           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_867/XLXI_17_2                    |
+| ++XLXI_17_3        |           | 1/1           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_867/XLXI_17_3                    |
+| ++XLXI_9           |           | 2/2           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_867/XLXI_9                       |
+| +XLXI_868          |           | 0/284         | 0/269         | 0/265         | 0/0           | 0/0       | 0/1     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868                              |
+| ++XLXI_1           |           | 3/4           | 3/7           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_1                       |
+| +++XLXI_14         |           | 1/1           | 4/4           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_1/XLXI_14               |
+| ++XLXI_15          |           | 1/1           | 1/1           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_15                      |
+| ++XLXI_3           |           | 0/27          | 0/41          | 0/26          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3                       |
+| +++XLXI_1          |           | 3/7           | 5/5           | 1/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_1                |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_1/XLXI_12        |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_1/XLXI_13        |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_1/XLXI_30        |
+| ++++XLXI_62        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_1/XLXI_62        |
+| +++XLXI_16         |           | 2/2           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_16               |
+| +++XLXI_2          |           | 2/6           | 5/5           | 1/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_2                |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_2/XLXI_12        |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_2/XLXI_13        |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_2/XLXI_30        |
+| ++++XLXI_62        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_2/XLXI_62        |
+| +++XLXI_22         |           | 5/5           | 10/10         | 7/7           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_22               |
+| +++XLXI_23         |           | 1/1           | 8/8           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_23               |
+| +++XLXI_3          |           | 2/6           | 5/5           | 1/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_3                |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_3/XLXI_12        |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_3/XLXI_13        |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_3/XLXI_30        |
+| ++++XLXI_62        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_3/XLXI_3/XLXI_62        |
+| ++XLXI_6           |           | 2/2           | 12/12         | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_6                       |
+| ++XLXI_7           |           | 11/128        | 44/137        | 0/105         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7                       |
+| +++XLXI_1          |           | 3/6           | 4/4           | 2/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_1                |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_1/XLXI_12        |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_1/XLXI_13        |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_1/XLXI_30        |
+| +++XLXI_114        |           | 3/6           | 4/4           | 2/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_114              |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_114/XLXI_12      |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_114/XLXI_13      |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_114/XLXI_30      |
+| +++XLXI_116        |           | 3/6           | 4/4           | 2/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_116              |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_116/XLXI_12      |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_116/XLXI_13      |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_116/XLXI_30      |
+| +++XLXI_117        |           | 3/6           | 4/4           | 2/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_117              |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_117/XLXI_12      |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_117/XLXI_13      |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_117/XLXI_30      |
+| +++XLXI_118        |           | 3/6           | 4/4           | 2/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_118              |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_118/XLXI_12      |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_118/XLXI_13      |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_118/XLXI_30      |
+| +++XLXI_119        |           | 3/6           | 4/4           | 2/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_119              |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_119/XLXI_12      |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_119/XLXI_13      |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_119/XLXI_30      |
+| +++XLXI_121        |           | 3/6           | 4/4           | 2/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_121              |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_121/XLXI_12      |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_121/XLXI_13      |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_121/XLXI_30      |
+| +++XLXI_2          |           | 3/6           | 4/4           | 2/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_2                |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_2/XLXI_12        |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_2/XLXI_13        |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_2/XLXI_30        |
+| +++XLXI_3          |           | 3/6           | 4/4           | 2/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_3                |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_3/XLXI_12        |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_3/XLXI_13        |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_3/XLXI_30        |
+| +++XLXI_46         |           | 5/5           | 13/13         | 13/13         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_46               |
+| +++XLXI_71         |           | 10/46         | 36/36         | 1/37          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71               |
+| ++++XLXI_2_0       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_0      |
+| ++++XLXI_2_1       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_1      |
+| ++++XLXI_2_10      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_10     |
+| ++++XLXI_2_11      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_11     |
+| ++++XLXI_2_12      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_12     |
+| ++++XLXI_2_13      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_13     |
+| ++++XLXI_2_14      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_14     |
+| ++++XLXI_2_15      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_15     |
+| ++++XLXI_2_16      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_16     |
+| ++++XLXI_2_17      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_17     |
+| ++++XLXI_2_18      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_18     |
+| ++++XLXI_2_19      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_19     |
+| ++++XLXI_2_2       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_2      |
+| ++++XLXI_2_20      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_20     |
+| ++++XLXI_2_21      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_21     |
+| ++++XLXI_2_22      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_22     |
+| ++++XLXI_2_23      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_23     |
+| ++++XLXI_2_24      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_24     |
+| ++++XLXI_2_25      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_25     |
+| ++++XLXI_2_26      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_26     |
+| ++++XLXI_2_27      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_27     |
+| ++++XLXI_2_28      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_28     |
+| ++++XLXI_2_29      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_29     |
+| ++++XLXI_2_3       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_3      |
+| ++++XLXI_2_30      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_30     |
+| ++++XLXI_2_31      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_31     |
+| ++++XLXI_2_32      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_32     |
+| ++++XLXI_2_33      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_33     |
+| ++++XLXI_2_34      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_34     |
+| ++++XLXI_2_35      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_35     |
+| ++++XLXI_2_4       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_4      |
+| ++++XLXI_2_5       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_5      |
+| ++++XLXI_2_6       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_6      |
+| ++++XLXI_2_7       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_7      |
+| ++++XLXI_2_8       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_8      |
+| ++++XLXI_2_9       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_71/XLXI_2_9      |
+| +++XLXI_92         |           | 3/6           | 4/4           | 2/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_92               |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_92/XLXI_12       |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_92/XLXI_13       |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_92/XLXI_30       |
+| +++XLXI_93         |           | 3/6           | 4/4           | 2/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_93               |
+| ++++XLXI_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_93/XLXI_12       |
+| ++++XLXI_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_93/XLXI_13       |
+| ++++XLXI_30        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_7/XLXI_93/XLXI_30       |
+| ++XLXI_78          |           | 14/98         | 54/71         | 0/103         | 0/0           | 0/0       | 0/1     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78                      |
+| +++XLXI_123        |           | 12/12         | 17/17         | 31/31         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_123             |
+| +++XLXI_146_0      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_0           |
+| +++XLXI_146_1      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_1           |
+| +++XLXI_146_10     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_10          |
+| +++XLXI_146_11     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_11          |
+| +++XLXI_146_12     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_12          |
+| +++XLXI_146_13     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_13          |
+| +++XLXI_146_14     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_14          |
+| +++XLXI_146_15     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_15          |
+| +++XLXI_146_16     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_16          |
+| +++XLXI_146_17     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_17          |
+| +++XLXI_146_2      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_2           |
+| +++XLXI_146_3      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_3           |
+| +++XLXI_146_4      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_4           |
+| +++XLXI_146_5      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_5           |
+| +++XLXI_146_6      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_6           |
+| +++XLXI_146_7      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_7           |
+| +++XLXI_146_8      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_8           |
+| +++XLXI_146_9      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_146_9           |
+| +++XLXI_180_0      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_0           |
+| +++XLXI_180_1      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_1           |
+| +++XLXI_180_10     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_10          |
+| +++XLXI_180_11     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_11          |
+| +++XLXI_180_12     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_12          |
+| +++XLXI_180_13     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_13          |
+| +++XLXI_180_14     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_14          |
+| +++XLXI_180_15     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_15          |
+| +++XLXI_180_16     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_16          |
+| +++XLXI_180_17     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_17          |
+| +++XLXI_180_2      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_2           |
+| +++XLXI_180_3      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_3           |
+| +++XLXI_180_4      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_4           |
+| +++XLXI_180_5      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_5           |
+| +++XLXI_180_6      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_6           |
+| +++XLXI_180_7      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_7           |
+| +++XLXI_180_8      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_8           |
+| +++XLXI_180_9      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_180_9           |
+| +++XLXI_39         |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/1     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_39              |
+| ++++blk00000001    |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 1/1     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_39/blk00000001  |
+| +++XLXI_85_0       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_0            |
+| +++XLXI_85_1       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_1            |
+| +++XLXI_85_10      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_10           |
+| +++XLXI_85_11      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_11           |
+| +++XLXI_85_12      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_12           |
+| +++XLXI_85_13      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_13           |
+| +++XLXI_85_14      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_14           |
+| +++XLXI_85_15      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_15           |
+| +++XLXI_85_16      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_16           |
+| +++XLXI_85_17      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_17           |
+| +++XLXI_85_18      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_18           |
+| +++XLXI_85_19      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_19           |
+| +++XLXI_85_2       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_2            |
+| +++XLXI_85_20      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_20           |
+| +++XLXI_85_21      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_21           |
+| +++XLXI_85_22      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_22           |
+| +++XLXI_85_23      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_23           |
+| +++XLXI_85_24      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_24           |
+| +++XLXI_85_25      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_25           |
+| +++XLXI_85_26      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_26           |
+| +++XLXI_85_27      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_27           |
+| +++XLXI_85_28      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_28           |
+| +++XLXI_85_29      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_29           |
+| +++XLXI_85_3       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_3            |
+| +++XLXI_85_30      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_30           |
+| +++XLXI_85_31      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_31           |
+| +++XLXI_85_32      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_32           |
+| +++XLXI_85_33      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_33           |
+| +++XLXI_85_34      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_34           |
+| +++XLXI_85_35      |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_35           |
+| +++XLXI_85_4       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_4            |
+| +++XLXI_85_5       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_5            |
+| +++XLXI_85_6       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_6            |
+| +++XLXI_85_7       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_7            |
+| +++XLXI_85_8       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_8            |
+| +++XLXI_85_9       |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_78/XLXI_85_9            |
+| ++XLXI_81          |           | 0/24          | 0/0           | 0/24          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81                      |
+| +++M4_1E_0         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_0              |
+| +++M4_1E_1         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_1              |
+| +++M4_1E_10        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_10             |
+| +++M4_1E_11        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_11             |
+| +++M4_1E_12        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_12             |
+| +++M4_1E_13        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_13             |
+| +++M4_1E_14        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_14             |
+| +++M4_1E_15        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_15             |
+| +++M4_1E_2         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_2              |
+| +++M4_1E_3         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_3              |
+| +++M4_1E_4         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_4              |
+| +++M4_1E_5         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_5              |
+| +++M4_1E_6         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_6              |
+| +++M4_1E_7         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_7              |
+| +++M4_1E_8         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_8              |
+| +++M4_1E_9         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/M4_1E_9              |
+| +++m2_1_0          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/m2_1_0               |
+| +++m2_1_1          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/m2_1_1               |
+| +++m2_1_2          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/m2_1_2               |
+| +++m2_1_3          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/m2_1_3               |
+| +++m2_1_4          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/m2_1_4               |
+| +++m2_1_5          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/m2_1_5               |
+| +++m2_1_6          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/m2_1_6               |
+| +++m2_1_7          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | prac2_top/XLXI_868/XLXI_81/m2_1_7               |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

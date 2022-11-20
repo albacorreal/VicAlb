@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac2_rl_2022/bloque_factorial_bloque_factorial_sch_tb_isim_beh.exe" -prj "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac2_rl_2022/bloque_factorial_bloque_factorial_sch_tb_beh.prj" "work.bloque_factorial_bloque_factorial_sch_tb" 

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/ssee_prac2_rl_2022_conFD/Calculo_factorial_Calculo_factorial_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="calculo_factorial_calculo_factorial_sch_tb" />
+            <top_module name="mult_gen_pkg_v11_2" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/factorial_calculado" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">factorial_calculado</obj_property>
+      <obj_property name="ObjectShortName">factorial_calculado</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/inicio" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">inicio</obj_property>
+      <obj_property name="ObjectShortName">inicio</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/factorial" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">factorial[35:0]</obj_property>
+      <obj_property name="ObjectShortName">factorial[35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_123/dato" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_123/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_123/cuenta" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cuenta[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_123/mux1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mux1</obj_property>
+      <obj_property name="ObjectShortName">mux1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_123/mux2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mux2</obj_property>
+      <obj_property name="ObjectShortName">mux2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_123/ce_mult" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce_mult</obj_property>
+      <obj_property name="ObjectShortName">ce_mult</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_123/ce_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce_reg</obj_property>
+      <obj_property name="ObjectShortName">ce_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_123/es_directo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">es_directo</obj_property>
+      <obj_property name="ObjectShortName">es_directo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_123/es_cero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">es_cero</obj_property>
+      <obj_property name="ObjectShortName">es_cero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_123/factorial_calculado" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">factorial_calculado</obj_property>
+      <obj_property name="ObjectShortName">factorial_calculado</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_123/sreg0" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">sreg0</obj_property>
+      <obj_property name="ObjectShortName">sreg0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_39/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[17:0]</obj_property>
+      <obj_property name="ObjectShortName">a[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_39/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[17:0]</obj_property>
+      <obj_property name="ObjectShortName">b[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_39/p" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p[35:0]</obj_property>
+      <obj_property name="ObjectShortName">p[35:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_39/ce" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus141" type="vbus" db_ref_id="1">
+      <obj_property name="label">qreg[35:0]</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_35/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_34/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_33/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_32/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_31/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_30/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_29/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_28/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_27/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_26/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_25/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_24/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_23/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_22/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_21/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_20/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_19/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_18/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_17/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_16/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_15/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_14/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_13/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_12/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_11/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_10/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_9/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_8/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_7/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_6/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_5/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_4/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_3/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_2/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_1/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_0/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/calculo_factorial_calculo_factorial_sch_tb/UUT/XLXI_142_0/ce" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+</wave_config>

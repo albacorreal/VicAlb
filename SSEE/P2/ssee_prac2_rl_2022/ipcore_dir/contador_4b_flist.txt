@@ -1,0 +1,17 @@
+# Output products list for <contador_4b>
+_xmsgs\pn_parser.xmsgs
+contador_4b.asy
+contador_4b.gise
+contador_4b.ngc
+contador_4b.sym
+contador_4b.vhd
+contador_4b.vho
+contador_4b.xco
+contador_4b.xise
+contador_4b\doc\c_counter_binary_v11_0_readme.txt
+contador_4b\doc\c_counter_binary_v11_0_vinfo.html
+contador_4b\doc\ds215_counter.pdf
+contador_4b_flist.txt
+contador_4b_xmdf.tcl
+core_resources.txt
+gui_latency.txt

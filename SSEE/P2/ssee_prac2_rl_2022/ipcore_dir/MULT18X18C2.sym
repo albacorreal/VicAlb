@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="MULT18X18C2">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2022-11-19T17:13:50</timestamp>
+    <pin polarity="Input" x="-32" y="64" name="a(17:0)" />
+    <pin polarity="Output" x="256" y="64" name="p(35:0)" />
+    <pin polarity="Input" x="-32" y="128" name="b(17:0)" />
+    <pin polarity="Input" x="-32" y="224" name="clk" />
+    <pin polarity="Input" x="-32" y="320" name="sclr" />
+    <pin polarity="Input" x="-32" y="272" name="ce" />
+    <graph>
+        <rect width="220" x="0" y="32" height="384" />
+        <line x2="0" y1="64" y2="64" style="linewidth:W" x1="-32" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="4" y="64" type="pin a(17:0)" />
+        <line x2="224" y1="64" y2="64" style="linewidth:W" x1="256" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="220" y="64" type="pin p(35:0)" />
+        <text style="fontsize:40;fontname:Arial" x="-28" y="8">MULT18X18C2</text>
+        <line x2="0" y1="128" y2="128" style="linewidth:W" x1="-32" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="4" y="128" type="pin b(17:0)" />
+        <line x2="0" y1="224" y2="224" x1="-32" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="4" y="224" type="pin clk" />
+        <line x2="0" y1="320" y2="320" x1="-32" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="4" y="320" type="pin sclr" />
+        <line x2="0" y1="272" y2="272" x1="-32" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="4" y="272" type="pin ce" />
+    </graph>
+</symbol>
