@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+--
+-- Title      : List of design files displayed in Active-HDL Design Browser
+-- Active-HDL : 13.0.376.8320
+-- Workspace  : prac2_factorial
+-- Design     : prac2_factorial
+-- Author     : Administrator
+-- Company    : UMA
+-- Date       : 2022-11-20 16:18:22
+--
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+File                  | Comp. | File Status | Design Folder | File Path
+                      | Order |             |               |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+control_bcd_bin.asf   |     1 | Modified    |               | C:\Users\victo\Documents\III\SISTEMAS_ELECTRONICOS\PRACTICA_2__FACTORIAL_DE_UN_NUMERO\Prac2__Factorial_(Active-HDL)\prac2_factorial\prac2_factorial\src\control_bcd_bin.asf
+control_bin_bcd.asf   |     2 | Modified    |               | C:\Users\victo\Documents\III\SISTEMAS_ELECTRONICOS\PRACTICA_2__FACTORIAL_DE_UN_NUMERO\Prac2__Factorial_(Active-HDL)\prac2_factorial\prac2_factorial\src\control_bin_bcd.asf
+ctrl_entz_sal.asf     |     3 | Modified    |               | C:\Users\victo\Documents\III\SISTEMAS_ELECTRONICOS\PRACTICA_2__FACTORIAL_DE_UN_NUMERO\Prac2__Factorial_(Active-HDL)\prac2_factorial\prac2_factorial\src\ctrl_entz_sal.asf
+control_factorial.asf |     4 | Modified    |               | C:\Users\victo\Documents\III\SISTEMAS_ELECTRONICOS\PRACTICA_2__FACTORIAL_DE_UN_NUMERO\Prac2__Factorial_(Active-HDL)\prac2_factorial\prac2_factorial\src\control_factorial.asf
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,12 @@
+[Version]
+Version=11.1
+[Designs]
+prac2_factorial=.\prac2_factorial\prac2_factorial.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+prac2_factorial=1

@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+--
+-- Title      : Design Flow Manager settings and simulation libraries
+-- Active-HDL : 13.0.376.8320
+-- Workspace  : prac2_factorial
+-- Design     : prac2_factorial
+-- Author     : Administrator
+-- Company    : UMA
+-- Date       : 2022-11-20 16:18:22
+--
+-------------------------------------------------------------------------------
+1. Design Flow Manager Settings
+-----------------------------
+Language           | VHDL
+Flow Type          | HDL
+C Synthesis        | <none>  
+HDL Synthesis      | <none>  
+Physical Synthesis | <none>  
+Implementation     | <none>  
+Family Name        | 
+-----------------------------
+
+2. Working Library: prac2_factorial
+Active-HDL 13.0.376.8320 2022-11-14 13:45:43
+
+Elaboration top modules:
+
+
+----------------------------------------------------------------------------------
+Library                 | Comment
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+

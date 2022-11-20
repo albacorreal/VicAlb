@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/Users/victo/Documents/III/SISTEMAS_ELECTRONICOS/PRACTICA_2__FACTORIAL_DE_UN_NUMERO/Prac2__Factorial_(Active-HDL)/prac2_factorial/prac2_factorial/compile/control_factorial.vhd" 
+MESSAGE "Compile Entity "control_factorial"" 
+MESSAGE "Compile Architecture "control_factorial_arch" of Entity "control_factorial"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]" 

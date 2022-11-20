@@ -1,0 +1,46 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=prac2_factorial
+[Library]
+prac2_factorial=.\prac2_factorial\prac2_factorial.lib
+[$LibMap$]
+prac2_factorial=.
+Active_lib=SPARTAN6
+xilinxun=SPARTAN6
+UnlinkedDesignLibrary=SPARTAN6
+DESIGNS=SPARTAN6
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Xilinx SPARTAN6
+fileopenfolder=C:\Users\albertod\Documents\_Doc_\Aldec_Designs\prac2_factorial\prac2_factorial\src
+[Files]
+/control_bcd_bin.asf=-1
+/control_bin_bcd.asf=-1
+/ctrl_entz_sal.asf=-1
+/control_factorial.asf=-1
+[Files.Data]
+.\src\control_bcd_bin.asf=State Diagram
+.\src\control_bin_bcd.asf=State Diagram
+.\src\ctrl_entz_sal.asf=State Diagram
+.\src\control_factorial.asf=State Diagram
+[file_out:/control_bcd_bin.asf]
+/..\compile\control_bcd_bin.vhd=-1
+[file_out:/control_bin_bcd.asf]
+/..\compile\control_bin_bcd.vhd=-1
+[file_out:/ctrl_entz_sal.asf]
+/..\compile\ctrl_entz_sal.vhd=-1
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+[file_out:/control_factorial.asf]
+/..\compile\control_factorial.vhd=-1
