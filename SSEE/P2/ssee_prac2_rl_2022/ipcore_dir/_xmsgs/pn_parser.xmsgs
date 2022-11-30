@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Z:/ssee_prac2_rl_2022_mejora/ipcore_dir/MULT18X18C2.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Practicas/3/VicAlb/SSEE/P2/ssee_prac2_rl_2022/ipcore_dir/MULT18X18C2.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
