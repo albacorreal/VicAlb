@@ -1,0 +1,4 @@
+inicio
+parametros12
+sistema12
+graficas12

@@ -1,0 +1,4 @@
+inicio
+parametros11
+sistema11
+graficas11
