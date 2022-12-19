@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/ctrl_multip_cpmpl.vhd";
+static const char *ng0 = "//VBoxSvr/VMSF/ssee_prac3_rl_2022/ctrl_multip_cpmpl.vhd";
 extern char *IEEE_P_3620187407;
 
 unsigned char ieee_p_3620187407_sub_2546454082_3965413181(char *, char *, char *, int );
@@ -187,7 +187,7 @@ LAB12:    xsi_set_current_line(93, ng0);
 
 LAB25:    t1 = (t0 + 2928U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7760U);
+    t1 = (t0 + 7368U);
     t3 = ieee_p_3620187407_sub_2546454082_3965413181(IEEE_P_3620187407, t2, t1, 3);
     if (t3 != 0)
         goto LAB26;
@@ -446,7 +446,7 @@ LAB20:    xsi_set_current_line(89, ng0);
     xsi_set_current_line(90, ng0);
     t1 = (t0 + 2928U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7760U);
+    t1 = (t0 + 7368U);
     t5 = ieee_p_3620187407_sub_436279890_3965413181(IEEE_P_3620187407, t18, t2, t1, 1);
     t6 = (t0 + 2928U);
     t7 = *((char **)t6);
@@ -468,7 +468,7 @@ LAB23:    xsi_set_current_line(94, ng0);
     xsi_set_current_line(95, ng0);
     t1 = (t0 + 2928U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7760U);
+    t1 = (t0 + 7368U);
     t5 = ieee_p_3620187407_sub_436279890_3965413181(IEEE_P_3620187407, t18, t2, t1, 1);
     t6 = (t0 + 2928U);
     t7 = *((char **)t6);

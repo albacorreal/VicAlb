@@ -17,6 +17,7 @@
         <signal name="dato_real_signed(15)" />
         <signal name="dato_imag_unsigned(15:0)" />
         <signal name="descomplementado" />
+        <signal name="not_dato_real_signed" />
         <port polarity="Input" name="ck" />
         <port polarity="Input" name="dato_real_signed(15:0)" />
         <port polarity="Output" name="dato_real_unsigned(15:0)" />
@@ -63,6 +64,15 @@
             <line x2="64" y1="0" y2="-32" x1="64" />
             <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
+        <blockdef name="inv">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="160" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="-64" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="0" x1="128" />
+            <line x2="64" y1="0" y2="-64" x1="64" />
+            <circle r="16" cx="144" cy="-32" />
+        </blockdef>
         <block symbolname="gnd" name="XLXI_6(15:0)">
             <blockpin signalname="cero(15:0)" name="G" />
         </block>
@@ -73,7 +83,7 @@
             <blockpin signalname="cero(15:0)" name="a(15:0)" />
             <blockpin signalname="dato_real_signed(15:0)" name="b(15:0)" />
             <blockpin signalname="ck" name="clk" />
-            <blockpin signalname="dato_real_signed(15)" name="add" />
+            <blockpin signalname="not_dato_real_signed" name="add" />
             <blockpin signalname="ce" name="ce" />
             <blockpin signalname="dato_real_unsigned(15:0)" name="s(15:0)" />
         </block>
@@ -83,6 +93,10 @@
             <blockpin signalname="reset" name="CLR" />
             <blockpin signalname="ce" name="D" />
             <blockpin signalname="descomplementado" name="Q" />
+        </block>
+        <block symbolname="inv" name="XLXI_12">
+            <blockpin signalname="dato_real_signed(15)" name="I" />
+            <blockpin signalname="not_dato_real_signed" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="2688" height="1900">
@@ -144,7 +158,7 @@
             <wire x2="944" y1="640" y2="640" x1="720" />
             <wire x2="1120" y1="640" y2="640" x1="944" />
         </branch>
-        <branch name="dato_real_signed(15)">
+        <branch name="not_dato_real_signed">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="944" y="608" type="branch" />
             <wire x2="944" y1="608" y2="608" x1="720" />
             <wire x2="1120" y1="608" y2="608" x1="944" />
@@ -191,6 +205,12 @@
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="992" y="1104" type="branch" />
             <wire x2="992" y1="1104" y2="1104" x1="848" />
             <wire x2="1072" y1="1104" y2="1104" x1="992" />
+        </branch>
+        <instance x="496" y="640" name="XLXI_12" orien="R0" />
+        <branch name="dato_real_signed(15)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="432" y="608" type="branch" />
+            <wire x2="432" y1="608" y2="608" x1="384" />
+            <wire x2="496" y1="608" y2="608" x1="432" />
         </branch>
     </sheet>
 </drawing>

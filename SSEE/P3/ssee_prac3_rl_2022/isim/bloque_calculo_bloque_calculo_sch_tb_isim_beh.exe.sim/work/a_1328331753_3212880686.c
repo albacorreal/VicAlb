@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/bloque_calculo.vhf";
+static const char *ng0 = "//VBoxSvr/VMSF/ssee_prac3_rl_2022/bloque_calculo.vhf";
 
 
 
@@ -36,12 +36,12 @@ static void work_a_1328331753_3212880686_p_0(char *t0)
     char *t7;
     char *t8;
 
-LAB0:    xsi_set_current_line(2040, ng0);
+LAB0:    xsi_set_current_line(2909, ng0);
 
-LAB3:    t1 = (t0 + 5352U);
+LAB3:    t1 = (t0 + 7912U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 6912);
+    t1 = (t0 + 10000);
     t4 = (t1 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -49,7 +49,71 @@ LAB3:    t1 = (t0 + 5352U);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 6832);
+LAB2:    t8 = (t0 + 9888);
+    *((int *)t8) = 1;
+
+LAB1:    return;
+LAB4:    goto LAB2;
+
+}
+
+static void work_a_1328331753_3212880686_p_1(char *t0)
+{
+    char *t1;
+    char *t2;
+    unsigned char t3;
+    char *t4;
+    char *t5;
+    char *t6;
+    char *t7;
+    char *t8;
+
+LAB0:    xsi_set_current_line(2910, ng0);
+
+LAB3:    t1 = (t0 + 7752U);
+    t2 = *((char **)t1);
+    t3 = *((unsigned char *)t2);
+    t1 = (t0 + 10064);
+    t4 = (t1 + 56U);
+    t5 = *((char **)t4);
+    t6 = (t5 + 56U);
+    t7 = *((char **)t6);
+    *((unsigned char *)t7) = t3;
+    xsi_driver_first_trans_fast_port(t1);
+
+LAB2:    t8 = (t0 + 9904);
+    *((int *)t8) = 1;
+
+LAB1:    return;
+LAB4:    goto LAB2;
+
+}
+
+static void work_a_1328331753_3212880686_p_2(char *t0)
+{
+    char *t1;
+    char *t2;
+    unsigned char t3;
+    char *t4;
+    char *t5;
+    char *t6;
+    char *t7;
+    char *t8;
+
+LAB0:    xsi_set_current_line(2911, ng0);
+
+LAB3:    t1 = (t0 + 7592U);
+    t2 = *((char **)t1);
+    t3 = *((unsigned char *)t2);
+    t1 = (t0 + 10128);
+    t4 = (t1 + 56U);
+    t5 = *((char **)t4);
+    t6 = (t5 + 56U);
+    t7 = *((char **)t6);
+    *((unsigned char *)t7) = t3;
+    xsi_driver_first_trans_fast_port(t1);
+
+LAB2:    t8 = (t0 + 9920);
     *((int *)t8) = 1;
 
 LAB1:    return;
@@ -60,7 +124,7 @@ LAB4:    goto LAB2;
 
 extern void work_a_1328331753_3212880686_init()
 {
-	static char *pe[] = {(void *)work_a_1328331753_3212880686_p_0};
+	static char *pe[] = {(void *)work_a_1328331753_3212880686_p_0,(void *)work_a_1328331753_3212880686_p_1,(void *)work_a_1328331753_3212880686_p_2};
 	xsi_register_didat("work_a_1328331753_3212880686", "isim/bloque_calculo_bloque_calculo_sch_tb_isim_beh.exe.sim/work/a_1328331753_3212880686.didat");
 	xsi_register_executes(pe);
 }

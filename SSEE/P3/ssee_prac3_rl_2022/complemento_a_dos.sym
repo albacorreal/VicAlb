@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="complemento_a_dos">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2022-12-19T14:38:49</timestamp>
+    <pin polarity="Input" x="0" y="-32" name="ck" />
+    <pin polarity="Input" x="0" y="-96" name="dato_ent(15:0)" />
+    <pin polarity="Output" x="528" y="-96" name="dato_sal(15:0)" />
+    <graph>
+        <rect width="400" x="64" y="-128" height="128" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="264" y="-136" type="symbol" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin ck" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin dato_ent(15:0)" />
+        <rect width="64" x="0" y="-108" height="24" />
+        <line x2="528" y1="-96" y2="-96" x1="464" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="456" y="-96" type="pin dato_sal(15:0)" />
+        <rect width="64" x="464" y="-108" height="24" />
+    </graph>
+</symbol>

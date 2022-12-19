@@ -19,31 +19,7 @@
 <msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_872/XLXI_3/XLXI_45</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_872/XLXI_51/XLXI_122_19</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_872/XLXI_51/XLXI_122_18</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_872/XLXI_51/XLXI_122_17</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_872/XLXI_51/XLXI_122_16</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_872/XLXI_49/XLXI_122_19</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_872/XLXI_49/XLXI_122_18</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_872/XLXI_49/XLXI_122_17</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_872/XLXI_49/XLXI_122_16</arg>&apos; has unconnected output pin
-</msg>
-
-<msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_872/XLXI_64/XLXI_85</arg>&apos; has unconnected output pin
+<msg type="warning" file="NgdBuild" num="440" delta="old" >FF primitive &apos;<arg fmt="%s" index="1">XLXI_872/XLXI_64/XLXI_85</arg>&apos; has unconnected output pin
 </msg>
 
 </messages>

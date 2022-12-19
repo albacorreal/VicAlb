@@ -3,10 +3,6 @@ MODULE bloque_calculo
 		INSTANCE XLXI_3
 	SUBMODULE multip_complejo_serie
 		INSTANCE XLXI_42
-	SUBMODULE Conversor_Bin_BCD_16b
-		INSTANCE XLXI_49
-	SUBMODULE Conversor_Bin_BCD_16b
-		INSTANCE XLXI_51
 	SUBMODULE mux_ES_7seg
 		INSTANCE XLXI_60
 	SUBMODULE ctrl_entz_sal
@@ -17,5 +13,7 @@ MODULE bloque_calculo
 		INSTANCE XLXI_64
 	SUBMODULE reg_desp_8b_4_cifras
 		INSTANCE XLXI_66
-	SUBMODULE descomplementador_a_dos
-		INSTANCE XLXI_67
+	SUBMODULE Conversor_Bin_BCD_decim
+		INSTANCE XLXI_83
+	SUBMODULE Conversor_Bin_BCD_decim
+		INSTANCE XLXI_84

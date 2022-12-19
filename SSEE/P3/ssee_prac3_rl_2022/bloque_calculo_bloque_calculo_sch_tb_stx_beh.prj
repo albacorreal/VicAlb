@@ -1,5 +1,6 @@
 vhdl isim_temp "ipcore_dir/multip_8x8u.vhd"
 vhdl isim_temp "ipcore_dir/sumres16bu.vhd"
+vhdl isim_temp "ipcore_dir/sumres_16bs.vhd"
 vhdl isim_temp "regdesp16b.vhf"
 vhdl isim_temp "ctrl_multip_cpmpl.vhd"
 vhdl isim_temp "ctrl_bin_bcd_16b.vhd"

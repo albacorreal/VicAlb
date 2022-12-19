@@ -37,13 +37,13 @@
          <ClosedNode>/prac3_top_te C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top_te.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>prac3_top (D:/Practicas/3/VicAlb/SSEE/P3/ssee_prac3_rl_2022/prac3_top.sch)</SelectedItem>
+         <SelectedItem>prac3_top (Z:/ssee_prac3_rl_2022/prac3_top.sch)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000234000000020000000000000000000000000200000064ffffffff000000810000000300000002000002340000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>prac3_top (D:/Practicas/3/VicAlb/SSEE/P3/ssee_prac3_rl_2022/prac3_top.sch)</CurrentItem>
+      <CurrentItem>prac3_top (Z:/ssee_prac3_rl_2022/prac3_top.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -61,7 +61,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001bf000000010000000100000000000000000000000064ffffffff000000810000000000000001000001bf0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -72,7 +72,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002d2000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e50000000100000000000000fe0000000100000000000000760000000100000000000000790000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e50000000100000000000000fe0000000100000000000000760000000100000000000001390000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>bcd_7seg_neg.vhd</CurrentItem>
    </ItemView>
@@ -107,13 +107,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001390000011b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -127,7 +127,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -153,13 +153,13 @@
          <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>bloque_calculo_bloque_calculo_sch_tb - behavioral (C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/sim_bloque_calculo.vhd)</SelectedItem>
+         <SelectedItem>bloque_calculo_bloque_calculo_sch_tb - behavioral (Z:/ssee_prac3_rl_2022/sim_bloque_calculo.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >12</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023f0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000234000000020000000000000000000000000200000064ffffffff000000810000000300000002000002340000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>bloque_calculo_bloque_calculo_sch_tb - behavioral (C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/sim_bloque_calculo.vhd)</CurrentItem>
+      <CurrentItem>bloque_calculo_bloque_calculo_sch_tb - behavioral (Z:/ssee_prac3_rl_2022/sim_bloque_calculo.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -171,7 +171,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -180,12 +180,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem>ISim Simulator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem>ISim Simulator</CurrentItem>
    </ItemView>
 </Project>

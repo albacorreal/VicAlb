@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/ctrl_entz_sal.vhd";
+static const char *ng0 = "//VBoxSvr/VMSF/ssee_prac3_rl_2022/ctrl_entz_sal.vhd";
 
 
 

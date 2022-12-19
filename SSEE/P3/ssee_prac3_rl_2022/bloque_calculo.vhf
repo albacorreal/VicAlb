@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : bloque_calculo.vhf
--- /___/   /\     Timestamp : 12/17/2022 23:26:45
+-- /___/   /\     Timestamp : 12/19/2022 17:04:54
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -266,126 +266,6 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity descomplementador_a_dos_MUSER_bloque_calculo is
-   port ( ce                 : in    std_logic; 
-          ck                 : in    std_logic; 
-          dato_imag_signed   : in    std_logic_vector (15 downto 0); 
-          dato_real_signed   : in    std_logic_vector (15 downto 0); 
-          reset              : in    std_logic; 
-          dato_imag_unsigned : out   std_logic_vector (15 downto 0); 
-          dato_real_unsigned : out   std_logic_vector (15 downto 0); 
-          descomplementado   : out   std_logic);
-end descomplementador_a_dos_MUSER_bloque_calculo;
-
-architecture BEHAVIORAL of descomplementador_a_dos_MUSER_bloque_calculo is
-   attribute BOX_TYPE   : string ;
-   signal cero               : std_logic_vector (15 downto 0);
-   signal uno                : std_logic;
-   component sumres_16bs
-      port ( a   : in    std_logic_vector (15 downto 0); 
-             b   : in    std_logic_vector (15 downto 0); 
-             clk : in    std_logic; 
-             add : in    std_logic; 
-             ce  : in    std_logic; 
-             s   : out   std_logic_vector (15 downto 0));
-   end component;
-   
-   component FDCE
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             D   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
-   
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
-   component VCC
-      port ( P : out   std_logic);
-   end component;
-   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
-   
-begin
-   XLXI_1 : sumres_16bs
-      port map (a(15 downto 0)=>cero(15 downto 0),
-                add=>dato_real_signed(15),
-                b(15 downto 0)=>dato_real_signed(15 downto 0),
-                ce=>ce,
-                clk=>ck,
-                s(15 downto 0)=>dato_real_unsigned(15 downto 0));
-   
-   XLXI_3 : FDCE
-      port map (C=>ck,
-                CE=>ce,
-                CLR=>reset,
-                D=>ce,
-                Q=>descomplementado);
-   
-   XLXI_6_0 : GND
-      port map (G=>cero(0));
-   
-   XLXI_6_1 : GND
-      port map (G=>cero(1));
-   
-   XLXI_6_2 : GND
-      port map (G=>cero(2));
-   
-   XLXI_6_3 : GND
-      port map (G=>cero(3));
-   
-   XLXI_6_4 : GND
-      port map (G=>cero(4));
-   
-   XLXI_6_5 : GND
-      port map (G=>cero(5));
-   
-   XLXI_6_6 : GND
-      port map (G=>cero(6));
-   
-   XLXI_6_7 : GND
-      port map (G=>cero(7));
-   
-   XLXI_6_8 : GND
-      port map (G=>cero(8));
-   
-   XLXI_6_9 : GND
-      port map (G=>cero(9));
-   
-   XLXI_6_10 : GND
-      port map (G=>cero(10));
-   
-   XLXI_6_11 : GND
-      port map (G=>cero(11));
-   
-   XLXI_6_12 : GND
-      port map (G=>cero(12));
-   
-   XLXI_6_13 : GND
-      port map (G=>cero(13));
-   
-   XLXI_6_14 : GND
-      port map (G=>cero(14));
-   
-   XLXI_6_15 : GND
-      port map (G=>cero(15));
-   
-   XLXI_11 : VCC
-      port map (P=>uno);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
 entity mux_ES_7seg_MUSER_bloque_calculo is
    port ( ck                   : in    std_logic; 
           dato_decim           : in    std_logic_vector (3 downto 0); 
@@ -467,23 +347,23 @@ architecture BEHAVIORAL of mux_ES_7seg_MUSER_bloque_calculo is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_173 : label is "XLXI_173_365";
-   attribute HU_SET of XLXI_187_0 : label is "XLXI_187_0_381";
-   attribute HU_SET of XLXI_187_1 : label is "XLXI_187_1_380";
-   attribute HU_SET of XLXI_187_2 : label is "XLXI_187_2_379";
-   attribute HU_SET of XLXI_187_3 : label is "XLXI_187_3_378";
-   attribute HU_SET of XLXI_189_0 : label is "XLXI_189_0_369";
-   attribute HU_SET of XLXI_189_1 : label is "XLXI_189_1_368";
-   attribute HU_SET of XLXI_189_2 : label is "XLXI_189_2_367";
-   attribute HU_SET of XLXI_189_3 : label is "XLXI_189_3_366";
-   attribute HU_SET of XLXI_190_0 : label is "XLXI_190_0_373";
-   attribute HU_SET of XLXI_190_1 : label is "XLXI_190_1_372";
-   attribute HU_SET of XLXI_190_2 : label is "XLXI_190_2_371";
-   attribute HU_SET of XLXI_190_3 : label is "XLXI_190_3_370";
-   attribute HU_SET of XLXI_191_0 : label is "XLXI_191_0_377";
-   attribute HU_SET of XLXI_191_1 : label is "XLXI_191_1_376";
-   attribute HU_SET of XLXI_191_2 : label is "XLXI_191_2_375";
-   attribute HU_SET of XLXI_191_3 : label is "XLXI_191_3_374";
+   attribute HU_SET of XLXI_173 : label is "XLXI_173_216";
+   attribute HU_SET of XLXI_187_0 : label is "XLXI_187_0_232";
+   attribute HU_SET of XLXI_187_1 : label is "XLXI_187_1_231";
+   attribute HU_SET of XLXI_187_2 : label is "XLXI_187_2_230";
+   attribute HU_SET of XLXI_187_3 : label is "XLXI_187_3_229";
+   attribute HU_SET of XLXI_189_0 : label is "XLXI_189_0_220";
+   attribute HU_SET of XLXI_189_1 : label is "XLXI_189_1_219";
+   attribute HU_SET of XLXI_189_2 : label is "XLXI_189_2_218";
+   attribute HU_SET of XLXI_189_3 : label is "XLXI_189_3_217";
+   attribute HU_SET of XLXI_190_0 : label is "XLXI_190_0_224";
+   attribute HU_SET of XLXI_190_1 : label is "XLXI_190_1_223";
+   attribute HU_SET of XLXI_190_2 : label is "XLXI_190_2_222";
+   attribute HU_SET of XLXI_190_3 : label is "XLXI_190_3_221";
+   attribute HU_SET of XLXI_191_0 : label is "XLXI_191_0_228";
+   attribute HU_SET of XLXI_191_1 : label is "XLXI_191_1_227";
+   attribute HU_SET of XLXI_191_2 : label is "XLXI_191_2_226";
+   attribute HU_SET of XLXI_191_3 : label is "XLXI_191_3_225";
 begin
    XLXI_26 : GND
       port map (G=>cero);
@@ -744,6 +624,1058 @@ begin
    XLXI_201 : BUF
       port map (I=>cero,
                 O=>punto_decimal_tmp(1));
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity Bin_A_BCD_decim_MUSER_bloque_calculo is
+   port ( ck      : in    std_logic; 
+          initZ   : in    std_logic; 
+          mod_in  : in    std_logic; 
+          mod_out : out   std_logic; 
+          q       : out   std_logic_vector (3 downto 0));
+end Bin_A_BCD_decim_MUSER_bloque_calculo;
+
+architecture BEHAVIORAL of Bin_A_BCD_decim_MUSER_bloque_calculo is
+   attribute HU_SET     : string ;
+   attribute BOX_TYPE   : string ;
+   signal cero     : std_logic;
+   signal f_q2     : std_logic;
+   signal init     : std_logic;
+   signal uno      : std_logic;
+   signal XLXN_6   : std_logic;
+   signal XLXN_7   : std_logic;
+   signal XLXN_8   : std_logic;
+   signal XLXN_50  : std_logic;
+   signal XLXN_92  : std_logic;
+   signal XLXN_97  : std_logic;
+   signal XLXN_103 : std_logic;
+   signal XLXN_110 : std_logic;
+   signal q_DUMMY  : std_logic_vector (3 downto 0);
+   component M2_1_HXILINX_bloque_calculo
+      port ( D0 : in    std_logic; 
+             D1 : in    std_logic; 
+             S0 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   component FDR
+      port ( C : in    std_logic; 
+             D : in    std_logic; 
+             R : in    std_logic; 
+             Q : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDR : component is "BLACK_BOX";
+   
+   component GND
+      port ( G : out   std_logic);
+   end component;
+   attribute BOX_TYPE of GND : component is "BLACK_BOX";
+   
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component XOR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
+   
+   component NAND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of NAND2 : component is "BLACK_BOX";
+   
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_235";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_233";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_234";
+   attribute HU_SET of XLXI_58 : label is "XLXI_58_236";
+begin
+   q(3 downto 0) <= q_DUMMY(3 downto 0);
+   XLXI_12 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>cero,
+                D1=>XLXN_110,
+                S0=>mod_in,
+                O=>XLXN_6);
+   
+   XLXI_13 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q_DUMMY(3),
+                D1=>f_q2,
+                S0=>mod_in,
+                O=>XLXN_7);
+   
+   XLXI_30 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q_DUMMY(2),
+                D1=>XLXN_50,
+                S0=>mod_in,
+                O=>XLXN_8);
+   
+   XLXI_38 : FDR
+      port map (C=>ck,
+                D=>XLXN_6,
+                R=>init,
+                Q=>q_DUMMY(3));
+   
+   XLXI_39 : FDR
+      port map (C=>ck,
+                D=>XLXN_7,
+                R=>init,
+                Q=>q_DUMMY(2));
+   
+   XLXI_40 : FDR
+      port map (C=>ck,
+                D=>XLXN_8,
+                R=>init,
+                Q=>q_DUMMY(1));
+   
+   XLXI_41 : FDR
+      port map (C=>ck,
+                D=>XLXN_92,
+                R=>init,
+                Q=>q_DUMMY(0));
+   
+   XLXI_54 : GND
+      port map (G=>cero);
+   
+   XLXI_55 : VCC
+      port map (P=>uno);
+   
+   XLXI_56 : INV
+      port map (I=>initZ,
+                O=>init);
+   
+   XLXI_57 : BUF
+      port map (I=>q_DUMMY(0),
+                O=>mod_out);
+   
+   XLXI_58 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q_DUMMY(1),
+                D1=>XLXN_97,
+                S0=>mod_in,
+                O=>XLXN_92);
+   
+   XLXI_60 : INV
+      port map (I=>q_DUMMY(1),
+                O=>XLXN_97);
+   
+   XLXI_61 : XOR2
+      port map (I0=>q_DUMMY(1),
+                I1=>q_DUMMY(2),
+                O=>XLXN_50);
+   
+   XLXI_65 : INV
+      port map (I=>f_q2,
+                O=>XLXN_110);
+   
+   XLXI_67 : NAND2
+      port map (I0=>q_DUMMY(1),
+                I1=>q_DUMMY(2),
+                O=>XLXN_103);
+   
+   XLXI_69 : AND2B1
+      port map (I0=>q_DUMMY(3),
+                I1=>XLXN_103,
+                O=>f_q2);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity regdesp8b_lsb_MUSER_bloque_calculo is
+   port ( ce          : in    std_logic; 
+          ck          : in    std_logic; 
+          data        : in    std_logic_vector (7 downto 0); 
+          load        : in    std_logic; 
+          sinc_reset  : in    std_logic; 
+          ser_out_lsb : out   std_logic);
+end regdesp8b_lsb_MUSER_bloque_calculo;
+
+architecture BEHAVIORAL of regdesp8b_lsb_MUSER_bloque_calculo is
+   attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
+   signal cero        : std_logic;
+   signal ce_total    : std_logic;
+   signal q           : std_logic_vector (7 downto 0);
+   signal XLXN_26     : std_logic_vector (7 downto 0);
+   component FDRE
+      port ( C  : in    std_logic; 
+             CE : in    std_logic; 
+             D  : in    std_logic; 
+             R  : in    std_logic; 
+             Q  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDRE : component is "BLACK_BOX";
+   
+   component M2_1_HXILINX_bloque_calculo
+      port ( D0 : in    std_logic; 
+             D1 : in    std_logic; 
+             S0 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component GND
+      port ( G : out   std_logic);
+   end component;
+   attribute BOX_TYPE of GND : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_244";
+   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_243";
+   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_242";
+   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_241";
+   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_240";
+   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_239";
+   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_238";
+   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_237";
+begin
+   XLXI_1_0 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(0),
+                R=>sinc_reset,
+                Q=>q(0));
+   
+   XLXI_1_1 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(1),
+                R=>sinc_reset,
+                Q=>q(1));
+   
+   XLXI_1_2 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(2),
+                R=>sinc_reset,
+                Q=>q(2));
+   
+   XLXI_1_3 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(3),
+                R=>sinc_reset,
+                Q=>q(3));
+   
+   XLXI_1_4 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(4),
+                R=>sinc_reset,
+                Q=>q(4));
+   
+   XLXI_1_5 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(5),
+                R=>sinc_reset,
+                Q=>q(5));
+   
+   XLXI_1_6 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(6),
+                R=>sinc_reset,
+                Q=>q(6));
+   
+   XLXI_1_7 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(7),
+                R=>sinc_reset,
+                Q=>q(7));
+   
+   XLXI_2_0 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(1),
+                D1=>data(0),
+                S0=>load,
+                O=>XLXN_26(0));
+   
+   XLXI_2_1 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(2),
+                D1=>data(1),
+                S0=>load,
+                O=>XLXN_26(1));
+   
+   XLXI_2_2 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(3),
+                D1=>data(2),
+                S0=>load,
+                O=>XLXN_26(2));
+   
+   XLXI_2_3 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(4),
+                D1=>data(3),
+                S0=>load,
+                O=>XLXN_26(3));
+   
+   XLXI_2_4 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(5),
+                D1=>data(4),
+                S0=>load,
+                O=>XLXN_26(4));
+   
+   XLXI_2_5 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(6),
+                D1=>data(5),
+                S0=>load,
+                O=>XLXN_26(5));
+   
+   XLXI_2_6 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(7),
+                D1=>data(6),
+                S0=>load,
+                O=>XLXN_26(6));
+   
+   XLXI_2_7 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>cero,
+                D1=>data(7),
+                S0=>load,
+                O=>XLXN_26(7));
+   
+   XLXI_6 : BUF
+      port map (I=>q(0),
+                O=>ser_out_lsb);
+   
+   XLXI_10 : GND
+      port map (G=>cero);
+   
+   XLXI_19 : OR2
+      port map (I0=>load,
+                I1=>ce,
+                O=>ce_total);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity Bin_A_BCD_MUSER_bloque_calculo is
+   port ( ck      : in    std_logic; 
+          initZ   : in    std_logic; 
+          mod_in  : in    std_logic; 
+          mod_out : out   std_logic; 
+          q       : out   std_logic_vector (3 downto 0));
+end Bin_A_BCD_MUSER_bloque_calculo;
+
+architecture BEHAVIORAL of Bin_A_BCD_MUSER_bloque_calculo is
+   attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
+   signal cero          : std_logic;
+   signal init          : std_logic;
+   signal uno           : std_logic;
+   signal XLXN_6        : std_logic;
+   signal XLXN_7        : std_logic;
+   signal XLXN_8        : std_logic;
+   signal XLXN_42       : std_logic;
+   signal XLXN_48       : std_logic;
+   signal XLXN_49       : std_logic;
+   signal XLXN_50       : std_logic;
+   signal mod_out_DUMMY : std_logic;
+   signal q_DUMMY       : std_logic_vector (3 downto 0);
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component XNOR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of XNOR2 : component is "BLACK_BOX";
+   
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
+   component M2_1_HXILINX_bloque_calculo
+      port ( D0 : in    std_logic; 
+             D1 : in    std_logic; 
+             S0 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   component FDR
+      port ( C : in    std_logic; 
+             D : in    std_logic; 
+             R : in    std_logic; 
+             Q : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDR : component is "BLACK_BOX";
+   
+   component COMPM4_HXILINX_bloque_calculo
+      port ( A0 : in    std_logic; 
+             A1 : in    std_logic; 
+             A2 : in    std_logic; 
+             A3 : in    std_logic; 
+             B0 : in    std_logic; 
+             B1 : in    std_logic; 
+             B2 : in    std_logic; 
+             B3 : in    std_logic; 
+             GT : out   std_logic; 
+             LT : out   std_logic);
+   end component;
+   
+   component GND
+      port ( G : out   std_logic);
+   end component;
+   attribute BOX_TYPE of GND : component is "BLACK_BOX";
+   
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_247";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_245";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_246";
+   attribute HU_SET of XLXI_53 : label is "XLXI_53_248";
+begin
+   mod_out <= mod_out_DUMMY;
+   q(3 downto 0) <= q_DUMMY(3 downto 0);
+   XLXI_8 : AND2
+      port map (I0=>XLXN_42,
+                I1=>initZ,
+                O=>mod_out_DUMMY);
+   
+   XLXI_9 : AND2
+      port map (I0=>q_DUMMY(0),
+                I1=>q_DUMMY(3),
+                O=>XLXN_48);
+   
+   XLXI_10 : XNOR2
+      port map (I0=>q_DUMMY(0),
+                I1=>q_DUMMY(1),
+                O=>XLXN_49);
+   
+   XLXI_11 : INV
+      port map (I=>q_DUMMY(0),
+                O=>XLXN_50);
+   
+   XLXI_12 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q_DUMMY(2),
+                D1=>XLXN_48,
+                S0=>mod_out_DUMMY,
+                O=>XLXN_6);
+   
+   XLXI_13 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q_DUMMY(1),
+                D1=>XLXN_49,
+                S0=>mod_out_DUMMY,
+                O=>XLXN_7);
+   
+   XLXI_30 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q_DUMMY(0),
+                D1=>XLXN_50,
+                S0=>mod_out_DUMMY,
+                O=>XLXN_8);
+   
+   XLXI_38 : FDR
+      port map (C=>ck,
+                D=>XLXN_6,
+                R=>init,
+                Q=>q_DUMMY(3));
+   
+   XLXI_39 : FDR
+      port map (C=>ck,
+                D=>XLXN_7,
+                R=>init,
+                Q=>q_DUMMY(2));
+   
+   XLXI_40 : FDR
+      port map (C=>ck,
+                D=>XLXN_8,
+                R=>init,
+                Q=>q_DUMMY(1));
+   
+   XLXI_41 : FDR
+      port map (C=>ck,
+                D=>mod_in,
+                R=>init,
+                Q=>q_DUMMY(0));
+   
+   XLXI_53 : COMPM4_HXILINX_bloque_calculo
+      port map (A0=>q_DUMMY(0),
+                A1=>q_DUMMY(1),
+                A2=>q_DUMMY(2),
+                A3=>q_DUMMY(3),
+                B0=>cero,
+                B1=>cero,
+                B2=>uno,
+                B3=>cero,
+                GT=>XLXN_42,
+                LT=>open);
+   
+   XLXI_54 : GND
+      port map (G=>cero);
+   
+   XLXI_55 : VCC
+      port map (P=>uno);
+   
+   XLXI_56 : INV
+      port map (I=>initZ,
+                O=>init);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity regdesp8b_MUSER_bloque_calculo is
+   port ( ce          : in    std_logic; 
+          ck          : in    std_logic; 
+          data        : in    std_logic_vector (7 downto 0); 
+          load        : in    std_logic; 
+          sinc_reset  : in    std_logic; 
+          ser_out_msb : out   std_logic);
+end regdesp8b_MUSER_bloque_calculo;
+
+architecture BEHAVIORAL of regdesp8b_MUSER_bloque_calculo is
+   attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
+   signal cero        : std_logic;
+   signal ce_total    : std_logic;
+   signal q           : std_logic_vector (7 downto 0);
+   signal XLXN_26     : std_logic_vector (7 downto 0);
+   component FDRE
+      port ( C  : in    std_logic; 
+             CE : in    std_logic; 
+             D  : in    std_logic; 
+             R  : in    std_logic; 
+             Q  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDRE : component is "BLACK_BOX";
+   
+   component M2_1_HXILINX_bloque_calculo
+      port ( D0 : in    std_logic; 
+             D1 : in    std_logic; 
+             S0 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component GND
+      port ( G : out   std_logic);
+   end component;
+   attribute BOX_TYPE of GND : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_256";
+   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_255";
+   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_254";
+   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_253";
+   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_252";
+   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_251";
+   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_250";
+   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_249";
+begin
+   XLXI_1_0 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(0),
+                R=>sinc_reset,
+                Q=>q(0));
+   
+   XLXI_1_1 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(1),
+                R=>sinc_reset,
+                Q=>q(1));
+   
+   XLXI_1_2 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(2),
+                R=>sinc_reset,
+                Q=>q(2));
+   
+   XLXI_1_3 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(3),
+                R=>sinc_reset,
+                Q=>q(3));
+   
+   XLXI_1_4 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(4),
+                R=>sinc_reset,
+                Q=>q(4));
+   
+   XLXI_1_5 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(5),
+                R=>sinc_reset,
+                Q=>q(5));
+   
+   XLXI_1_6 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(6),
+                R=>sinc_reset,
+                Q=>q(6));
+   
+   XLXI_1_7 : FDRE
+      port map (C=>ck,
+                CE=>ce_total,
+                D=>XLXN_26(7),
+                R=>sinc_reset,
+                Q=>q(7));
+   
+   XLXI_2_0 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>cero,
+                D1=>data(0),
+                S0=>load,
+                O=>XLXN_26(0));
+   
+   XLXI_2_1 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(0),
+                D1=>data(1),
+                S0=>load,
+                O=>XLXN_26(1));
+   
+   XLXI_2_2 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(1),
+                D1=>data(2),
+                S0=>load,
+                O=>XLXN_26(2));
+   
+   XLXI_2_3 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(2),
+                D1=>data(3),
+                S0=>load,
+                O=>XLXN_26(3));
+   
+   XLXI_2_4 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(3),
+                D1=>data(4),
+                S0=>load,
+                O=>XLXN_26(4));
+   
+   XLXI_2_5 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(4),
+                D1=>data(5),
+                S0=>load,
+                O=>XLXN_26(5));
+   
+   XLXI_2_6 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(5),
+                D1=>data(6),
+                S0=>load,
+                O=>XLXN_26(6));
+   
+   XLXI_2_7 : M2_1_HXILINX_bloque_calculo
+      port map (D0=>q(6),
+                D1=>data(7),
+                S0=>load,
+                O=>XLXN_26(7));
+   
+   XLXI_6 : BUF
+      port map (I=>q(7),
+                O=>ser_out_msb);
+   
+   XLXI_10 : GND
+      port map (G=>cero);
+   
+   XLXI_19 : OR2
+      port map (I0=>load,
+                I1=>ce,
+                O=>ce_total);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity Conversor_Bin_BCD_decim_MUSER_bloque_calculo is
+   port ( ck               : in    std_logic; 
+          dato_bin_decimal : in    std_logic_vector (7 downto 0); 
+          dato_bin_entero  : in    std_logic_vector (7 downto 0); 
+          inicio           : in    std_logic; 
+          reset            : in    std_logic; 
+          cent             : out   std_logic_vector (3 downto 0); 
+          centesimas       : out   std_logic_vector (3 downto 0); 
+          dato_nuevo       : out   std_logic; 
+          dec              : out   std_logic_vector (3 downto 0); 
+          decimas          : out   std_logic_vector (3 downto 0); 
+          diezmilesimas    : out   std_logic_vector (3 downto 0); 
+          milesimas        : out   std_logic_vector (3 downto 0); 
+          unid             : out   std_logic_vector (3 downto 0));
+end Conversor_Bin_BCD_decim_MUSER_bloque_calculo;
+
+architecture BEHAVIORAL of Conversor_Bin_BCD_decim_MUSER_bloque_calculo is
+   attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
+   signal bin_serie_decim_lsb : std_logic;
+   signal bin_serie_msb       : std_logic;
+   signal centesimas_tmp      : std_logic_vector (3 downto 0);
+   signal cent_tmp            : std_logic_vector (3 downto 0);
+   signal ce_reg_salida       : std_logic;
+   signal decimas_tmp         : std_logic_vector (3 downto 0);
+   signal dec_tmp             : std_logic_vector (3 downto 0);
+   signal diezmilesimas_tmp   : std_logic_vector (3 downto 0);
+   signal initZ               : std_logic;
+   signal load                : std_logic;
+   signal milesimas_tmp       : std_logic_vector (3 downto 0);
+   signal unid_tmp            : std_logic_vector (3 downto 0);
+   signal XLXN_8              : std_logic;
+   signal XLXN_9              : std_logic;
+   signal XLXN_116            : std_logic;
+   signal XLXN_198            : std_logic;
+   signal XLXN_199            : std_logic;
+   signal XLXN_200            : std_logic;
+   signal XLXN_349            : std_logic;
+   signal XLXN_438            : std_logic;
+   signal XLXN_439            : std_logic;
+   signal XLXN_440            : std_logic;
+   signal XLXN_468            : std_logic;
+   signal XLXN_469            : std_logic;
+   signal XLXN_470            : std_logic;
+   signal XLXN_492            : std_logic;
+   component Bin_A_BCD_MUSER_bloque_calculo
+      port ( mod_out : out   std_logic; 
+             q       : out   std_logic_vector (3 downto 0); 
+             mod_in  : in    std_logic; 
+             initZ   : in    std_logic; 
+             ck      : in    std_logic);
+   end component;
+   
+   component regdesp8b_MUSER_bloque_calculo
+      port ( ck          : in    std_logic; 
+             ce          : in    std_logic; 
+             sinc_reset  : in    std_logic; 
+             load        : in    std_logic; 
+             data        : in    std_logic_vector (7 downto 0); 
+             ser_out_msb : out   std_logic);
+   end component;
+   
+   component GND
+      port ( G : out   std_logic);
+   end component;
+   attribute BOX_TYPE of GND : component is "BLACK_BOX";
+   
+   component FD4RE_HXILINX_bloque_calculo
+      port ( C  : in    std_logic; 
+             CE : in    std_logic; 
+             D0 : in    std_logic; 
+             D1 : in    std_logic; 
+             D2 : in    std_logic; 
+             D3 : in    std_logic; 
+             R  : in    std_logic; 
+             Q0 : out   std_logic; 
+             Q1 : out   std_logic; 
+             Q2 : out   std_logic; 
+             Q3 : out   std_logic);
+   end component;
+   
+   component control_bin_bcd
+      port ( CK            : in    std_logic; 
+             inicio        : in    std_logic; 
+             reset         : in    std_logic; 
+             ce_reg_salida : out   std_logic; 
+             dato_nuevo    : out   std_logic; 
+             initZ         : out   std_logic; 
+             load          : out   std_logic);
+   end component;
+   
+   component regdesp8b_lsb_MUSER_bloque_calculo
+      port ( sinc_reset  : in    std_logic; 
+             ser_out_lsb : out   std_logic; 
+             ck          : in    std_logic; 
+             data        : in    std_logic_vector (7 downto 0); 
+             load        : in    std_logic; 
+             ce          : in    std_logic);
+   end component;
+   
+   component Bin_A_BCD_decim_MUSER_bloque_calculo
+      port ( mod_out : out   std_logic; 
+             q       : out   std_logic_vector (3 downto 0); 
+             initZ   : in    std_logic; 
+             ck      : in    std_logic; 
+             mod_in  : in    std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_259";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_257";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_258";
+   attribute HU_SET of XLXI_84 : label is "XLXI_84_260";
+   attribute HU_SET of XLXI_85 : label is "XLXI_85_261";
+   attribute HU_SET of XLXI_86 : label is "XLXI_86_262";
+   attribute HU_SET of XLXI_103 : label is "XLXI_103_263";
+begin
+   XLXI_1 : Bin_A_BCD_MUSER_bloque_calculo
+      port map (ck=>ck,
+                initZ=>initZ,
+                mod_in=>bin_serie_msb,
+                mod_out=>XLXN_9,
+                q(3 downto 0)=>unid_tmp(3 downto 0));
+   
+   XLXI_2 : Bin_A_BCD_MUSER_bloque_calculo
+      port map (ck=>ck,
+                initZ=>initZ,
+                mod_in=>XLXN_9,
+                mod_out=>XLXN_8,
+                q(3 downto 0)=>dec_tmp(3 downto 0));
+   
+   XLXI_3 : Bin_A_BCD_MUSER_bloque_calculo
+      port map (ck=>ck,
+                initZ=>initZ,
+                mod_in=>XLXN_8,
+                mod_out=>open,
+                q(3 downto 0)=>cent_tmp(3 downto 0));
+   
+   XLXI_9 : regdesp8b_MUSER_bloque_calculo
+      port map (ce=>initZ,
+                ck=>ck,
+                data(7 downto 0)=>dato_bin_entero(7 downto 0),
+                load=>load,
+                sinc_reset=>XLXN_116,
+                ser_out_msb=>bin_serie_msb);
+   
+   XLXI_26 : GND
+      port map (G=>XLXN_116);
+   
+   XLXI_31 : FD4RE_HXILINX_bloque_calculo
+      port map (C=>ck,
+                CE=>ce_reg_salida,
+                D0=>unid_tmp(0),
+                D1=>unid_tmp(1),
+                D2=>unid_tmp(2),
+                D3=>unid_tmp(3),
+                R=>XLXN_198,
+                Q0=>unid(0),
+                Q1=>unid(1),
+                Q2=>unid(2),
+                Q3=>unid(3));
+   
+   XLXI_32 : GND
+      port map (G=>XLXN_198);
+   
+   XLXI_35 : FD4RE_HXILINX_bloque_calculo
+      port map (C=>ck,
+                CE=>ce_reg_salida,
+                D0=>dec_tmp(0),
+                D1=>dec_tmp(1),
+                D2=>dec_tmp(2),
+                D3=>dec_tmp(3),
+                R=>XLXN_199,
+                Q0=>dec(0),
+                Q1=>dec(1),
+                Q2=>dec(2),
+                Q3=>dec(3));
+   
+   XLXI_36 : GND
+      port map (G=>XLXN_199);
+   
+   XLXI_37 : FD4RE_HXILINX_bloque_calculo
+      port map (C=>ck,
+                CE=>ce_reg_salida,
+                D0=>cent_tmp(0),
+                D1=>cent_tmp(1),
+                D2=>cent_tmp(2),
+                D3=>cent_tmp(3),
+                R=>XLXN_200,
+                Q0=>cent(0),
+                Q1=>cent(1),
+                Q2=>cent(2),
+                Q3=>cent(3));
+   
+   XLXI_38 : GND
+      port map (G=>XLXN_200);
+   
+   XLXI_46 : control_bin_bcd
+      port map (CK=>ck,
+                inicio=>inicio,
+                reset=>reset,
+                ce_reg_salida=>ce_reg_salida,
+                dato_nuevo=>dato_nuevo,
+                initZ=>initZ,
+                load=>load);
+   
+   XLXI_72 : GND
+      port map (G=>XLXN_349);
+   
+   XLXI_84 : FD4RE_HXILINX_bloque_calculo
+      port map (C=>ck,
+                CE=>ce_reg_salida,
+                D0=>centesimas_tmp(0),
+                D1=>centesimas_tmp(1),
+                D2=>centesimas_tmp(2),
+                D3=>centesimas_tmp(3),
+                R=>XLXN_439,
+                Q0=>centesimas(0),
+                Q1=>centesimas(1),
+                Q2=>centesimas(2),
+                Q3=>centesimas(3));
+   
+   XLXI_85 : FD4RE_HXILINX_bloque_calculo
+      port map (C=>ck,
+                CE=>ce_reg_salida,
+                D0=>milesimas_tmp(0),
+                D1=>milesimas_tmp(1),
+                D2=>milesimas_tmp(2),
+                D3=>milesimas_tmp(3),
+                R=>XLXN_440,
+                Q0=>milesimas(0),
+                Q1=>milesimas(1),
+                Q2=>milesimas(2),
+                Q3=>milesimas(3));
+   
+   XLXI_86 : FD4RE_HXILINX_bloque_calculo
+      port map (C=>ck,
+                CE=>ce_reg_salida,
+                D0=>decimas_tmp(0),
+                D1=>decimas_tmp(1),
+                D2=>decimas_tmp(2),
+                D3=>decimas_tmp(3),
+                R=>XLXN_438,
+                Q0=>decimas(0),
+                Q1=>decimas(1),
+                Q2=>decimas(2),
+                Q3=>decimas(3));
+   
+   XLXI_87 : GND
+      port map (G=>XLXN_438);
+   
+   XLXI_88 : GND
+      port map (G=>XLXN_439);
+   
+   XLXI_89 : GND
+      port map (G=>XLXN_440);
+   
+   XLXI_90 : regdesp8b_lsb_MUSER_bloque_calculo
+      port map (ce=>initZ,
+                ck=>ck,
+                data(7 downto 0)=>dato_bin_decimal(7 downto 0),
+                load=>load,
+                sinc_reset=>XLXN_349,
+                ser_out_lsb=>bin_serie_decim_lsb);
+   
+   XLXI_91 : Bin_A_BCD_decim_MUSER_bloque_calculo
+      port map (ck=>ck,
+                initZ=>initZ,
+                mod_in=>bin_serie_decim_lsb,
+                mod_out=>XLXN_468,
+                q(3 downto 0)=>decimas_tmp(3 downto 0));
+   
+   XLXI_93 : Bin_A_BCD_decim_MUSER_bloque_calculo
+      port map (ck=>ck,
+                initZ=>initZ,
+                mod_in=>XLXN_468,
+                mod_out=>XLXN_469,
+                q(3 downto 0)=>centesimas_tmp(3 downto 0));
+   
+   XLXI_94 : Bin_A_BCD_decim_MUSER_bloque_calculo
+      port map (ck=>ck,
+                initZ=>initZ,
+                mod_in=>XLXN_469,
+                mod_out=>XLXN_470,
+                q(3 downto 0)=>milesimas_tmp(3 downto 0));
+   
+   XLXI_95 : Bin_A_BCD_decim_MUSER_bloque_calculo
+      port map (ck=>ck,
+                initZ=>initZ,
+                mod_in=>XLXN_470,
+                mod_out=>open,
+                q(3 downto 0)=>diezmilesimas_tmp(3 downto 0));
+   
+   XLXI_103 : FD4RE_HXILINX_bloque_calculo
+      port map (C=>ck,
+                CE=>ce_reg_salida,
+                D0=>diezmilesimas_tmp(0),
+                D1=>diezmilesimas_tmp(1),
+                D2=>diezmilesimas_tmp(2),
+                D3=>diezmilesimas_tmp(3),
+                R=>XLXN_492,
+                Q0=>diezmilesimas(0),
+                Q1=>diezmilesimas(1),
+                Q2=>diezmilesimas(2),
+                Q3=>diezmilesimas(3));
+   
+   XLXI_104 : GND
+      port map (G=>XLXN_492);
    
 end BEHAVIORAL;
 
@@ -1237,17 +2169,66 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
+entity complemento_a_dos_MUSER_bloque_calculo is
+   port ( ck       : in    std_logic; 
+          dato_ent : in    std_logic_vector (15 downto 0); 
+          dato_sal : out   std_logic_vector (15 downto 0));
+end complemento_a_dos_MUSER_bloque_calculo;
+
+architecture BEHAVIORAL of complemento_a_dos_MUSER_bloque_calculo is
+   attribute BOX_TYPE   : string ;
+   signal XLXN_6   : std_logic_vector (15 downto 0);
+   signal XLXN_9   : std_logic;
+   component sumres_16bs
+      port ( b   : in    std_logic_vector (15 downto 0); 
+             a   : in    std_logic_vector (15 downto 0); 
+             s   : out   std_logic_vector (15 downto 0); 
+             clk : in    std_logic; 
+             add : in    std_logic);
+   end component;
+   
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
+begin
+   XLXN_6(15 downto 0) <= x"0000";
+   XLXI_3 : sumres_16bs
+      port map (a(15 downto 0)=>XLXN_6(15 downto 0),
+                add=>XLXN_9,
+                b(15 downto 0)=>dato_ent(15 downto 0),
+                clk=>ck,
+                s(15 downto 0)=>dato_sal(15 downto 0));
+   
+   XLXI_4 : INV
+      port map (I=>dato_ent(15),
+                O=>XLXN_9);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
 entity multip_complejo_serie_MUSER_bloque_calculo is
-   port ( a           : in    std_logic_vector (7 downto 0); 
-          b           : in    std_logic_vector (7 downto 0); 
-          c           : in    std_logic_vector (7 downto 0); 
-          carga_cifra : in    std_logic; 
-          ck          : in    std_logic; 
-          d           : in    std_logic_vector (7 downto 0); 
-          reset       : in    std_logic; 
-          dato_imag   : out   std_logic_vector (15 downto 0); 
-          dato_real   : out   std_logic_vector (15 downto 0); 
-          multip_ok   : out   std_logic);
+   port ( a                : in    std_logic_vector (7 downto 0); 
+          b                : in    std_logic_vector (7 downto 0); 
+          c                : in    std_logic_vector (7 downto 0); 
+          carga_cifra      : in    std_logic; 
+          ck               : in    std_logic; 
+          d                : in    std_logic_vector (7 downto 0); 
+          reset            : in    std_logic; 
+          dato_imag        : out   std_logic_vector (15 downto 0); 
+          dato_real        : out   std_logic_vector (15 downto 0); 
+          multip_ok        : out   std_logic; 
+          signo_parte_imag : out   std_logic; 
+          signo_parte_real : out   std_logic);
 end multip_complejo_serie_MUSER_bloque_calculo;
 
 architecture BEHAVIORAL of multip_complejo_serie_MUSER_bloque_calculo is
@@ -1257,6 +2238,7 @@ architecture BEHAVIORAL of multip_complejo_serie_MUSER_bloque_calculo is
    signal ce_multip        : std_logic;
    signal ce_multip_ret    : std_logic;
    signal ce_sum_res       : std_logic;
+   signal dato_real_s      : std_logic_vector (15 downto 0);
    signal multiplicando1   : std_logic_vector (7 downto 0);
    signal multiplicando2   : std_logic_vector (7 downto 0);
    signal producto         : std_logic_vector (15 downto 0);
@@ -1325,24 +2307,36 @@ architecture BEHAVIORAL of multip_complejo_serie_MUSER_bloque_calculo is
              s   : out   std_logic_vector (15 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_389";
-   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_388";
-   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_387";
-   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_386";
-   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_385";
-   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_384";
-   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_383";
-   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_382";
-   attribute HU_SET of XLXI_9_0 : label is "XLXI_9_0_397";
-   attribute HU_SET of XLXI_9_1 : label is "XLXI_9_1_396";
-   attribute HU_SET of XLXI_9_2 : label is "XLXI_9_2_395";
-   attribute HU_SET of XLXI_9_3 : label is "XLXI_9_3_394";
-   attribute HU_SET of XLXI_9_4 : label is "XLXI_9_4_393";
-   attribute HU_SET of XLXI_9_5 : label is "XLXI_9_5_392";
-   attribute HU_SET of XLXI_9_6 : label is "XLXI_9_6_391";
-   attribute HU_SET of XLXI_9_7 : label is "XLXI_9_7_390";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_398";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_399";
+   component complemento_a_dos_MUSER_bloque_calculo
+      port ( ck       : in    std_logic; 
+             dato_ent : in    std_logic_vector (15 downto 0); 
+             dato_sal : out   std_logic_vector (15 downto 0));
+   end component;
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_271";
+   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_270";
+   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_269";
+   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_268";
+   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_267";
+   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_266";
+   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_265";
+   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_264";
+   attribute HU_SET of XLXI_9_0 : label is "XLXI_9_0_279";
+   attribute HU_SET of XLXI_9_1 : label is "XLXI_9_1_278";
+   attribute HU_SET of XLXI_9_2 : label is "XLXI_9_2_277";
+   attribute HU_SET of XLXI_9_3 : label is "XLXI_9_3_276";
+   attribute HU_SET of XLXI_9_4 : label is "XLXI_9_4_275";
+   attribute HU_SET of XLXI_9_5 : label is "XLXI_9_5_274";
+   attribute HU_SET of XLXI_9_6 : label is "XLXI_9_6_273";
+   attribute HU_SET of XLXI_9_7 : label is "XLXI_9_7_272";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_281";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_280";
 begin
    dato_imag(15 downto 0) <= dato_imag_DUMMY(15 downto 0);
    XLXI_6_0 : M2_1_HXILINX_bloque_calculo
@@ -1476,7 +2470,7 @@ begin
                 CE=>ce_carga_salida,
                 D(15 downto 0)=>dato_imag_DUMMY(15 downto 0),
                 R=>XLXN_74,
-                Q(15 downto 0)=>dato_real(15 downto 0));
+                Q(15 downto 0)=>dato_real_s(15 downto 0));
    
    XLXI_33 : FD16RE_HXILINX_bloque_calculo
       port map (C=>ck,
@@ -1493,820 +2487,18 @@ begin
                 clk=>ck,
                 s(15 downto 0)=>dato_imag_DUMMY(15 downto 0));
    
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity regdesp16b_MUSER_bloque_calculo is
-   port ( ce          : in    std_logic; 
-          ck          : in    std_logic; 
-          data        : in    std_logic_vector (15 downto 0); 
-          load        : in    std_logic; 
-          sinc_reset  : in    std_logic; 
-          ser_out_msb : out   std_logic);
-end regdesp16b_MUSER_bloque_calculo;
-
-architecture BEHAVIORAL of regdesp16b_MUSER_bloque_calculo is
-   attribute BOX_TYPE   : string ;
-   attribute HU_SET     : string ;
-   signal cero        : std_logic;
-   signal ce_total    : std_logic;
-   signal q           : std_logic_vector (15 downto 0);
-   signal XLXN_28     : std_logic_vector (15 downto 0);
-   component FDRE
-      port ( C  : in    std_logic; 
-             CE : in    std_logic; 
-             D  : in    std_logic; 
-             R  : in    std_logic; 
-             Q  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FDRE : component is "BLACK_BOX";
-   
-   component M2_1_HXILINX_bloque_calculo
-      port ( D0 : in    std_logic; 
-             D1 : in    std_logic; 
-             S0 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   
-   component BUF
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
-   
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_415";
-   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_414";
-   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_413";
-   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_412";
-   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_411";
-   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_410";
-   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_409";
-   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_408";
-   attribute HU_SET of XLXI_2_8 : label is "XLXI_2_8_407";
-   attribute HU_SET of XLXI_2_9 : label is "XLXI_2_9_406";
-   attribute HU_SET of XLXI_2_10 : label is "XLXI_2_10_405";
-   attribute HU_SET of XLXI_2_11 : label is "XLXI_2_11_404";
-   attribute HU_SET of XLXI_2_12 : label is "XLXI_2_12_403";
-   attribute HU_SET of XLXI_2_13 : label is "XLXI_2_13_402";
-   attribute HU_SET of XLXI_2_14 : label is "XLXI_2_14_401";
-   attribute HU_SET of XLXI_2_15 : label is "XLXI_2_15_400";
-begin
-   XLXI_1_0 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(0),
-                R=>sinc_reset,
-                Q=>q(0));
-   
-   XLXI_1_1 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(1),
-                R=>sinc_reset,
-                Q=>q(1));
-   
-   XLXI_1_2 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(2),
-                R=>sinc_reset,
-                Q=>q(2));
-   
-   XLXI_1_3 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(3),
-                R=>sinc_reset,
-                Q=>q(3));
-   
-   XLXI_1_4 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(4),
-                R=>sinc_reset,
-                Q=>q(4));
-   
-   XLXI_1_5 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(5),
-                R=>sinc_reset,
-                Q=>q(5));
-   
-   XLXI_1_6 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(6),
-                R=>sinc_reset,
-                Q=>q(6));
-   
-   XLXI_1_7 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(7),
-                R=>sinc_reset,
-                Q=>q(7));
-   
-   XLXI_1_8 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(8),
-                R=>sinc_reset,
-                Q=>q(8));
-   
-   XLXI_1_9 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(9),
-                R=>sinc_reset,
-                Q=>q(9));
-   
-   XLXI_1_10 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(10),
-                R=>sinc_reset,
-                Q=>q(10));
-   
-   XLXI_1_11 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(11),
-                R=>sinc_reset,
-                Q=>q(11));
-   
-   XLXI_1_12 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(12),
-                R=>sinc_reset,
-                Q=>q(12));
-   
-   XLXI_1_13 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(13),
-                R=>sinc_reset,
-                Q=>q(13));
-   
-   XLXI_1_14 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(14),
-                R=>sinc_reset,
-                Q=>q(14));
-   
-   XLXI_1_15 : FDRE
-      port map (C=>ck,
-                CE=>ce_total,
-                D=>XLXN_28(15),
-                R=>sinc_reset,
-                Q=>q(15));
-   
-   XLXI_2_0 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>cero,
-                D1=>data(0),
-                S0=>load,
-                O=>XLXN_28(0));
-   
-   XLXI_2_1 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(0),
-                D1=>data(1),
-                S0=>load,
-                O=>XLXN_28(1));
-   
-   XLXI_2_2 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(1),
-                D1=>data(2),
-                S0=>load,
-                O=>XLXN_28(2));
-   
-   XLXI_2_3 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(2),
-                D1=>data(3),
-                S0=>load,
-                O=>XLXN_28(3));
-   
-   XLXI_2_4 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(3),
-                D1=>data(4),
-                S0=>load,
-                O=>XLXN_28(4));
-   
-   XLXI_2_5 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(4),
-                D1=>data(5),
-                S0=>load,
-                O=>XLXN_28(5));
-   
-   XLXI_2_6 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(5),
-                D1=>data(6),
-                S0=>load,
-                O=>XLXN_28(6));
-   
-   XLXI_2_7 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(6),
-                D1=>data(7),
-                S0=>load,
-                O=>XLXN_28(7));
-   
-   XLXI_2_8 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(7),
-                D1=>data(8),
-                S0=>load,
-                O=>XLXN_28(8));
-   
-   XLXI_2_9 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(8),
-                D1=>data(9),
-                S0=>load,
-                O=>XLXN_28(9));
-   
-   XLXI_2_10 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(9),
-                D1=>data(10),
-                S0=>load,
-                O=>XLXN_28(10));
-   
-   XLXI_2_11 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(10),
-                D1=>data(11),
-                S0=>load,
-                O=>XLXN_28(11));
-   
-   XLXI_2_12 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(11),
-                D1=>data(12),
-                S0=>load,
-                O=>XLXN_28(12));
-   
-   XLXI_2_13 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(12),
-                D1=>data(13),
-                S0=>load,
-                O=>XLXN_28(13));
-   
-   XLXI_2_14 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(13),
-                D1=>data(14),
-                S0=>load,
-                O=>XLXN_28(14));
-   
-   XLXI_2_15 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q(14),
-                D1=>data(15),
-                S0=>load,
-                O=>XLXN_28(15));
-   
-   XLXI_6 : BUF
-      port map (I=>q(15),
-                O=>ser_out_msb);
-   
-   XLXI_10 : GND
-      port map (G=>cero);
-   
-   XLXI_19 : OR2
-      port map (I0=>load,
-                I1=>ce,
-                O=>ce_total);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity Bin_A_BCD_MUSER_bloque_calculo is
-   port ( ck      : in    std_logic; 
-          initZ   : in    std_logic; 
-          mod_in  : in    std_logic; 
-          mod_out : out   std_logic; 
-          q       : out   std_logic_vector (3 downto 0));
-end Bin_A_BCD_MUSER_bloque_calculo;
-
-architecture BEHAVIORAL of Bin_A_BCD_MUSER_bloque_calculo is
-   attribute BOX_TYPE   : string ;
-   attribute HU_SET     : string ;
-   signal cero          : std_logic;
-   signal init          : std_logic;
-   signal uno           : std_logic;
-   signal XLXN_6        : std_logic;
-   signal XLXN_7        : std_logic;
-   signal XLXN_8        : std_logic;
-   signal XLXN_42       : std_logic;
-   signal XLXN_48       : std_logic;
-   signal XLXN_49       : std_logic;
-   signal XLXN_50       : std_logic;
-   signal mod_out_DUMMY : std_logic;
-   signal q_DUMMY       : std_logic_vector (3 downto 0);
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-   component XNOR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XNOR2 : component is "BLACK_BOX";
-   
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
-   component M2_1_HXILINX_bloque_calculo
-      port ( D0 : in    std_logic; 
-             D1 : in    std_logic; 
-             S0 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   
-   component FDR
-      port ( C : in    std_logic; 
-             D : in    std_logic; 
-             R : in    std_logic; 
-             Q : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FDR : component is "BLACK_BOX";
-   
-   component COMPM4_HXILINX_bloque_calculo
-      port ( A0 : in    std_logic; 
-             A1 : in    std_logic; 
-             A2 : in    std_logic; 
-             A3 : in    std_logic; 
-             B0 : in    std_logic; 
-             B1 : in    std_logic; 
-             B2 : in    std_logic; 
-             B3 : in    std_logic; 
-             GT : out   std_logic; 
-             LT : out   std_logic);
-   end component;
-   
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
-   component VCC
-      port ( P : out   std_logic);
-   end component;
-   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_418";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_416";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_417";
-   attribute HU_SET of XLXI_53 : label is "XLXI_53_419";
-begin
-   mod_out <= mod_out_DUMMY;
-   q(3 downto 0) <= q_DUMMY(3 downto 0);
-   XLXI_8 : AND2
-      port map (I0=>XLXN_42,
-                I1=>initZ,
-                O=>mod_out_DUMMY);
-   
-   XLXI_9 : AND2
-      port map (I0=>q_DUMMY(0),
-                I1=>q_DUMMY(3),
-                O=>XLXN_48);
-   
-   XLXI_10 : XNOR2
-      port map (I0=>q_DUMMY(0),
-                I1=>q_DUMMY(1),
-                O=>XLXN_49);
-   
-   XLXI_11 : INV
-      port map (I=>q_DUMMY(0),
-                O=>XLXN_50);
-   
-   XLXI_12 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q_DUMMY(2),
-                D1=>XLXN_48,
-                S0=>mod_out_DUMMY,
-                O=>XLXN_6);
-   
-   XLXI_13 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q_DUMMY(1),
-                D1=>XLXN_49,
-                S0=>mod_out_DUMMY,
-                O=>XLXN_7);
-   
-   XLXI_30 : M2_1_HXILINX_bloque_calculo
-      port map (D0=>q_DUMMY(0),
-                D1=>XLXN_50,
-                S0=>mod_out_DUMMY,
-                O=>XLXN_8);
-   
-   XLXI_38 : FDR
-      port map (C=>ck,
-                D=>XLXN_6,
-                R=>init,
-                Q=>q_DUMMY(3));
-   
-   XLXI_39 : FDR
-      port map (C=>ck,
-                D=>XLXN_7,
-                R=>init,
-                Q=>q_DUMMY(2));
-   
-   XLXI_40 : FDR
-      port map (C=>ck,
-                D=>XLXN_8,
-                R=>init,
-                Q=>q_DUMMY(1));
-   
-   XLXI_41 : FDR
-      port map (C=>ck,
-                D=>mod_in,
-                R=>init,
-                Q=>q_DUMMY(0));
-   
-   XLXI_53 : COMPM4_HXILINX_bloque_calculo
-      port map (A0=>q_DUMMY(0),
-                A1=>q_DUMMY(1),
-                A2=>q_DUMMY(2),
-                A3=>q_DUMMY(3),
-                B0=>cero,
-                B1=>cero,
-                B2=>uno,
-                B3=>cero,
-                GT=>XLXN_42,
-                LT=>open);
-   
-   XLXI_54 : GND
-      port map (G=>cero);
-   
-   XLXI_55 : VCC
-      port map (P=>uno);
-   
-   XLXI_56 : INV
-      port map (I=>initZ,
-                O=>init);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity Conversor_Bin_BCD_16b_MUSER_bloque_calculo is
-   port ( ck              : in    std_logic; 
-          dato_bin_entero : in    std_logic_vector (15 downto 0); 
-          inicio          : in    std_logic; 
-          reset           : in    std_logic; 
-          bcd0            : out   std_logic_vector (3 downto 0); 
-          bcd1            : out   std_logic_vector (3 downto 0); 
-          bcd2            : out   std_logic_vector (3 downto 0); 
-          bcd3            : out   std_logic_vector (3 downto 0); 
-          bcd4            : out   std_logic_vector (3 downto 0); 
-          dato_nuevo      : out   std_logic);
-end Conversor_Bin_BCD_16b_MUSER_bloque_calculo;
-
-architecture BEHAVIORAL of Conversor_Bin_BCD_16b_MUSER_bloque_calculo is
-   attribute BOX_TYPE   : string ;
-   signal bcd_tmp0        : std_logic_vector (3 downto 0);
-   signal bcd_tmp1        : std_logic_vector (3 downto 0);
-   signal bcd_tmp2        : std_logic_vector (3 downto 0);
-   signal bcd_tmp3        : std_logic_vector (3 downto 0);
-   signal bcd_tmp4        : std_logic_vector (3 downto 0);
-   signal bin_serie_msb   : std_logic;
-   signal ce_reg_salida   : std_logic;
-   signal initZ           : std_logic;
-   signal load            : std_logic;
-   signal XLXN_8          : std_logic;
-   signal XLXN_9          : std_logic;
-   signal XLXN_116        : std_logic;
-   signal XLXN_563        : std_logic;
-   signal XLXN_564        : std_logic;
-   signal XLXN_671        : std_logic_vector (19 downto 0);
-   component Bin_A_BCD_MUSER_bloque_calculo
-      port ( mod_out : out   std_logic; 
-             q       : out   std_logic_vector (3 downto 0); 
-             mod_in  : in    std_logic; 
-             initZ   : in    std_logic; 
-             ck      : in    std_logic);
-   end component;
-   
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
-   component FDCE
-      port ( C   : in    std_logic; 
-             CE  : in    std_logic; 
-             CLR : in    std_logic; 
-             D   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
-   
-   component regdesp16b_MUSER_bloque_calculo
-      port ( sinc_reset  : in    std_logic; 
-             ce          : in    std_logic; 
-             ck          : in    std_logic; 
-             data        : in    std_logic_vector (15 downto 0); 
-             load        : in    std_logic; 
-             ser_out_msb : out   std_logic);
-   end component;
-   
-   component control_bin_bcd_16b
-      port ( CK            : in    std_logic; 
-             ce_reg_salida : out   std_logic; 
-             dato_nuevo    : out   std_logic; 
-             initZ         : out   std_logic; 
-             load          : out   std_logic; 
-             inicio        : in    std_logic; 
-             reset         : in    std_logic);
-   end component;
-   
-begin
-   XLXI_1 : Bin_A_BCD_MUSER_bloque_calculo
+   XLXI_35 : complemento_a_dos_MUSER_bloque_calculo
       port map (ck=>ck,
-                initZ=>initZ,
-                mod_in=>bin_serie_msb,
-                mod_out=>XLXN_9,
-                q(3 downto 0)=>bcd_tmp0(3 downto 0));
+                dato_ent(15 downto 0)=>dato_real_s(15 downto 0),
+                dato_sal(15 downto 0)=>dato_real(15 downto 0));
    
-   XLXI_2 : Bin_A_BCD_MUSER_bloque_calculo
-      port map (ck=>ck,
-                initZ=>initZ,
-                mod_in=>XLXN_9,
-                mod_out=>XLXN_8,
-                q(3 downto 0)=>bcd_tmp1(3 downto 0));
+   XLXI_42 : BUF
+      port map (I=>dato_real_s(15),
+                O=>signo_parte_real);
    
-   XLXI_3 : Bin_A_BCD_MUSER_bloque_calculo
-      port map (ck=>ck,
-                initZ=>initZ,
-                mod_in=>XLXN_8,
-                mod_out=>XLXN_564,
-                q(3 downto 0)=>bcd_tmp2(3 downto 0));
-   
-   XLXI_26 : GND
-      port map (G=>XLXN_116);
-   
-   XLXI_32_0 : GND
-      port map (G=>XLXN_671(0));
-   
-   XLXI_32_1 : GND
-      port map (G=>XLXN_671(1));
-   
-   XLXI_32_2 : GND
-      port map (G=>XLXN_671(2));
-   
-   XLXI_32_3 : GND
-      port map (G=>XLXN_671(3));
-   
-   XLXI_32_4 : GND
-      port map (G=>XLXN_671(4));
-   
-   XLXI_32_5 : GND
-      port map (G=>XLXN_671(5));
-   
-   XLXI_32_6 : GND
-      port map (G=>XLXN_671(6));
-   
-   XLXI_32_7 : GND
-      port map (G=>XLXN_671(7));
-   
-   XLXI_32_8 : GND
-      port map (G=>XLXN_671(8));
-   
-   XLXI_32_9 : GND
-      port map (G=>XLXN_671(9));
-   
-   XLXI_32_10 : GND
-      port map (G=>XLXN_671(10));
-   
-   XLXI_32_11 : GND
-      port map (G=>XLXN_671(11));
-   
-   XLXI_32_12 : GND
-      port map (G=>XLXN_671(12));
-   
-   XLXI_32_13 : GND
-      port map (G=>XLXN_671(13));
-   
-   XLXI_32_14 : GND
-      port map (G=>XLXN_671(14));
-   
-   XLXI_32_15 : GND
-      port map (G=>XLXN_671(15));
-   
-   XLXI_32_16 : GND
-      port map (G=>XLXN_671(16));
-   
-   XLXI_32_17 : GND
-      port map (G=>XLXN_671(17));
-   
-   XLXI_32_18 : GND
-      port map (G=>XLXN_671(18));
-   
-   XLXI_32_19 : GND
-      port map (G=>XLXN_671(19));
-   
-   XLXI_92 : Bin_A_BCD_MUSER_bloque_calculo
-      port map (ck=>ck,
-                initZ=>initZ,
-                mod_in=>XLXN_564,
-                mod_out=>XLXN_563,
-                q(3 downto 0)=>bcd_tmp3(3 downto 0));
-   
-   XLXI_93 : Bin_A_BCD_MUSER_bloque_calculo
-      port map (ck=>ck,
-                initZ=>initZ,
-                mod_in=>XLXN_563,
-                mod_out=>open,
-                q(3 downto 0)=>bcd_tmp4(3 downto 0));
-   
-   XLXI_122_0 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(0),
-                D=>bcd_tmp0(0),
-                Q=>bcd0(0));
-   
-   XLXI_122_1 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(1),
-                D=>bcd_tmp0(1),
-                Q=>bcd0(1));
-   
-   XLXI_122_2 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(2),
-                D=>bcd_tmp0(2),
-                Q=>bcd0(2));
-   
-   XLXI_122_3 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(3),
-                D=>bcd_tmp0(3),
-                Q=>bcd0(3));
-   
-   XLXI_122_4 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(4),
-                D=>bcd_tmp1(0),
-                Q=>bcd1(0));
-   
-   XLXI_122_5 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(5),
-                D=>bcd_tmp1(1),
-                Q=>bcd1(1));
-   
-   XLXI_122_6 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(6),
-                D=>bcd_tmp1(2),
-                Q=>bcd1(2));
-   
-   XLXI_122_7 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(7),
-                D=>bcd_tmp1(3),
-                Q=>bcd1(3));
-   
-   XLXI_122_8 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(8),
-                D=>bcd_tmp2(0),
-                Q=>bcd2(0));
-   
-   XLXI_122_9 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(9),
-                D=>bcd_tmp2(1),
-                Q=>bcd2(1));
-   
-   XLXI_122_10 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(10),
-                D=>bcd_tmp2(2),
-                Q=>bcd2(2));
-   
-   XLXI_122_11 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(11),
-                D=>bcd_tmp2(3),
-                Q=>bcd2(3));
-   
-   XLXI_122_12 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(12),
-                D=>bcd_tmp3(0),
-                Q=>bcd3(0));
-   
-   XLXI_122_13 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(13),
-                D=>bcd_tmp3(1),
-                Q=>bcd3(1));
-   
-   XLXI_122_14 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(14),
-                D=>bcd_tmp3(2),
-                Q=>bcd3(2));
-   
-   XLXI_122_15 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(15),
-                D=>bcd_tmp3(3),
-                Q=>bcd3(3));
-   
-   XLXI_122_16 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(16),
-                D=>bcd_tmp4(0),
-                Q=>bcd4(0));
-   
-   XLXI_122_17 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(17),
-                D=>bcd_tmp4(1),
-                Q=>bcd4(1));
-   
-   XLXI_122_18 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(18),
-                D=>bcd_tmp4(2),
-                Q=>bcd4(2));
-   
-   XLXI_122_19 : FDCE
-      port map (C=>ck,
-                CE=>ce_reg_salida,
-                CLR=>XLXN_671(19),
-                D=>bcd_tmp4(3),
-                Q=>bcd4(3));
-   
-   XLXI_123 : regdesp16b_MUSER_bloque_calculo
-      port map (ce=>initZ,
-                ck=>ck,
-                data(15 downto 0)=>dato_bin_entero(15 downto 0),
-                load=>load,
-                sinc_reset=>XLXN_116,
-                ser_out_msb=>bin_serie_msb);
-   
-   XLXI_124 : control_bin_bcd_16b
-      port map (CK=>ck,
-                inicio=>inicio,
-                reset=>reset,
-                ce_reg_salida=>ce_reg_salida,
-                dato_nuevo=>dato_nuevo,
-                initZ=>initZ,
-                load=>load);
+   XLXI_43 : BUF
+      port map (I=>dato_imag_DUMMY(15),
+                O=>signo_parte_imag);
    
 end BEHAVIORAL;
 
@@ -2416,11 +2608,11 @@ architecture BEHAVIORAL of Comp_Num_Letra_MUSER_bloque_calculo is
    end component;
    attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_421";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_422";
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_420";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_423";
-   attribute HU_SET of XLXI_43 : label is "XLXI_43_424";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_283";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_284";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_282";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_285";
+   attribute HU_SET of XLXI_43 : label is "XLXI_43_286";
 begin
    XLXI_2 : GND
       port map (G=>cero);
@@ -2554,7 +2746,10 @@ entity bloque_calculo is
           display_nexys3_4     : out   std_logic_vector (3 downto 0); 
           multip_bcd_nueva     : out   std_logic; 
           punto_decimal_nexys3 : out   std_logic_vector (4 downto 1); 
-          signo_parte_real     : out   std_logic);
+          signo_imag           : out   std_logic; 
+          signo_parte_imag     : out   std_logic; 
+          signo_parte_real     : out   std_logic; 
+          signo_real           : out   std_logic);
 end bloque_calculo;
 
 architecture BEHAVIORAL of bloque_calculo is
@@ -2568,13 +2763,10 @@ architecture BEHAVIORAL of bloque_calculo is
    signal d                      : std_logic_vector (7 downto 0);
    signal dato                   : std_logic_vector (7 downto 0);
    signal dato_imag              : std_logic_vector (15 downto 0);
-   signal dato_imag_s            : std_logic_vector (15 downto 0);
    signal dato_nuevo             : std_logic;
    signal dato_ok                : std_logic;
    signal dato_real              : std_logic_vector (15 downto 0);
-   signal dato_real_s            : std_logic_vector (15 downto 0);
    signal decimas                : std_logic_vector (3 downto 0);
-   signal descomplementado       : std_logic;
    signal entZ_sal               : std_logic;
    signal imag_bcd0              : std_logic_vector (3 downto 0);
    signal imag_bcd1              : std_logic_vector (3 downto 0);
@@ -2588,6 +2780,8 @@ architecture BEHAVIORAL of bloque_calculo is
    signal real_bcd2              : std_logic_vector (3 downto 0);
    signal real_bcd3              : std_logic_vector (3 downto 0);
    signal unidades               : std_logic_vector (3 downto 0);
+   signal signo_parte_real_DUMMY : std_logic;
+   signal signo_parte_imag_DUMMY : std_logic;
    signal multip_bcd_nueva_DUMMY : std_logic;
    component Comp_Num_Letra_MUSER_bloque_calculo
       port ( tecla_pulsada : in    std_logic; 
@@ -2607,29 +2801,18 @@ architecture BEHAVIORAL of bloque_calculo is
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
    component multip_complejo_serie_MUSER_bloque_calculo
-      port ( a           : in    std_logic_vector (7 downto 0); 
-             b           : in    std_logic_vector (7 downto 0); 
-             c           : in    std_logic_vector (7 downto 0); 
-             carga_cifra : in    std_logic; 
-             ck          : in    std_logic; 
-             d           : in    std_logic_vector (7 downto 0); 
-             reset       : in    std_logic; 
-             dato_imag   : out   std_logic_vector (15 downto 0); 
-             dato_real   : out   std_logic_vector (15 downto 0); 
-             multip_ok   : out   std_logic);
-   end component;
-   
-   component Conversor_Bin_BCD_16b_MUSER_bloque_calculo
-      port ( dato_bin_entero : in    std_logic_vector (15 downto 0); 
-             inicio          : in    std_logic; 
-             ck              : in    std_logic; 
-             reset           : in    std_logic; 
-             dato_nuevo      : out   std_logic; 
-             bcd0            : out   std_logic_vector (3 downto 0); 
-             bcd1            : out   std_logic_vector (3 downto 0); 
-             bcd2            : out   std_logic_vector (3 downto 0); 
-             bcd3            : out   std_logic_vector (3 downto 0); 
-             bcd4            : out   std_logic_vector (3 downto 0));
+      port ( a                : in    std_logic_vector (7 downto 0); 
+             b                : in    std_logic_vector (7 downto 0); 
+             c                : in    std_logic_vector (7 downto 0); 
+             carga_cifra      : in    std_logic; 
+             ck               : in    std_logic; 
+             d                : in    std_logic_vector (7 downto 0); 
+             dato_imag        : out   std_logic_vector (15 downto 0); 
+             dato_real        : out   std_logic_vector (15 downto 0); 
+             multip_ok        : out   std_logic; 
+             reset            : in    std_logic; 
+             signo_parte_imag : out   std_logic; 
+             signo_parte_real : out   std_logic);
    end component;
    
    component mux_ES_7seg_MUSER_bloque_calculo
@@ -2692,16 +2875,12 @@ architecture BEHAVIORAL of bloque_calculo is
              sinc_reset : in    std_logic);
    end component;
    
-   component descomplementador_a_dos_MUSER_bloque_calculo
-      port ( ce                 : in    std_logic; 
-             ck                 : in    std_logic; 
-             dato_imag_signed   : in    std_logic_vector (15 downto 0); 
-             dato_imag_unsigned : out   std_logic_vector (15 downto 0); 
-             dato_real_signed   : in    std_logic_vector (15 downto 0); 
-             dato_real_unsigned : out   std_logic_vector (15 downto 0); 
-             descomplementado   : out   std_logic; 
-             reset              : in    std_logic);
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
    end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
    component AND2
       port ( I0 : in    std_logic; 
@@ -2710,8 +2889,26 @@ architecture BEHAVIORAL of bloque_calculo is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
+   component Conversor_Bin_BCD_decim_MUSER_bloque_calculo
+      port ( dato_nuevo       : out   std_logic; 
+             unid             : out   std_logic_vector (3 downto 0); 
+             dec              : out   std_logic_vector (3 downto 0); 
+             cent             : out   std_logic_vector (3 downto 0); 
+             decimas          : out   std_logic_vector (3 downto 0); 
+             centesimas       : out   std_logic_vector (3 downto 0); 
+             milesimas        : out   std_logic_vector (3 downto 0); 
+             diezmilesimas    : out   std_logic_vector (3 downto 0); 
+             dato_bin_entero  : in    std_logic_vector (7 downto 0); 
+             dato_bin_decimal : in    std_logic_vector (7 downto 0); 
+             inicio           : in    std_logic; 
+             ck               : in    std_logic; 
+             reset            : in    std_logic);
+   end component;
+   
 begin
    multip_bcd_nueva <= multip_bcd_nueva_DUMMY;
+   signo_parte_imag <= signo_parte_imag_DUMMY;
+   signo_parte_real <= signo_parte_real_DUMMY;
    XLXI_3 : Comp_Num_Letra_MUSER_bloque_calculo
       port map (ck=>ck,
                 cod_tecla(3 downto 0)=>cod_tecla(3 downto 0),
@@ -2779,33 +2976,11 @@ begin
                 ck=>ck,
                 d(7 downto 0)=>d(7 downto 0),
                 reset=>reset,
-                dato_imag(15 downto 0)=>dato_imag_s(15 downto 0),
-                dato_real(15 downto 0)=>dato_real_s(15 downto 0),
-                multip_ok=>multip_ok);
-   
-   XLXI_49 : Conversor_Bin_BCD_16b_MUSER_bloque_calculo
-      port map (ck=>ck,
-                dato_bin_entero(15 downto 0)=>dato_real(15 downto 0),
-                inicio=>descomplementado,
-                reset=>reset,
-                bcd0(3 downto 0)=>real_bcd0(3 downto 0),
-                bcd1(3 downto 0)=>real_bcd1(3 downto 0),
-                bcd2(3 downto 0)=>real_bcd2(3 downto 0),
-                bcd3(3 downto 0)=>real_bcd3(3 downto 0),
-                bcd4=>open,
-                dato_nuevo=>multip_bcd_nueva_DUMMY);
-   
-   XLXI_51 : Conversor_Bin_BCD_16b_MUSER_bloque_calculo
-      port map (ck=>ck,
-                dato_bin_entero(15 downto 0)=>dato_imag(15 downto 0),
-                inicio=>descomplementado,
-                reset=>reset,
-                bcd0(3 downto 0)=>imag_bcd0(3 downto 0),
-                bcd1(3 downto 0)=>imag_bcd1(3 downto 0),
-                bcd2(3 downto 0)=>imag_bcd2(3 downto 0),
-                bcd3(3 downto 0)=>imag_bcd3(3 downto 0),
-                bcd4=>open,
-                dato_nuevo=>open);
+                dato_imag(15 downto 0)=>dato_imag(15 downto 0),
+                dato_real(15 downto 0)=>dato_real(15 downto 0),
+                multip_ok=>multip_ok,
+                signo_parte_imag=>signo_parte_imag_DUMMY,
+                signo_parte_real=>signo_parte_real_DUMMY);
    
    XLXI_60 : mux_ES_7seg_MUSER_bloque_calculo
       port map (ck=>ck,
@@ -2847,7 +3022,7 @@ begin
       port map (ce=>carga_cifra,
                 ck=>ck,
                 entrada(3 downto 0)=>cifra(3 downto 0),
-                sinc_reset=>multip_ok,
+                sinc_reset=>dato_nuevo,
                 dato_ok=>open,
                 dato1(3 downto 0)=>decimas(3 downto 0),
                 dato2(3 downto 0)=>unidades(3 downto 0));
@@ -2863,20 +3038,45 @@ begin
                 dato3(7 downto 0)=>b(7 downto 0),
                 dato4(7 downto 0)=>a(7 downto 0));
    
-   XLXI_67 : descomplementador_a_dos_MUSER_bloque_calculo
-      port map (ce=>multip_ok,
-                ck=>ck,
-                dato_imag_signed(15 downto 0)=>dato_imag_s(15 downto 0),
-                dato_real_signed(15 downto 0)=>dato_real_s(15 downto 0),
-                reset=>reset,
-                dato_imag_unsigned(15 downto 0)=>dato_imag(15 downto 0),
-                dato_real_unsigned(15 downto 0)=>dato_real(15 downto 0),
-                descomplementado=>descomplementado);
-   
-   XLXI_69 : AND2
+   XLXI_70 : AND2B1
       port map (I0=>sw0,
-                I1=>dato_real_s(15),
-                O=>signo_parte_real);
+                I1=>signo_parte_real_DUMMY,
+                O=>signo_real);
+   
+   XLXI_74 : AND2
+      port map (I0=>sw0,
+                I1=>signo_parte_imag_DUMMY,
+                O=>signo_imag);
+   
+   XLXI_83 : Conversor_Bin_BCD_decim_MUSER_bloque_calculo
+      port map (ck=>ck,
+                dato_bin_decimal(7 downto 0)=>dato_real(7 downto 0),
+                dato_bin_entero(7 downto 0)=>dato_real(15 downto 8),
+                inicio=>multip_ok,
+                reset=>reset,
+                cent=>open,
+                centesimas(3 downto 0)=>real_bcd0(3 downto 0),
+                dato_nuevo=>multip_bcd_nueva_DUMMY,
+                dec(3 downto 0)=>real_bcd3(3 downto 0),
+                decimas(3 downto 0)=>real_bcd1(3 downto 0),
+                diezmilesimas=>open,
+                milesimas=>open,
+                unid(3 downto 0)=>real_bcd2(3 downto 0));
+   
+   XLXI_84 : Conversor_Bin_BCD_decim_MUSER_bloque_calculo
+      port map (ck=>ck,
+                dato_bin_decimal(7 downto 0)=>dato_imag(7 downto 0),
+                dato_bin_entero(7 downto 0)=>dato_imag(15 downto 8),
+                inicio=>multip_ok,
+                reset=>reset,
+                cent=>open,
+                centesimas(3 downto 0)=>imag_bcd0(3 downto 0),
+                dato_nuevo=>open,
+                dec(3 downto 0)=>imag_bcd3(3 downto 0),
+                decimas(3 downto 0)=>imag_bcd1(3 downto 0),
+                diezmilesimas=>open,
+                milesimas=>open,
+                unid(3 downto 0)=>imag_bcd2(3 downto 0));
    
 end BEHAVIORAL;
 

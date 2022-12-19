@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Sat Dec 17 21:32:04 2022
+# Date: Mon Dec 19 14:27:31 2022
 #
 ##############################################################
 #
@@ -53,7 +53,7 @@ CSET bypass_ce_priority=CE_Overrides_Bypass
 CSET bypass_sense=Active_High
 CSET c_in=false
 CSET c_out=false
-CSET ce=true
+CSET ce=false
 CSET component_name=sumres_16bs
 CSET implementation=Fabric
 CSET latency=1
@@ -70,4 +70,4 @@ CSET sync_ctrl_priority=Reset_Overrides_Set
 MISC pkg_timestamp=2013-07-22T10:35:41Z
 # END Extra information
 GENERATE
-# CRC: 602857c9
+# CRC: 773b0aec

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/bloque_calculo.vhf";
+static const char *ng0 = "//VBoxSvr/VMSF/ssee_prac3_rl_2022/bloque_calculo.vhf";
 
 
 
@@ -39,7 +39,7 @@ static void work_a_3428416665_0072777805_p_0(char *t0)
     char *t10;
     static char *nl0[] = {&&LAB5, &&LAB5, &&LAB3, &&LAB4, &&LAB5, &&LAB5, &&LAB5, &&LAB5, &&LAB5};
 
-LAB0:    xsi_set_current_line(184, ng0);
+LAB0:    xsi_set_current_line(255, ng0);
     t1 = (t0 + 1512U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
@@ -50,7 +50,7 @@ LAB2:    t1 = (t0 + 2992);
     *((int *)t1) = 1;
 
 LAB1:    return;
-LAB3:    xsi_set_current_line(185, ng0);
+LAB3:    xsi_set_current_line(256, ng0);
     t4 = (t0 + 1192U);
     t5 = *((char **)t4);
     t6 = *((unsigned char *)t5);
@@ -63,7 +63,7 @@ LAB3:    xsi_set_current_line(185, ng0);
     xsi_driver_first_trans_fast_port(t4);
     goto LAB2;
 
-LAB4:    xsi_set_current_line(186, ng0);
+LAB4:    xsi_set_current_line(257, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
@@ -76,7 +76,7 @@ LAB4:    xsi_set_current_line(186, ng0);
     xsi_driver_first_trans_fast_port(t1);
     goto LAB2;
 
-LAB5:    xsi_set_current_line(187, ng0);
+LAB5:    xsi_set_current_line(258, ng0);
     goto LAB2;
 
 }

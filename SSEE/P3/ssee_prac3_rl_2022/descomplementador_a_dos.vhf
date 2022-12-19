@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : descomplementador_a_dos.vhf
--- /___/   /\     Timestamp : 12/17/2022 23:26:32
+-- /___/   /\     Timestamp : 12/19/2022 11:25:09
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -38,8 +38,9 @@ end descomplementador_a_dos;
 
 architecture BEHAVIORAL of descomplementador_a_dos is
    attribute BOX_TYPE   : string ;
-   signal cero               : std_logic_vector (15 downto 0);
-   signal uno                : std_logic;
+   signal cero                 : std_logic_vector (15 downto 0);
+   signal not_dato_real_signed : std_logic;
+   signal uno                  : std_logic;
    component sumres_16bs
       port ( a   : in    std_logic_vector (15 downto 0); 
              b   : in    std_logic_vector (15 downto 0); 
@@ -68,10 +69,16 @@ architecture BEHAVIORAL of descomplementador_a_dos is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
 begin
    XLXI_1 : sumres_16bs
       port map (a(15 downto 0)=>cero(15 downto 0),
-                add=>dato_real_signed(15),
+                add=>not_dato_real_signed,
                 b(15 downto 0)=>dato_real_signed(15 downto 0),
                 ce=>ce,
                 clk=>ck,
@@ -134,6 +141,10 @@ begin
    
    XLXI_11 : VCC
       port map (P=>uno);
+   
+   XLXI_12 : INV
+      port map (I=>dato_real_signed(15),
+                O=>not_dato_real_signed);
    
 end BEHAVIORAL;
 

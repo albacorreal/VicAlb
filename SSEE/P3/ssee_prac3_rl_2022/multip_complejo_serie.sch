@@ -16,7 +16,6 @@
         <signal name="XLXN_66" />
         <signal name="sum_resZ" />
         <signal name="ce_sum_res" />
-        <signal name="XLXN_74" />
         <signal name="ce_carga_salida" />
         <signal name="carga_cifra" />
         <signal name="a(7:0)" />
@@ -29,6 +28,12 @@
         <signal name="multiplicando2(7:0)" />
         <signal name="producto(15:0)" />
         <signal name="producto_ret(15:0)" />
+        <signal name="dato_real_s(15:0)" />
+        <signal name="signo_parte_real" />
+        <signal name="signo_parte_imag" />
+        <signal name="XLXN_74" />
+        <signal name="dato_real_s(15)" />
+        <signal name="dato_imag(15)" />
         <port polarity="Input" name="reset" />
         <port polarity="Input" name="ck" />
         <port polarity="Output" name="multip_ok" />
@@ -39,6 +44,8 @@
         <port polarity="Input" name="d(7:0)" />
         <port polarity="Output" name="dato_real(15:0)" />
         <port polarity="Output" name="dato_imag(15:0)" />
+        <port polarity="Output" name="signo_parte_real" />
+        <port polarity="Output" name="signo_parte_imag" />
         <blockdef name="m2_1">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="96" y1="-64" y2="-192" x1="96" />
@@ -118,6 +125,23 @@
             <line x2="32" y1="240" y2="240" x1="0" />
             <line x2="256" y1="112" y2="112" style="linewidth:W" x1="288" />
         </blockdef>
+        <blockdef name="complemento_a_dos">
+            <timestamp>2022-12-19T14:38:51</timestamp>
+            <rect width="400" x="64" y="-128" height="128" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="528" y1="-96" y2="-96" x1="464" />
+            <rect width="64" x="464" y="-108" height="24" />
+        </blockdef>
+        <blockdef name="buf">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="128" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="0" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="-64" x1="128" />
+            <line x2="64" y1="-64" y2="0" x1="64" />
+        </blockdef>
         <block symbolname="m2_1" name="XLXI_6(7:0)">
             <blockpin signalname="a(7:0)" name="D0" />
             <blockpin signalname="b(7:0)" name="D1" />
@@ -132,9 +156,6 @@
         </block>
         <block symbolname="gnd" name="XLXI_19">
             <blockpin signalname="XLXN_66" name="G" />
-        </block>
-        <block symbolname="gnd" name="XLXI_21">
-            <blockpin signalname="XLXN_74" name="G" />
         </block>
         <block symbolname="fd" name="XLXI_26">
             <blockpin signalname="ck" name="C" />
@@ -160,19 +181,22 @@
             <blockpin signalname="ck" name="clk" />
             <blockpin signalname="ce_multip" name="ce" />
         </block>
-        <block symbolname="fd16re" name="XLXI_32">
-            <blockpin signalname="ck" name="C" />
-            <blockpin signalname="ce_carga_salida" name="CE" />
-            <blockpin signalname="dato_imag(15:0)" name="D(15:0)" />
-            <blockpin signalname="XLXN_74" name="R" />
-            <blockpin signalname="dato_real(15:0)" name="Q(15:0)" />
-        </block>
         <block symbolname="fd16re" name="XLXI_33">
             <blockpin signalname="ck" name="C" />
             <blockpin signalname="ce_multip_ret" name="CE" />
             <blockpin signalname="producto(15:0)" name="D(15:0)" />
             <blockpin signalname="XLXN_66" name="R" />
             <blockpin signalname="producto_ret(15:0)" name="Q(15:0)" />
+        </block>
+        <block symbolname="gnd" name="XLXI_21">
+            <blockpin signalname="XLXN_74" name="G" />
+        </block>
+        <block symbolname="fd16re" name="XLXI_32">
+            <blockpin signalname="ck" name="C" />
+            <blockpin signalname="ce_carga_salida" name="CE" />
+            <blockpin signalname="dato_imag(15:0)" name="D(15:0)" />
+            <blockpin signalname="XLXN_74" name="R" />
+            <blockpin signalname="dato_real_s(15:0)" name="Q(15:0)" />
         </block>
         <block symbolname="sumres16bu" name="XLXI_34">
             <blockpin signalname="producto_ret(15:0)" name="a(15:0)" />
@@ -181,6 +205,19 @@
             <blockpin signalname="sum_resZ" name="add" />
             <blockpin signalname="ce_sum_res" name="ce" />
             <blockpin signalname="dato_imag(15:0)" name="s(15:0)" />
+        </block>
+        <block symbolname="complemento_a_dos" name="XLXI_35">
+            <blockpin signalname="ck" name="ck" />
+            <blockpin signalname="dato_real_s(15:0)" name="dato_ent(15:0)" />
+            <blockpin signalname="dato_real(15:0)" name="dato_sal(15:0)" />
+        </block>
+        <block symbolname="buf" name="XLXI_42">
+            <blockpin signalname="dato_real_s(15)" name="I" />
+            <blockpin signalname="signo_parte_real" name="O" />
+        </block>
+        <block symbolname="buf" name="XLXI_43">
+            <blockpin signalname="dato_imag(15)" name="I" />
+            <blockpin signalname="signo_parte_imag" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -277,31 +314,6 @@
             <wire x2="3136" y1="448" y2="448" x1="2992" />
             <wire x2="3264" y1="448" y2="448" x1="3136" />
         </branch>
-        <branch name="dato_imag(15:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1136" y="1088" type="branch" />
-            <wire x2="1136" y1="1088" y2="1088" x1="944" />
-            <wire x2="1280" y1="1088" y2="1088" x1="1136" />
-        </branch>
-        <branch name="XLXN_74">
-            <wire x2="1280" y1="1312" y2="1312" x1="1200" />
-            <wire x2="1200" y1="1312" y2="1360" x1="1200" />
-        </branch>
-        <instance x="1136" y="1488" name="XLXI_21" orien="R0" />
-        <branch name="ck">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1168" y="1216" type="branch" />
-            <wire x2="1168" y1="1216" y2="1216" x1="1024" />
-            <wire x2="1280" y1="1216" y2="1216" x1="1168" />
-        </branch>
-        <branch name="ce_carga_salida">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1168" y="1152" type="branch" />
-            <wire x2="1168" y1="1152" y2="1152" x1="1024" />
-            <wire x2="1280" y1="1152" y2="1152" x1="1168" />
-        </branch>
-        <branch name="dato_real(15:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1840" y="1088" type="branch" />
-            <wire x2="1840" y1="1088" y2="1088" x1="1664" />
-            <wire x2="2000" y1="1088" y2="1088" x1="1840" />
-        </branch>
         <branch name="ce_multip_ret">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3136" y="1088" type="branch" />
             <wire x2="3136" y1="1088" y2="1088" x1="2992" />
@@ -372,74 +384,148 @@
         </branch>
         <instance x="1696" y="368" name="XLXI_31" orien="R0">
         </instance>
-        <instance x="1280" y="1344" name="XLXI_32" orien="R0" />
         <instance x="2608" y="704" name="XLXI_33" orien="R0" />
-        <branch name="ce_sum_res">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="528" y="1216" type="branch" />
-            <wire x2="528" y1="1216" y2="1216" x1="352" />
-            <wire x2="656" y1="1216" y2="1216" x1="528" />
+        <branch name="carga_cifra">
+            <wire x2="784" y1="2512" y2="2512" x1="512" />
         </branch>
-        <branch name="sum_resZ">
+        <branch name="a(7:0)">
+            <wire x2="784" y1="2256" y2="2256" x1="512" />
+        </branch>
+        <branch name="b(7:0)">
+            <wire x2="784" y1="2320" y2="2320" x1="512" />
+        </branch>
+        <branch name="c(7:0)">
+            <wire x2="784" y1="2384" y2="2384" x1="512" />
+        </branch>
+        <branch name="d(7:0)">
+            <wire x2="784" y1="2448" y2="2448" x1="512" />
+        </branch>
+        <branch name="reset">
+            <wire x2="784" y1="2576" y2="2576" x1="512" />
+        </branch>
+        <branch name="ck">
+            <wire x2="784" y1="2640" y2="2640" x1="512" />
+        </branch>
+        <iomarker fontsize="28" x="512" y="2512" name="carga_cifra" orien="R180" />
+        <iomarker fontsize="28" x="512" y="2256" name="a(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="512" y="2320" name="b(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="512" y="2384" name="c(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="512" y="2448" name="d(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="512" y="2576" name="reset" orien="R180" />
+        <iomarker fontsize="28" x="512" y="2640" name="ck" orien="R180" />
+        <branch name="dato_real(15:0)">
+            <wire x2="1360" y1="2256" y2="2256" x1="1120" />
+        </branch>
+        <branch name="dato_imag(15:0)">
+            <wire x2="1360" y1="2320" y2="2320" x1="1120" />
+        </branch>
+        <branch name="multip_ok">
+            <wire x2="1360" y1="2512" y2="2512" x1="1120" />
+        </branch>
+        <branch name="signo_parte_real">
+            <wire x2="1360" y1="2384" y2="2384" x1="1120" />
+        </branch>
+        <branch name="signo_parte_imag">
+            <wire x2="1360" y1="2448" y2="2448" x1="1120" />
+        </branch>
+        <iomarker fontsize="28" x="1360" y="2256" name="dato_real(15:0)" orien="R0" />
+        <iomarker fontsize="28" x="1360" y="2320" name="dato_imag(15:0)" orien="R0" />
+        <iomarker fontsize="28" x="1360" y="2512" name="multip_ok" orien="R0" />
+        <iomarker fontsize="28" x="1360" y="2384" name="signo_parte_real" orien="R0" />
+        <iomarker fontsize="28" x="1360" y="2448" name="signo_parte_imag" orien="R0" />
+        <branch name="dato_imag(15:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1120" y="1056" type="branch" />
+            <wire x2="1120" y1="1056" y2="1056" x1="944" />
+            <wire x2="1280" y1="1056" y2="1056" x1="1120" />
+        </branch>
+        <branch name="XLXN_74">
+            <wire x2="1280" y1="1280" y2="1280" x1="1200" />
+            <wire x2="1200" y1="1280" y2="1328" x1="1200" />
+        </branch>
+        <instance x="1136" y="1456" name="XLXI_21" orien="R0" />
+        <branch name="ck">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1168" y="1184" type="branch" />
+            <wire x2="1168" y1="1184" y2="1184" x1="1024" />
+            <wire x2="1280" y1="1184" y2="1184" x1="1168" />
+        </branch>
+        <branch name="ce_carga_salida">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1168" y="1120" type="branch" />
+            <wire x2="1168" y1="1120" y2="1120" x1="1024" />
+            <wire x2="1280" y1="1120" y2="1120" x1="1168" />
+        </branch>
+        <branch name="dato_real_s(15:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1840" y="1056" type="branch" />
+            <wire x2="1840" y1="1056" y2="1056" x1="1664" />
+            <wire x2="2000" y1="1056" y2="1056" x1="1840" />
+        </branch>
+        <instance x="1280" y="1312" name="XLXI_32" orien="R0" />
+        <branch name="ce_sum_res">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="528" y="1184" type="branch" />
             <wire x2="528" y1="1184" y2="1184" x1="352" />
             <wire x2="656" y1="1184" y2="1184" x1="528" />
         </branch>
-        <branch name="ck">
+        <branch name="sum_resZ">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="528" y="1152" type="branch" />
             <wire x2="528" y1="1152" y2="1152" x1="352" />
             <wire x2="656" y1="1152" y2="1152" x1="528" />
         </branch>
-        <branch name="producto(15:0)">
+        <branch name="ck">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="528" y="1120" type="branch" />
             <wire x2="528" y1="1120" y2="1120" x1="352" />
             <wire x2="656" y1="1120" y2="1120" x1="528" />
         </branch>
-        <branch name="producto_ret(15:0)">
+        <branch name="producto(15:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="528" y="1088" type="branch" />
             <wire x2="528" y1="1088" y2="1088" x1="352" />
             <wire x2="656" y1="1088" y2="1088" x1="528" />
         </branch>
-        <instance x="656" y="976" name="XLXI_34" orien="R0">
+        <branch name="producto_ret(15:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="528" y="1056" type="branch" />
+            <wire x2="528" y1="1056" y2="1056" x1="352" />
+            <wire x2="656" y1="1056" y2="1056" x1="528" />
+        </branch>
+        <instance x="656" y="944" name="XLXI_34" orien="R0">
         </instance>
-        <iomarker fontsize="28" x="528" y="2448" name="carga_cifra" orien="R180" />
-        <iomarker fontsize="28" x="528" y="2208" name="b(7:0)" orien="R180" />
-        <iomarker fontsize="28" x="528" y="2128" name="a(7:0)" orien="R180" />
-        <iomarker fontsize="28" x="528" y="2368" name="d(7:0)" orien="R180" />
-        <iomarker fontsize="28" x="528" y="2288" name="c(7:0)" orien="R180" />
-        <iomarker fontsize="28" x="1472" y="2480" name="multip_ok" orien="R0" />
-        <iomarker fontsize="28" x="1472" y="2544" name="dato_real(15:0)" orien="R0" />
-        <iomarker fontsize="28" x="1472" y="2608" name="dato_imag(15:0)" orien="R0" />
-        <iomarker fontsize="28" x="528" y="2608" name="ck" orien="R180" />
-        <iomarker fontsize="28" x="528" y="2528" name="reset" orien="R180" />
-        <branch name="carga_cifra">
-            <wire x2="800" y1="2448" y2="2448" x1="528" />
-        </branch>
-        <branch name="b(7:0)">
-            <wire x2="800" y1="2208" y2="2208" x1="528" />
-        </branch>
-        <branch name="a(7:0)">
-            <wire x2="800" y1="2128" y2="2128" x1="528" />
-        </branch>
-        <branch name="d(7:0)">
-            <wire x2="800" y1="2368" y2="2368" x1="528" />
-        </branch>
-        <branch name="c(7:0)">
-            <wire x2="800" y1="2288" y2="2288" x1="528" />
-        </branch>
-        <branch name="multip_ok">
-            <wire x2="1472" y1="2480" y2="2480" x1="1232" />
+        <instance x="544" y="1760" name="XLXI_35" orien="R0">
+        </instance>
+        <branch name="dato_real_s(15:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="384" y="1664" type="branch" />
+            <wire x2="384" y1="1664" y2="1664" x1="256" />
+            <wire x2="544" y1="1664" y2="1664" x1="384" />
         </branch>
         <branch name="dato_real(15:0)">
-            <wire x2="1472" y1="2544" y2="2544" x1="1232" />
-        </branch>
-        <branch name="dato_imag(15:0)">
-            <wire x2="1472" y1="2608" y2="2608" x1="1232" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1216" y="1664" type="branch" />
+            <wire x2="1216" y1="1664" y2="1664" x1="1072" />
+            <wire x2="1328" y1="1664" y2="1664" x1="1216" />
         </branch>
         <branch name="ck">
-            <wire x2="800" y1="2608" y2="2608" x1="528" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="384" y="1728" type="branch" />
+            <wire x2="384" y1="1728" y2="1728" x1="256" />
+            <wire x2="544" y1="1728" y2="1728" x1="384" />
         </branch>
-        <branch name="reset">
-            <wire x2="800" y1="2528" y2="2528" x1="528" />
+        <instance x="704" y="1920" name="XLXI_42" orien="R0" />
+        <instance x="704" y="2016" name="XLXI_43" orien="R0" />
+        <branch name="dato_real_s(15)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="576" y="1888" type="branch" />
+            <wire x2="576" y1="1888" y2="1888" x1="384" />
+            <wire x2="704" y1="1888" y2="1888" x1="576" />
+        </branch>
+        <branch name="signo_parte_real">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1024" y="1888" type="branch" />
+            <wire x2="1024" y1="1888" y2="1888" x1="928" />
+            <wire x2="1120" y1="1888" y2="1888" x1="1024" />
+            <wire x2="1248" y1="1888" y2="1888" x1="1120" />
+        </branch>
+        <branch name="signo_parte_imag">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1024" y="1984" type="branch" />
+            <wire x2="1024" y1="1984" y2="1984" x1="928" />
+            <wire x2="1120" y1="1984" y2="1984" x1="1024" />
+            <wire x2="1248" y1="1984" y2="1984" x1="1120" />
+        </branch>
+        <branch name="dato_imag(15)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="576" y="1984" type="branch" />
+            <wire x2="576" y1="1984" y2="1984" x1="384" />
+            <wire x2="704" y1="1984" y2="1984" x1="576" />
         </branch>
     </sheet>
 </drawing>

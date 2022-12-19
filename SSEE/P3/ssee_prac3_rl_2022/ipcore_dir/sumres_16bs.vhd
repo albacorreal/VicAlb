@@ -46,7 +46,6 @@ ENTITY sumres_16bs IS
     b : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     clk : IN STD_LOGIC;
     add : IN STD_LOGIC;
-    ce : IN STD_LOGIC;
     s : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END sumres_16bs;
@@ -59,7 +58,6 @@ COMPONENT wrapped_sumres_16bs
     b : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     clk : IN STD_LOGIC;
     add : IN STD_LOGIC;
-    ce : IN STD_LOGIC;
     s : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END COMPONENT;
@@ -82,7 +80,7 @@ END COMPONENT;
       c_has_bypass => 0,
       c_has_c_in => 0,
       c_has_c_out => 0,
-      c_has_ce => 1,
+      c_has_ce => 0,
       c_has_sclr => 0,
       c_has_sinit => 0,
       c_has_sset => 0,
@@ -103,7 +101,6 @@ U0 : wrapped_sumres_16bs
     b => b,
     clk => clk,
     add => add,
-    ce => ce,
     s => s
   );
 -- synthesis translate_on

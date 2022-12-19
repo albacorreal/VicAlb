@@ -59,7 +59,6 @@ COMPONENT sumres_16bs
     b : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     clk : IN STD_LOGIC;
     add : IN STD_LOGIC;
-    ce : IN STD_LOGIC;
     s : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END COMPONENT;
@@ -75,7 +74,6 @@ your_instance_name : sumres_16bs
     b => b,
     clk => clk,
     add => add,
-    ce => ce,
     s => s
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ------------

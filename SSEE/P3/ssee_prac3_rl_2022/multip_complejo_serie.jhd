@@ -5,3 +5,5 @@ MODULE multip_complejo_serie
 		INSTANCE XLXI_31
 	SUBMODULE sumres16bu
 		INSTANCE XLXI_34
+	SUBMODULE complemento_a_dos
+		INSTANCE XLXI_35

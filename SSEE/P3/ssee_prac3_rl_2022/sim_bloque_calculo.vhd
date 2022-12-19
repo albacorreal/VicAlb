@@ -1,4 +1,4 @@
--- Vhdl test bench created from schematic Z:\ssee_prac3_rl_2022\bloque_calculo.sch - Sat Dec 17 23:53:09 2022
+-- Vhdl test bench created from schematic Z:\ssee_prac3_rl_2022\bloque_calculo.sch - Mon Dec 19 16:19:30 2022
 --
 -- Notes: 
 -- 1) This testbench template has been automatically generated using types
@@ -33,7 +33,10 @@ ARCHITECTURE behavioral OF bloque_calculo_bloque_calculo_sch_tb IS
           display_nexys3_1	:	OUT	STD_LOGIC_VECTOR (3 DOWNTO 0); 
           multip_bcd_nueva	:	OUT	STD_LOGIC; 
           sw0	:	IN	STD_LOGIC; 
-          signo_parte_real	:	OUT	STD_LOGIC);
+          signo_parte_real	:	OUT	STD_LOGIC; 
+          signo_parte_imag	:	OUT	STD_LOGIC; 
+          signo_real	:	OUT	STD_LOGIC; 
+          signo_imag	:	OUT	STD_LOGIC);
    END COMPONENT;
 
    SIGNAL ck	:	STD_LOGIC;
@@ -48,8 +51,11 @@ ARCHITECTURE behavioral OF bloque_calculo_bloque_calculo_sch_tb IS
    SIGNAL multip_bcd_nueva	:	STD_LOGIC;
    SIGNAL sw0	:	STD_LOGIC;
    SIGNAL signo_parte_real	:	STD_LOGIC;
+   SIGNAL signo_parte_imag	:	STD_LOGIC;
+   SIGNAL signo_real	:	STD_LOGIC;
+   SIGNAL signo_imag	:	STD_LOGIC;
 	
-	CONSTANT CLK_period: time := 10 ns;
+	CONSTANT CLK_period : time := 10 ns;
 
 BEGIN
 
@@ -65,7 +71,10 @@ BEGIN
 		display_nexys3_1 => display_nexys3_1, 
 		multip_bcd_nueva => multip_bcd_nueva, 
 		sw0 => sw0, 
-		signo_parte_real => signo_parte_real
+		signo_parte_real => signo_parte_real, 
+		signo_parte_imag => signo_parte_imag, 
+		signo_real => signo_real, 
+		signo_imag => signo_imag
    );
 
 -- *** Test Bench - User Defined Section ***
@@ -87,6 +96,7 @@ CK_process :process
    tb : PROCESS
    BEGIN
 		-- Reset e inicialización de señales
+		sw0 <= transport '0';
 		reset <= transport '1';
 		cod_tecla <= transport "0000";
 		tecla_pulsada <= transport '0';

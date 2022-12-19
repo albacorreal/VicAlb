@@ -86,6 +86,10 @@
         <signal name="uart_tx" />
         <signal name="led(7:0)" />
         <signal name="punto_dec(4:1)" />
+        <signal name="sw(0)" />
+        <signal name="led(0)" />
+        <signal name="led(7:2)" />
+        <signal name="led(1)" />
         <port polarity="BiDirectional" name="fila_pad(4:1)" />
         <port polarity="Input" name="col_pad(4:1)" />
         <port polarity="Input" name="reset_pad" />
@@ -309,24 +313,27 @@
             <line x2="0" y1="0" y2="0" x1="64" />
         </blockdef>
         <blockdef name="bloque_calculo">
-            <timestamp>2022-11-22T17:35:41</timestamp>
-            <line x2="608" y1="-208" y2="-208" x1="544" />
-            <rect width="64" x="0" y="-620" height="24" />
-            <line x2="0" y1="-608" y2="-608" x1="64" />
-            <line x2="0" y1="-528" y2="-528" x1="64" />
-            <line x2="0" y1="-448" y2="-448" x1="64" />
-            <line x2="0" y1="-368" y2="-368" x1="64" />
-            <rect width="64" x="544" y="-300" height="24" />
-            <line x2="608" y1="-288" y2="-288" x1="544" />
-            <rect width="64" x="544" y="-492" height="24" />
-            <line x2="608" y1="-480" y2="-480" x1="544" />
-            <rect width="64" x="544" y="-428" height="24" />
-            <line x2="608" y1="-416" y2="-416" x1="544" />
-            <rect width="64" x="544" y="-556" height="24" />
-            <line x2="608" y1="-544" y2="-544" x1="544" />
-            <rect width="64" x="544" y="-620" height="24" />
-            <line x2="608" y1="-608" y2="-608" x1="544" />
-            <rect width="480" x="64" y="-640" height="476" />
+            <timestamp>2022-12-19T15:11:14</timestamp>
+            <rect width="480" x="48" y="-656" height="576" />
+            <line x2="592" y1="-432" y2="-432" x1="528" />
+            <rect width="64" x="528" y="-444" height="24" />
+            <line x2="592" y1="-496" y2="-496" x1="528" />
+            <rect width="64" x="528" y="-508" height="24" />
+            <line x2="592" y1="-560" y2="-560" x1="528" />
+            <rect width="64" x="528" y="-572" height="24" />
+            <line x2="592" y1="-624" y2="-624" x1="528" />
+            <rect width="64" x="528" y="-636" height="24" />
+            <line x2="592" y1="-240" y2="-240" x1="528" />
+            <line x2="592" y1="-304" y2="-304" x1="528" />
+            <rect width="64" x="528" y="-316" height="24" />
+            <line x2="592" y1="-112" y2="-112" x1="528" />
+            <line x2="592" y1="-176" y2="-176" x1="528" />
+            <line x2="-16" y1="-624" y2="-624" x1="48" />
+            <rect width="64" x="-16" y="-636" height="24" />
+            <line x2="-16" y1="-544" y2="-544" x1="48" />
+            <line x2="-16" y1="-464" y2="-464" x1="48" />
+            <line x2="-16" y1="-384" y2="-384" x1="48" />
+            <line x2="-16" y1="-304" y2="-304" x1="48" />
         </blockdef>
         <blockdef name="Remote_Lab">
             <timestamp>2022-10-7T9:28:48</timestamp>
@@ -517,20 +524,8 @@
         <block symbolname="vcc" name="XLXI_866">
             <blockpin signalname="uart_tx" name="P" />
         </block>
-        <block symbolname="gnd" name="XLXI_871(7:0)">
-            <blockpin signalname="led(7:0)" name="G" />
-        </block>
-        <block symbolname="bloque_calculo" name="XLXI_872">
-            <blockpin signalname="ck_100MHz" name="ck" />
-            <blockpin signalname="cod_tecla_sinc(3:0)" name="cod_tecla(3:0)" />
-            <blockpin signalname="tecla_pulsada_sinc" name="tecla_pulsada" />
-            <blockpin signalname="reset" name="reset" />
-            <blockpin signalname="punto_dec(4:1)" name="punto_decimal_nexys3(4:1)" />
-            <blockpin signalname="mill_bcd(3:0)" name="display_nexys3_4(3:0)" />
-            <blockpin signalname="cent_bcd(3:0)" name="display_nexys3_3(3:0)" />
-            <blockpin signalname="dec_bcd(3:0)" name="display_nexys3_2(3:0)" />
-            <blockpin signalname="unid_bcd(3:0)" name="display_nexys3_1(3:0)" />
-            <blockpin name="multip_bcd_nueva" />
+        <block symbolname="gnd" name="XLXI_871(5:0)">
+            <blockpin signalname="led(7:2)" name="G" />
         </block>
         <block symbolname="displays_7seg_nexys3_RemLab" name="XLXI_874">
             <blockpin signalname="mill_bcd(3:0)" name="mill_bcd(3:0)" />
@@ -568,6 +563,21 @@
             <blockpin signalname="led_pad(7:0)" name="Led(7:0)" />
             <blockpin signalname="seg_pad(7:0)" name="seg(7:0)" />
             <blockpin signalname="anodo_pad(3:0)" name="an(3:0)" />
+        </block>
+        <block symbolname="bloque_calculo" name="XLXI_872">
+            <blockpin signalname="unid_bcd(3:0)" name="display_nexys3_1(3:0)" />
+            <blockpin signalname="dec_bcd(3:0)" name="display_nexys3_2(3:0)" />
+            <blockpin signalname="cent_bcd(3:0)" name="display_nexys3_3(3:0)" />
+            <blockpin signalname="mill_bcd(3:0)" name="display_nexys3_4(3:0)" />
+            <blockpin name="multip_bcd_nueva" />
+            <blockpin signalname="punto_dec(4:1)" name="punto_decimal_nexys3(4:1)" />
+            <blockpin signalname="led(1)" name="signo_imag" />
+            <blockpin signalname="led(0)" name="signo_real" />
+            <blockpin signalname="cod_tecla_sinc(3:0)" name="cod_tecla(3:0)" />
+            <blockpin signalname="tecla_pulsada_sinc" name="tecla_pulsada" />
+            <blockpin signalname="ck_100MHz" name="ck" />
+            <blockpin signalname="reset" name="reset" />
+            <blockpin signalname="sw(0)" name="sw0" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
@@ -1074,10 +1084,10 @@
             <wire x2="2720" y1="3744" y2="3792" x1="2720" />
             <wire x2="2816" y1="3792" y2="3792" x1="2720" />
         </branch>
-        <instance x="2336" y="3680" name="XLXI_871(7:0)" orien="R0">
+        <instance x="2336" y="3680" name="XLXI_871(5:0)" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="-144" y="-88" type="instance" />
         </instance>
-        <branch name="led(7:0)">
+        <branch name="led(7:2)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2496" y="3520" type="branch" />
             <wire x2="2400" y1="3520" y2="3552" x1="2400" />
             <wire x2="2496" y1="3520" y2="3520" x1="2400" />
@@ -1124,36 +1134,25 @@
             <wire x2="2784" y1="544" y2="544" x1="2608" />
             <wire x2="2928" y1="544" y2="544" x1="2784" />
         </branch>
-        <instance x="2928" y="1072" name="XLXI_872" orien="R0">
-        </instance>
         <branch name="seg0(7:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4800" y="784" type="branch" />
-            <wire x2="4672" y1="784" y2="784" x1="4640" />
-            <wire x2="4800" y1="784" y2="784" x1="4672" />
+            <wire x2="4800" y1="784" y2="784" x1="4640" />
             <wire x2="4912" y1="784" y2="784" x1="4800" />
         </branch>
         <branch name="seg1(7:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4800" y="704" type="branch" />
-            <wire x2="4672" y1="704" y2="704" x1="4640" />
-            <wire x2="4800" y1="704" y2="704" x1="4672" />
+            <wire x2="4800" y1="704" y2="704" x1="4640" />
             <wire x2="4912" y1="704" y2="704" x1="4800" />
         </branch>
         <branch name="seg2(7:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4800" y="624" type="branch" />
-            <wire x2="4672" y1="624" y2="624" x1="4640" />
-            <wire x2="4800" y1="624" y2="624" x1="4672" />
+            <wire x2="4800" y1="624" y2="624" x1="4640" />
             <wire x2="4912" y1="624" y2="624" x1="4800" />
         </branch>
         <branch name="seg3(7:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4800" y="544" type="branch" />
-            <wire x2="4672" y1="544" y2="544" x1="4640" />
-            <wire x2="4800" y1="544" y2="544" x1="4672" />
+            <wire x2="4800" y1="544" y2="544" x1="4640" />
             <wire x2="4912" y1="544" y2="544" x1="4800" />
-        </branch>
-        <branch name="punto_dec(4:1)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3840" y="784" type="branch" />
-            <wire x2="3840" y1="784" y2="784" x1="3536" />
-            <wire x2="4144" y1="784" y2="784" x1="3840" />
         </branch>
         <branch name="ck_20KHz">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4048" y="720" type="branch" />
@@ -1164,5 +1163,27 @@
         </instance>
         <instance x="3232" y="3696" name="XLXI_865" orien="R0">
         </instance>
+        <branch name="punto_dec(4:1)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3840" y="784" type="branch" />
+            <wire x2="3840" y1="784" y2="784" x1="3536" />
+            <wire x2="4144" y1="784" y2="784" x1="3840" />
+        </branch>
+        <branch name="sw(0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="784" type="branch" />
+            <wire x2="2816" y1="784" y2="784" x1="2688" />
+            <wire x2="2928" y1="784" y2="784" x1="2816" />
+        </branch>
+        <branch name="led(0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3616" y="912" type="branch" />
+            <wire x2="3616" y1="912" y2="912" x1="3536" />
+            <wire x2="3744" y1="912" y2="912" x1="3616" />
+        </branch>
+        <instance x="2944" y="1088" name="XLXI_872" orien="R0">
+        </instance>
+        <branch name="led(1)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3616" y="976" type="branch" />
+            <wire x2="3616" y1="976" y2="976" x1="3536" />
+            <wire x2="3744" y1="976" y2="976" x1="3616" />
+        </branch>
     </sheet>
 </drawing>
