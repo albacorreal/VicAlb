@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym reg_desp_4_cifras C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/reg_desp_4_cifras.sch C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/reg_desp_4_cifras.sym 

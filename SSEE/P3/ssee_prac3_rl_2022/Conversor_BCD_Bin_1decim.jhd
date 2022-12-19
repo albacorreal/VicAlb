@@ -1,0 +1,3 @@
+MODULE Conversor_BCD_Bin_1decim
+	SUBMODULE bcd_bin_1_decimal
+		INSTANCE XLXI_3

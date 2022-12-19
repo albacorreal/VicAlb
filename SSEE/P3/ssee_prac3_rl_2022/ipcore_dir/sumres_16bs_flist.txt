@@ -1,0 +1,15 @@
+# Output products list for <sumres_16bs>
+_xmsgs\pn_parser.xmsgs
+sumres_16bs.asy
+sumres_16bs.gise
+sumres_16bs.ngc
+sumres_16bs.sym
+sumres_16bs.vhd
+sumres_16bs.vho
+sumres_16bs.xco
+sumres_16bs.xise
+sumres_16bs\doc\c_addsub_v11_0_readme.txt
+sumres_16bs\doc\c_addsub_v11_0_vinfo.html
+sumres_16bs\doc\ds214_addsub.pdf
+sumres_16bs_flist.txt
+sumres_16bs_xmdf.tcl

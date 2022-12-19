@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/prac3_top.xst" -ofn "C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/prac3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc prac3_top.ucf -p xc6slx16-csg324-3 prac3_top.ngc prac3_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o prac3_top_map.ncd prac3_top.ngd prac3_top.pcf 
+par -w -intstyle ise -ol high -mt off prac3_top_map.ncd prac3_top.ncd prac3_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml prac3_top.twx prac3_top.ncd -o prac3_top.twr prac3_top.pcf -ucf prac3_top.ucf 
+bitgen -intstyle ise -f prac3_top.ut prac3_top.ncd 
+xst -intstyle ise -ifn "Z:/ssee_prac3_rl_2022/prac3_top.xst" -ofn "Z:/ssee_prac3_rl_2022/prac3_top.syr" 
+xst -intstyle ise -ifn "Z:/ssee_prac3_rl_2022/prac3_top.xst" -ofn "Z:/ssee_prac3_rl_2022/prac3_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc prac3_top.ucf -p xc6slx16-csg324-3 prac3_top.ngc prac3_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o prac3_top_map.ncd prac3_top.ngd prac3_top.pcf 
+par -w -intstyle ise -ol high -mt off prac3_top_map.ncd prac3_top.ncd prac3_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml prac3_top.twx prac3_top.ncd -o prac3_top.twr prac3_top.pcf -ucf prac3_top.ucf 
+bitgen -intstyle ise -f prac3_top.ut prac3_top.ncd 

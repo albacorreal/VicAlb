@@ -1,0 +1,3 @@
+MODULE descomplementador_a_dos
+	SUBMODULE sumres_16bs
+		INSTANCE XLXI_1

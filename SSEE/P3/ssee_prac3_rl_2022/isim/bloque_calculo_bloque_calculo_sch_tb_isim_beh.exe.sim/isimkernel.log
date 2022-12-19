@@ -1,0 +1,30 @@
+Command line:
+   bloque_calculo_bloque_calculo_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53223
+
+Tue Nov 22 19:32:53 2022
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5164.6 Meg
+
+ Total Signals          : 2220
+ Total Nets             : 1644
+ Total Signal Drivers   : 725
+ Total Blocks           : 523
+ Total Primitive Blocks : 482
+ Total Processes        : 696
+ Total Traceable Variables  : 480
+ Total Scalar Nets and Variables : 3287
+Total Line Count : 1844
+Total Line Count : 1844
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 5479.17 Meg
+
+Tue Nov 22 19:33:25 2022
+

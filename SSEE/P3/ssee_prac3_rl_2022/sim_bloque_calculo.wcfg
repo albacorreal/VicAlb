@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/bloque_calculo_bloque_calculo_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="bloque_calculo_bloque_calculo_sch_tb" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="c_reg_fd_v11_0_comp" />
+            <top_module name="mult_gen_pkg_v11_2" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="xbip_addsub_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/ck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/cod_tecla" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cod_tecla[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cod_tecla[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/tecla_pulsada" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tecla_pulsada</obj_property>
+      <obj_property name="ObjectShortName">tecla_pulsada</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[3:0]</obj_property>
+      <obj_property name="ObjectShortName">b[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c[3:0]</obj_property>
+      <obj_property name="ObjectShortName">c[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/carga_cifra" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">carga_cifra</obj_property>
+      <obj_property name="ObjectShortName">carga_cifra</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/cifra" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cifra[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cifra[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/XLXI_42/XLXI_30/sreg0" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">sreg0</obj_property>
+      <obj_property name="ObjectShortName">sreg0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/XLXI_42/XLXI_30/ce_multip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce_multip</obj_property>
+      <obj_property name="ObjectShortName">ce_multip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/XLXI_42/XLXI_30/selector_multip2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">selector_multip2</obj_property>
+      <obj_property name="ObjectShortName">selector_multip2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/XLXI_42/XLXI_30/selector_multip1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">selector_multip1</obj_property>
+      <obj_property name="ObjectShortName">selector_multip1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/XLXI_42/XLXI_30/ce_sum_res" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce_sum_res</obj_property>
+      <obj_property name="ObjectShortName">ce_sum_res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/XLXI_42/XLXI_30/sum_resz" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sum_resz</obj_property>
+      <obj_property name="ObjectShortName">sum_resz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/XLXI_42/XLXI_30/ce_carga_salida" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce_carga_salida</obj_property>
+      <obj_property name="ObjectShortName">ce_carga_salida</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/multip_ok" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">multip_ok</obj_property>
+      <obj_property name="ObjectShortName">multip_ok</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/dato_real" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato_real[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato_real[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/dato_imag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato_imag[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato_imag[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/multip_bcd_nueva" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">multip_bcd_nueva</obj_property>
+      <obj_property name="ObjectShortName">multip_bcd_nueva</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/imag_bcd0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">imag_bcd0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">imag_bcd0[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/imag_bcd1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">imag_bcd1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">imag_bcd1[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/real_bcd0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">real_bcd0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">real_bcd0[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/real_bcd1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">real_bcd1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">real_bcd1[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/letra_c" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">letra_c</obj_property>
+      <obj_property name="ObjectShortName">letra_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/UUT/entz_sal" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">entz_sal</obj_property>
+      <obj_property name="ObjectShortName">entz_sal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/punto_decimal_nexys3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">punto_decimal_nexys3[4:1]</obj_property>
+      <obj_property name="ObjectShortName">punto_decimal_nexys3[4:1]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/display_nexys3_4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">display_nexys3_4[3:0]</obj_property>
+      <obj_property name="ObjectShortName">display_nexys3_4[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/display_nexys3_3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">display_nexys3_3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">display_nexys3_3[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/display_nexys3_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">display_nexys3_2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">display_nexys3_2[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bloque_calculo_bloque_calculo_sch_tb/display_nexys3_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">display_nexys3_1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">display_nexys3_1[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
