@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.58 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.58 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: prac3_top.prj
 
@@ -126,14 +126,14 @@ Parsing architecture <sumres16bu_a> of entity <sumres16bu>.
 Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\ipcore_dir\sumres_16bs.vhd" into library work
 Parsing entity <sumres_16bs>.
 Parsing architecture <sumres_16bs_a> of entity <sumres_16bs>.
-Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\nivel_a_pulso.vhf" into library work
-Parsing entity <nivel_a_pulso>.
-Parsing architecture <BEHAVIORAL> of entity <nivel_a_pulso>.
 Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\regdesp8b_lsb.vhf" into library work
 Parsing entity <M2_1_HXILINX_regdesp8b_lsb>.
 Parsing architecture <M2_1_HXILINX_regdesp8b_lsb_V> of entity <m2_1_hxilinx_regdesp8b_lsb>.
 Parsing entity <regdesp8b_lsb>.
 Parsing architecture <BEHAVIORAL> of entity <regdesp8b_lsb>.
+Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\nivel_a_pulso.vhf" into library work
+Parsing entity <nivel_a_pulso>.
+Parsing architecture <BEHAVIORAL> of entity <nivel_a_pulso>.
 Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\regdesp8b.vhf" into library work
 Parsing entity <M2_1_HXILINX_regdesp8b>.
 Parsing architecture <M2_1_HXILINX_regdesp8b_V> of entity <m2_1_hxilinx_regdesp8b>.
@@ -148,9 +148,6 @@ Parsing architecture <BEHAVIORAL> of entity <cont_anillo_ce>.
 Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\control_bin_bcd.vhd" into library work
 Parsing entity <control_bin_bcd>.
 Parsing architecture <control_bin_bcd_arch> of entity <control_bin_bcd>.
-Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\complemento_a_dos.vhf" into library work
-Parsing entity <complemento_a_dos>.
-Parsing architecture <BEHAVIORAL> of entity <complemento_a_dos>.
 Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\Bin_A_BCD_decim.vhf" into library work
 Parsing entity <M2_1_HXILINX_Bin_A_BCD_decim>.
 Parsing architecture <M2_1_HXILINX_Bin_A_BCD_decim_V> of entity <m2_1_hxilinx_bin_a_bcd_decim>.
@@ -196,8 +193,6 @@ Parsing entity <FD16RE_HXILINX_multip_complejo_serie>.
 Parsing architecture <Behavioral> of entity <fd16re_hxilinx_multip_complejo_serie>.
 Parsing entity <M2_1_HXILINX_multip_complejo_serie>.
 Parsing architecture <M2_1_HXILINX_multip_complejo_serie_V> of entity <m2_1_hxilinx_multip_complejo_serie>.
-Parsing entity <complemento_a_dos_MUSER_multip_complejo_serie>.
-Parsing architecture <BEHAVIORAL> of entity <complemento_a_dos_muser_multip_complejo_serie>.
 Parsing entity <multip_complejo_serie>.
 Parsing architecture <BEHAVIORAL> of entity <multip_complejo_serie>.
 Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\detector.vhf" into library work
@@ -235,6 +230,9 @@ Parsing entity <COMP4_HXILINX_Comp_Num_Letra>.
 Parsing architecture <COMP4_HXILINX_Comp_Num_Letra_V> of entity <comp4_hxilinx_comp_num_letra>.
 Parsing entity <Comp_Num_Letra>.
 Parsing architecture <BEHAVIORAL> of entity <comp_num_letra>.
+Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\complemento_a_dos.vhf" into library work
+Parsing entity <complemento_a_dos>.
+Parsing architecture <BEHAVIORAL> of entity <complemento_a_dos>.
 Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\codif_tecla.vhf" into library work
 Parsing entity <OR8_HXILINX_codif_tecla>.
 Parsing architecture <OR8_HXILINX_codif_tecla_V> of entity <or8_hxilinx_codif_tecla>.
@@ -298,6 +296,8 @@ Parsing entity <FD16RE_HXILINX_bloque_calculo>.
 Parsing architecture <Behavioral> of entity <fd16re_hxilinx_bloque_calculo>.
 Parsing entity <M2_1_HXILINX_bloque_calculo>.
 Parsing architecture <M2_1_HXILINX_bloque_calculo_V> of entity <m2_1_hxilinx_bloque_calculo>.
+Parsing entity <complemento_a_dos_MUSER_bloque_calculo>.
+Parsing architecture <BEHAVIORAL> of entity <complemento_a_dos_muser_bloque_calculo>.
 Parsing entity <mux_ES_7seg_MUSER_bloque_calculo>.
 Parsing architecture <BEHAVIORAL> of entity <mux_es_7seg_muser_bloque_calculo>.
 Parsing entity <Bin_A_BCD_decim_MUSER_bloque_calculo>.
@@ -316,8 +316,6 @@ Parsing entity <reg_desp_8b_4_cifras_MUSER_bloque_calculo>.
 Parsing architecture <BEHAVIORAL> of entity <reg_desp_8b_4_cifras_muser_bloque_calculo>.
 Parsing entity <reg_desp_2_cifras_MUSER_bloque_calculo>.
 Parsing architecture <BEHAVIORAL> of entity <reg_desp_2_cifras_muser_bloque_calculo>.
-Parsing entity <complemento_a_dos_MUSER_bloque_calculo>.
-Parsing architecture <BEHAVIORAL> of entity <complemento_a_dos_muser_bloque_calculo>.
 Parsing entity <multip_complejo_serie_MUSER_bloque_calculo>.
 Parsing architecture <BEHAVIORAL> of entity <multip_complejo_serie_muser_bloque_calculo>.
 Parsing entity <Comp_Num_Letra_MUSER_bloque_calculo>.
@@ -353,6 +351,8 @@ Parsing entity <M2_1_HXILINX_prac3_top>.
 Parsing architecture <M2_1_HXILINX_prac3_top_V> of entity <m2_1_hxilinx_prac3_top>.
 Parsing entity <IFD_HXILINX_prac3_top>.
 Parsing architecture <Behavioral> of entity <ifd_hxilinx_prac3_top>.
+Parsing entity <complemento_a_dos_MUSER_prac3_top>.
+Parsing architecture <BEHAVIORAL> of entity <complemento_a_dos_muser_prac3_top>.
 Parsing entity <mux_ES_7seg_MUSER_prac3_top>.
 Parsing architecture <BEHAVIORAL> of entity <mux_es_7seg_muser_prac3_top>.
 Parsing entity <Bin_A_BCD_decim_MUSER_prac3_top>.
@@ -371,8 +371,6 @@ Parsing entity <reg_desp_8b_4_cifras_MUSER_prac3_top>.
 Parsing architecture <BEHAVIORAL> of entity <reg_desp_8b_4_cifras_muser_prac3_top>.
 Parsing entity <reg_desp_2_cifras_MUSER_prac3_top>.
 Parsing architecture <BEHAVIORAL> of entity <reg_desp_2_cifras_muser_prac3_top>.
-Parsing entity <complemento_a_dos_MUSER_prac3_top>.
-Parsing architecture <BEHAVIORAL> of entity <complemento_a_dos_muser_prac3_top>.
 Parsing entity <multip_complejo_serie_MUSER_prac3_top>.
 Parsing architecture <BEHAVIORAL> of entity <multip_complejo_serie_muser_prac3_top>.
 Parsing entity <Comp_Num_Letra_MUSER_prac3_top>.
@@ -399,6 +397,9 @@ Parsing entity <teclado_hexa_completo_MUSER_prac3_top>.
 Parsing architecture <BEHAVIORAL> of entity <teclado_hexa_completo_muser_prac3_top>.
 Parsing entity <prac3_top>.
 Parsing architecture <BEHAVIORAL> of entity <prac3_top>.
+Parsing VHDL file "\\vboxsvr\vmsf\ssee_prac3_rl_2022\descomplementador_a_dos.vhf" into library work
+Parsing entity <descomplementador_a_dos>.
+Parsing architecture <BEHAVIORAL> of entity <descomplementador_a_dos>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -437,10 +438,10 @@ Elaborating entity <dcm_100m_5m> (architecture <xilinx>) from library <work>.
 Elaborating entity <cont_16bits> (architecture <cont_16bits_a>) from library <work>.
 
 Elaborating entity <IFD8_HXILINX_prac3_top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:1127 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 5007: Assignment to boton_der ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 5008: Assignment to boton_aba ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 5009: Assignment to boton_izq ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 5010: Assignment to boton_arr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 4981: Assignment to boton_der ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 4982: Assignment to boton_aba ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 4983: Assignment to boton_izq ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 4984: Assignment to boton_arr ignored, since the identifier is never used
 
 Elaborating entity <Remote_Lab> (architecture <Behavioral>) from library <work>.
 
@@ -478,10 +479,6 @@ Elaborating entity <FD16RE_HXILINX_prac3_top> (architecture <Behavioral>) from l
 
 Elaborating entity <sumres16bu> (architecture <sumres16bu_a>) from library <work>.
 
-Elaborating entity <complemento_a_dos_MUSER_prac3_top> (architecture <BEHAVIORAL>) from library <work>.
-
-Elaborating entity <sumres_16bs> (architecture <sumres_16bs_a>) from library <work>.
-
 Elaborating entity <mux_ES_7seg_MUSER_prac3_top> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <M4_1E_HXILINX_prac3_top> (architecture <M4_1E_HXILINX_prac3_top_V>) from library <work>.
@@ -514,11 +511,15 @@ Elaborating entity <regdesp8b_lsb_MUSER_prac3_top> (architecture <BEHAVIORAL>) f
 
 Elaborating entity <Bin_A_BCD_decim_MUSER_prac3_top> (architecture <BEHAVIORAL>) from library <work>.
 
+Elaborating entity <complemento_a_dos_MUSER_prac3_top> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <sumres_16bs> (architecture <sumres_16bs_a>) from library <work>.
+
 Elaborating entity <displays_7seg_nexys3_RemLab_MUSER_prac3_top> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <bcd_7seg_neg> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:634 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 4505: Net <XLXI_138_CLK_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 4506: Net <XLXI_138_KEYCLEARB_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 4479: Net <XLXI_138_CLK_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" Line 4480: Net <XLXI_138_KEYCLEARB_openSignal> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -529,7 +530,7 @@ Synthesizing Unit <prac3_top>.
     Set property "IOSTANDARD = DEFAULT" for instance <XLXI_30>.
     Set property "IBUF_DELAY_VALUE = 0" for instance <XLXI_30>.
     Set property "IFD_DELAY_VALUE = AUTO" for instance <XLXI_30>.
-    Set property "HU_SET = XLXI_35_213" for instance <XLXI_35>.
+    Set property "HU_SET = XLXI_35_427" for instance <XLXI_35>.
     Set property "IOSTANDARD = DEFAULT" for instance <XLXI_114_1>.
     Set property "SLEW = SLOW" for instance <XLXI_114_1>.
     Set property "DRIVE = 12" for instance <XLXI_114_1>.
@@ -545,38 +546,36 @@ Synthesizing Unit <prac3_top>.
     Set property "INIT = 0" for instance <XLXI_142>.
     Set property "SRTYPE = SYNC" for instance <XLXI_142>.
     Set property "DDR_ALIGNMENT = NONE" for instance <XLXI_142>.
-    Set property "HU_SET = XLXI_165_212" for instance <XLXI_165>.
-    Set property "HU_SET = XLXI_180_214" for instance <XLXI_180>.
-    Set property "HU_SET = XLXI_279_1_207" for instance <XLXI_279_1>.
-    Set property "HU_SET = XLXI_279_2_206" for instance <XLXI_279_2>.
-    Set property "HU_SET = XLXI_279_3_205" for instance <XLXI_279_3>.
-    Set property "HU_SET = XLXI_279_4_204" for instance <XLXI_279_4>.
-    Set property "HU_SET = XLXI_288_1_211" for instance <XLXI_288_1>.
-    Set property "HU_SET = XLXI_288_2_210" for instance <XLXI_288_2>.
-    Set property "HU_SET = XLXI_288_3_209" for instance <XLXI_288_3>.
-    Set property "HU_SET = XLXI_288_4_208" for instance <XLXI_288_4>.
-    Set property "HU_SET = XLXI_387_215" for instance <XLXI_387>.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4722: Output port <tecla> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4801: Output port <CFGCLK> of the instance <XLXI_138> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4801: Output port <CFGMCLK> of the instance <XLXI_138> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4801: Output port <EOS> of the instance <XLXI_138> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4913: Output port <G> of the instance <XLXI_708_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4916: Output port <G> of the instance <XLXI_708_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4919: Output port <G> of the instance <XLXI_708_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4922: Output port <G> of the instance <XLXI_708_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4964: Output port <P> of the instance <XLXI_860_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4967: Output port <P> of the instance <XLXI_860_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4970: Output port <P> of the instance <XLXI_860_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4973: Output port <P> of the instance <XLXI_860_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4976: Output port <P> of the instance <XLXI_860_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4979: Output port <P> of the instance <XLXI_860_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4982: Output port <P> of the instance <XLXI_860_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4985: Output port <P> of the instance <XLXI_860_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4988: Output port <RxInternal> of the instance <XLXI_865> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 5048: Output port <multip_bcd_nueva> of the instance <XLXI_872> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 5048: Output port <signo_parte_imag> of the instance <XLXI_872> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 5048: Output port <signo_parte_real> of the instance <XLXI_872> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 5063: Output port <anodo> of the instance <XLXI_874> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_165_426" for instance <XLXI_165>.
+    Set property "HU_SET = XLXI_180_428" for instance <XLXI_180>.
+    Set property "HU_SET = XLXI_279_1_421" for instance <XLXI_279_1>.
+    Set property "HU_SET = XLXI_279_2_420" for instance <XLXI_279_2>.
+    Set property "HU_SET = XLXI_279_3_419" for instance <XLXI_279_3>.
+    Set property "HU_SET = XLXI_279_4_418" for instance <XLXI_279_4>.
+    Set property "HU_SET = XLXI_288_1_425" for instance <XLXI_288_1>.
+    Set property "HU_SET = XLXI_288_2_424" for instance <XLXI_288_2>.
+    Set property "HU_SET = XLXI_288_3_423" for instance <XLXI_288_3>.
+    Set property "HU_SET = XLXI_288_4_422" for instance <XLXI_288_4>.
+    Set property "HU_SET = XLXI_387_429" for instance <XLXI_387>.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4696: Output port <tecla> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4775: Output port <CFGCLK> of the instance <XLXI_138> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4775: Output port <CFGMCLK> of the instance <XLXI_138> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4775: Output port <EOS> of the instance <XLXI_138> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4887: Output port <G> of the instance <XLXI_708_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4890: Output port <G> of the instance <XLXI_708_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4893: Output port <G> of the instance <XLXI_708_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4896: Output port <G> of the instance <XLXI_708_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4938: Output port <P> of the instance <XLXI_860_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4941: Output port <P> of the instance <XLXI_860_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4944: Output port <P> of the instance <XLXI_860_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4947: Output port <P> of the instance <XLXI_860_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4950: Output port <P> of the instance <XLXI_860_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4953: Output port <P> of the instance <XLXI_860_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4956: Output port <P> of the instance <XLXI_860_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4959: Output port <P> of the instance <XLXI_860_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 4962: Output port <RxInternal> of the instance <XLXI_865> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 5022: Output port <multip_bcd_nueva> of the instance <XLXI_872> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 5037: Output port <anodo> of the instance <XLXI_874> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_138_CLK_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_138_KEYCLEARB_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
@@ -591,10 +590,10 @@ Unit <teclado_hexa_completo_MUSER_prac3_top> synthesized.
 
 Synthesizing Unit <teclado_4x4_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-    Set property "HU_SET = XLXI_1_193" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_9_194" for instance <XLXI_9>.
-    Set property "HU_SET = XLXI_12_195" for instance <XLXI_12>.
-    Set property "HU_SET = XLXI_15_196" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_1_407" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_9_408" for instance <XLXI_9>.
+    Set property "HU_SET = XLXI_12_409" for instance <XLXI_12>.
+    Set property "HU_SET = XLXI_15_410" for instance <XLXI_15>.
     Summary:
 	no macro.
 Unit <teclado_4x4_MUSER_prac3_top> synthesized.
@@ -623,13 +622,13 @@ Unit <detector_MUSER_prac3_top> synthesized.
 
 Synthesizing Unit <codif_tecla_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-    Set property "HU_SET = XLXI_1_198" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_3_199" for instance <XLXI_3>.
-    Set property "HU_SET = XLXI_4_200" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_5_201" for instance <XLXI_5>.
-    Set property "HU_SET = XLXI_10_197" for instance <XLXI_10>.
-    Set property "HU_SET = XLXI_13_202" for instance <XLXI_13>.
-    Set property "HU_SET = XLXI_14_203" for instance <XLXI_14>.
+    Set property "HU_SET = XLXI_1_412" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_3_413" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_4_414" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_5_415" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_10_411" for instance <XLXI_10>.
+    Set property "HU_SET = XLXI_13_416" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_14_417" for instance <XLXI_14>.
     Summary:
 	no macro.
 Unit <codif_tecla_MUSER_prac3_top> synthesized.
@@ -768,43 +767,43 @@ Unit <sincroniza_MUSER_prac3_top> synthesized.
 
 Synthesizing Unit <bloque_calculo_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3167: Output port <letra_b> of the instance <XLXI_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3178: Output port <G> of the instance <XLXI_41_0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3181: Output port <G> of the instance <XLXI_41_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3184: Output port <G> of the instance <XLXI_41_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3187: Output port <G> of the instance <XLXI_41_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3190: Output port <G> of the instance <XLXI_41_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3193: Output port <G> of the instance <XLXI_41_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3196: Output port <G> of the instance <XLXI_41_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3199: Output port <G> of the instance <XLXI_41_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3202: Output port <G> of the instance <XLXI_41_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3205: Output port <G> of the instance <XLXI_41_9> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3208: Output port <G> of the instance <XLXI_41_10> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3211: Output port <G> of the instance <XLXI_41_11> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3214: Output port <G> of the instance <XLXI_41_12> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3217: Output port <G> of the instance <XLXI_41_13> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3220: Output port <G> of the instance <XLXI_41_14> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3223: Output port <G> of the instance <XLXI_41_15> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3276: Output port <dato_ok> of the instance <XLXI_64> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3306: Output port <cent> of the instance <XLXI_83> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3306: Output port <diezmilesimas> of the instance <XLXI_83> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3306: Output port <milesimas> of the instance <XLXI_83> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3321: Output port <cent> of the instance <XLXI_84> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3321: Output port <diezmilesimas> of the instance <XLXI_84> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3321: Output port <milesimas> of the instance <XLXI_84> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3321: Output port <dato_nuevo> of the instance <XLXI_84> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3138: Output port <letra_b> of the instance <XLXI_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3149: Output port <G> of the instance <XLXI_41_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3152: Output port <G> of the instance <XLXI_41_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3155: Output port <G> of the instance <XLXI_41_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3158: Output port <G> of the instance <XLXI_41_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3161: Output port <G> of the instance <XLXI_41_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3164: Output port <G> of the instance <XLXI_41_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3167: Output port <G> of the instance <XLXI_41_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3170: Output port <G> of the instance <XLXI_41_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3173: Output port <G> of the instance <XLXI_41_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3176: Output port <G> of the instance <XLXI_41_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3179: Output port <G> of the instance <XLXI_41_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3182: Output port <G> of the instance <XLXI_41_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3185: Output port <G> of the instance <XLXI_41_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3188: Output port <G> of the instance <XLXI_41_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3191: Output port <G> of the instance <XLXI_41_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3194: Output port <G> of the instance <XLXI_41_15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3245: Output port <dato_ok> of the instance <XLXI_64> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3275: Output port <cent> of the instance <XLXI_83> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3275: Output port <diezmilesimas> of the instance <XLXI_83> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3275: Output port <milesimas> of the instance <XLXI_83> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3290: Output port <cent> of the instance <XLXI_84> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3290: Output port <diezmilesimas> of the instance <XLXI_84> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3290: Output port <milesimas> of the instance <XLXI_84> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3290: Output port <dato_nuevo> of the instance <XLXI_84> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <bloque_calculo_MUSER_prac3_top> synthesized.
 
 Synthesizing Unit <Comp_Num_Letra_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-    Set property "HU_SET = XLXI_4_189" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_14_190" for instance <XLXI_14>.
-    Set property "HU_SET = XLXI_24_188" for instance <XLXI_24>.
-    Set property "HU_SET = XLXI_35_191" for instance <XLXI_35>.
-    Set property "HU_SET = XLXI_43_192" for instance <XLXI_43>.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 2878: Output port <GT> of the instance <XLXI_4> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_4_403" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_14_404" for instance <XLXI_14>.
+    Set property "HU_SET = XLXI_24_402" for instance <XLXI_24>.
+    Set property "HU_SET = XLXI_35_405" for instance <XLXI_35>.
+    Set property "HU_SET = XLXI_43_406" for instance <XLXI_43>.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 2850: Output port <GT> of the instance <XLXI_4> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Comp_Num_Letra_MUSER_prac3_top> synthesized.
@@ -834,24 +833,24 @@ Unit <COMP4_HXILINX_prac3_top> synthesized.
 
 Synthesizing Unit <multip_complejo_serie_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-    Set property "HU_SET = XLXI_6_0_177" for instance <XLXI_6_0>.
-    Set property "HU_SET = XLXI_6_1_176" for instance <XLXI_6_1>.
-    Set property "HU_SET = XLXI_6_2_175" for instance <XLXI_6_2>.
-    Set property "HU_SET = XLXI_6_3_174" for instance <XLXI_6_3>.
-    Set property "HU_SET = XLXI_6_4_173" for instance <XLXI_6_4>.
-    Set property "HU_SET = XLXI_6_5_172" for instance <XLXI_6_5>.
-    Set property "HU_SET = XLXI_6_6_171" for instance <XLXI_6_6>.
-    Set property "HU_SET = XLXI_6_7_170" for instance <XLXI_6_7>.
-    Set property "HU_SET = XLXI_9_0_185" for instance <XLXI_9_0>.
-    Set property "HU_SET = XLXI_9_1_184" for instance <XLXI_9_1>.
-    Set property "HU_SET = XLXI_9_2_183" for instance <XLXI_9_2>.
-    Set property "HU_SET = XLXI_9_3_182" for instance <XLXI_9_3>.
-    Set property "HU_SET = XLXI_9_4_181" for instance <XLXI_9_4>.
-    Set property "HU_SET = XLXI_9_5_180" for instance <XLXI_9_5>.
-    Set property "HU_SET = XLXI_9_6_179" for instance <XLXI_9_6>.
-    Set property "HU_SET = XLXI_9_7_178" for instance <XLXI_9_7>.
-    Set property "HU_SET = XLXI_32_187" for instance <XLXI_32>.
-    Set property "HU_SET = XLXI_33_186" for instance <XLXI_33>.
+    Set property "HU_SET = XLXI_6_0_391" for instance <XLXI_6_0>.
+    Set property "HU_SET = XLXI_6_1_390" for instance <XLXI_6_1>.
+    Set property "HU_SET = XLXI_6_2_389" for instance <XLXI_6_2>.
+    Set property "HU_SET = XLXI_6_3_388" for instance <XLXI_6_3>.
+    Set property "HU_SET = XLXI_6_4_387" for instance <XLXI_6_4>.
+    Set property "HU_SET = XLXI_6_5_386" for instance <XLXI_6_5>.
+    Set property "HU_SET = XLXI_6_6_385" for instance <XLXI_6_6>.
+    Set property "HU_SET = XLXI_6_7_384" for instance <XLXI_6_7>.
+    Set property "HU_SET = XLXI_9_0_399" for instance <XLXI_9_0>.
+    Set property "HU_SET = XLXI_9_1_398" for instance <XLXI_9_1>.
+    Set property "HU_SET = XLXI_9_2_397" for instance <XLXI_9_2>.
+    Set property "HU_SET = XLXI_9_3_396" for instance <XLXI_9_3>.
+    Set property "HU_SET = XLXI_9_4_395" for instance <XLXI_9_4>.
+    Set property "HU_SET = XLXI_9_5_394" for instance <XLXI_9_5>.
+    Set property "HU_SET = XLXI_9_6_393" for instance <XLXI_9_6>.
+    Set property "HU_SET = XLXI_9_7_392" for instance <XLXI_9_7>.
+    Set property "HU_SET = XLXI_32_401" for instance <XLXI_32>.
+    Set property "HU_SET = XLXI_33_400" for instance <XLXI_33>.
     Summary:
 	no macro.
 Unit <multip_complejo_serie_MUSER_prac3_top> synthesized.
@@ -904,31 +903,25 @@ Synthesizing Unit <FD16RE_HXILINX_prac3_top>.
 	inferred  16 D-type flip-flop(s).
 Unit <FD16RE_HXILINX_prac3_top> synthesized.
 
-Synthesizing Unit <complemento_a_dos_MUSER_prac3_top>.
-    Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-    Summary:
-	no macro.
-Unit <complemento_a_dos_MUSER_prac3_top> synthesized.
-
 Synthesizing Unit <mux_ES_7seg_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-    Set property "HU_SET = XLXI_173_122" for instance <XLXI_173>.
-    Set property "HU_SET = XLXI_187_0_138" for instance <XLXI_187_0>.
-    Set property "HU_SET = XLXI_187_1_137" for instance <XLXI_187_1>.
-    Set property "HU_SET = XLXI_187_2_136" for instance <XLXI_187_2>.
-    Set property "HU_SET = XLXI_187_3_135" for instance <XLXI_187_3>.
-    Set property "HU_SET = XLXI_189_0_126" for instance <XLXI_189_0>.
-    Set property "HU_SET = XLXI_189_1_125" for instance <XLXI_189_1>.
-    Set property "HU_SET = XLXI_189_2_124" for instance <XLXI_189_2>.
-    Set property "HU_SET = XLXI_189_3_123" for instance <XLXI_189_3>.
-    Set property "HU_SET = XLXI_190_0_130" for instance <XLXI_190_0>.
-    Set property "HU_SET = XLXI_190_1_129" for instance <XLXI_190_1>.
-    Set property "HU_SET = XLXI_190_2_128" for instance <XLXI_190_2>.
-    Set property "HU_SET = XLXI_190_3_127" for instance <XLXI_190_3>.
-    Set property "HU_SET = XLXI_191_0_134" for instance <XLXI_191_0>.
-    Set property "HU_SET = XLXI_191_1_133" for instance <XLXI_191_1>.
-    Set property "HU_SET = XLXI_191_2_132" for instance <XLXI_191_2>.
-    Set property "HU_SET = XLXI_191_3_131" for instance <XLXI_191_3>.
+    Set property "HU_SET = XLXI_173_336" for instance <XLXI_173>.
+    Set property "HU_SET = XLXI_187_0_352" for instance <XLXI_187_0>.
+    Set property "HU_SET = XLXI_187_1_351" for instance <XLXI_187_1>.
+    Set property "HU_SET = XLXI_187_2_350" for instance <XLXI_187_2>.
+    Set property "HU_SET = XLXI_187_3_349" for instance <XLXI_187_3>.
+    Set property "HU_SET = XLXI_189_0_340" for instance <XLXI_189_0>.
+    Set property "HU_SET = XLXI_189_1_339" for instance <XLXI_189_1>.
+    Set property "HU_SET = XLXI_189_2_338" for instance <XLXI_189_2>.
+    Set property "HU_SET = XLXI_189_3_337" for instance <XLXI_189_3>.
+    Set property "HU_SET = XLXI_190_0_344" for instance <XLXI_190_0>.
+    Set property "HU_SET = XLXI_190_1_343" for instance <XLXI_190_1>.
+    Set property "HU_SET = XLXI_190_2_342" for instance <XLXI_190_2>.
+    Set property "HU_SET = XLXI_190_3_341" for instance <XLXI_190_3>.
+    Set property "HU_SET = XLXI_191_0_348" for instance <XLXI_191_0>.
+    Set property "HU_SET = XLXI_191_1_347" for instance <XLXI_191_1>.
+    Set property "HU_SET = XLXI_191_2_346" for instance <XLXI_191_2>.
+    Set property "HU_SET = XLXI_191_3_345" for instance <XLXI_191_3>.
     Summary:
 	no macro.
 Unit <mux_ES_7seg_MUSER_prac3_top> synthesized.
@@ -981,40 +974,40 @@ Unit <reg_desp_8b_4_cifras_MUSER_prac3_top> synthesized.
 
 Synthesizing Unit <Conversor_Bin_BCD_decim_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-    Set property "HU_SET = XLXI_31_165" for instance <XLXI_31>.
-    Set property "HU_SET = XLXI_35_163" for instance <XLXI_35>.
-    Set property "HU_SET = XLXI_37_164" for instance <XLXI_37>.
-    Set property "HU_SET = XLXI_84_166" for instance <XLXI_84>.
-    Set property "HU_SET = XLXI_85_167" for instance <XLXI_85>.
-    Set property "HU_SET = XLXI_86_168" for instance <XLXI_86>.
-    Set property "HU_SET = XLXI_103_169" for instance <XLXI_103>.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 1757: Output port <mod_out> of the instance <XLXI_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 1912: Output port <mod_out> of the instance <XLXI_95> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_31_379" for instance <XLXI_31>.
+    Set property "HU_SET = XLXI_35_377" for instance <XLXI_35>.
+    Set property "HU_SET = XLXI_37_378" for instance <XLXI_37>.
+    Set property "HU_SET = XLXI_84_380" for instance <XLXI_84>.
+    Set property "HU_SET = XLXI_85_381" for instance <XLXI_85>.
+    Set property "HU_SET = XLXI_86_382" for instance <XLXI_86>.
+    Set property "HU_SET = XLXI_103_383" for instance <XLXI_103>.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 1804: Output port <mod_out> of the instance <XLXI_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 1959: Output port <mod_out> of the instance <XLXI_95> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Conversor_Bin_BCD_decim_MUSER_prac3_top> synthesized.
 
 Synthesizing Unit <Bin_A_BCD_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-    Set property "HU_SET = XLXI_12_153" for instance <XLXI_12>.
-    Set property "HU_SET = XLXI_13_151" for instance <XLXI_13>.
-    Set property "HU_SET = XLXI_30_152" for instance <XLXI_30>.
-    Set property "HU_SET = XLXI_53_154" for instance <XLXI_53>.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 1410: Output port <LT> of the instance <XLXI_53> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_12_367" for instance <XLXI_12>.
+    Set property "HU_SET = XLXI_13_365" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_30_366" for instance <XLXI_30>.
+    Set property "HU_SET = XLXI_53_368" for instance <XLXI_53>.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 1457: Output port <LT> of the instance <XLXI_53> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Bin_A_BCD_MUSER_prac3_top> synthesized.
 
 Synthesizing Unit <regdesp8b_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-    Set property "HU_SET = XLXI_2_0_162" for instance <XLXI_2_0>.
-    Set property "HU_SET = XLXI_2_1_161" for instance <XLXI_2_1>.
-    Set property "HU_SET = XLXI_2_2_160" for instance <XLXI_2_2>.
-    Set property "HU_SET = XLXI_2_3_159" for instance <XLXI_2_3>.
-    Set property "HU_SET = XLXI_2_4_158" for instance <XLXI_2_4>.
-    Set property "HU_SET = XLXI_2_5_157" for instance <XLXI_2_5>.
-    Set property "HU_SET = XLXI_2_6_156" for instance <XLXI_2_6>.
-    Set property "HU_SET = XLXI_2_7_155" for instance <XLXI_2_7>.
+    Set property "HU_SET = XLXI_2_0_376" for instance <XLXI_2_0>.
+    Set property "HU_SET = XLXI_2_1_375" for instance <XLXI_2_1>.
+    Set property "HU_SET = XLXI_2_2_374" for instance <XLXI_2_2>.
+    Set property "HU_SET = XLXI_2_3_373" for instance <XLXI_2_3>.
+    Set property "HU_SET = XLXI_2_4_372" for instance <XLXI_2_4>.
+    Set property "HU_SET = XLXI_2_5_371" for instance <XLXI_2_5>.
+    Set property "HU_SET = XLXI_2_6_370" for instance <XLXI_2_6>.
+    Set property "HU_SET = XLXI_2_7_369" for instance <XLXI_2_7>.
     Summary:
 	no macro.
 Unit <regdesp8b_MUSER_prac3_top> synthesized.
@@ -1041,8 +1034,8 @@ Synthesizing Unit <control_bin_bcd>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit adder for signal <Sreg0_machine.contador[3]_GND_66_o_add_3_OUT> created at line 90.
-    Found 4-bit comparator greater for signal <Sreg0_machine.contador[3]_PWR_54_o_LessThan_3_o> created at line 86
+    Found 4-bit adder for signal <Sreg0_machine.contador[3]_GND_64_o_add_3_OUT> created at line 90.
+    Found 4-bit comparator greater for signal <Sreg0_machine.contador[3]_PWR_52_o_LessThan_3_o> created at line 86
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   8 D-type flip-flop(s).
@@ -1053,33 +1046,39 @@ Unit <control_bin_bcd> synthesized.
 
 Synthesizing Unit <regdesp8b_lsb_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-    Set property "HU_SET = XLXI_2_0_150" for instance <XLXI_2_0>.
-    Set property "HU_SET = XLXI_2_1_149" for instance <XLXI_2_1>.
-    Set property "HU_SET = XLXI_2_2_148" for instance <XLXI_2_2>.
-    Set property "HU_SET = XLXI_2_3_147" for instance <XLXI_2_3>.
-    Set property "HU_SET = XLXI_2_4_146" for instance <XLXI_2_4>.
-    Set property "HU_SET = XLXI_2_5_145" for instance <XLXI_2_5>.
-    Set property "HU_SET = XLXI_2_6_144" for instance <XLXI_2_6>.
-    Set property "HU_SET = XLXI_2_7_143" for instance <XLXI_2_7>.
+    Set property "HU_SET = XLXI_2_0_364" for instance <XLXI_2_0>.
+    Set property "HU_SET = XLXI_2_1_363" for instance <XLXI_2_1>.
+    Set property "HU_SET = XLXI_2_2_362" for instance <XLXI_2_2>.
+    Set property "HU_SET = XLXI_2_3_361" for instance <XLXI_2_3>.
+    Set property "HU_SET = XLXI_2_4_360" for instance <XLXI_2_4>.
+    Set property "HU_SET = XLXI_2_5_359" for instance <XLXI_2_5>.
+    Set property "HU_SET = XLXI_2_6_358" for instance <XLXI_2_6>.
+    Set property "HU_SET = XLXI_2_7_357" for instance <XLXI_2_7>.
     Summary:
 	no macro.
 Unit <regdesp8b_lsb_MUSER_prac3_top> synthesized.
 
 Synthesizing Unit <Bin_A_BCD_decim_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-    Set property "HU_SET = XLXI_12_141" for instance <XLXI_12>.
-    Set property "HU_SET = XLXI_13_139" for instance <XLXI_13>.
-    Set property "HU_SET = XLXI_30_140" for instance <XLXI_30>.
-    Set property "HU_SET = XLXI_58_142" for instance <XLXI_58>.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 1026: Output port <P> of the instance <XLXI_55> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_12_355" for instance <XLXI_12>.
+    Set property "HU_SET = XLXI_13_353" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_30_354" for instance <XLXI_30>.
+    Set property "HU_SET = XLXI_58_356" for instance <XLXI_58>.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 1073: Output port <P> of the instance <XLXI_55> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Bin_A_BCD_decim_MUSER_prac3_top> synthesized.
 
+Synthesizing Unit <complemento_a_dos_MUSER_prac3_top>.
+    Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
+    Summary:
+	no macro.
+Unit <complemento_a_dos_MUSER_prac3_top> synthesized.
+
 Synthesizing Unit <displays_7seg_nexys3_RemLab_MUSER_prac3_top>.
     Related source file is "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf".
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3454: Output port <O> of the instance <XLXI_26> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3459: Output port <O> of the instance <XLXI_27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3428: Output port <O> of the instance <XLXI_26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\vboxsvr\vmsf\ssee_prac3_rl_2022\prac3_top.vhf" line 3433: Output port <O> of the instance <XLXI_27> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <displays_7seg_nexys3_RemLab_MUSER_prac3_top> synthesized.
@@ -1903,13 +1902,13 @@ Top Level Output File Name         : prac3_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 931
+# BELS                             : 929
 #      AND2                        : 14
 #      AND2B1                      : 11
 #      AND3                        : 1
 #      AND3B1                      : 3
 #      AND5B3                      : 4
-#      BUF                         : 21
+#      BUF                         : 19
 #      GND                         : 10
 #      INV                         : 80
 #      LUT1                        : 73
@@ -2375,14 +2374,14 @@ ck_100MHz_pad             |    7.850|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 26.00 secs
-Total CPU time to Xst completion: 26.20 secs
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 32.02 secs
  
 --> 
 
-Total memory usage is 4524408 kilobytes
+Total memory usage is 4494168 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  519 (   0 filtered)
-Number of infos    :   68 (   0 filtered)
+Number of infos    :   66 (   0 filtered)
 

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Bin_A_BCD_decim.vhf
--- /___/   /\     Timestamp : 12/19/2022 17:04:47
+-- /___/   /\     Timestamp : 12/19/2022 19:45:15
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -134,10 +134,10 @@ architecture BEHAVIORAL of Bin_A_BCD_decim is
    end component;
    attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_18";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_16";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_17";
-   attribute HU_SET of XLXI_58 : label is "XLXI_58_19";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_224";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_222";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_223";
+   attribute HU_SET of XLXI_58 : label is "XLXI_58_225";
 begin
    q(3 downto 0) <= q_DUMMY(3 downto 0);
    XLXI_12 : M2_1_HXILINX_Bin_A_BCD_decim

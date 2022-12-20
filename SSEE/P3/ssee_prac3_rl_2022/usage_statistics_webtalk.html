@@ -17,7 +17,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Project ID (random number)</B></TD>
-<TD><xtag-property name="RandomID">d56688ba2a6d407abfde3c7f3643017a</xtag-property>.<xtag-property name="ProjectID">C393C2FE8E8740BABB16CBD687848DF3</xtag-property>.<xtag-property name="ProjectIteration">20</xtag-property></TD>
+<TD><xtag-property name="RandomID">d56688ba2a6d407abfde3c7f3643017a</xtag-property>.<xtag-property name="ProjectID">C393C2FE8E8740BABB16CBD687848DF3</xtag-property>.<xtag-property name="ProjectIteration">21</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Target Package:</B></TD>
 <TD><xtag-property name="TargetPackage">csg324</xtag-property></TD>
 </TR>
@@ -29,7 +29,7 @@
 </TR>
 <TR ALIGN=LEFT>
 <TD BGCOLOR='#FFFF99'><B>Date Generated</B></TD>
-<TD><xtag-property name="Date Generated">2022-12-19T17:06:10</xtag-property></TD>
+<TD><xtag-property name="Date Generated">2022-12-19T19:47:12</xtag-property></TD>
 <TD BGCOLOR='#FFFF99'><B>Tool Flow</B></TD>
 <TD><xtag-property name="ToolFlow">ISE</xtag-property></TD>
 </TR>
@@ -1093,6 +1093,12 @@
 <LI><xtag-cmdline>par -w -intstyle ise -ol high -mt off &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
 <LI><xtag-cmdline>trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
 <LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
+<LI><xtag-cmdline>xst -intstyle ise -ifn &lt;ise_file&gt;</xtag-cmdline></LI>
+<LI><xtag-cmdline>ngdbuild -intstyle ise -dd _ngo -sd &lt;dname&gt; -nt timestamp -uc &lt;fname&gt;.ucf -p xc6slx16-csg324-3 &lt;fname&gt;.ngc &lt;fname&gt;.ngd</xtag-cmdline></LI>
+<LI><xtag-cmdline>map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o &lt;fname&gt;.ncd &lt;fname&gt;.ngd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>par -w -intstyle ise -ol high -mt off &lt;fname&gt;.ncd &lt;fname&gt;.ncd &lt;fname&gt;.pcf</xtag-cmdline></LI>
+<LI><xtag-cmdline>trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml &lt;fname&gt;.twx &lt;fname&gt;.ncd -o &lt;fname&gt;.twr &lt;fname&gt;.pcf -ucf &lt;fname&gt;.ucf</xtag-cmdline></LI>
+<LI><xtag-cmdline>bitgen -intstyle ise -f &lt;fname&gt;.ut &lt;fname&gt;.ncd</xtag-cmdline></LI>
 <LI><xtag-cmdline>fuse</xtag-cmdline></LI>
 </xtag-section></UL></TD></TR>
 </TABLE>
@@ -1110,8 +1116,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>bitgen</xtag-program-name></td>
-  <td><xtag-total-run-started>51</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>51</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>53</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>53</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1130,8 +1136,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>map</xtag-program-name></td>
-  <td><xtag-total-run-started>55</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>55</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>57</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>57</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1140,8 +1146,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>netgen</xtag-program-name></td>
-  <td><xtag-total-run-started>7</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>7</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>8</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>8</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1160,8 +1166,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>ngcbuild</xtag-program-name></td>
-  <td><xtag-total-run-started>16</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>16</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>19</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>19</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1170,8 +1176,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>ngdbuild</xtag-program-name></td>
-  <td><xtag-total-run-started>60</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>60</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>62</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>62</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1180,8 +1186,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>obngc</xtag-program-name></td>
-  <td><xtag-total-run-started>16</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>16</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>18</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>18</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1190,8 +1196,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>par</xtag-program-name></td>
-  <td><xtag-total-run-started>55</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>54</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>57</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>56</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1200,8 +1206,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>trce</xtag-program-name></td>
-  <td><xtag-total-run-started>52</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>52</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>54</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>54</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1230,8 +1236,8 @@
 </tr>
 <tr>
   <td><xtag-program-name>xst</xtag-program-name></td>
-  <td><xtag-total-run-started>109</xtag-total-run-started></td>
-  <td><xtag-total-run-finished>109</xtag-total-run-finished></td>
+  <td><xtag-total-run-started>114</xtag-total-run-started></td>
+  <td><xtag-total-run-finished>114</xtag-total-run-finished></td>
   <td><xtag-total-error>0</xtag-total-error></td>
   <td><xtag-total-fatal-error>0</xtag-total-fatal-error></td>
   <td><xtag-total-internal-error>0</xtag-total-internal-error></td>
@@ -1289,7 +1295,7 @@ Help files</xtag-group-name></B></TD></TR>
 </TR><TR><TD><xtag-design-property-name>PROP_intProjectCreationTimestamp</xtag-design-property-name>=<xtag-design-property-value>2013-11-23T13:30:44</xtag-design-property-value></TD>
 <TD><xtag-design-property-name>PROP_intWbtProjectID</xtag-design-property-name>=<xtag-design-property-value>C393C2FE8E8740BABB16CBD687848DF3</xtag-design-property-value></TD>
 
-</TR><TR><TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>20</xtag-process-property-value></TD>
+</TR><TR><TD><xtag-process-property-name>PROP_intWbtProjectIteration</xtag-process-property-name>=<xtag-process-property-value>21</xtag-process-property-value></TD>
 <TD><xtag-design-property-name>PROP_intWorkingDirLocWRTProjDir</xtag-design-property-name>=<xtag-design-property-value>Same</xtag-design-property-value></TD>
 
 </TR><TR><TD><xtag-design-property-name>PROP_intWorkingDirUsed</xtag-design-property-name>=<xtag-design-property-value>No</xtag-design-property-value></TD>
@@ -1436,13 +1442,13 @@ Help files</xtag-group-name></B></TD></TR>
 <TD><xtag-core-param-name>c_xdevicefamily</xtag-core-param-name>=<xtag-core-param-value>spartan6</xtag-core-param-value></TD>
 <TR ALIGN=CENTER><TD COLSPAN=4><B>Core Type=<xtag-core-type-name>c_addsub_v11_0</xtag-core-type-name></B></TD></TR>
 <TR>
-<TD><xtag-core-param-name>c_a_type</xtag-core-param-name>=<xtag-core-param-value>1</xtag-core-param-value></TD>
+<TD><xtag-core-param-name>c_a_type</xtag-core-param-name>=<xtag-core-param-value>0</xtag-core-param-value></TD>
 <TD><xtag-core-param-name>c_a_width</xtag-core-param-name>=<xtag-core-param-value>16</xtag-core-param-value></TD>
 <TD><xtag-core-param-name>c_add_mode</xtag-core-param-name>=<xtag-core-param-value>2</xtag-core-param-value></TD>
 <TD><xtag-core-param-name>c_ainit_val</xtag-core-param-name>=<xtag-core-param-value>0</xtag-core-param-value></TD>
 
 </TR><TR><TD><xtag-core-param-name>c_b_constant</xtag-core-param-name>=<xtag-core-param-value>0</xtag-core-param-value></TD>
-<TD><xtag-core-param-name>c_b_type</xtag-core-param-name>=<xtag-core-param-value>1</xtag-core-param-value></TD>
+<TD><xtag-core-param-name>c_b_type</xtag-core-param-name>=<xtag-core-param-value>0</xtag-core-param-value></TD>
 <TD><xtag-core-param-name>c_b_value</xtag-core-param-name>=<xtag-core-param-value>0000000000000000</xtag-core-param-value></TD>
 <TD><xtag-core-param-name>c_b_width</xtag-core-param-name>=<xtag-core-param-value>16</xtag-core-param-value></TD>
 
@@ -1516,7 +1522,7 @@ Help files</xtag-group-name></B></TD></TR>
 </TR>
 <TR>
 <TD><xtag-preunisim-param-name>NGDBUILD_NUM_AND5B3</xtag-preunisim-param-name>=<xtag-preunisim-param-value>4</xtag-preunisim-param-value></TD>
-<TD><xtag-preunisim-param-name>NGDBUILD_NUM_BUF</xtag-preunisim-param-name>=<xtag-preunisim-param-value>21</xtag-preunisim-param-value></TD>
+<TD><xtag-preunisim-param-name>NGDBUILD_NUM_BUF</xtag-preunisim-param-name>=<xtag-preunisim-param-value>19</xtag-preunisim-param-value></TD>
 <TD><xtag-preunisim-param-name>NGDBUILD_NUM_BUFG</xtag-preunisim-param-name>=<xtag-preunisim-param-value>7</xtag-preunisim-param-value></TD>
 <TD><xtag-preunisim-param-name>NGDBUILD_NUM_DCM_SP</xtag-preunisim-param-name>=<xtag-preunisim-param-value>1</xtag-preunisim-param-value></TD>
 </TR>
@@ -1574,7 +1580,7 @@ Help files</xtag-group-name></B></TD></TR>
 </TR>
 <TR>
 <TD><xtag-postunisim-param-name>NGDBUILD_NUM_AND5B3</xtag-postunisim-param-name>=<xtag-postunisim-param-value>4</xtag-postunisim-param-value></TD>
-<TD><xtag-postunisim-param-name>NGDBUILD_NUM_BUF</xtag-postunisim-param-name>=<xtag-postunisim-param-value>21</xtag-postunisim-param-value></TD>
+<TD><xtag-postunisim-param-name>NGDBUILD_NUM_BUF</xtag-postunisim-param-name>=<xtag-postunisim-param-value>19</xtag-postunisim-param-value></TD>
 <TD><xtag-postunisim-param-name>NGDBUILD_NUM_BUFG</xtag-postunisim-param-name>=<xtag-postunisim-param-value>7</xtag-postunisim-param-value></TD>
 <TD><xtag-postunisim-param-name>NGDBUILD_NUM_DCM_SP</xtag-postunisim-param-name>=<xtag-postunisim-param-value>1</xtag-postunisim-param-value></TD>
 </TR>
@@ -1701,4 +1707,4 @@ Help files</xtag-group-name></B></TD></TR>
 <TD><xtag-xstoptions-param-name>-equivalent_register_removal</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>YES</xtag-xstoptions-param-value></TD>
 <TD><xtag-xstoptions-param-name>-slice_utilization_ratio_maxmargin</xtag-xstoptions-param-name>=<xtag-xstoptions-param-value>5</xtag-xstoptions-param-value></TD>
 </xtag-section></TABLE>
-&nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'><xtag-section name="ISimStatistics"><TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=1><B>ISim Statistics</B></TD></TR><TR><TD><xtag-isim-property-name>Xilinx HDL Libraries Used</xtag-isim-property-name>=<xtag-isim-property-value>ieee, unisim, std, xilinxcorelib</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Fuse Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>1718 ms, 65100 KB</xtag-isim-property-value></TD></TR></BODY></HTML>
+&nbsp;<BR><TABLE BORDER CELLSPACING=0 WIDTH='100%'><xtag-section name="ISimStatistics"><TR ALIGN=CENTER BGCOLOR='#99CCFF'><TD COLSPAN=1><B>ISim Statistics</B></TD></TR><TR><TD><xtag-isim-property-name>Xilinx HDL Libraries Used</xtag-isim-property-name>=<xtag-isim-property-value>ieee, unisim, std, xilinxcorelib</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Fuse Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>1842 ms, 65152 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Signals</xtag-isim-property-name>=<xtag-isim-property-value>2939</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Nets</xtag-isim-property-name>=<xtag-isim-property-value>2424</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Blocks</xtag-isim-property-name>=<xtag-isim-property-value>673</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Processes</xtag-isim-property-name>=<xtag-isim-property-value>840</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Total Simulation Time</xtag-isim-property-name>=<xtag-isim-property-value>1 us</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Resource Usage</xtag-isim-property-name>=<xtag-isim-property-value>0.484375 sec, 4669591 KB</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Simulation Mode</xtag-isim-property-name>=<xtag-isim-property-value>gui</xtag-isim-property-value></TD></TR><TR><TD><xtag-isim-property-name>Hardware CoSim</xtag-isim-property-name>=<xtag-isim-property-value>0</xtag-isim-property-value></TD></TR></xtag-section></TABLE></BODY></HTML>

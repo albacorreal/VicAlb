@@ -28,7 +28,7 @@
     </file>
     <file xil_pn:name="sincroniza.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="14"/>
     </file>
     <file xil_pn:name="bcd_7seg_neg.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
@@ -40,7 +40,7 @@
     </file>
     <file xil_pn:name="teclado_4x4.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="14"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
     </file>
     <file xil_pn:name="teclado_hexa_completo.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
@@ -52,7 +52,7 @@
     </file>
     <file xil_pn:name="detector.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="20"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="19"/>
     </file>
     <file xil_pn:name="cont_anillo_ce.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
@@ -67,20 +67,20 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="28"/>
     </file>
     <file xil_pn:name="Comp_Num_Letra.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="24"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="23"/>
     </file>
     <file xil_pn:name="reg_desp_4_cifras.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Bin_A_BCD.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="10"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
     </file>
     <file xil_pn:name="ctrl_entz_sal.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="21"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="20"/>
     </file>
     <file xil_pn:name="ipcore_dir/multip_4x4u.xco" xil_pn:type="FILE_COREGEN">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
@@ -91,32 +91,32 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ctrl_multip_cpmpl.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
     </file>
     <file xil_pn:name="multip_complejo_serie.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="19"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="18"/>
     </file>
     <file xil_pn:name="bloque_calculo.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="20"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="33"/>
     </file>
     <file xil_pn:name="Conversor_Bin_BCD_16b.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="regdesp16b.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ctrl_bin_bcd_16b.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="mux_ES_7seg.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="18"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="17"/>
     </file>
     <file xil_pn:name="prac3_top.sch" xil_pn:type="FILE_SCHEMATIC">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
@@ -130,62 +130,62 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Bin_A_BCD_decim.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
     </file>
     <file xil_pn:name="Conversor_Bin_BCD_decim.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="22"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="21"/>
     </file>
     <file xil_pn:name="regdesp8b.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
     </file>
     <file xil_pn:name="control_bin_bcd.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
     </file>
     <file xil_pn:name="regdesp8b_lsb.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
     </file>
     <file xil_pn:name="bcd_bin_1_decimal.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="11"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
     </file>
     <file xil_pn:name="Conversor_BCD_Bin_1decim.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="23"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="22"/>
     </file>
     <file xil_pn:name="sim_bloque_calculo.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="21"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="139"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="139"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="139"/>
     </file>
     <file xil_pn:name="reg_desp_2_cifras.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="17"/>
-    </file>
-    <file xil_pn:name="reg_desp_8b_4_cifras.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="11"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="16"/>
     </file>
+    <file xil_pn:name="reg_desp_8b_4_cifras.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="10"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
+    </file>
     <file xil_pn:name="ipcore_dir/multip_8x8u.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
     </file>
     <file xil_pn:name="ipcore_dir/sumres16bu.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
     </file>
     <file xil_pn:name="complemento_a_dos.sch" xil_pn:type="FILE_SCHEMATIC">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="24"/>
     </file>
     <file xil_pn:name="ipcore_dir/sumres_16bs.xco" xil_pn:type="FILE_COREGEN">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
     </file>
     <file xil_pn:name="ipcore_dir/dcm_100m_5m.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>

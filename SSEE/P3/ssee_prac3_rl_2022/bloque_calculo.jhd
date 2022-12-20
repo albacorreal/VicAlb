@@ -17,3 +17,5 @@ MODULE bloque_calculo
 		INSTANCE XLXI_83
 	SUBMODULE Conversor_Bin_BCD_decim
 		INSTANCE XLXI_84
+	SUBMODULE complemento_a_dos
+		INSTANCE XLXI_87

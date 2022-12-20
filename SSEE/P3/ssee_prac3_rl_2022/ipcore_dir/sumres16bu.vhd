@@ -67,12 +67,12 @@ END COMPONENT;
 -- Configuration specification
   FOR ALL : wrapped_sumres16bu USE ENTITY XilinxCoreLib.c_addsub_v11_0(behavioral)
     GENERIC MAP (
-      c_a_type => 1,
+      c_a_type => 0,
       c_a_width => 16,
       c_add_mode => 2,
       c_ainit_val => "0",
       c_b_constant => 0,
-      c_b_type => 1,
+      c_b_type => 0,
       c_b_value => "0000000000000000",
       c_b_width => 16,
       c_borrow_low => 1,

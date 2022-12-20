@@ -1,0 +1,10 @@
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/bloque_calculo.vhf,-w,Z:/ssee_prac3_rl_2022/bloque_calculo.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/multip_complejo_serie.vhf,-w,Z:/ssee_prac3_rl_2022/multip_complejo_serie.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/Conversor_Bin_BCD_decim.vhf,-w,Z:/ssee_prac3_rl_2022/Conversor_Bin_BCD_decim.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/prac3_top.vhf,-w,Z:/ssee_prac3_rl_2022/prac3_top.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/regdesp8b.vhf,-w,Z:/ssee_prac3_rl_2022/regdesp8b.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/Bin_A_BCD_decim.vhf,-w,Z:/ssee_prac3_rl_2022/Bin_A_BCD_decim.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/regdesp8b_lsb.vhf,-w,Z:/ssee_prac3_rl_2022/regdesp8b_lsb.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/bloque_calculo.vhf,-w,Z:/ssee_prac3_rl_2022/bloque_calculo.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/Conversor_Bin_BCD_decim.vhf,-w,Z:/ssee_prac3_rl_2022/Conversor_Bin_BCD_decim.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/prac3_top.vhf,-w,Z:/ssee_prac3_rl_2022/prac3_top.sch

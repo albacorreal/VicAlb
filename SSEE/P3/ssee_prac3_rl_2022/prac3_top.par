@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-2J4VM5T::  Mon Dec 19 17:05:48 2022
+DESKTOP-2J4VM5T::  Mon Dec 19 19:46:35 2022
 
 par -w -intstyle ise -ol high -mt off prac3_top_map.ncd prac3_top.ncd
 prac3_top.pcf 
@@ -99,8 +99,8 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 3 secs 
-Finished initial Timing Analysis.  REAL time: 3 secs 
+Starting initial Timing Analysis.  REAL time: 4 secs 
+Finished initial Timing Analysis.  REAL time: 4 secs 
 
 WARNING:Par:288 - The signal boton_aba_pad_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal uart_rx_pad_IBUF has no load.  PAR will not attempt to route this signal.
@@ -117,28 +117,28 @@ WARNING:Par:288 - The signal boton_izq_pad_IBUF has no load.  PAR will not attem
 Starting Router
 
 
-Phase  1  : 2892 unrouted;      REAL time: 3 secs 
+Phase  1  : 2892 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 2485 unrouted;      REAL time: 3 secs 
+Phase  2  : 2485 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 820 unrouted;      REAL time: 4 secs 
+Phase  3  : 820 unrouted;      REAL time: 6 secs 
 
-Phase  4  : 820 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 5 secs 
+Phase  4  : 820 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
 
 Updating file: prac3_top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
-Total REAL time to Router completion: 6 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Total REAL time to Router completion: 9 secs 
 Total CPU time to Router completion: 5 secs 
 
 Partition Implementation Status
@@ -218,8 +218,8 @@ Derived Constraints for TS_ck_100MHz_pad
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |TS_ck_100MHz_pad               |     10.000ns|      5.340ns|      7.097ns|            0|            0|            0|        10159|
-| TS_XLXI_306_clkfx             |    200.000ns|      2.998ns|          N/A|            0|            0|          105|            0|
 | TS_XLXI_306_clk2x             |     10.000ns|      7.097ns|          N/A|            0|            0|        10054|            0|
+| TS_XLXI_306_clkfx             |    200.000ns|      2.998ns|          N/A|            0|            0|          105|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -231,7 +231,7 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 12 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 7 secs 
+Total REAL time to PAR completion: 11 secs 
 Total CPU time to PAR completion: 6 secs 
 
 Peak Memory Usage:  4468 MB

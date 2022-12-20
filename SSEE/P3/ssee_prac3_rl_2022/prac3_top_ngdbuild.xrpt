@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Mon Dec 19 17:05:34 2022">
+  <application stringID="NgdBuild" timeStamp="Mon Dec 19 19:46:12 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -72,7 +72,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND3B1" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND5B3" value="4"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_BUF" value="21"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_BUF" value="19"/>
         <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="7"/>
         <item dataType="int" stringID="NGDBUILD_NUM_DCM_SP" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_DSP48A1" value="1"/>
@@ -113,7 +113,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND3B1" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND5B3" value="4"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_BUF" value="21"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_BUF" value="19"/>
         <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="7"/>
         <item dataType="int" stringID="NGDBUILD_NUM_DCM_SP" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_DSP48A1" value="1"/>
@@ -171,7 +171,7 @@
             </scope>
             <scope stringID="NGDBUILD_CORE_INSTANCE" value="sumres16bu">
               <item stringID="NGDBUILD_CORE_INFO" type="c_addsub_v11_0" value="sumres16bu"/>
-              <item c_a_type="1" c_a_width="16" c_add_mode="2" c_ainit_val="0" c_b_constant="0" c_b_type="1" c_b_value="0000000000000000" c_b_width="16" c_borrow_low="1" c_bypass_low="0" c_ce_overrides_bypass="1" c_ce_overrides_sclr="0" c_has_bypass="0" c_has_c_in="0" c_has_c_out="0" c_has_ce="1" c_has_sclr="0" c_has_sinit="0" c_has_sset="0" c_implementation="0" c_latency="1" c_out_width="16" c_sclr_overrides_sset="1" c_sinit_val="0" c_verbosity="0" c_xdevicefamily="spartan6" stringID="NGDBUILD_CORE_PARAMETERS" value="sumres16bu"/>
+              <item c_a_type="0" c_a_width="16" c_add_mode="2" c_ainit_val="0" c_b_constant="0" c_b_type="0" c_b_value="0000000000000000" c_b_width="16" c_borrow_low="1" c_bypass_low="0" c_ce_overrides_bypass="1" c_ce_overrides_sclr="0" c_has_bypass="0" c_has_c_in="0" c_has_c_out="0" c_has_ce="1" c_has_sclr="0" c_has_sinit="0" c_has_sset="0" c_implementation="0" c_latency="1" c_out_width="16" c_sclr_overrides_sset="1" c_sinit_val="0" c_verbosity="0" c_xdevicefamily="spartan6" stringID="NGDBUILD_CORE_PARAMETERS" value="sumres16bu"/>
             </scope>
             <scope stringID="NGDBUILD_CORE_INSTANCE" value="sumres_16bs">
               <item stringID="NGDBUILD_CORE_INFO" type="c_addsub_v11_0" value="sumres_16bs"/>

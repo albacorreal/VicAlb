@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : bloque_calculo.vhf
--- /___/   /\     Timestamp : 12/19/2022 17:04:54
+-- /___/   /\     Timestamp : 12/19/2022 19:45:16
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -266,6 +266,53 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
+entity complemento_a_dos_MUSER_bloque_calculo is
+   port ( ck       : in    std_logic; 
+          dato_ent : in    std_logic_vector (15 downto 0); 
+          dato_sal : out   std_logic_vector (15 downto 0));
+end complemento_a_dos_MUSER_bloque_calculo;
+
+architecture BEHAVIORAL of complemento_a_dos_MUSER_bloque_calculo is
+   attribute BOX_TYPE   : string ;
+   signal XLXN_6   : std_logic_vector (15 downto 0);
+   signal XLXN_9   : std_logic;
+   component sumres_16bs
+      port ( b   : in    std_logic_vector (15 downto 0); 
+             a   : in    std_logic_vector (15 downto 0); 
+             s   : out   std_logic_vector (15 downto 0); 
+             clk : in    std_logic; 
+             add : in    std_logic);
+   end component;
+   
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
+begin
+   XLXN_6(15 downto 0) <= x"0000";
+   XLXI_3 : sumres_16bs
+      port map (a(15 downto 0)=>XLXN_6(15 downto 0),
+                add=>XLXN_9,
+                b(15 downto 0)=>dato_ent(15 downto 0),
+                clk=>ck,
+                s(15 downto 0)=>dato_sal(15 downto 0));
+   
+   XLXI_4 : INV
+      port map (I=>dato_ent(15),
+                O=>XLXN_9);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
 entity mux_ES_7seg_MUSER_bloque_calculo is
    port ( ck                   : in    std_logic; 
           dato_decim           : in    std_logic_vector (3 downto 0); 
@@ -347,23 +394,23 @@ architecture BEHAVIORAL of mux_ES_7seg_MUSER_bloque_calculo is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_173 : label is "XLXI_173_216";
-   attribute HU_SET of XLXI_187_0 : label is "XLXI_187_0_232";
-   attribute HU_SET of XLXI_187_1 : label is "XLXI_187_1_231";
-   attribute HU_SET of XLXI_187_2 : label is "XLXI_187_2_230";
-   attribute HU_SET of XLXI_187_3 : label is "XLXI_187_3_229";
-   attribute HU_SET of XLXI_189_0 : label is "XLXI_189_0_220";
-   attribute HU_SET of XLXI_189_1 : label is "XLXI_189_1_219";
-   attribute HU_SET of XLXI_189_2 : label is "XLXI_189_2_218";
-   attribute HU_SET of XLXI_189_3 : label is "XLXI_189_3_217";
-   attribute HU_SET of XLXI_190_0 : label is "XLXI_190_0_224";
-   attribute HU_SET of XLXI_190_1 : label is "XLXI_190_1_223";
-   attribute HU_SET of XLXI_190_2 : label is "XLXI_190_2_222";
-   attribute HU_SET of XLXI_190_3 : label is "XLXI_190_3_221";
-   attribute HU_SET of XLXI_191_0 : label is "XLXI_191_0_228";
-   attribute HU_SET of XLXI_191_1 : label is "XLXI_191_1_227";
-   attribute HU_SET of XLXI_191_2 : label is "XLXI_191_2_226";
-   attribute HU_SET of XLXI_191_3 : label is "XLXI_191_3_225";
+   attribute HU_SET of XLXI_173 : label is "XLXI_173_234";
+   attribute HU_SET of XLXI_187_0 : label is "XLXI_187_0_250";
+   attribute HU_SET of XLXI_187_1 : label is "XLXI_187_1_249";
+   attribute HU_SET of XLXI_187_2 : label is "XLXI_187_2_248";
+   attribute HU_SET of XLXI_187_3 : label is "XLXI_187_3_247";
+   attribute HU_SET of XLXI_189_0 : label is "XLXI_189_0_238";
+   attribute HU_SET of XLXI_189_1 : label is "XLXI_189_1_237";
+   attribute HU_SET of XLXI_189_2 : label is "XLXI_189_2_236";
+   attribute HU_SET of XLXI_189_3 : label is "XLXI_189_3_235";
+   attribute HU_SET of XLXI_190_0 : label is "XLXI_190_0_242";
+   attribute HU_SET of XLXI_190_1 : label is "XLXI_190_1_241";
+   attribute HU_SET of XLXI_190_2 : label is "XLXI_190_2_240";
+   attribute HU_SET of XLXI_190_3 : label is "XLXI_190_3_239";
+   attribute HU_SET of XLXI_191_0 : label is "XLXI_191_0_246";
+   attribute HU_SET of XLXI_191_1 : label is "XLXI_191_1_245";
+   attribute HU_SET of XLXI_191_2 : label is "XLXI_191_2_244";
+   attribute HU_SET of XLXI_191_3 : label is "XLXI_191_3_243";
 begin
    XLXI_26 : GND
       port map (G=>cero);
@@ -717,10 +764,10 @@ architecture BEHAVIORAL of Bin_A_BCD_decim_MUSER_bloque_calculo is
    end component;
    attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_235";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_233";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_234";
-   attribute HU_SET of XLXI_58 : label is "XLXI_58_236";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_253";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_251";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_252";
+   attribute HU_SET of XLXI_58 : label is "XLXI_58_254";
 begin
    q(3 downto 0) <= q_DUMMY(3 downto 0);
    XLXI_12 : M2_1_HXILINX_bloque_calculo
@@ -868,14 +915,14 @@ architecture BEHAVIORAL of regdesp8b_lsb_MUSER_bloque_calculo is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_244";
-   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_243";
-   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_242";
-   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_241";
-   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_240";
-   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_239";
-   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_238";
-   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_237";
+   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_262";
+   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_261";
+   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_260";
+   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_259";
+   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_258";
+   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_257";
+   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_256";
+   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_255";
 begin
    XLXI_1_0 : FDRE
       port map (C=>ck,
@@ -1084,10 +1131,10 @@ architecture BEHAVIORAL of Bin_A_BCD_MUSER_bloque_calculo is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_247";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_245";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_246";
-   attribute HU_SET of XLXI_53 : label is "XLXI_53_248";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_265";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_263";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_264";
+   attribute HU_SET of XLXI_53 : label is "XLXI_53_266";
 begin
    mod_out <= mod_out_DUMMY;
    q(3 downto 0) <= q_DUMMY(3 downto 0);
@@ -1234,14 +1281,14 @@ architecture BEHAVIORAL of regdesp8b_MUSER_bloque_calculo is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_256";
-   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_255";
-   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_254";
-   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_253";
-   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_252";
-   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_251";
-   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_250";
-   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_249";
+   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_274";
+   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_273";
+   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_272";
+   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_271";
+   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_270";
+   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_269";
+   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_268";
+   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_267";
 begin
    XLXI_1_0 : FDRE
       port map (C=>ck,
@@ -1477,13 +1524,13 @@ architecture BEHAVIORAL of Conversor_Bin_BCD_decim_MUSER_bloque_calculo is
              mod_in  : in    std_logic);
    end component;
    
-   attribute HU_SET of XLXI_31 : label is "XLXI_31_259";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_257";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_258";
-   attribute HU_SET of XLXI_84 : label is "XLXI_84_260";
-   attribute HU_SET of XLXI_85 : label is "XLXI_85_261";
-   attribute HU_SET of XLXI_86 : label is "XLXI_86_262";
-   attribute HU_SET of XLXI_103 : label is "XLXI_103_263";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_277";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_275";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_276";
+   attribute HU_SET of XLXI_84 : label is "XLXI_84_278";
+   attribute HU_SET of XLXI_85 : label is "XLXI_85_279";
+   attribute HU_SET of XLXI_86 : label is "XLXI_86_280";
+   attribute HU_SET of XLXI_103 : label is "XLXI_103_281";
 begin
    XLXI_1 : Bin_A_BCD_MUSER_bloque_calculo
       port map (ck=>ck,
@@ -2169,66 +2216,17 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity complemento_a_dos_MUSER_bloque_calculo is
-   port ( ck       : in    std_logic; 
-          dato_ent : in    std_logic_vector (15 downto 0); 
-          dato_sal : out   std_logic_vector (15 downto 0));
-end complemento_a_dos_MUSER_bloque_calculo;
-
-architecture BEHAVIORAL of complemento_a_dos_MUSER_bloque_calculo is
-   attribute BOX_TYPE   : string ;
-   signal XLXN_6   : std_logic_vector (15 downto 0);
-   signal XLXN_9   : std_logic;
-   component sumres_16bs
-      port ( b   : in    std_logic_vector (15 downto 0); 
-             a   : in    std_logic_vector (15 downto 0); 
-             s   : out   std_logic_vector (15 downto 0); 
-             clk : in    std_logic; 
-             add : in    std_logic);
-   end component;
-   
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
-begin
-   XLXN_6(15 downto 0) <= x"0000";
-   XLXI_3 : sumres_16bs
-      port map (a(15 downto 0)=>XLXN_6(15 downto 0),
-                add=>XLXN_9,
-                b(15 downto 0)=>dato_ent(15 downto 0),
-                clk=>ck,
-                s(15 downto 0)=>dato_sal(15 downto 0));
-   
-   XLXI_4 : INV
-      port map (I=>dato_ent(15),
-                O=>XLXN_9);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
 entity multip_complejo_serie_MUSER_bloque_calculo is
-   port ( a                : in    std_logic_vector (7 downto 0); 
-          b                : in    std_logic_vector (7 downto 0); 
-          c                : in    std_logic_vector (7 downto 0); 
-          carga_cifra      : in    std_logic; 
-          ck               : in    std_logic; 
-          d                : in    std_logic_vector (7 downto 0); 
-          reset            : in    std_logic; 
-          dato_imag        : out   std_logic_vector (15 downto 0); 
-          dato_real        : out   std_logic_vector (15 downto 0); 
-          multip_ok        : out   std_logic; 
-          signo_parte_imag : out   std_logic; 
-          signo_parte_real : out   std_logic);
+   port ( a           : in    std_logic_vector (7 downto 0); 
+          b           : in    std_logic_vector (7 downto 0); 
+          c           : in    std_logic_vector (7 downto 0); 
+          carga_cifra : in    std_logic; 
+          ck          : in    std_logic; 
+          d           : in    std_logic_vector (7 downto 0); 
+          reset       : in    std_logic; 
+          dato_imag   : out   std_logic_vector (15 downto 0); 
+          dato_real   : out   std_logic_vector (15 downto 0); 
+          multip_ok   : out   std_logic);
 end multip_complejo_serie_MUSER_bloque_calculo;
 
 architecture BEHAVIORAL of multip_complejo_serie_MUSER_bloque_calculo is
@@ -2238,7 +2236,6 @@ architecture BEHAVIORAL of multip_complejo_serie_MUSER_bloque_calculo is
    signal ce_multip        : std_logic;
    signal ce_multip_ret    : std_logic;
    signal ce_sum_res       : std_logic;
-   signal dato_real_s      : std_logic_vector (15 downto 0);
    signal multiplicando1   : std_logic_vector (7 downto 0);
    signal multiplicando2   : std_logic_vector (7 downto 0);
    signal producto         : std_logic_vector (15 downto 0);
@@ -2307,36 +2304,24 @@ architecture BEHAVIORAL of multip_complejo_serie_MUSER_bloque_calculo is
              s   : out   std_logic_vector (15 downto 0));
    end component;
    
-   component complemento_a_dos_MUSER_bloque_calculo
-      port ( ck       : in    std_logic; 
-             dato_ent : in    std_logic_vector (15 downto 0); 
-             dato_sal : out   std_logic_vector (15 downto 0));
-   end component;
-   
-   component BUF
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_271";
-   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_270";
-   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_269";
-   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_268";
-   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_267";
-   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_266";
-   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_265";
-   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_264";
-   attribute HU_SET of XLXI_9_0 : label is "XLXI_9_0_279";
-   attribute HU_SET of XLXI_9_1 : label is "XLXI_9_1_278";
-   attribute HU_SET of XLXI_9_2 : label is "XLXI_9_2_277";
-   attribute HU_SET of XLXI_9_3 : label is "XLXI_9_3_276";
-   attribute HU_SET of XLXI_9_4 : label is "XLXI_9_4_275";
-   attribute HU_SET of XLXI_9_5 : label is "XLXI_9_5_274";
-   attribute HU_SET of XLXI_9_6 : label is "XLXI_9_6_273";
-   attribute HU_SET of XLXI_9_7 : label is "XLXI_9_7_272";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_281";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_280";
+   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_289";
+   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_288";
+   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_287";
+   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_286";
+   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_285";
+   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_284";
+   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_283";
+   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_282";
+   attribute HU_SET of XLXI_9_0 : label is "XLXI_9_0_297";
+   attribute HU_SET of XLXI_9_1 : label is "XLXI_9_1_296";
+   attribute HU_SET of XLXI_9_2 : label is "XLXI_9_2_295";
+   attribute HU_SET of XLXI_9_3 : label is "XLXI_9_3_294";
+   attribute HU_SET of XLXI_9_4 : label is "XLXI_9_4_293";
+   attribute HU_SET of XLXI_9_5 : label is "XLXI_9_5_292";
+   attribute HU_SET of XLXI_9_6 : label is "XLXI_9_6_291";
+   attribute HU_SET of XLXI_9_7 : label is "XLXI_9_7_290";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_299";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_298";
 begin
    dato_imag(15 downto 0) <= dato_imag_DUMMY(15 downto 0);
    XLXI_6_0 : M2_1_HXILINX_bloque_calculo
@@ -2470,7 +2455,7 @@ begin
                 CE=>ce_carga_salida,
                 D(15 downto 0)=>dato_imag_DUMMY(15 downto 0),
                 R=>XLXN_74,
-                Q(15 downto 0)=>dato_real_s(15 downto 0));
+                Q(15 downto 0)=>dato_real(15 downto 0));
    
    XLXI_33 : FD16RE_HXILINX_bloque_calculo
       port map (C=>ck,
@@ -2486,19 +2471,6 @@ begin
                 ce=>ce_sum_res,
                 clk=>ck,
                 s(15 downto 0)=>dato_imag_DUMMY(15 downto 0));
-   
-   XLXI_35 : complemento_a_dos_MUSER_bloque_calculo
-      port map (ck=>ck,
-                dato_ent(15 downto 0)=>dato_real_s(15 downto 0),
-                dato_sal(15 downto 0)=>dato_real(15 downto 0));
-   
-   XLXI_42 : BUF
-      port map (I=>dato_real_s(15),
-                O=>signo_parte_real);
-   
-   XLXI_43 : BUF
-      port map (I=>dato_imag_DUMMY(15),
-                O=>signo_parte_imag);
    
 end BEHAVIORAL;
 
@@ -2608,11 +2580,11 @@ architecture BEHAVIORAL of Comp_Num_Letra_MUSER_bloque_calculo is
    end component;
    attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_283";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_284";
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_282";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_285";
-   attribute HU_SET of XLXI_43 : label is "XLXI_43_286";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_301";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_302";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_300";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_303";
+   attribute HU_SET of XLXI_43 : label is "XLXI_43_304";
 begin
    XLXI_2 : GND
       port map (G=>cero);
@@ -2747,8 +2719,6 @@ entity bloque_calculo is
           multip_bcd_nueva     : out   std_logic; 
           punto_decimal_nexys3 : out   std_logic_vector (4 downto 1); 
           signo_imag           : out   std_logic; 
-          signo_parte_imag     : out   std_logic; 
-          signo_parte_real     : out   std_logic; 
           signo_real           : out   std_logic);
 end bloque_calculo;
 
@@ -2766,6 +2736,7 @@ architecture BEHAVIORAL of bloque_calculo is
    signal dato_nuevo             : std_logic;
    signal dato_ok                : std_logic;
    signal dato_real              : std_logic_vector (15 downto 0);
+   signal dato_real_u            : std_logic_vector (15 downto 0);
    signal decimas                : std_logic_vector (3 downto 0);
    signal entZ_sal               : std_logic;
    signal imag_bcd0              : std_logic_vector (3 downto 0);
@@ -2780,8 +2751,6 @@ architecture BEHAVIORAL of bloque_calculo is
    signal real_bcd2              : std_logic_vector (3 downto 0);
    signal real_bcd3              : std_logic_vector (3 downto 0);
    signal unidades               : std_logic_vector (3 downto 0);
-   signal signo_parte_real_DUMMY : std_logic;
-   signal signo_parte_imag_DUMMY : std_logic;
    signal multip_bcd_nueva_DUMMY : std_logic;
    component Comp_Num_Letra_MUSER_bloque_calculo
       port ( tecla_pulsada : in    std_logic; 
@@ -2801,18 +2770,16 @@ architecture BEHAVIORAL of bloque_calculo is
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
    component multip_complejo_serie_MUSER_bloque_calculo
-      port ( a                : in    std_logic_vector (7 downto 0); 
-             b                : in    std_logic_vector (7 downto 0); 
-             c                : in    std_logic_vector (7 downto 0); 
-             carga_cifra      : in    std_logic; 
-             ck               : in    std_logic; 
-             d                : in    std_logic_vector (7 downto 0); 
-             dato_imag        : out   std_logic_vector (15 downto 0); 
-             dato_real        : out   std_logic_vector (15 downto 0); 
-             multip_ok        : out   std_logic; 
-             reset            : in    std_logic; 
-             signo_parte_imag : out   std_logic; 
-             signo_parte_real : out   std_logic);
+      port ( a           : in    std_logic_vector (7 downto 0); 
+             b           : in    std_logic_vector (7 downto 0); 
+             c           : in    std_logic_vector (7 downto 0); 
+             carga_cifra : in    std_logic; 
+             ck          : in    std_logic; 
+             d           : in    std_logic_vector (7 downto 0); 
+             reset       : in    std_logic; 
+             dato_imag   : out   std_logic_vector (15 downto 0); 
+             dato_real   : out   std_logic_vector (15 downto 0); 
+             multip_ok   : out   std_logic);
    end component;
    
    component mux_ES_7seg_MUSER_bloque_calculo
@@ -2905,10 +2872,14 @@ architecture BEHAVIORAL of bloque_calculo is
              reset            : in    std_logic);
    end component;
    
+   component complemento_a_dos_MUSER_bloque_calculo
+      port ( ck       : in    std_logic; 
+             dato_ent : in    std_logic_vector (15 downto 0); 
+             dato_sal : out   std_logic_vector (15 downto 0));
+   end component;
+   
 begin
    multip_bcd_nueva <= multip_bcd_nueva_DUMMY;
-   signo_parte_imag <= signo_parte_imag_DUMMY;
-   signo_parte_real <= signo_parte_real_DUMMY;
    XLXI_3 : Comp_Num_Letra_MUSER_bloque_calculo
       port map (ck=>ck,
                 cod_tecla(3 downto 0)=>cod_tecla(3 downto 0),
@@ -2978,9 +2949,7 @@ begin
                 reset=>reset,
                 dato_imag(15 downto 0)=>dato_imag(15 downto 0),
                 dato_real(15 downto 0)=>dato_real(15 downto 0),
-                multip_ok=>multip_ok,
-                signo_parte_imag=>signo_parte_imag_DUMMY,
-                signo_parte_real=>signo_parte_real_DUMMY);
+                multip_ok=>multip_ok);
    
    XLXI_60 : mux_ES_7seg_MUSER_bloque_calculo
       port map (ck=>ck,
@@ -3040,18 +3009,18 @@ begin
    
    XLXI_70 : AND2B1
       port map (I0=>sw0,
-                I1=>signo_parte_real_DUMMY,
+                I1=>dato_real(15),
                 O=>signo_real);
    
    XLXI_74 : AND2
       port map (I0=>sw0,
-                I1=>signo_parte_imag_DUMMY,
+                I1=>dato_imag(15),
                 O=>signo_imag);
    
    XLXI_83 : Conversor_Bin_BCD_decim_MUSER_bloque_calculo
       port map (ck=>ck,
-                dato_bin_decimal(7 downto 0)=>dato_real(7 downto 0),
-                dato_bin_entero(7 downto 0)=>dato_real(15 downto 8),
+                dato_bin_decimal(7 downto 0)=>dato_real_u(7 downto 0),
+                dato_bin_entero(7 downto 0)=>dato_real_u(15 downto 8),
                 inicio=>multip_ok,
                 reset=>reset,
                 cent=>open,
@@ -3077,6 +3046,11 @@ begin
                 diezmilesimas=>open,
                 milesimas=>open,
                 unid(3 downto 0)=>imag_bcd2(3 downto 0));
+   
+   XLXI_87 : complemento_a_dos_MUSER_bloque_calculo
+      port map (ck=>ck,
+                dato_ent(15 downto 0)=>dato_real(15 downto 0),
+                dato_sal(15 downto 0)=>dato_real_u(15 downto 0));
    
 end BEHAVIORAL;
 
