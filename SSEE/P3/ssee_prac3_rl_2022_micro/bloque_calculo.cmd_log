@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym bloque_calculo C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/bloque_calculo.sch C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/bloque_calculo.sym 

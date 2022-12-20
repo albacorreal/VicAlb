@@ -1,0 +1,15 @@
+# Output products list for <multip_8x8u>
+_xmsgs\pn_parser.xmsgs
+multip_8x8u.asy
+multip_8x8u.gise
+multip_8x8u.ngc
+multip_8x8u.sym
+multip_8x8u.vhd
+multip_8x8u.vho
+multip_8x8u.xco
+multip_8x8u.xise
+multip_8x8u\doc\mult_gen_ds255.pdf
+multip_8x8u\doc\mult_gen_v11_2_readme.txt
+multip_8x8u\doc\mult_gen_v11_2_vinfo.html
+multip_8x8u_flist.txt
+multip_8x8u_xmdf.tcl

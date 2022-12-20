@@ -1,0 +1,3 @@
+THIRPARTY=false
+PROCESSOR=MicroBlaze_MCS
+MSS_FILE=system.mss
