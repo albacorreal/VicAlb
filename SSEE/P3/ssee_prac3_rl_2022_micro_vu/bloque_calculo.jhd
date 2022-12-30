@@ -1,0 +1,23 @@
+MODULE bloque_calculo
+	SUBMODULE Comp_Num_Letra
+		INSTANCE XLXI_3
+	SUBMODULE multip_complejo_serie
+		INSTANCE XLXI_42
+	SUBMODULE mux_ES_7seg
+		INSTANCE XLXI_60
+	SUBMODULE ctrl_entz_sal
+		INSTANCE XLXI_61
+	SUBMODULE Conversor_BCD_Bin_1decim
+		INSTANCE XLXI_62
+	SUBMODULE reg_desp_2_cifras
+		INSTANCE XLXI_64
+	SUBMODULE reg_desp_8b_4_cifras
+		INSTANCE XLXI_66
+	SUBMODULE Conversor_Bin_BCD_decim
+		INSTANCE XLXI_83
+	SUBMODULE Conversor_Bin_BCD_decim
+		INSTANCE XLXI_84
+	SUBMODULE complemento_a_dos
+		INSTANCE XLXI_87
+	SUBMODULE ctrl_datos_micro
+		INSTANCE XLXI_102

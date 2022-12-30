@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ctrl_entz_sal.vhd -prj ssee_prac3_rl_2022 -o ctrl_entz_sal.spl -module ctrl_entz_sal -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w ctrl_entz_sal.spl Z:/ssee_prac3_rl_2022/ctrl_entz_sal.sym 
