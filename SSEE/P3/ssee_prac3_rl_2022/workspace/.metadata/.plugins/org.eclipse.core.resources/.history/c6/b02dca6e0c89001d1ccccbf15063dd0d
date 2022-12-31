@@ -371,7 +371,7 @@ int main()
 					XIOModule_DiscreteWrite(&iomodule, 2, tecla_pulsada);
 
 					// Mostramos por pantalla la tecla pulsada
-
+					xil_printf()
 				}
 				else
 				{

@@ -369,9 +369,6 @@ int main()
 
 					// Enviamos por el GPO2 el valor de tecla_pulsada
 					XIOModule_DiscreteWrite(&iomodule, 2, tecla_pulsada);
-
-					// Mostramos por pantalla la tecla pulsada
-
 				}
 				else
 				{
@@ -446,12 +443,12 @@ int main()
 				// Imprimimos por pantalla la parte real
 				if (signo_real == 0)
 				{
-					// La parte real es positiva
+					// Signo real positivo
 					xil_printf("%d%d,%d%d", buf_real[3], buf_real[2], buf_real[1], buf_real[0]);
 				}
 				else
 				{
-					// La parte real es negativa
+					// Signo real negativo
 					xil_printf("-%d%d,%d%d", buf_real[3], buf_real[2], buf_real[1], buf_real[0]);
 				}
 				// Imprimimos por pantalla la parte imaginaria

@@ -369,9 +369,6 @@ int main()
 
 					// Enviamos por el GPO2 el valor de tecla_pulsada
 					XIOModule_DiscreteWrite(&iomodule, 2, tecla_pulsada);
-
-					// Mostramos por pantalla la tecla pulsada
-
 				}
 				else
 				{
@@ -425,15 +422,14 @@ int main()
 				// Usamos una máscara para obtener del GPI1 la parte imaginaria de la multiplicación
 				result_BCD_imag = GPI1 & 0x0000FFFF;
 
-				// Usamos desplazamientos para convertir los bits que nos interesan en los 4 menos significativos
-				// y aplicamos máscaras para quedarnos solo con esos cuatro bits
-				buf_imag[3] = (result_BCD_imag >> 12) & 0x000F;
-				buf_imag[2] = (result_BCD_imag >> 8) & 0x000F;
-				buf_imag[1] = (result_BCD_imag >> 4) & 0x000F;
+				// Usamos máscaras para dividir el resultado real en decenas, unidades, décimas y centésimas
+				buf_imag[3] = result_BCD_imag & 0xF000;
+				buf_imag[2] = result_BCD_imag & 0x0F00;
+				buf_imag[1] = result_BCD_imag & 0x00F0;
 				buf_imag[0] = result_BCD_imag & 0x000F;
 
-				// Usamos desplazamiento y una máscara para obtener el signo de la parte real
-				signo_real = (GPI2 >> 1) & 0x01;
+				// Usamos una máscara para obtener el signo de la parte real
+				signo_real = GPI2 & 0x02;
 
 				// Usamos una máscara para obtener el signo de la parte real
 				signo_imag = GPI2 & 0x01;
@@ -446,12 +442,12 @@ int main()
 				// Imprimimos por pantalla la parte real
 				if (signo_real == 0)
 				{
-					// La parte real es positiva
+					// Signo real positivo
 					xil_printf("%d%d,%d%d", buf_real[3], buf_real[2], buf_real[1], buf_real[0]);
 				}
 				else
 				{
-					// La parte real es negativa
+					// Signo real negativo
 					xil_printf("-%d%d,%d%d", buf_real[3], buf_real[2], buf_real[1], buf_real[0]);
 				}
 				// Imprimimos por pantalla la parte imaginaria

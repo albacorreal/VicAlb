@@ -22,7 +22,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -35,12 +35,11 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="Z:/ssee_prac3_rl_2022/workspace/hw_platform_0/system.xml" title="system.xml" tooltip="hw_platform_0/system.xml" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="Z:/ssee_prac3_rl_2022/workspace/hw_platform_0/system.xml" title="system.xml" tooltip="hw_platform_0/system.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw_platform_0/system.xml"/>
 </editor>
 <editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="Z:/ssee_prac3_rl_2022/workspace/standalone_bsp_0/system.mss" title="system.mss" tooltip="standalone_bsp_0/system.mss" workbook="DefaultEditorWorkbook">
@@ -48,10 +47,6 @@
 </editor>
 <editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="Z:/ssee_prac3_rl_2022/workspace/hello_world_bsp/system.mss" title="system.mss" tooltip="hello_world_bsp/system.mss" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello_world_bsp/system.mss"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="Z:/ssee_prac3_rl_2022/workspace/hello_world/src/helloworld.c" title="helloworld.c" tooltip="hello_world/src/helloworld.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello_world/src/helloworld.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12614" selectionTopPixel="5731"/>
 </editor>
 </editors>
 <views>
@@ -83,7 +78,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -163,7 +158,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.74922603" ratioLeft="484" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -195,95 +190,165 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/hw_platform_0/system.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/standalone_bsp_0/system.mss"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/hello_world_bsp/system.mss"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hello_world/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/Z:/PROYECTOS_XILINX_ISE/mcs_int_timer_n3/workspace/mcs_int_timer_demo/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/Z:/PROYECTOS_XILINX_ISE/mcs_nexys3/workspace/mcs_nexys3/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/Z:/PROYECTOS_XILINX_ISE/mcs_nexys3/workspace/mcs_nexys3/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/Z:/PROYECTOS_XILINX_ISE/proyecto_mcs_iobus/mcs_iobus_fsm_xilinx_ise/workspace/iobus_test/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/Z:/PROYECTOS_XILINX_ISE/proyecto_mcs_iobus/mcs_iobus_xilinx_ise/workspace/iobus_test/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/Z:/PROYECTOS_XILINX_ISE/mcs_seriepc_n3/workspace/seriepc_n3/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/Z:/PROYECTOS_XILINX_ISE/prueba_mcs/workspace/hello_world/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/Z:/PROYECTOS_XILINX_ISE/mcs_int_timer_n3/workspace/mcs_int_timer_demo/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/hw_platform_0/system.xml"/>
 </editors>
-<item historyLabel="system.xml" index="0"/>
-<item historyLabel="system.mss" index="1"/>
-<item historyLabel="system.mss" index="2"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="16220" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="1886" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="1">
+<position/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="12696" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="1">
+<position/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="12696" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="16358" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1934" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="15450" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="2135" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="13532" y="0"/>
+</item>
 <item historyLabel="helloworld.c" index="3">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="13532" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="1">
 <position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="system.mss" index="2"/>
-<item historyLabel="system.mss" index="1"/>
-<item historyLabel="system.xml" index="0"/>
-<item historyLabel="helloworld.c" index="3">
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="2665" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="1">
+<position info="not_deleted" x="2510" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="2822" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="9344" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="1">
+<position info="not_deleted" x="2924" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="9495" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="1">
+<position info="not_deleted" x="4201" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="11459" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="1">
+<position info="not_deleted" x="1530" y="62"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="2364" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="1">
+<position info="not_deleted" x="1685" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="11211" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="11509" y="9"/>
+</item>
+<item historyLabel="helloworld.c" index="1">
+<position info="not_deleted" x="1795" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="12087" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="1">
+<position info="not_deleted" x="1795" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="12111" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="4">
 <position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="1867" y="0"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="12059" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="2267" y="0"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="16070" y="44"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="2795" y="0"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="16254" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="2990" y="0"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="16212" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="3291" y="0"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="15741" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="3099" y="0"/>
+<item historyLabel="helloworld.c" index="4">
+<position info="not_deleted" x="5116" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="3403" y="0"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="15741" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="3473" y="0"/>
+<item historyLabel="helloworld.c" index="5">
+<position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="3478" y="0"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="15741" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="2893" y="99"/>
+<item historyLabel="helloworld.c" index="6">
+<position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="3822" y="0"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="15741" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="3982" y="0"/>
+<item historyLabel="helloworld.c" index="7">
+<position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="10697" y="0"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="15741" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="11028" y="0"/>
+<item historyLabel="helloworld.c" index="8">
+<position info="not_deleted" x="2916" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="11046" y="0"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="15741" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="11126" y="0"/>
+<item historyLabel="helloworld.c" index="0">
+<position info="not_deleted" x="12471" y="0"/>
 </item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="11173" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="11741" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="12489" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="12540" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="12660" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="12787" y="0"/>
-</item>
-<item historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="12871" y="0"/>
-</item>
-<item active="true" historyLabel="helloworld.c" index="3">
-<position info="not_deleted" x="12869" y="0"/>
-</item>
+<item active="true" historyLabel="system.xml" index="9"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -301,6 +366,24 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="Z:\PROYECTOS_XILINX_ISE\mcs_int_timer_n3\workspace\mcs_int_timer_demo\src\helloworld.c">
+<persistable uri="file:/Z:/PROYECTOS_XILINX_ISE/mcs_int_timer_n3/workspace/mcs_int_timer_demo/src/helloworld.c"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="Z:\PROYECTOS_XILINX_ISE\prueba_mcs\workspace\hello_world\src\helloworld.c">
+<persistable uri="file:/Z:/PROYECTOS_XILINX_ISE/prueba_mcs/workspace/hello_world/src/helloworld.c"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="Z:\PROYECTOS_XILINX_ISE\mcs_seriepc_n3\workspace\seriepc_n3\src\helloworld.c">
+<persistable uri="file:/Z:/PROYECTOS_XILINX_ISE/mcs_seriepc_n3/workspace/seriepc_n3/src/helloworld.c"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="Z:\PROYECTOS_XILINX_ISE\proyecto_mcs_iobus\mcs_iobus_xilinx_ise\workspace\iobus_test\src\helloworld.c">
+<persistable uri="file:/Z:/PROYECTOS_XILINX_ISE/proyecto_mcs_iobus/mcs_iobus_xilinx_ise/workspace/iobus_test/src/helloworld.c"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="Z:\PROYECTOS_XILINX_ISE\proyecto_mcs_iobus\mcs_iobus_fsm_xilinx_ise\workspace\iobus_test\src\helloworld.c">
+<persistable uri="file:/Z:/PROYECTOS_XILINX_ISE/proyecto_mcs_iobus/mcs_iobus_fsm_xilinx_ise/workspace/iobus_test/src/helloworld.c"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="Z:\PROYECTOS_XILINX_ISE\mcs_nexys3\workspace\mcs_nexys3\src\helloworld.c">
+<persistable uri="file:/Z:/PROYECTOS_XILINX_ISE/mcs_nexys3/workspace/mcs_nexys3/src/helloworld.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="hello_world/src/helloworld.c">
 <persistable path="/hello_world/src/helloworld.c"/>
 </file>
