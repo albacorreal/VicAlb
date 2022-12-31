@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="ssee_prac3_rl_2022" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Conversor_BCD_Bin C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|Conversor_BCD_Bin.sch</ClosedNode>
+         <ClosedNode>/Conversor_BCD_Bin_1decim C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|Conversor_BCD_Bin_1decim.sch</ClosedNode>
+         <ClosedNode>/Conversor_Bin_BCD_decim C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|Conversor_Bin_BCD_decim.sch</ClosedNode>
+         <ClosedNode>/Remote_Lab - Behavioral C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|Remote_Lab.vhd</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_1 - teclado_hexa_completo</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_864 - displays_7seg_nexys3_RemLab</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_865 - Remote_Lab - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_867 - sinc_entrada</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_869 - bloque_calculo</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_872 - bloque_calculo/XLXI_42 - multip_complejo_serie</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_872 - bloque_calculo/XLXI_49 - Conversor_Bin_BCD_16b</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_872 - bloque_calculo/XLXI_51 - Conversor_Bin_BCD_16b</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_873 - Remote_Lab - Behavioral/U3 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_873 - Remote_Lab - Behavioral/U4 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_873 - Remote_Lab - Behavioral/U5 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_873 - Remote_Lab - Behavioral/U6 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_873 - Remote_Lab - Behavioral/U7 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_873 - Remote_Lab - Behavioral/U8 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_874 - displays_7seg_nexys3_RemLab</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_875 - Remote_Lab - Behavioral/U1 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_875 - Remote_Lab - Behavioral/U2 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_875 - Remote_Lab - Behavioral/U3 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_875 - Remote_Lab - Behavioral/U4 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_875 - Remote_Lab - Behavioral/U5 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_875 - Remote_Lab - Behavioral/U6 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_875 - Remote_Lab - Behavioral/U7 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch/XLXI_875 - Remote_Lab - Behavioral/U8 - Modulo - Behavioral</ClosedNode>
+         <ClosedNode>/prac3_top_te C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top_te.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>prac3_top (Z:/ssee_prac3_rl_2022/prac3_top.sch)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000021c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000021c0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>prac3_top (Z:/ssee_prac3_rl_2022/prac3_top.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Generate Programming File</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b9000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Generate Programming File</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e50000000100000000000000fe0000000100000000000000760000000100000000000001390000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>bcd_7seg_neg.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000138000000010001000100000000000000000000000064ffffffff000000810000000000000001000001380000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001390000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Create Schematic Symbol</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Create Schematic Symbol</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Conversor_BCD_Bin_1decim C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|Conversor_BCD_Bin_1decim.sch</ClosedNode>
+         <ClosedNode>/Conversor_Bin_BCD_decim C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|Conversor_Bin_BCD_decim.sch</ClosedNode>
+         <ClosedNode>/bloque_calculo_bloque_calculo_sch_tb - behavioral C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|sim_bloque_calculo.vhd/UUT - bloque_calculo</ClosedNode>
+         <ClosedNode>/prac3_top C:|Users|albertod|Documents|_Doc_|Xilinx|ssee_prac3_rl_2022|prac3_top.sch</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>bloque_calculo_bloque_calculo_sch_tb - behavioral (Z:/ssee_prac3_rl_2022/sim_bloque_calculo.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >12</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000234000000020000000000000000000000000200000064ffffffff000000810000000300000002000002340000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>bloque_calculo_bloque_calculo_sch_tb - behavioral (Z:/ssee_prac3_rl_2022/sim_bloque_calculo.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ISim Simulator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+</Project>

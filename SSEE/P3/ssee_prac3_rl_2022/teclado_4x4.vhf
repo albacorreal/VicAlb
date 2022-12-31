@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : teclado_4x4.vhf
--- /___/   /\     Timestamp : 12/17/2022 23:26:39
+-- /___/   /\     Timestamp : 12/31/2022 13:12:48
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -250,10 +250,10 @@ architecture BEHAVIORAL of teclado_4x4 is
    end component;
    attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_240";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_241";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_242";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_243";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_4";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_5";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_6";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_7";
 begin
    fila1 <= fila1_DUMMY;
    fila2 <= fila2_DUMMY;

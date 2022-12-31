@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Dec 19 19:46:46 2022
+Sat Dec 31 13:19:50 2022
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -102,7 +102,7 @@ Pinout by Pin Number:
 |E8        |                      |IOBS     |IO_L9N_0                     |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |E9        |                      |         |VCCAUX                       |         |           |              |          |         |           |         |2.5    |          |           |                |
 |E10       |                      |         |VCCO_0                       |         |           |0             |          |         |           |         |3.30   |          |           |                |
-|E11       |col_pad<1>            |IOB      |IO_L42N_0                    |INPUT    |LVCMOS33   |0             |          |         |           |NONE     |       |LOCATED   |YES        |NONE            |
+|E11       |                      |IOBS     |IO_L42N_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |E12       |fila_pad<1>           |IOB      |IO_L51N_0                    |TRISTATE |LVCMOS33   |0             |12        |SLOW     |PULLDOWN   |         |       |LOCATED   |NO         |NONE            |
 |E13       |                      |IOBS     |IO_L63N_SCP6_0               |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |E14       |                      |         |VCCAUX                       |         |           |              |          |         |           |         |2.5    |          |           |                |
@@ -119,8 +119,8 @@ Pinout by Pin Number:
 |F7        |                      |IOBM     |IO_L7P_0                     |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |F8        |                      |IOBS     |IO_L32N_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |F9        |                      |IOBS     |IO_L38N_VREF_0               |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
-|F10       |col_pad<3>            |IOB      |IO_L40N_0                    |INPUT    |LVCMOS33   |0             |          |         |           |NONE     |       |LOCATED   |YES        |NONE            |
-|F11       |col_pad<2>            |IOB      |IO_L42P_0                    |INPUT    |LVCMOS33   |0             |          |         |           |NONE     |       |LOCATED   |YES        |NONE            |
+|F10       |                      |IOBS     |IO_L40N_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
+|F11       |                      |IOBM     |IO_L42P_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |F12       |fila_pad<2>           |IOB      |IO_L51P_0                    |TRISTATE |LVCMOS33   |0             |12        |SLOW     |PULLDOWN   |         |       |LOCATED   |NO         |NONE            |
 |F13       |                      |IOBM     |IO_L63P_SCP7_0               |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |F14       |                      |IOBM     |IO_L30P_A21_M1RESET_1        |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
@@ -138,7 +138,7 @@ Pinout by Pin Number:
 |G8        |                      |IOBM     |IO_L32P_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |G9        |                      |IOBM     |IO_L38P_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |G10       |                      |         |VCCAUX                       |         |           |              |          |         |           |         |2.5    |          |           |                |
-|G11       |col_pad<4>            |IOB      |IO_L40P_0                    |INPUT    |LVCMOS33   |0             |          |         |           |NONE     |       |LOCATED   |YES        |NONE            |
+|G11       |                      |IOBM     |IO_L40P_0                    |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |G12       |                      |         |GND                          |         |           |              |          |         |           |         |       |          |           |                |
 |G13       |                      |IOBS     |IO_L32N_A16_M1A9_1           |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
 |G14       |                      |IOBS     |IO_L30N_A20_M1A11_1          |UNUSED   |           |1             |          |         |           |         |       |          |           |                |

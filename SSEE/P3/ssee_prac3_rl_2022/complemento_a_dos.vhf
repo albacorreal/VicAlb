@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : complemento_a_dos.vhf
--- /___/   /\     Timestamp : 12/19/2022 16:12:54
+-- /___/   /\     Timestamp : 12/31/2022 13:12:58
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

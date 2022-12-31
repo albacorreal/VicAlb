@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : multip_complejo_serie.vhf
--- /___/   /\     Timestamp : 12/19/2022 19:45:09
+-- /___/   /\     Timestamp : 12/31/2022 13:12:55
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -175,24 +175,24 @@ architecture BEHAVIORAL of multip_complejo_serie is
              s   : out   std_logic_vector (15 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_78";
-   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_77";
-   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_76";
-   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_75";
-   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_74";
-   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_73";
-   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_72";
-   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_71";
-   attribute HU_SET of XLXI_9_0 : label is "XLXI_9_0_86";
-   attribute HU_SET of XLXI_9_1 : label is "XLXI_9_1_85";
-   attribute HU_SET of XLXI_9_2 : label is "XLXI_9_2_84";
-   attribute HU_SET of XLXI_9_3 : label is "XLXI_9_3_83";
-   attribute HU_SET of XLXI_9_4 : label is "XLXI_9_4_82";
-   attribute HU_SET of XLXI_9_5 : label is "XLXI_9_5_81";
-   attribute HU_SET of XLXI_9_6 : label is "XLXI_9_6_80";
-   attribute HU_SET of XLXI_9_7 : label is "XLXI_9_7_79";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_88";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_87";
+   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_149";
+   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_148";
+   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_147";
+   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_146";
+   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_145";
+   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_144";
+   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_143";
+   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_142";
+   attribute HU_SET of XLXI_9_0 : label is "XLXI_9_0_157";
+   attribute HU_SET of XLXI_9_1 : label is "XLXI_9_1_156";
+   attribute HU_SET of XLXI_9_2 : label is "XLXI_9_2_155";
+   attribute HU_SET of XLXI_9_3 : label is "XLXI_9_3_154";
+   attribute HU_SET of XLXI_9_4 : label is "XLXI_9_4_153";
+   attribute HU_SET of XLXI_9_5 : label is "XLXI_9_5_152";
+   attribute HU_SET of XLXI_9_6 : label is "XLXI_9_6_151";
+   attribute HU_SET of XLXI_9_7 : label is "XLXI_9_7_150";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_159";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_158";
 begin
    dato_imag(15 downto 0) <= dato_imag_DUMMY(15 downto 0);
    XLXI_6_0 : M2_1_HXILINX_multip_complejo_serie

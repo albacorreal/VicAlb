@@ -1,3 +1,4 @@
+-bd "workspace/hello_world/debug/hello_world.elf" tag microblaze_prac3
 -w
 -g DebugBitstream:No
 -g Binary:no

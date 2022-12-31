@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Conversor_BCD_Bin_1decim.vhf
--- /___/   /\     Timestamp : 12/17/2022 23:26:32
+-- /___/   /\     Timestamp : 12/31/2022 13:12:59
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

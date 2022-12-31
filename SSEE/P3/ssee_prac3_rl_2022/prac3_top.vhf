@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : prac3_top.vhf
--- /___/   /\     Timestamp : 12/19/2022 19:45:20
+-- /___/   /\     Timestamp : 12/31/2022 13:18:23
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -649,23 +649,23 @@ architecture BEHAVIORAL of mux_ES_7seg_MUSER_prac3_top is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_173 : label is "XLXI_173_336";
-   attribute HU_SET of XLXI_187_0 : label is "XLXI_187_0_352";
-   attribute HU_SET of XLXI_187_1 : label is "XLXI_187_1_351";
-   attribute HU_SET of XLXI_187_2 : label is "XLXI_187_2_350";
-   attribute HU_SET of XLXI_187_3 : label is "XLXI_187_3_349";
-   attribute HU_SET of XLXI_189_0 : label is "XLXI_189_0_340";
-   attribute HU_SET of XLXI_189_1 : label is "XLXI_189_1_339";
-   attribute HU_SET of XLXI_189_2 : label is "XLXI_189_2_338";
-   attribute HU_SET of XLXI_189_3 : label is "XLXI_189_3_337";
-   attribute HU_SET of XLXI_190_0 : label is "XLXI_190_0_344";
-   attribute HU_SET of XLXI_190_1 : label is "XLXI_190_1_343";
-   attribute HU_SET of XLXI_190_2 : label is "XLXI_190_2_342";
-   attribute HU_SET of XLXI_190_3 : label is "XLXI_190_3_341";
-   attribute HU_SET of XLXI_191_0 : label is "XLXI_191_0_348";
-   attribute HU_SET of XLXI_191_1 : label is "XLXI_191_1_347";
-   attribute HU_SET of XLXI_191_2 : label is "XLXI_191_2_346";
-   attribute HU_SET of XLXI_191_3 : label is "XLXI_191_3_345";
+   attribute HU_SET of XLXI_173 : label is "XLXI_173_0";
+   attribute HU_SET of XLXI_187_0 : label is "XLXI_187_0_16";
+   attribute HU_SET of XLXI_187_1 : label is "XLXI_187_1_15";
+   attribute HU_SET of XLXI_187_2 : label is "XLXI_187_2_14";
+   attribute HU_SET of XLXI_187_3 : label is "XLXI_187_3_13";
+   attribute HU_SET of XLXI_189_0 : label is "XLXI_189_0_4";
+   attribute HU_SET of XLXI_189_1 : label is "XLXI_189_1_3";
+   attribute HU_SET of XLXI_189_2 : label is "XLXI_189_2_2";
+   attribute HU_SET of XLXI_189_3 : label is "XLXI_189_3_1";
+   attribute HU_SET of XLXI_190_0 : label is "XLXI_190_0_8";
+   attribute HU_SET of XLXI_190_1 : label is "XLXI_190_1_7";
+   attribute HU_SET of XLXI_190_2 : label is "XLXI_190_2_6";
+   attribute HU_SET of XLXI_190_3 : label is "XLXI_190_3_5";
+   attribute HU_SET of XLXI_191_0 : label is "XLXI_191_0_12";
+   attribute HU_SET of XLXI_191_1 : label is "XLXI_191_1_11";
+   attribute HU_SET of XLXI_191_2 : label is "XLXI_191_2_10";
+   attribute HU_SET of XLXI_191_3 : label is "XLXI_191_3_9";
 begin
    XLXI_26 : GND
       port map (G=>cero);
@@ -1019,10 +1019,10 @@ architecture BEHAVIORAL of Bin_A_BCD_decim_MUSER_prac3_top is
    end component;
    attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_355";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_353";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_354";
-   attribute HU_SET of XLXI_58 : label is "XLXI_58_356";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_19";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_17";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_18";
+   attribute HU_SET of XLXI_58 : label is "XLXI_58_20";
 begin
    q(3 downto 0) <= q_DUMMY(3 downto 0);
    XLXI_12 : M2_1_HXILINX_prac3_top
@@ -1170,14 +1170,14 @@ architecture BEHAVIORAL of regdesp8b_lsb_MUSER_prac3_top is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_364";
-   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_363";
-   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_362";
-   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_361";
-   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_360";
-   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_359";
-   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_358";
-   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_357";
+   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_28";
+   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_27";
+   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_26";
+   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_25";
+   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_24";
+   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_23";
+   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_22";
+   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_21";
 begin
    XLXI_1_0 : FDRE
       port map (C=>ck,
@@ -1386,10 +1386,10 @@ architecture BEHAVIORAL of Bin_A_BCD_MUSER_prac3_top is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_367";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_365";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_366";
-   attribute HU_SET of XLXI_53 : label is "XLXI_53_368";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_31";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_29";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_30";
+   attribute HU_SET of XLXI_53 : label is "XLXI_53_32";
 begin
    mod_out <= mod_out_DUMMY;
    q(3 downto 0) <= q_DUMMY(3 downto 0);
@@ -1536,14 +1536,14 @@ architecture BEHAVIORAL of regdesp8b_MUSER_prac3_top is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_376";
-   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_375";
-   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_374";
-   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_373";
-   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_372";
-   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_371";
-   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_370";
-   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_369";
+   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_40";
+   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_39";
+   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_38";
+   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_37";
+   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_36";
+   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_35";
+   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_34";
+   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_33";
 begin
    XLXI_1_0 : FDRE
       port map (C=>ck,
@@ -1779,13 +1779,13 @@ architecture BEHAVIORAL of Conversor_Bin_BCD_decim_MUSER_prac3_top is
              mod_in  : in    std_logic);
    end component;
    
-   attribute HU_SET of XLXI_31 : label is "XLXI_31_379";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_377";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_378";
-   attribute HU_SET of XLXI_84 : label is "XLXI_84_380";
-   attribute HU_SET of XLXI_85 : label is "XLXI_85_381";
-   attribute HU_SET of XLXI_86 : label is "XLXI_86_382";
-   attribute HU_SET of XLXI_103 : label is "XLXI_103_383";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_43";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_41";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_42";
+   attribute HU_SET of XLXI_84 : label is "XLXI_84_44";
+   attribute HU_SET of XLXI_85 : label is "XLXI_85_45";
+   attribute HU_SET of XLXI_86 : label is "XLXI_86_46";
+   attribute HU_SET of XLXI_103 : label is "XLXI_103_47";
 begin
    XLXI_1 : Bin_A_BCD_MUSER_prac3_top
       port map (ck=>ck,
@@ -2559,24 +2559,24 @@ architecture BEHAVIORAL of multip_complejo_serie_MUSER_prac3_top is
              s   : out   std_logic_vector (15 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_391";
-   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_390";
-   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_389";
-   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_388";
-   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_387";
-   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_386";
-   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_385";
-   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_384";
-   attribute HU_SET of XLXI_9_0 : label is "XLXI_9_0_399";
-   attribute HU_SET of XLXI_9_1 : label is "XLXI_9_1_398";
-   attribute HU_SET of XLXI_9_2 : label is "XLXI_9_2_397";
-   attribute HU_SET of XLXI_9_3 : label is "XLXI_9_3_396";
-   attribute HU_SET of XLXI_9_4 : label is "XLXI_9_4_395";
-   attribute HU_SET of XLXI_9_5 : label is "XLXI_9_5_394";
-   attribute HU_SET of XLXI_9_6 : label is "XLXI_9_6_393";
-   attribute HU_SET of XLXI_9_7 : label is "XLXI_9_7_392";
-   attribute HU_SET of XLXI_32 : label is "XLXI_32_401";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_400";
+   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_55";
+   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_54";
+   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_53";
+   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_52";
+   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_51";
+   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_50";
+   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_49";
+   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_48";
+   attribute HU_SET of XLXI_9_0 : label is "XLXI_9_0_63";
+   attribute HU_SET of XLXI_9_1 : label is "XLXI_9_1_62";
+   attribute HU_SET of XLXI_9_2 : label is "XLXI_9_2_61";
+   attribute HU_SET of XLXI_9_3 : label is "XLXI_9_3_60";
+   attribute HU_SET of XLXI_9_4 : label is "XLXI_9_4_59";
+   attribute HU_SET of XLXI_9_5 : label is "XLXI_9_5_58";
+   attribute HU_SET of XLXI_9_6 : label is "XLXI_9_6_57";
+   attribute HU_SET of XLXI_9_7 : label is "XLXI_9_7_56";
+   attribute HU_SET of XLXI_32 : label is "XLXI_32_65";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_64";
 begin
    dato_imag(15 downto 0) <= dato_imag_DUMMY(15 downto 0);
    XLXI_6_0 : M2_1_HXILINX_prac3_top
@@ -2835,11 +2835,11 @@ architecture BEHAVIORAL of Comp_Num_Letra_MUSER_prac3_top is
    end component;
    attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_403";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_404";
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_402";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_405";
-   attribute HU_SET of XLXI_43 : label is "XLXI_43_406";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_67";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_68";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_66";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_69";
+   attribute HU_SET of XLXI_43 : label is "XLXI_43_70";
 begin
    XLXI_2 : GND
       port map (G=>cero);
@@ -2964,15 +2964,19 @@ use UNISIM.Vcomponents.ALL;
 entity bloque_calculo_MUSER_prac3_top is
    port ( ck                   : in    std_logic; 
           cod_tecla            : in    std_logic_vector (3 downto 0); 
+          interrupt_ack        : in    std_logic; 
           reset                : in    std_logic; 
           sw0                  : in    std_logic; 
           tecla_pulsada        : in    std_logic; 
+          actualiza_datos      : out   std_logic; 
           display_nexys3_1     : out   std_logic_vector (3 downto 0); 
           display_nexys3_2     : out   std_logic_vector (3 downto 0); 
           display_nexys3_3     : out   std_logic_vector (3 downto 0); 
           display_nexys3_4     : out   std_logic_vector (3 downto 0); 
           multip_bcd_nueva     : out   std_logic; 
           punto_decimal_nexys3 : out   std_logic_vector (4 downto 1); 
+          result_BCD_imag      : out   std_logic_vector (15 downto 0); 
+          result_BCD_real      : out   std_logic_vector (15 downto 0); 
           signo_imag           : out   std_logic; 
           signo_real           : out   std_logic);
 end bloque_calculo_MUSER_prac3_top;
@@ -2994,19 +2998,13 @@ architecture BEHAVIORAL of bloque_calculo_MUSER_prac3_top is
    signal dato_real_u            : std_logic_vector (15 downto 0);
    signal decimas                : std_logic_vector (3 downto 0);
    signal entZ_sal               : std_logic;
-   signal imag_bcd0              : std_logic_vector (3 downto 0);
-   signal imag_bcd1              : std_logic_vector (3 downto 0);
-   signal imag_bcd2              : std_logic_vector (3 downto 0);
-   signal imag_bcd3              : std_logic_vector (3 downto 0);
    signal letra_a                : std_logic;
    signal letra_c                : std_logic;
    signal multip_ok              : std_logic;
-   signal real_bcd0              : std_logic_vector (3 downto 0);
-   signal real_bcd1              : std_logic_vector (3 downto 0);
-   signal real_bcd2              : std_logic_vector (3 downto 0);
-   signal real_bcd3              : std_logic_vector (3 downto 0);
    signal unidades               : std_logic_vector (3 downto 0);
+   signal result_BCD_real_DUMMY  : std_logic_vector (15 downto 0);
    signal multip_bcd_nueva_DUMMY : std_logic;
+   signal result_BCD_imag_DUMMY  : std_logic_vector (15 downto 0);
    component Comp_Num_Letra_MUSER_prac3_top
       port ( tecla_pulsada : in    std_logic; 
              ck            : in    std_logic; 
@@ -3059,10 +3057,10 @@ architecture BEHAVIORAL of bloque_calculo_MUSER_prac3_top is
    end component;
    
    component ctrl_entz_sal
-      port ( cambia_a_salida  : in    std_logic; 
-             cambia_a_entrada : in    std_logic; 
-             ck               : in    std_logic; 
+      port ( ck               : in    std_logic; 
              reset            : in    std_logic; 
+             cambia_a_salida  : in    std_logic; 
+             cambia_a_entrada : in    std_logic; 
              entZ_sal         : out   std_logic);
    end component;
    
@@ -3097,20 +3095,6 @@ architecture BEHAVIORAL of bloque_calculo_MUSER_prac3_top is
              sinc_reset : in    std_logic);
    end component;
    
-   component AND2B1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
    component Conversor_Bin_BCD_decim_MUSER_prac3_top
       port ( dato_nuevo       : out   std_logic; 
              unid             : out   std_logic_vector (3 downto 0); 
@@ -3133,8 +3117,24 @@ architecture BEHAVIORAL of bloque_calculo_MUSER_prac3_top is
              dato_sal : out   std_logic_vector (15 downto 0));
    end component;
    
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component ctrl_datos_micro
+      port ( multip_bcd_nueva : in    std_logic; 
+             actualiza        : out   std_logic; 
+             intc_ack         : in    std_logic; 
+             reset            : in    std_logic; 
+             ck               : in    std_logic);
+   end component;
+   
 begin
    multip_bcd_nueva <= multip_bcd_nueva_DUMMY;
+   result_BCD_imag(15 downto 0) <= result_BCD_imag_DUMMY(15 downto 0);
+   result_BCD_real(15 downto 0) <= result_BCD_real_DUMMY(15 downto 0);
    XLXI_3 : Comp_Num_Letra_MUSER_prac3_top
       port map (ck=>ck,
                 cod_tecla(3 downto 0)=>cod_tecla(3 downto 0),
@@ -3211,14 +3211,14 @@ begin
                 dato_decim(3 downto 0)=>decimas(3 downto 0),
                 dato_unid(3 downto 0)=>unidades(3 downto 0),
                 entZ_sal=>entZ_sal,
-                imag_bcd0(3 downto 0)=>imag_bcd0(3 downto 0),
-                imag_bcd1(3 downto 0)=>imag_bcd1(3 downto 0),
-                imag_bcd2(3 downto 0)=>imag_bcd2(3 downto 0),
-                imag_bcd3(3 downto 0)=>imag_bcd3(3 downto 0),
-                real_bcd0(3 downto 0)=>real_bcd0(3 downto 0),
-                real_bcd1(3 downto 0)=>real_bcd1(3 downto 0),
-                real_bcd2(3 downto 0)=>real_bcd2(3 downto 0),
-                real_bcd3(3 downto 0)=>real_bcd3(3 downto 0),
+                imag_bcd0(3 downto 0)=>result_BCD_imag_DUMMY(3 downto 0),
+                imag_bcd1(3 downto 0)=>result_BCD_imag_DUMMY(7 downto 4),
+                imag_bcd2(3 downto 0)=>result_BCD_imag_DUMMY(11 downto 8),
+                imag_bcd3(3 downto 0)=>result_BCD_imag_DUMMY(15 downto 12),
+                real_bcd0(3 downto 0)=>result_BCD_real_DUMMY(3 downto 0),
+                real_bcd1(3 downto 0)=>result_BCD_real_DUMMY(7 downto 4),
+                real_bcd2(3 downto 0)=>result_BCD_real_DUMMY(11 downto 8),
+                real_bcd3(3 downto 0)=>result_BCD_real_DUMMY(15 downto 12),
                 sw0=>sw0,
                 display_nexys3_1(3 downto 0)=>display_nexys3_1(3 downto 0),
                 display_nexys3_2(3 downto 0)=>display_nexys3_2(3 downto 0),
@@ -3262,16 +3262,6 @@ begin
                 dato3(7 downto 0)=>b(7 downto 0),
                 dato4(7 downto 0)=>a(7 downto 0));
    
-   XLXI_70 : AND2B1
-      port map (I0=>sw0,
-                I1=>dato_real(15),
-                O=>signo_real);
-   
-   XLXI_74 : AND2
-      port map (I0=>sw0,
-                I1=>dato_imag(15),
-                O=>signo_imag);
-   
    XLXI_83 : Conversor_Bin_BCD_decim_MUSER_prac3_top
       port map (ck=>ck,
                 dato_bin_decimal(7 downto 0)=>dato_real_u(7 downto 0),
@@ -3279,13 +3269,13 @@ begin
                 inicio=>multip_ok,
                 reset=>reset,
                 cent=>open,
-                centesimas(3 downto 0)=>real_bcd0(3 downto 0),
+                centesimas(3 downto 0)=>result_BCD_real_DUMMY(3 downto 0),
                 dato_nuevo=>multip_bcd_nueva_DUMMY,
-                dec(3 downto 0)=>real_bcd3(3 downto 0),
-                decimas(3 downto 0)=>real_bcd1(3 downto 0),
+                dec(3 downto 0)=>result_BCD_real_DUMMY(15 downto 12),
+                decimas(3 downto 0)=>result_BCD_real_DUMMY(7 downto 4),
                 diezmilesimas=>open,
                 milesimas=>open,
-                unid(3 downto 0)=>real_bcd2(3 downto 0));
+                unid(3 downto 0)=>result_BCD_real_DUMMY(11 downto 8));
    
    XLXI_84 : Conversor_Bin_BCD_decim_MUSER_prac3_top
       port map (ck=>ck,
@@ -3294,18 +3284,33 @@ begin
                 inicio=>multip_ok,
                 reset=>reset,
                 cent=>open,
-                centesimas(3 downto 0)=>imag_bcd0(3 downto 0),
+                centesimas(3 downto 0)=>result_BCD_imag_DUMMY(3 downto 0),
                 dato_nuevo=>open,
-                dec(3 downto 0)=>imag_bcd3(3 downto 0),
-                decimas(3 downto 0)=>imag_bcd1(3 downto 0),
+                dec(3 downto 0)=>result_BCD_imag_DUMMY(15 downto 12),
+                decimas(3 downto 0)=>result_BCD_imag_DUMMY(7 downto 4),
                 diezmilesimas=>open,
                 milesimas=>open,
-                unid(3 downto 0)=>imag_bcd2(3 downto 0));
+                unid(3 downto 0)=>result_BCD_imag_DUMMY(11 downto 8));
    
    XLXI_87 : complemento_a_dos_MUSER_prac3_top
       port map (ck=>ck,
                 dato_ent(15 downto 0)=>dato_real(15 downto 0),
                 dato_sal(15 downto 0)=>dato_real_u(15 downto 0));
+   
+   XLXI_96 : BUF
+      port map (I=>dato_real(15),
+                O=>signo_real);
+   
+   XLXI_97 : BUF
+      port map (I=>dato_imag(15),
+                O=>signo_imag);
+   
+   XLXI_102 : ctrl_datos_micro
+      port map (ck=>ck,
+                intc_ack=>interrupt_ack,
+                multip_bcd_nueva=>multip_bcd_nueva_DUMMY,
+                reset=>reset,
+                actualiza=>actualiza_datos);
    
 end BEHAVIORAL;
 
@@ -3942,10 +3947,10 @@ architecture BEHAVIORAL of teclado_4x4_MUSER_prac3_top is
    end component;
    attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_407";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_408";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_409";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_410";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_71";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_72";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_73";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_74";
 begin
    fila1 <= fila1_DUMMY;
    fila2 <= fila2_DUMMY;
@@ -4178,13 +4183,13 @@ architecture BEHAVIORAL of codif_tecla_MUSER_prac3_top is
              entrada : in    std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_412";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_413";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_414";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_415";
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_411";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_416";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_417";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_76";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_77";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_78";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_79";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_75";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_80";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_81";
 begin
    XLXI_1 : OR8_HXILINX_prac3_top
       port map (I0=>tecla(15),
@@ -4427,6 +4432,7 @@ architecture BEHAVIORAL of prac3_top is
    attribute INIT             : string ;
    attribute SRTYPE           : string ;
    attribute DDR_ALIGNMENT    : string ;
+   signal actualiza_datos               : std_logic;
    signal boton_aba                     : std_logic;
    signal boton_aba_i                   : std_logic;
    signal boton_arr                     : std_logic;
@@ -4443,26 +4449,36 @@ architecture BEHAVIORAL of prac3_top is
    signal ck_100MHz                     : std_logic;
    signal ck_300Hz                      : std_logic;
    signal codigo_tecla_KHz              : std_logic_vector (3 downto 0);
+   signal cod_tecla_micro               : std_logic_vector (3 downto 0);
    signal cod_tecla_sinc                : std_logic_vector (3 downto 0);
    signal col                           : std_logic_vector (4 downto 1);
    signal cuenta_dcm                    : std_logic_vector (15 downto 0);
    signal dec_bcd                       : std_logic_vector (3 downto 0);
    signal display                       : std_logic_vector (7 downto 0);
    signal fila                          : std_logic_vector (4 downto 1);
+   signal fit1_interrupt                : std_logic;
+   signal interrupcion_reconocida       : std_logic;
    signal led                           : std_logic_vector (7 downto 0);
+   signal led_parpadeo                  : std_logic;
    signal locked_OK                     : std_logic;
    signal mill_bcd                      : std_logic_vector (3 downto 0);
+   signal one                           : std_logic;
    signal punto_dec                     : std_logic_vector (4 downto 1);
    signal reset                         : std_logic;
    signal reset_i                       : std_logic;
+   signal result_BCD_imag               : std_logic_vector (15 downto 0);
+   signal result_BCD_real               : std_logic_vector (15 downto 0);
    signal seg0                          : std_logic_vector (7 downto 0);
    signal seg1                          : std_logic_vector (7 downto 0);
    signal seg2                          : std_logic_vector (7 downto 0);
    signal seg3                          : std_logic_vector (7 downto 0);
+   signal signo_imag                    : std_logic;
+   signal signo_real                    : std_logic;
    signal signo_sal                     : std_logic;
    signal sw                            : std_logic_vector (7 downto 0);
    signal sw_i                          : std_logic_vector (7 downto 0);
    signal tecla_pulsada_KHz             : std_logic;
+   signal tecla_pulsada_micro           : std_logic;
    signal tecla_pulsada_sinc            : std_logic;
    signal uart_rx                       : std_logic;
    signal uart_tx                       : std_logic;
@@ -4478,6 +4494,22 @@ architecture BEHAVIORAL of prac3_top is
    signal XLXN_460                      : std_logic;
    signal XLXI_138_CLK_openSignal       : std_logic;
    signal XLXI_138_KEYCLEARB_openSignal : std_logic;
+   component microblaze_prac3
+      port ( clk            : in    std_logic; 
+             reset          : in    std_logic; 
+             uart_tx        : out   std_logic; 
+             uart_rx        : in    std_logic; 
+             fit1_toggle    : out   std_logic; 
+             fit1_interrupt : out   std_logic; 
+             gpi1           : in    std_logic_vector (31 downto 0); 
+             gpi2           : in    std_logic_vector (1 downto 0); 
+             gpo1           : out   std_logic_vector (3 downto 0); 
+             gpo2           : out   std_logic_vector (0 downto 0); 
+             gpo3           : out   std_logic_vector (0 downto 0); 
+             intc_irq       : out   std_logic; 
+             intc_interrupt : in    std_logic_vector (0 downto 0));
+   end component;
+   
    component teclado_hexa_completo_MUSER_prac3_top
       port ( col1          : in    std_logic; 
              col2          : in    std_logic; 
@@ -4651,19 +4683,22 @@ architecture BEHAVIORAL of prac3_top is
    end component;
    
    component bloque_calculo_MUSER_prac3_top
-      port ( display_nexys3_1     : out   std_logic_vector (3 downto 0); 
+      port ( cod_tecla            : in    std_logic_vector (3 downto 0); 
+             display_nexys3_1     : out   std_logic_vector (3 downto 0); 
              display_nexys3_2     : out   std_logic_vector (3 downto 0); 
              display_nexys3_3     : out   std_logic_vector (3 downto 0); 
              display_nexys3_4     : out   std_logic_vector (3 downto 0); 
-             multip_bcd_nueva     : out   std_logic; 
-             punto_decimal_nexys3 : out   std_logic_vector (4 downto 1); 
-             signo_imag           : out   std_logic; 
-             signo_real           : out   std_logic; 
-             cod_tecla            : in    std_logic_vector (3 downto 0); 
              tecla_pulsada        : in    std_logic; 
              ck                   : in    std_logic; 
              reset                : in    std_logic; 
-             sw0                  : in    std_logic);
+             sw0                  : in    std_logic; 
+             interrupt_ack        : in    std_logic; 
+             actualiza_datos      : out   std_logic; 
+             punto_decimal_nexys3 : out   std_logic_vector (4 downto 1); 
+             result_BCD_imag      : out   std_logic_vector (15 downto 0); 
+             result_BCD_real      : out   std_logic_vector (15 downto 0); 
+             signo_imag           : out   std_logic; 
+             signo_real           : out   std_logic);
    end component;
    
    component displays_7seg_nexys3_RemLab_MUSER_prac3_top
@@ -4680,19 +4715,42 @@ architecture BEHAVIORAL of prac3_top is
              siete_seg0 : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_427";
-   attribute HU_SET of XLXI_165 : label is "XLXI_165_426";
-   attribute HU_SET of XLXI_180 : label is "XLXI_180_428";
-   attribute HU_SET of XLXI_279_1 : label is "XLXI_279_1_421";
-   attribute HU_SET of XLXI_279_2 : label is "XLXI_279_2_420";
-   attribute HU_SET of XLXI_279_3 : label is "XLXI_279_3_419";
-   attribute HU_SET of XLXI_279_4 : label is "XLXI_279_4_418";
-   attribute HU_SET of XLXI_288_1 : label is "XLXI_288_1_425";
-   attribute HU_SET of XLXI_288_2 : label is "XLXI_288_2_424";
-   attribute HU_SET of XLXI_288_3 : label is "XLXI_288_3_423";
-   attribute HU_SET of XLXI_288_4 : label is "XLXI_288_4_422";
-   attribute HU_SET of XLXI_387 : label is "XLXI_387_429";
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_91";
+   attribute HU_SET of XLXI_165 : label is "XLXI_165_90";
+   attribute HU_SET of XLXI_180 : label is "XLXI_180_92";
+   attribute HU_SET of XLXI_279_1 : label is "XLXI_279_1_85";
+   attribute HU_SET of XLXI_279_2 : label is "XLXI_279_2_84";
+   attribute HU_SET of XLXI_279_3 : label is "XLXI_279_3_83";
+   attribute HU_SET of XLXI_279_4 : label is "XLXI_279_4_82";
+   attribute HU_SET of XLXI_288_1 : label is "XLXI_288_1_89";
+   attribute HU_SET of XLXI_288_2 : label is "XLXI_288_2_88";
+   attribute HU_SET of XLXI_288_3 : label is "XLXI_288_3_87";
+   attribute HU_SET of XLXI_288_4 : label is "XLXI_288_4_86";
+   attribute HU_SET of XLXI_387 : label is "XLXI_387_93";
 begin
+   mcs_0 : microblaze_prac3
+      port map (clk=>ck_100MHz,
+                gpi1(31 downto 16)=>result_BCD_real(15 downto 0),
+                gpi1(15 downto 0)=>result_BCD_imag(15 downto 0),
+                gpi2(1)=>signo_real,
+                gpi2(0)=>signo_imag,
+                intc_interrupt(0)=>actualiza_datos,
+                reset=>reset,
+                uart_rx=>uart_rx,
+                fit1_interrupt=>fit1_interrupt,
+                fit1_toggle=>open,
+                gpo1(3 downto 0)=>cod_tecla_micro(3 downto 0),
+                gpo2(0)=>tecla_pulsada_micro,
+                gpo3(0)=>led_parpadeo,
+                intc_irq=>interrupcion_reconocida,
+                uart_tx=>uart_tx);
+   
    XLXI_1 : teclado_hexa_completo_MUSER_prac3_top
       port map (ck_teclado=>ck_300Hz,
                 col1=>col(1),
@@ -4992,47 +5050,47 @@ begin
                 EppDB(7 downto 0)=>DB(7 downto 0));
    
    XLXI_866 : VCC
-      port map (P=>uart_tx);
+      port map (P=>one);
    
    XLXI_867 : sinc_entrada_MUSER_prac3_top
       port map (ck_MHz=>ck_100MHz,
-                codigo_tecla_KHz(3 downto 0)=>codigo_tecla_KHz(3 downto 0),
-                tecla_pulsada_KHz=>tecla_pulsada_KHz,
+                codigo_tecla_KHz(3 downto 0)=>cod_tecla_micro(3 downto 0),
+                tecla_pulsada_KHz=>tecla_pulsada_micro,
                 codigo_tecla_MHz(3 downto 0)=>cod_tecla_sinc(3 downto 0),
                 tecla_pulsada_MHz=>tecla_pulsada_sinc);
    
    XLXI_871_0 : GND
-      port map (G=>led(2));
-   
-   XLXI_871_1 : GND
       port map (G=>led(3));
    
-   XLXI_871_2 : GND
+   XLXI_871_1 : GND
       port map (G=>led(4));
    
-   XLXI_871_3 : GND
+   XLXI_871_2 : GND
       port map (G=>led(5));
    
-   XLXI_871_4 : GND
+   XLXI_871_3 : GND
       port map (G=>led(6));
    
-   XLXI_871_5 : GND
+   XLXI_871_4 : GND
       port map (G=>led(7));
    
    XLXI_872 : bloque_calculo_MUSER_prac3_top
       port map (ck=>ck_100MHz,
                 cod_tecla(3 downto 0)=>cod_tecla_sinc(3 downto 0),
+                interrupt_ack=>interrupcion_reconocida,
                 reset=>reset,
                 sw0=>sw(0),
                 tecla_pulsada=>tecla_pulsada_sinc,
+                actualiza_datos=>actualiza_datos,
                 display_nexys3_1(3 downto 0)=>unid_bcd(3 downto 0),
                 display_nexys3_2(3 downto 0)=>dec_bcd(3 downto 0),
                 display_nexys3_3(3 downto 0)=>cent_bcd(3 downto 0),
                 display_nexys3_4(3 downto 0)=>mill_bcd(3 downto 0),
-                multip_bcd_nueva=>open,
                 punto_decimal_nexys3(4 downto 1)=>punto_dec(4 downto 1),
-                signo_imag=>led(1),
-                signo_real=>led(0));
+                result_BCD_imag(15 downto 0)=>result_BCD_imag(15 downto 0),
+                result_BCD_real(15 downto 0)=>result_BCD_real(15 downto 0),
+                signo_imag=>signo_imag,
+                signo_real=>signo_real);
    
    XLXI_874 : displays_7seg_nexys3_RemLab_MUSER_prac3_top
       port map (cent_bcd(3 downto 0)=>cent_bcd(3 downto 0),
@@ -5046,6 +5104,18 @@ begin
                 siete_seg1(7 downto 0)=>seg1(7 downto 0),
                 siete_seg2(7 downto 0)=>seg2(7 downto 0),
                 siete_seg3(7 downto 0)=>seg3(7 downto 0));
+   
+   XLXI_875 : BUF
+      port map (I=>signo_real,
+                O=>led(0));
+   
+   XLXI_876 : BUF
+      port map (I=>signo_imag,
+                O=>led(1));
+   
+   XLXI_877 : BUF
+      port map (I=>led_parpadeo,
+                O=>led(2));
    
 end BEHAVIORAL;
 

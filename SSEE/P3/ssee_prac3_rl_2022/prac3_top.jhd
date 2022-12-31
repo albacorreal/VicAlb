@@ -13,3 +13,5 @@ MODULE prac3_top
 		INSTANCE XLXI_872
 	SUBMODULE Remote_Lab
 		INSTANCE XLXI_865
+	SUBMODULE microblaze_prac3
+		INSTANCE mcs_0

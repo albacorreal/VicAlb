@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Conversor_Bin_BCD_decim.vhf
--- /___/   /\     Timestamp : 12/19/2022 19:45:19
+-- /___/   /\     Timestamp : 12/31/2022 13:12:58
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -217,10 +217,10 @@ architecture BEHAVIORAL of Bin_A_BCD_decim_MUSER_Conversor_Bin_BCD_decim is
    end component;
    attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_307";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_305";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_306";
-   attribute HU_SET of XLXI_58 : label is "XLXI_58_308";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_233";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_231";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_232";
+   attribute HU_SET of XLXI_58 : label is "XLXI_58_234";
 begin
    q(3 downto 0) <= q_DUMMY(3 downto 0);
    XLXI_12 : M2_1_HXILINX_Conversor_Bin_BCD_decim
@@ -368,14 +368,14 @@ architecture BEHAVIORAL of regdesp8b_lsb_MUSER_Conversor_Bin_BCD_decim is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_316";
-   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_315";
-   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_314";
-   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_313";
-   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_312";
-   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_311";
-   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_310";
-   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_309";
+   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_242";
+   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_241";
+   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_240";
+   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_239";
+   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_238";
+   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_237";
+   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_236";
+   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_235";
 begin
    XLXI_1_0 : FDRE
       port map (C=>ck,
@@ -584,10 +584,10 @@ architecture BEHAVIORAL of Bin_A_BCD_MUSER_Conversor_Bin_BCD_decim is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_319";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_317";
-   attribute HU_SET of XLXI_30 : label is "XLXI_30_318";
-   attribute HU_SET of XLXI_53 : label is "XLXI_53_320";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_245";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_243";
+   attribute HU_SET of XLXI_30 : label is "XLXI_30_244";
+   attribute HU_SET of XLXI_53 : label is "XLXI_53_246";
 begin
    mod_out <= mod_out_DUMMY;
    q(3 downto 0) <= q_DUMMY(3 downto 0);
@@ -734,14 +734,14 @@ architecture BEHAVIORAL of regdesp8b_MUSER_Conversor_Bin_BCD_decim is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_328";
-   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_327";
-   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_326";
-   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_325";
-   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_324";
-   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_323";
-   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_322";
-   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_321";
+   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_254";
+   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_253";
+   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_252";
+   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_251";
+   attribute HU_SET of XLXI_2_4 : label is "XLXI_2_4_250";
+   attribute HU_SET of XLXI_2_5 : label is "XLXI_2_5_249";
+   attribute HU_SET of XLXI_2_6 : label is "XLXI_2_6_248";
+   attribute HU_SET of XLXI_2_7 : label is "XLXI_2_7_247";
 begin
    XLXI_1_0 : FDRE
       port map (C=>ck,
@@ -977,13 +977,13 @@ architecture BEHAVIORAL of Conversor_Bin_BCD_decim is
              mod_in  : in    std_logic);
    end component;
    
-   attribute HU_SET of XLXI_31 : label is "XLXI_31_331";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_329";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_330";
-   attribute HU_SET of XLXI_84 : label is "XLXI_84_332";
-   attribute HU_SET of XLXI_85 : label is "XLXI_85_333";
-   attribute HU_SET of XLXI_86 : label is "XLXI_86_334";
-   attribute HU_SET of XLXI_103 : label is "XLXI_103_335";
+   attribute HU_SET of XLXI_31 : label is "XLXI_31_257";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_255";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_256";
+   attribute HU_SET of XLXI_84 : label is "XLXI_84_258";
+   attribute HU_SET of XLXI_85 : label is "XLXI_85_259";
+   attribute HU_SET of XLXI_86 : label is "XLXI_86_260";
+   attribute HU_SET of XLXI_103 : label is "XLXI_103_261";
 begin
    XLXI_1 : Bin_A_BCD_MUSER_Conversor_Bin_BCD_decim
       port map (ck=>ck,

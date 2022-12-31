@@ -87,9 +87,23 @@
         <signal name="led(7:0)" />
         <signal name="punto_dec(4:1)" />
         <signal name="sw(0)" />
+        <signal name="led(7:3)" />
+        <signal name="cod_tecla_micro(3:0)" />
+        <signal name="tecla_pulsada_micro" />
+        <signal name="led_parpadeo" />
+        <signal name="interrupcion_reconocida" />
+        <signal name="fit1_interrupt" />
+        <signal name="result_BCD_real(15:0),result_BCD_imag(15:0)" />
+        <signal name="signo_real,signo_imag" />
+        <signal name="actualiza_datos" />
+        <signal name="result_BCD_real(15:0)" />
+        <signal name="result_BCD_imag(15:0)" />
+        <signal name="signo_real" />
+        <signal name="signo_imag" />
         <signal name="led(0)" />
-        <signal name="led(7:2)" />
         <signal name="led(1)" />
+        <signal name="led(2)" />
+        <signal name="one" />
         <port polarity="BiDirectional" name="fila_pad(4:1)" />
         <port polarity="Input" name="col_pad(4:1)" />
         <port polarity="Input" name="reset_pad" />
@@ -313,27 +327,32 @@
             <line x2="0" y1="0" y2="0" x1="64" />
         </blockdef>
         <blockdef name="bloque_calculo">
-            <timestamp>2022-12-19T15:11:14</timestamp>
-            <rect width="480" x="48" y="-656" height="576" />
-            <line x2="592" y1="-432" y2="-432" x1="528" />
-            <rect width="64" x="528" y="-444" height="24" />
-            <line x2="592" y1="-496" y2="-496" x1="528" />
-            <rect width="64" x="528" y="-508" height="24" />
-            <line x2="592" y1="-560" y2="-560" x1="528" />
-            <rect width="64" x="528" y="-572" height="24" />
-            <line x2="592" y1="-624" y2="-624" x1="528" />
-            <rect width="64" x="528" y="-636" height="24" />
-            <line x2="592" y1="-240" y2="-240" x1="528" />
-            <line x2="592" y1="-304" y2="-304" x1="528" />
-            <rect width="64" x="528" y="-316" height="24" />
-            <line x2="592" y1="-112" y2="-112" x1="528" />
-            <line x2="592" y1="-176" y2="-176" x1="528" />
-            <line x2="-16" y1="-624" y2="-624" x1="48" />
-            <rect width="64" x="-16" y="-636" height="24" />
-            <line x2="-16" y1="-544" y2="-544" x1="48" />
-            <line x2="-16" y1="-464" y2="-464" x1="48" />
-            <line x2="-16" y1="-384" y2="-384" x1="48" />
-            <line x2="-16" y1="-304" y2="-304" x1="48" />
+            <timestamp>2022-12-28T16:58:16</timestamp>
+            <rect width="480" x="64" y="-752" height="728" />
+            <line x2="0" y1="-720" y2="-720" x1="64" />
+            <rect width="64" x="0" y="-732" height="24" />
+            <line x2="608" y1="-528" y2="-528" x1="544" />
+            <rect width="64" x="544" y="-540" height="24" />
+            <line x2="608" y1="-592" y2="-592" x1="544" />
+            <rect width="64" x="544" y="-604" height="24" />
+            <line x2="608" y1="-656" y2="-656" x1="544" />
+            <rect width="64" x="544" y="-668" height="24" />
+            <line x2="608" y1="-720" y2="-720" x1="544" />
+            <rect width="64" x="544" y="-732" height="24" />
+            <line x2="0" y1="-640" y2="-640" x1="64" />
+            <line x2="0" y1="-560" y2="-560" x1="64" />
+            <line x2="0" y1="-480" y2="-480" x1="64" />
+            <line x2="0" y1="-400" y2="-400" x1="64" />
+            <line x2="0" y1="-320" y2="-320" x1="64" />
+            <line x2="608" y1="-80" y2="-80" x1="544" />
+            <line x2="608" y1="-400" y2="-400" x1="544" />
+            <rect width="64" x="544" y="-412" height="24" />
+            <line x2="608" y1="-272" y2="-272" x1="544" />
+            <rect width="64" x="544" y="-284" height="24" />
+            <line x2="608" y1="-336" y2="-336" x1="544" />
+            <rect width="64" x="544" y="-348" height="24" />
+            <line x2="608" y1="-144" y2="-144" x1="544" />
+            <line x2="608" y1="-208" y2="-208" x1="544" />
         </blockdef>
         <blockdef name="Remote_Lab">
             <timestamp>2022-10-7T9:28:48</timestamp>
@@ -373,6 +392,31 @@
             <line x2="464" y1="-544" y2="-544" x1="400" />
             <rect width="64" x="400" y="-364" height="24" />
             <line x2="464" y1="-352" y2="-352" x1="400" />
+        </blockdef>
+        <blockdef name="microblaze_prac3">
+            <timestamp>2022-12-28T13:13:29</timestamp>
+            <rect width="704" x="32" y="32" height="1696" />
+            <line x2="32" y1="80" y2="80" x1="0" />
+            <line x2="32" y1="112" y2="112" x1="0" />
+            <line x2="736" y1="80" y2="80" x1="768" />
+            <line x2="32" y1="144" y2="144" x1="0" />
+            <line x2="736" y1="112" y2="112" x1="768" />
+            <line x2="736" y1="368" y2="368" x1="768" />
+            <line x2="32" y1="304" y2="304" style="linewidth:W" x1="0" />
+            <line x2="32" y1="336" y2="336" style="linewidth:W" x1="0" />
+            <line x2="736" y1="784" y2="784" style="linewidth:W" x1="768" />
+            <line x2="736" y1="816" y2="816" style="linewidth:W" x1="768" />
+            <line x2="736" y1="848" y2="848" style="linewidth:W" x1="768" />
+            <line x2="736" y1="912" y2="912" x1="768" />
+            <line x2="32" y1="432" y2="432" style="linewidth:W" x1="0" />
+        </blockdef>
+        <blockdef name="buf">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="128" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="0" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="-64" x1="128" />
+            <line x2="64" y1="-64" y2="0" x1="64" />
         </blockdef>
         <block symbolname="obuft" name="XLXI_114(4:1)">
             <blockpin signalname="XLXN_406(4:1)" name="I" />
@@ -509,10 +553,10 @@
             <blockpin signalname="tecla_pulsada_KHz" name="tecla_pulsada" />
         </block>
         <block symbolname="sinc_entrada" name="XLXI_867">
-            <blockpin signalname="codigo_tecla_KHz(3:0)" name="codigo_tecla_KHz(3:0)" />
+            <blockpin signalname="cod_tecla_micro(3:0)" name="codigo_tecla_KHz(3:0)" />
             <blockpin signalname="cod_tecla_sinc(3:0)" name="codigo_tecla_MHz(3:0)" />
             <blockpin signalname="tecla_pulsada_sinc" name="tecla_pulsada_MHz" />
-            <blockpin signalname="tecla_pulsada_KHz" name="tecla_pulsada_KHz" />
+            <blockpin signalname="tecla_pulsada_micro" name="tecla_pulsada_KHz" />
             <blockpin signalname="ck_100MHz" name="ck_MHz" />
         </block>
         <block symbolname="gnd" name="XLXI_708(3:0)">
@@ -522,10 +566,10 @@
             <blockpin signalname="uno(7:0)" name="P" />
         </block>
         <block symbolname="vcc" name="XLXI_866">
-            <blockpin signalname="uart_tx" name="P" />
+            <blockpin signalname="one" name="P" />
         </block>
-        <block symbolname="gnd" name="XLXI_871(5:0)">
-            <blockpin signalname="led(7:2)" name="G" />
+        <block symbolname="gnd" name="XLXI_871(4:0)">
+            <blockpin signalname="led(7:3)" name="G" />
         </block>
         <block symbolname="displays_7seg_nexys3_RemLab" name="XLXI_874">
             <blockpin signalname="mill_bcd(3:0)" name="mill_bcd(3:0)" />
@@ -565,19 +609,49 @@
             <blockpin signalname="anodo_pad(3:0)" name="an(3:0)" />
         </block>
         <block symbolname="bloque_calculo" name="XLXI_872">
+            <blockpin signalname="cod_tecla_sinc(3:0)" name="cod_tecla(3:0)" />
             <blockpin signalname="unid_bcd(3:0)" name="display_nexys3_1(3:0)" />
             <blockpin signalname="dec_bcd(3:0)" name="display_nexys3_2(3:0)" />
             <blockpin signalname="cent_bcd(3:0)" name="display_nexys3_3(3:0)" />
             <blockpin signalname="mill_bcd(3:0)" name="display_nexys3_4(3:0)" />
-            <blockpin name="multip_bcd_nueva" />
-            <blockpin signalname="punto_dec(4:1)" name="punto_decimal_nexys3(4:1)" />
-            <blockpin signalname="led(1)" name="signo_imag" />
-            <blockpin signalname="led(0)" name="signo_real" />
-            <blockpin signalname="cod_tecla_sinc(3:0)" name="cod_tecla(3:0)" />
             <blockpin signalname="tecla_pulsada_sinc" name="tecla_pulsada" />
             <blockpin signalname="ck_100MHz" name="ck" />
             <blockpin signalname="reset" name="reset" />
             <blockpin signalname="sw(0)" name="sw0" />
+            <blockpin signalname="interrupcion_reconocida" name="interrupt_ack" />
+            <blockpin signalname="actualiza_datos" name="actualiza_datos" />
+            <blockpin signalname="punto_dec(4:1)" name="punto_decimal_nexys3(4:1)" />
+            <blockpin signalname="result_BCD_imag(15:0)" name="result_BCD_imag(15:0)" />
+            <blockpin signalname="result_BCD_real(15:0)" name="result_BCD_real(15:0)" />
+            <blockpin signalname="signo_imag" name="signo_imag" />
+            <blockpin signalname="signo_real" name="signo_real" />
+        </block>
+        <block symbolname="microblaze_prac3" name="mcs_0">
+            <blockpin signalname="ck_100MHz" name="clk" />
+            <blockpin signalname="reset" name="reset" />
+            <blockpin signalname="uart_tx" name="uart_tx" />
+            <blockpin signalname="uart_rx" name="uart_rx" />
+            <blockpin name="fit1_toggle" />
+            <blockpin signalname="fit1_interrupt" name="fit1_interrupt" />
+            <blockpin signalname="result_BCD_real(15:0),result_BCD_imag(15:0)" name="gpi1(31:0)" />
+            <blockpin signalname="signo_real,signo_imag" name="gpi2(1:0)" />
+            <blockpin signalname="cod_tecla_micro(3:0)" name="gpo1(3:0)" />
+            <blockpin signalname="tecla_pulsada_micro" name="gpo2(0:0)" />
+            <blockpin signalname="led_parpadeo" name="gpo3(0:0)" />
+            <blockpin signalname="interrupcion_reconocida" name="intc_irq" />
+            <blockpin signalname="actualiza_datos" name="intc_interrupt(0:0)" />
+        </block>
+        <block symbolname="buf" name="XLXI_876">
+            <blockpin signalname="signo_imag" name="I" />
+            <blockpin signalname="led(1)" name="O" />
+        </block>
+        <block symbolname="buf" name="XLXI_877">
+            <blockpin signalname="led_parpadeo" name="I" />
+            <blockpin signalname="led(2)" name="O" />
+        </block>
+        <block symbolname="buf" name="XLXI_875">
+            <blockpin signalname="signo_real" name="I" />
+            <blockpin signalname="led(0)" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
@@ -632,7 +706,7 @@
         </branch>
         <iomarker fontsize="28" x="1248" y="4944" name="fila_pad(4:1)" orien="R0" />
         <iomarker fontsize="28" x="416" y="4480" name="col_pad(4:1)" orien="R180" />
-        <rect style="linestyle:Dash" width="6572" x="80" y="68" height="1932" />
+        <rect style="linestyle:Dash" width="5708" x="80" y="68" height="1932" />
         <rect style="linestyle:Dash" width="1912" x="80" y="2084" height="1416" />
         <instance x="688" y="2160" name="XLXI_306" orien="R0">
         </instance>
@@ -945,12 +1019,12 @@
             <wire x2="448" y1="656" y2="656" x1="336" />
         </branch>
         <text style="fontsize:56;fontname:Arial" x="2160" y="140">Calculo del factorial usando el teclado y los displays 7-Segmentos de la placa Nexys3</text>
-        <branch name="codigo_tecla_KHz(3:0)">
+        <branch name="cod_tecla_micro(3:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1792" y="464" type="branch" />
             <wire x2="1792" y1="464" y2="464" x1="1616" />
             <wire x2="1936" y1="464" y2="464" x1="1792" />
         </branch>
-        <branch name="tecla_pulsada_KHz">
+        <branch name="tecla_pulsada_micro">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1792" y="544" type="branch" />
             <wire x2="1792" y1="544" y2="544" x1="1616" />
             <wire x2="1936" y1="544" y2="544" x1="1792" />
@@ -967,7 +1041,7 @@
         </branch>
         <branch name="ck_100MHz">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="624" type="branch" />
-            <wire x2="2816" y1="624" y2="624" x1="2688" />
+            <wire x2="2816" y1="624" y2="624" x1="2656" />
             <wire x2="2928" y1="624" y2="624" x1="2816" />
         </branch>
         <instance x="1936" y="624" name="XLXI_867" orien="R0">
@@ -1079,15 +1153,15 @@
         <text style="fontsize:36;fontname:Arial" x="4040" y="3508">PADS de salida para los 8 leds y los</text>
         <text style="fontsize:36;fontname:Arial" x="3944" y="3268">Senales de entrada</text>
         <instance x="2656" y="3744" name="XLXI_866" orien="R0" />
-        <branch name="uart_tx">
+        <branch name="one">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="3792" type="branch" />
             <wire x2="2720" y1="3744" y2="3792" x1="2720" />
             <wire x2="2816" y1="3792" y2="3792" x1="2720" />
         </branch>
-        <instance x="2336" y="3680" name="XLXI_871(5:0)" orien="R0">
+        <instance x="2336" y="3680" name="XLXI_871(4:0)" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="-144" y="-88" type="instance" />
         </instance>
-        <branch name="led(7:2)">
+        <branch name="led(7:3)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2496" y="3520" type="branch" />
             <wire x2="2400" y1="3520" y2="3552" x1="2400" />
             <wire x2="2496" y1="3520" y2="3520" x1="2400" />
@@ -1126,7 +1200,7 @@
         </branch>
         <branch name="reset">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="704" type="branch" />
-            <wire x2="2816" y1="704" y2="704" x1="2688" />
+            <wire x2="2816" y1="704" y2="704" x1="2656" />
             <wire x2="2928" y1="704" y2="704" x1="2816" />
         </branch>
         <branch name="tecla_pulsada_sinc">
@@ -1170,20 +1244,143 @@
         </branch>
         <branch name="sw(0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="784" type="branch" />
-            <wire x2="2816" y1="784" y2="784" x1="2688" />
+            <wire x2="2816" y1="784" y2="784" x1="2656" />
             <wire x2="2928" y1="784" y2="784" x1="2816" />
         </branch>
-        <branch name="led(0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3616" y="912" type="branch" />
-            <wire x2="3616" y1="912" y2="912" x1="3536" />
-            <wire x2="3744" y1="912" y2="912" x1="3616" />
+        <rect style="linestyle:Dash" width="1696" x="5848" y="260" height="2224" />
+        <text style="fontsize:56;fontname:Arial" x="6284" y="320">Microcontrolador MicroBlaze MCS</text>
+        <branch name="cod_tecla_micro(3:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="7360" y="1312" type="branch" />
+            <wire x2="7360" y1="1312" y2="1312" x1="7216" />
+            <wire x2="7504" y1="1312" y2="1312" x1="7360" />
         </branch>
-        <instance x="2944" y="1088" name="XLXI_872" orien="R0">
+        <branch name="tecla_pulsada_micro">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="7360" y="1344" type="branch" />
+            <wire x2="7360" y1="1344" y2="1344" x1="7216" />
+            <wire x2="7504" y1="1344" y2="1344" x1="7360" />
+        </branch>
+        <branch name="led_parpadeo">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="7360" y="1376" type="branch" />
+            <wire x2="7360" y1="1376" y2="1376" x1="7216" />
+            <wire x2="7504" y1="1376" y2="1376" x1="7360" />
+        </branch>
+        <branch name="interrupcion_reconocida">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="7360" y="1440" type="branch" />
+            <wire x2="7360" y1="1440" y2="1440" x1="7216" />
+            <wire x2="7504" y1="1440" y2="1440" x1="7360" />
+        </branch>
+        <branch name="fit1_interrupt">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="7344" y="896" type="branch" />
+            <wire x2="7344" y1="896" y2="896" x1="7216" />
+            <wire x2="7456" y1="896" y2="896" x1="7344" />
+            <wire x2="7488" y1="896" y2="896" x1="7456" />
+        </branch>
+        <branch name="uart_tx">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="7344" y="608" type="branch" />
+            <wire x2="7344" y1="608" y2="608" x1="7216" />
+            <wire x2="7488" y1="608" y2="608" x1="7344" />
+        </branch>
+        <branch name="ck_100MHz">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="608" type="branch" />
+            <wire x2="6320" y1="608" y2="608" x1="6144" />
+            <wire x2="6448" y1="608" y2="608" x1="6320" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="640" type="branch" />
+            <wire x2="6320" y1="640" y2="640" x1="6144" />
+            <wire x2="6448" y1="640" y2="640" x1="6320" />
+        </branch>
+        <branch name="uart_rx">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="672" type="branch" />
+            <wire x2="6320" y1="672" y2="672" x1="6144" />
+            <wire x2="6448" y1="672" y2="672" x1="6320" />
+        </branch>
+        <branch name="result_BCD_real(15:0),result_BCD_imag(15:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="6176" y="832" type="branch" />
+            <wire x2="6176" y1="832" y2="832" x1="5888" />
+            <wire x2="6448" y1="832" y2="832" x1="6176" />
+        </branch>
+        <branch name="signo_real,signo_imag">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="6176" y="864" type="branch" />
+            <wire x2="6176" y1="864" y2="864" x1="5888" />
+            <wire x2="6448" y1="864" y2="864" x1="6176" />
+        </branch>
+        <branch name="actualiza_datos">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="6288" y="960" type="branch" />
+            <wire x2="6288" y1="960" y2="960" x1="6080" />
+            <wire x2="6448" y1="960" y2="960" x1="6288" />
+        </branch>
+        <instance x="6448" y="528" name="mcs_0" orien="R0">
         </instance>
-        <branch name="led(1)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3616" y="976" type="branch" />
-            <wire x2="3616" y1="976" y2="976" x1="3536" />
-            <wire x2="3744" y1="976" y2="976" x1="3616" />
+        <text style="fontsize:56;fontname:Arial" x="5896" y="2348">Inicializar por apertura de proyecto:</text>
+        <text style="fontsize:56;fontname:Arial" x="6020" y="2432">source ipcore_dir/microblaze_mcs_setup.tcl</text>
+        <text style="fontsize:56;fontname:Arial" x="5684" y="2576">microblaze_mcs_data2mem workspace/hello_world/debug/hello_world.elf 
+</text>
+        <instance x="2928" y="1184" name="XLXI_872" orien="R0">
+        </instance>
+        <branch name="interrupcion_reconocida">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="864" type="branch" />
+            <wire x2="2816" y1="864" y2="864" x1="2656" />
+            <wire x2="2928" y1="864" y2="864" x1="2816" />
         </branch>
+        <branch name="result_BCD_real(15:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3728" y="848" type="branch" />
+            <wire x2="3728" y1="848" y2="848" x1="3536" />
+            <wire x2="3920" y1="848" y2="848" x1="3728" />
+        </branch>
+        <branch name="result_BCD_imag(15:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3728" y="912" type="branch" />
+            <wire x2="3728" y1="912" y2="912" x1="3536" />
+            <wire x2="3920" y1="912" y2="912" x1="3728" />
+        </branch>
+        <branch name="signo_real">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3728" y="976" type="branch" />
+            <wire x2="3728" y1="976" y2="976" x1="3536" />
+            <wire x2="3920" y1="976" y2="976" x1="3728" />
+        </branch>
+        <branch name="signo_imag">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3728" y="1040" type="branch" />
+            <wire x2="3728" y1="1040" y2="1040" x1="3536" />
+            <wire x2="3920" y1="1040" y2="1040" x1="3728" />
+        </branch>
+        <branch name="actualiza_datos">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3728" y="1104" type="branch" />
+            <wire x2="3728" y1="1104" y2="1104" x1="3536" />
+            <wire x2="3920" y1="1104" y2="1104" x1="3728" />
+        </branch>
+        <instance x="4480" y="1248" name="XLXI_876" orien="R0" />
+        <instance x="4480" y="1344" name="XLXI_877" orien="R0" />
+        <instance x="4480" y="1152" name="XLXI_875" orien="R0" />
+        <branch name="signo_real">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4368" y="1120" type="branch" />
+            <wire x2="4368" y1="1120" y2="1120" x1="4192" />
+            <wire x2="4480" y1="1120" y2="1120" x1="4368" />
+        </branch>
+        <branch name="signo_imag">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4368" y="1216" type="branch" />
+            <wire x2="4368" y1="1216" y2="1216" x1="4192" />
+            <wire x2="4480" y1="1216" y2="1216" x1="4368" />
+        </branch>
+        <branch name="led_parpadeo">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4368" y="1312" type="branch" />
+            <wire x2="4368" y1="1312" y2="1312" x1="4192" />
+            <wire x2="4480" y1="1312" y2="1312" x1="4368" />
+        </branch>
+        <branch name="led(0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4800" y="1120" type="branch" />
+            <wire x2="4800" y1="1120" y2="1120" x1="4704" />
+            <wire x2="4992" y1="1120" y2="1120" x1="4800" />
+        </branch>
+        <branch name="led(1)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4800" y="1216" type="branch" />
+            <wire x2="4800" y1="1216" y2="1216" x1="4704" />
+            <wire x2="4992" y1="1216" y2="1216" x1="4800" />
+        </branch>
+        <branch name="led(2)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4800" y="1312" type="branch" />
+            <wire x2="4800" y1="1312" y2="1312" x1="4704" />
+            <wire x2="4992" y1="1312" y2="1312" x1="4800" />
+        </branch>
+        <text style="fontsize:36;fontname:Arial" x="4380" y="1000">Senales de salida. Leds</text>
     </sheet>
 </drawing>

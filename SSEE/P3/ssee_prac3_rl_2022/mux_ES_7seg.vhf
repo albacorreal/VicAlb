@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : mux_ES_7seg.vhf
--- /___/   /\     Timestamp : 12/17/2022 23:26:37
+-- /___/   /\     Timestamp : 12/31/2022 13:12:51
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -204,23 +204,23 @@ architecture BEHAVIORAL of mux_ES_7seg is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_173 : label is "XLXI_173_129";
-   attribute HU_SET of XLXI_187_0 : label is "XLXI_187_0_145";
-   attribute HU_SET of XLXI_187_1 : label is "XLXI_187_1_144";
-   attribute HU_SET of XLXI_187_2 : label is "XLXI_187_2_143";
-   attribute HU_SET of XLXI_187_3 : label is "XLXI_187_3_142";
-   attribute HU_SET of XLXI_189_0 : label is "XLXI_189_0_133";
-   attribute HU_SET of XLXI_189_1 : label is "XLXI_189_1_132";
-   attribute HU_SET of XLXI_189_2 : label is "XLXI_189_2_131";
-   attribute HU_SET of XLXI_189_3 : label is "XLXI_189_3_130";
-   attribute HU_SET of XLXI_190_0 : label is "XLXI_190_0_137";
-   attribute HU_SET of XLXI_190_1 : label is "XLXI_190_1_136";
-   attribute HU_SET of XLXI_190_2 : label is "XLXI_190_2_135";
-   attribute HU_SET of XLXI_190_3 : label is "XLXI_190_3_134";
-   attribute HU_SET of XLXI_191_0 : label is "XLXI_191_0_141";
-   attribute HU_SET of XLXI_191_1 : label is "XLXI_191_1_140";
-   attribute HU_SET of XLXI_191_2 : label is "XLXI_191_2_139";
-   attribute HU_SET of XLXI_191_3 : label is "XLXI_191_3_138";
+   attribute HU_SET of XLXI_173 : label is "XLXI_173_31";
+   attribute HU_SET of XLXI_187_0 : label is "XLXI_187_0_47";
+   attribute HU_SET of XLXI_187_1 : label is "XLXI_187_1_46";
+   attribute HU_SET of XLXI_187_2 : label is "XLXI_187_2_45";
+   attribute HU_SET of XLXI_187_3 : label is "XLXI_187_3_44";
+   attribute HU_SET of XLXI_189_0 : label is "XLXI_189_0_35";
+   attribute HU_SET of XLXI_189_1 : label is "XLXI_189_1_34";
+   attribute HU_SET of XLXI_189_2 : label is "XLXI_189_2_33";
+   attribute HU_SET of XLXI_189_3 : label is "XLXI_189_3_32";
+   attribute HU_SET of XLXI_190_0 : label is "XLXI_190_0_39";
+   attribute HU_SET of XLXI_190_1 : label is "XLXI_190_1_38";
+   attribute HU_SET of XLXI_190_2 : label is "XLXI_190_2_37";
+   attribute HU_SET of XLXI_190_3 : label is "XLXI_190_3_36";
+   attribute HU_SET of XLXI_191_0 : label is "XLXI_191_0_43";
+   attribute HU_SET of XLXI_191_1 : label is "XLXI_191_1_42";
+   attribute HU_SET of XLXI_191_2 : label is "XLXI_191_2_41";
+   attribute HU_SET of XLXI_191_3 : label is "XLXI_191_3_40";
 begin
    XLXI_26 : GND
       port map (G=>cero);
