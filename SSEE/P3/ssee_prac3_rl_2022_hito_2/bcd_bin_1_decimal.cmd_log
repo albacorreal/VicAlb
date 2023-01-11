@@ -1,0 +1,2 @@
+vhdtdtfi -lib work bcd_bin_1_decimal.vhd -prj ssee_prac3_rl_2022 -o bcd_bin_1_decimal.spl -module bcd_bin_1_decimal -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w bcd_bin_1_decimal.spl C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/bcd_bin_1_decimal.sym 

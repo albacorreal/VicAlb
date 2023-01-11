@@ -1,0 +1,46 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=prac3_mc
+[Library]
+prac3_mc=.\prac3_mc\prac3_mc.lib
+[$LibMap$]
+prac3_mc=.
+Active_lib=SPARTAN6
+xilinxun=SPARTAN6
+UnlinkedDesignLibrary=SPARTAN6
+DESIGNS=SPARTAN6
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Xilinx SPARTAN6
+fileopenfolder=C:\Users\albertod\Documents\_Doc_\Aldec_Designs\prac3_mc\prac3_mc\src
+[Files]
+/ctrl_multip_compl.asf=-1
+/control_bin_bcd_16b.asf=-1
+/ctrl_entz_sal.asf=-1
+/ctrl_datos_micro.asf=-1
+[Files.Data]
+.\src\ctrl_multip_compl.asf=State Diagram
+.\src\control_bin_bcd_16b.asf=State Diagram
+.\src\ctrl_entz_sal.asf=State Diagram
+.\src\ctrl_datos_micro.asf=State Diagram
+[file_out:/control_bin_bcd_16b.asf]
+/..\compile\control_bin_bcd_16b.vhd=-1
+[file_out:/ctrl_entz_sal.asf]
+/..\compile\ctrl_entz_sal.vhd=-1
+[file_out:/ctrl_multip_compl.asf]
+/..\compile\ctrl_multip_compl.vhd=-1
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+[file_out:/ctrl_datos_micro.asf]
+/..\compile\ctrl_datos_micro.vhd=-1

@@ -1,0 +1,675 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o Z:/ssee_prac3_rl_2022/prac3_top_prac3_top_sch_tb_isim_beh.exe -prj Z:/ssee_prac3_rl_2022/prac3_top_prac3_top_sch_tb_beh.prj work.prac3_top_prac3_top_sch_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/ipcore_dir/dcm_100m_5m.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/ipcore_dir/cont_16bits.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/ipcore_dir/cont_3b.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/ipcore_dir/multip_8x8u.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/ipcore_dir/sumres16bu.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/ipcore_dir/sumres_16bs.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/ipcore_dir/microblaze_prac3.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/regdesp8b_lsb.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/regdesp8b.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/nivel_a_pulso.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/ctrl_multip_cpmpl.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/cont_anillo_ce.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/control_bin_bcd.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/Bin_A_BCD_decim.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/Bin_A_BCD.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/bcd_bin_1_decimal.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/teclado_4x4.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/sincroniza.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/reg_desp_8b_4_cifras.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/reg_desp_2_cifras.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/mux_ES_7seg.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/multip_complejo_serie.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/detector.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/ctrl_entz_sal.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/ctrl_datos_micro.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/Conversor_Bin_BCD_decim.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/Conversor_BCD_Bin_1decim.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/Comp_Num_Letra.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/complemento_a_dos.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/codif_tecla.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/bcd_7seg_neg.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/teclado_hexa_completo.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/sinc_entrada.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/Remote_Lab.vhd" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/displays_7seg_nexys3_RemLab.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/bloque_calculo.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/prac3_top.vhf" into library work
+Parsing VHDL file "Z:/ssee_prac3_rl_2022/sim_top.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package std_logic_signed
+Compiling package std_logic_textio
+Compiling architecture vcc_v of entity VCC [vcc_default]
+Compiling architecture gnd_v of entity GND [gnd_default]
+Compiling architecture fdr_v of entity FDR [\FDR('0')\]
+Compiling architecture fds_v of entity FDS [\FDS('1')\]
+Compiling architecture fd_v of entity FD [\FD('0')\]
+Compiling architecture srl16e_v of entity SRL16E [\SRL16E("0000000000000001")(0,15...]
+Compiling architecture fde_v of entity FDE [\FDE('0')\]
+Compiling architecture fdre_v of entity FDRE [\FDRE('0')\]
+Compiling architecture xorcy_v of entity XORCY [xorcy_default]
+Compiling architecture muxf6_v of entity MUXF6 [muxf6_default]
+Compiling architecture muxf5_v of entity MUXF5 [muxf5_default]
+Compiling architecture muxcy_l_v of entity MUXCY_L [muxcy_l_default]
+Compiling architecture fdse_v of entity FDSE [\FDSE('1')\]
+Compiling architecture ram32x1d_v of entity RAM32X1D [\RAM32X1D("000000000000000000000...]
+Compiling architecture lut6_2_v of entity LUT6_2 [\LUT6_2("11111111000000001111111...]
+Compiling architecture mult_and_v of entity MULT_AND [mult_and_default]
+Compiling architecture lut3_v of entity LUT3 [\LUT3("00000000")(0,7)\]
+Compiling architecture lut4_v of entity LUT4 [\LUT4("1111101000001010")(0,15)\]
+Compiling architecture lut6_v of entity LUT6 [\LUT6("0110000001111010101001100...]
+Compiling architecture lut2_v of entity LUT2 [\LUT2("1000")(0,3)\]
+Compiling architecture lut5_v of entity LUT5 [\LUT5("0000010000000000000000000...]
+Compiling architecture lut1_v of entity LUT1 [\LUT1("0010")(0,3)\]
+Compiling architecture muxf7_v of entity MUXF7 [muxf7_default]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture ramb16bwer_v of entity RAMB16BWER [\RAMB16BWER(2,2,0,0,true,true,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2444: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2450: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2834: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2835: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2874: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2875: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2948: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2966: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 2985: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3003: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3029: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3032: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3054: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3072: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3091: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3109: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3135: Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/unisims/primitive/RAMB16BWER.vhd" Line 3138: Range is empty (null range)
+Compiling architecture structure of entity microblaze_prac3 [microblaze_prac3_default]
+Compiling architecture behavioral of entity FD4CE_HXILINX_prac3_top [fd4ce_hxilinx_prac3_top_default]
+Compiling architecture fdce_v of entity FDCE [\FDCE('0')\]
+Compiling architecture behavioral of entity cont_anillo_ce_MUSER_prac3_top [cont_anillo_ce_muser_prac3_top_d...]
+Compiling package bip_utils_pkg_v2_0
+Compiling package xbip_counter_v2_0_pkg
+Compiling package c_counter_binary_v11_0_pkg
+Compiling package xbip_counter_v2_0_xst_comp
+Compiling package bip_usecase_utils_pkg_v2_0
+Compiling package c_addsub_pkg_v11_0
+Compiling package c_compare_v11_0_comp
+Compiling package c_mux_bus_v11_0_comp
+Compiling package c_reg_fd_v11_0_comp
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(3,"0","0",1,0,0,...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(3,3,3,0,2...]
+Compiling architecture behavioral of entity c_counter_binary_v11_0_legacy [\c_counter_binary_v11_0_legacy("...]
+Compiling architecture behavioral of entity c_counter_binary_v11_0 [\c_counter_binary_v11_0(0,0,"spa...]
+Compiling architecture cont_3b_a of entity cont_3b [cont_3b_default]
+Compiling architecture and5b3_v of entity AND5B3 [and5b3_default]
+Compiling architecture and3_v of entity AND3 [and3_default]
+Compiling architecture behavioral of entity teclado_4x4_MUSER_prac3_top [teclado_4x4_muser_prac3_top_defa...]
+Compiling architecture behavioral of entity detector_MUSER_prac3_top [detector_muser_prac3_top_default]
+Compiling architecture or8_hxilinx_prac3_top_v of entity OR8_HXILINX_prac3_top [or8_hxilinx_prac3_top_default]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture and2b1_v of entity AND2B1 [and2b1_default]
+Compiling architecture behavioral of entity nivel_a_pulso_MUSER_prac3_top [nivel_a_pulso_muser_prac3_top_de...]
+Compiling architecture behavioral of entity codif_tecla_MUSER_prac3_top [codif_tecla_muser_prac3_top_defa...]
+Compiling architecture behavioral of entity teclado_hexa_completo_MUSER_prac3_top [teclado_hexa_completo_muser_prac...]
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture ibuf_v of entity IBUF [\IBUF("DONT_CARE","0",true,"AUTO...]
+Compiling architecture behavioral of entity OFD8_HXILINX_prac3_top [ofd8_hxilinx_prac3_top_default]
+Compiling architecture obuft_v of entity OBUFT [\OBUFT("DONT_CARE",12,"DEFAULT",...]
+Compiling architecture startup_spartan6_v of entity STARTUP_SPARTAN6 [startup_spartan6_default]
+Compiling architecture oddr2_v of entity ODDR2 [\ODDR2("NONE",'0',"SYNC")(1,4,1,...]
+Compiling architecture behavioral of entity OFD_HXILINX_prac3_top [\OFD_HXILINX_prac3_top('0')\]
+Compiling architecture behavioral of entity IFD4_HXILINX_prac3_top [ifd4_hxilinx_prac3_top_default]
+Compiling architecture behavioral of entity IFD_HXILINX_prac3_top [\IFD_HXILINX_prac3_top('0')\]
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_clock_lost_v of entity dcm_sp_clock_lost [dcm_sp_clock_lost_default]
+Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,10.0...]
+Compiling architecture xilinx of entity dcm_100m_5m [dcm_100m_5m_default]
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(16,"0","0",1,0,0...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(16,16,16,...]
+Compiling architecture behavioral of entity c_counter_binary_v11_0_legacy [\c_counter_binary_v11_0_legacy("...]
+Compiling architecture behavioral of entity c_counter_binary_v11_0 [\c_counter_binary_v11_0(0,0,"spa...]
+Compiling architecture cont_16bits_a of entity cont_16bits [cont_16bits_default]
+Compiling architecture behavioral of entity IFD8_HXILINX_prac3_top [ifd8_hxilinx_prac3_top_default]
+Compiling architecture behavioral of entity Genera_Tono [genera_tono_default]
+Compiling architecture behavioral of entity Division [division_default]
+Compiling architecture behavioral of entity Modulo [modulo_default]
+Compiling architecture behavioral of entity Remote_Lab [remote_lab_default]
+Compiling architecture behavioral of entity sincroniza_MUSER_prac3_top [sincroniza_muser_prac3_top_defau...]
+Compiling architecture behavioral of entity sinc_entrada_MUSER_prac3_top [sinc_entrada_muser_prac3_top_def...]
+Compiling architecture compm4_hxilinx_prac3_top_v of entity COMPM4_HXILINX_prac3_top [compm4_hxilinx_prac3_top_default]
+Compiling architecture behavioral of entity FD4RE_HXILINX_prac3_top [fd4re_hxilinx_prac3_top_default]
+Compiling architecture comp4_hxilinx_prac3_top_v of entity COMP4_HXILINX_prac3_top [comp4_hxilinx_prac3_top_default]
+Compiling architecture and2_v of entity AND2 [and2_default]
+Compiling architecture and3b1_v of entity AND3B1 [and3b1_default]
+Compiling architecture behavioral of entity Comp_Num_Letra_MUSER_prac3_top [comp_num_letra_muser_prac3_top_d...]
+Compiling architecture m2_1_hxilinx_prac3_top_v of entity M2_1_HXILINX_prac3_top [m2_1_hxilinx_prac3_top_default]
+Compiling architecture ctrl_multip_compl_arch of entity ctrl_multip_compl [ctrl_multip_compl_default]
+Compiling package mult_gen_pkg_v11_2
+Compiling architecture behavioral of entity mult_gen_v11_2 [\mult_gen_v11_2(0,0,"spartan6",8...]
+Compiling architecture multip_8x8u_a of entity multip_8x8u [multip_8x8u_default]
+Compiling architecture behavioral of entity FD16RE_HXILINX_prac3_top [fd16re_hxilinx_prac3_top_default]
+Compiling package xbip_addsub_v2_0_comp
+Compiling package xbip_pipe_v2_0_xst_comp
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(16,"0","0",1,0,1...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(16,16,16,...]
+Compiling architecture behavioral of entity c_addsub_v11_0 [\c_addsub_v11_0(0,"spartan6",0,1...]
+Compiling architecture sumres16bu_a of entity sumres16bu [sumres16bu_default]
+Compiling architecture behavioral of entity multip_complejo_serie_MUSER_prac3_top [multip_complejo_serie_muser_prac...]
+Compiling architecture buf_v of entity BUF [buf_default]
+Compiling architecture m4_1e_hxilinx_prac3_top_v of entity M4_1E_HXILINX_prac3_top [m4_1e_hxilinx_prac3_top_default]
+Compiling architecture m2_1e_hxilinx_prac3_top_v of entity M2_1E_HXILINX_prac3_top [m2_1e_hxilinx_prac3_top_default]
+Compiling architecture behavioral of entity mux_ES_7seg_MUSER_prac3_top [mux_es_7seg_muser_prac3_top_defa...]
+Compiling architecture ctrl_entz_sal_arch of entity ctrl_entz_sal [ctrl_entz_sal_default]
+Compiling architecture behavioral of entity bcd_bin_1_decimal [bcd_bin_1_decimal_default]
+Compiling architecture behavioral of entity Conversor_BCD_Bin_1decim_MUSER_prac3_top [conversor_bcd_bin_1decim_muser_p...]
+Compiling architecture behavioral of entity reg_desp_2_cifras_MUSER_prac3_top [reg_desp_2_cifras_muser_prac3_to...]
+Compiling architecture behavioral of entity reg_desp_8b_4_cifras_MUSER_prac3_top [reg_desp_8b_4_cifras_muser_prac3...]
+Compiling architecture xnor2_v of entity XNOR2 [xnor2_default]
+Compiling architecture behavioral of entity Bin_A_BCD_MUSER_prac3_top [bin_a_bcd_muser_prac3_top_defaul...]
+Compiling architecture behavioral of entity regdesp8b_MUSER_prac3_top [regdesp8b_muser_prac3_top_defaul...]
+Compiling architecture control_bin_bcd_arch of entity control_bin_bcd [control_bin_bcd_default]
+Compiling architecture behavioral of entity regdesp8b_lsb_MUSER_prac3_top [regdesp8b_lsb_muser_prac3_top_de...]
+Compiling architecture xor2_v of entity XOR2 [xor2_default]
+Compiling architecture nand2_v of entity NAND2 [nand2_default]
+Compiling architecture behavioral of entity Bin_A_BCD_decim_MUSER_prac3_top [bin_a_bcd_decim_muser_prac3_top_...]
+Compiling architecture behavioral of entity Conversor_Bin_BCD_decim_MUSER_prac3_top [conversor_bin_bcd_decim_muser_pr...]
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(16,"0","0",1,0,0...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(16,16,16,...]
+Compiling architecture behavioral of entity c_addsub_v11_0 [\c_addsub_v11_0(0,"spartan6",0,1...]
+Compiling architecture sumres_16bs_a of entity sumres_16bs [sumres_16bs_default]
+Compiling architecture behavioral of entity complemento_a_dos_MUSER_prac3_top [complemento_a_dos_muser_prac3_to...]
+Compiling architecture ctrl_datos_micro_arch of entity ctrl_datos_micro [ctrl_datos_micro_default]
+Compiling architecture behavioral of entity bloque_calculo_MUSER_prac3_top [bloque_calculo_muser_prac3_top_d...]
+Compiling architecture behavioral of entity bcd_7seg_neg [bcd_7seg_neg_default]
+Compiling architecture behavioral of entity displays_7seg_nexys3_RemLab_MUSER_prac3_top [displays_7seg_nexys3_remlab_muse...]
+Compiling architecture behavioral of entity prac3_top [prac3_top_default]
+Compiling architecture behavioral of entity prac3_top_prac3_top_sch_tb
+Time Resolution for simulation is 1ps.
+Compiled 597 VHDL Units
+Built simulation executable Z:/ssee_prac3_rl_2022/prac3_top_prac3_top_sch_tb_isim_beh.exe
+Fuse Memory Usage: 344444 KB
+Fuse CPU Usage: 9186 ms

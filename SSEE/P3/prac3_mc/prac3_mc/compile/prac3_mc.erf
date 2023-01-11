@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/Users/victo/Documents/III/SISTEMAS_ELECTRONICOS/PRACTICA_3__MULTIPLICACION_COMPLEJA/Prac3__Multiplicador_Complejo_(Active-HDL)/prac3_mc_micro/prac3_mc/compile/ctrl_datos_micro.vhd" 
+MESSAGE "Compile Entity "ctrl_datos_micro"" 
+MESSAGE "Compile Architecture "ctrl_datos_micro_arch" of Entity "ctrl_datos_micro"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]" 

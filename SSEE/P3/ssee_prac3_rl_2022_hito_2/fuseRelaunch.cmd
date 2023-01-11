@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "Z:/ssee_prac3_rl_2022/prac3_top_prac3_top_sch_tb_isim_beh.exe" -prj "Z:/ssee_prac3_rl_2022/prac3_top_prac3_top_sch_tb_beh.prj" "work.prac3_top_prac3_top_sch_tb" 

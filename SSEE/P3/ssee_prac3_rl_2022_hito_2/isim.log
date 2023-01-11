@@ -1,0 +1,31 @@
+ISim log file
+Running: Z:\ssee_prac3_rl_2022\prac3_top_prac3_top_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Z:/ssee_prac3_rl_2022/prac3_top_prac3_top_sch_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /prac3_top_prac3_top_sch_tb/UUT/XLXI_872/XLXI_3/XLXI_4/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 161979 ns : File "//VBoxSvr/VMSF/ssee_prac3_rl_2022/sim_top.vhd" Line 112
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 70479 ns : File "//VBoxSvr/VMSF/ssee_prac3_rl_2022/sim_top.vhd" Line 112
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 58419 ns : File "//VBoxSvr/VMSF/ssee_prac3_rl_2022/sim_top.vhd" Line 112
+# run all
+Stopped at time : 256769 ns : File "//VBoxSvr/VMSF/ssee_prac3_rl_2022/Remote_Lab.vhd" Line 172

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Conversor_BCD_Bin_1decim C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/Conversor_BCD_Bin_1decim.sch C:/Users/albertod/Documents/_Doc_/Xilinx/ssee_prac3_rl_2022/Conversor_BCD_Bin_1decim.sym 

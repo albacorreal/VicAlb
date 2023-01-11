@@ -1,0 +1,32 @@
+Command line:
+   prac3_top_prac3_top_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49774
+
+Tue Jan 10 19:08:18 2023
+
+
+ Elaboration Time: 0.515625 sec
+
+ Current Memory Usage: 4907.31 Meg
+
+ Total Signals          : 17367
+ Total Nets             : 27375
+ Total Signal Drivers   : 4510
+ Total Blocks           : 2558
+ Total Primitive Blocks : 2427
+ Total Processes        : 3986
+ Total Traceable Variables  : 5084
+ Total Scalar Nets and Variables : 385595
+Total Line Count : 18960
+Total Line Count : 18960
+Total Line Count : 18960
+Total Line Count : 18960
+
+ Total Simulation Time: 52.7969 sec
+
+ Current Memory Usage: 4750.02 Meg
+
+Tue Jan 10 19:35:01 2023
+

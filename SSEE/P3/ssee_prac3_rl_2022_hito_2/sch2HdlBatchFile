@@ -1,0 +1,5 @@
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/nivel_a_pulso.vhf,-w,Z:/ssee_prac3_rl_2022/nivel_a_pulso.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/sinc_entrada.vhf,-w,Z:/ssee_prac3_rl_2022/sinc_entrada.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/prac3_top.vhf,-w,Z:/ssee_prac3_rl_2022/prac3_top.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/codif_tecla.vhf,-w,Z:/ssee_prac3_rl_2022/codif_tecla.sch
+sch2hdl,-sympath,Z:/ssee_prac3_rl_2022/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,Z:/ssee_prac3_rl_2022/sinc_entrada.vhf,-w,Z:/ssee_prac3_rl_2022/sinc_entrada.sch

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Z:/ssee_prac3_rl_2022/prac3_top_prac3_top_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="c_compare_v11_0_comp" />
+            <top_module name="c_counter_binary_v11_0_pkg" />
+            <top_module name="c_mux_bus_v11_0_comp" />
+            <top_module name="c_reg_fd_v11_0_comp" />
+            <top_module name="mult_gen_pkg_v11_2" />
+            <top_module name="numeric_std" />
+            <top_module name="prac3_top_prac3_top_sch_tb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+            <top_module name="xbip_addsub_v2_0_comp" />
+            <top_module name="xbip_counter_v2_0_pkg" />
+            <top_module name="xbip_counter_v2_0_xst_comp" />
+            <top_module name="xbip_pipe_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/reset_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_pad</obj_property>
+      <obj_property name="ObjectShortName">reset_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/ck_100mhz_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck_100mhz_pad</obj_property>
+      <obj_property name="ObjectShortName">ck_100mhz_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/display_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">display_pad[7:0]</obj_property>
+      <obj_property name="ObjectShortName">display_pad[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/ce_display_neg_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ce_display_neg_pad[4:1]</obj_property>
+      <obj_property name="ObjectShortName">ce_display_neg_pad[4:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/signo_sal_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">signo_sal_pad</obj_property>
+      <obj_property name="ObjectShortName">signo_sal_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/ck_display_externo_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ck_display_externo_pad</obj_property>
+      <obj_property name="ObjectShortName">ck_display_externo_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/boton_der_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_der_pad</obj_property>
+      <obj_property name="ObjectShortName">boton_der_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/boton_izq_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_izq_pad</obj_property>
+      <obj_property name="ObjectShortName">boton_izq_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/boton_arr_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_arr_pad</obj_property>
+      <obj_property name="ObjectShortName">boton_arr_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/boton_aba_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">boton_aba_pad</obj_property>
+      <obj_property name="ObjectShortName">boton_aba_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/sw_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sw_pad[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_pad[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/eppastb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eppastb</obj_property>
+      <obj_property name="ObjectShortName">eppastb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/eppdstb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eppdstb</obj_property>
+      <obj_property name="ObjectShortName">eppdstb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/eppwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eppwrite</obj_property>
+      <obj_property name="ObjectShortName">eppwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/uart_rx_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_rx_pad</obj_property>
+      <obj_property name="ObjectShortName">uart_rx_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/eppwait" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eppwait</obj_property>
+      <obj_property name="ObjectShortName">eppwait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/db" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">db[7:0]</obj_property>
+      <obj_property name="ObjectShortName">db[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/led_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led_pad[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_pad[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/seg_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seg_pad[7:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_pad[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/anodo_pad" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">anodo_pad[3:0]</obj_property>
+      <obj_property name="ObjectShortName">anodo_pad[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prac3_top_prac3_top_sch_tb/uart_tx_pad" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uart_tx_pad</obj_property>
+      <obj_property name="ObjectShortName">uart_tx_pad</obj_property>
+   </wvobject>
+   <wvobject fp_name="group34" type="group">
+      <obj_property name="label">Micro</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/mcs_0/fit1_interrupt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fit1_interrupt</obj_property>
+         <obj_property name="ObjectShortName">fit1_interrupt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/mcs_0/intc_irq" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">intc_irq</obj_property>
+         <obj_property name="ObjectShortName">intc_irq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/mcs_0/gpi1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">gpi1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">gpi1[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/mcs_0/gpi2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">gpi2[1:0]</obj_property>
+         <obj_property name="ObjectShortName">gpi2[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/mcs_0/intc_interrupt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">intc_interrupt[0:0]</obj_property>
+         <obj_property name="ObjectShortName">intc_interrupt[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/mcs_0/gpo1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">gpo1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">gpo1[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/mcs_0/gpo2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">gpo2[0:0]</obj_property>
+         <obj_property name="ObjectShortName">gpo2[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/mcs_0/gpo3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">gpo3[0:0]</obj_property>
+         <obj_property name="ObjectShortName">gpo3[0:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group72" type="group">
+      <obj_property name="label">SincEntrada</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_867/codigo_tecla_khz" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">codigo_tecla_khz[3:0]</obj_property>
+         <obj_property name="ObjectShortName">codigo_tecla_khz[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_867/tecla_pulsada_khz" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tecla_pulsada_khz</obj_property>
+         <obj_property name="ObjectShortName">tecla_pulsada_khz</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_867/codigo_tecla_mhz" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">codigo_tecla_mhz[3:0]</obj_property>
+         <obj_property name="ObjectShortName">codigo_tecla_mhz[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_867/tecla_pulsada_mhz" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tecla_pulsada_mhz</obj_property>
+         <obj_property name="ObjectShortName">tecla_pulsada_mhz</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group67" type="group">
+      <obj_property name="label">BloqueCalculo</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_872/cod_tecla" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cod_tecla[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cod_tecla[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_872/interrupt_ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">interrupt_ack</obj_property>
+         <obj_property name="ObjectShortName">interrupt_ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_872/tecla_pulsada" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tecla_pulsada</obj_property>
+         <obj_property name="ObjectShortName">tecla_pulsada</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_872/multip_bcd_nueva" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">multip_bcd_nueva</obj_property>
+         <obj_property name="ObjectShortName">multip_bcd_nueva</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_872/actualiza_datos" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">actualiza_datos</obj_property>
+         <obj_property name="ObjectShortName">actualiza_datos</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_872/signo_real" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">signo_real</obj_property>
+         <obj_property name="ObjectShortName">signo_real</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_872/result_bcd_real" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">result_bcd_real[15:0]</obj_property>
+         <obj_property name="ObjectShortName">result_bcd_real[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_872/signo_imag" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">signo_imag</obj_property>
+         <obj_property name="ObjectShortName">signo_imag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/prac3_top_prac3_top_sch_tb/UUT/XLXI_872/result_bcd_imag" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">result_bcd_imag[15:0]</obj_property>
+         <obj_property name="ObjectShortName">result_bcd_imag[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,12 @@
+[Version]
+Version=11.1
+[Designs]
+prac3_mc=.\prac3_mc\prac3_mc.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+prac3_mc=1

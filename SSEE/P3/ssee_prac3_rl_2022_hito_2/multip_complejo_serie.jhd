@@ -1,0 +1,7 @@
+MODULE multip_complejo_serie
+	SUBMODULE ctrl_multip_compl
+		INSTANCE XLXI_30
+	SUBMODULE multip_8x8u
+		INSTANCE XLXI_31
+	SUBMODULE sumres16bu
+		INSTANCE XLXI_34

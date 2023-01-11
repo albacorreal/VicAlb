@@ -1,0 +1,5 @@
+9
+~E 1 "../compile/control_bin_bcd_16b.vhd" 27 control_bin_bcd_16b
+~A 1 "../compile/control_bin_bcd_16b.vhd" 39 control_bin_bcd_16b_arch
+~E 1 "../compile/ctrl_datos_micro.vhd" 27 ctrl_datos_micro
+~A 1 "../compile/ctrl_datos_micro.vhd" 37 ctrl_datos_micro_arch

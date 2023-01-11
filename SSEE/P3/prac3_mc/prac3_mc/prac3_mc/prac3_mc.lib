@@ -1,0 +1,36 @@
+timestamp=1672245139586
+
+[~A]
+ModifyID=9
+Version=74
+
+[~MFT]
+0=3|0prac3_mc.mgf|5780|0
+1=1|1prac3_mc.mgf|2425|0
+3=1|3prac3_mc.mgf|1388|0
+
+[control_bin_bcd_16b]
+A/control_bin_bcd_16b_arch=23|../src/control_bin_bcd_16b.asf|10000|1*0
+BinI32/control_bin_bcd_16b_arch=3*0
+I=0*803
+I/control_bin_bcd_16b_arch=0*3554
+M=11|0|ve4|1638089007579|../compile/control_bin_bcd_16b.vhd|0*242*0x55773c1dc137d595957428b9d5fc9725b7b9f353|0*696*0x23b75c12e3e89f2ef000564498faa8c2
+M/control_bin_bcd_16b_arch=21|0|ve4|1638089007581|../compile/control_bin_bcd_16b.vhd|0*1096*0x21db6a9c6206e991a530e07e1c30c9efd68d3dc6|0*3419*0x20116f55b147878295aeff36dce7fc50
+R=../compile/control_bin_bcd_16b.vhd|27
+Version=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|1ea254211300dc03487ba198d0bd8c0eded2e6f2b7998a1cbdde3f6c5ae524abca5e6c6284b4cc363f49af0fc11c4bc7
+Version/control_bin_bcd_16b_arch=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|1ea254211300dc03487ba198d0bd8c0ea4333a329d8bddbf23a51b7498225a6a729e6221e4efaa6a8714f045f53f5933dfad41bff38d5633843c80aae842aaba
+
+[ctrl_datos_micro]
+A/ctrl_datos_micro_arch=23|../src/ctrl_datos_micro.asf|10000|1*2425
+BinW64/ctrl_datos_micro_arch=3*1388
+I=0*4607
+I/ctrl_datos_micro_arch=0*5780
+M=11|2|vef|1672245101878|../compile/ctrl_datos_micro.vhd|0*4105*0x43b79f5c71b82f1722cbd67904bcb02725b1bacd|0*4506*0x23b75c12e3e89f2ef000564498faa8c2
+M/ctrl_datos_micro_arch=21|2|vef|1672245139527|../compile/ctrl_datos_micro.vhd|0*4897*0x630fb82569b357dd3c9824bbbb2d6f323edeec49|0*5654*0x20116f55b147878295aeff36dce7fc50
+R=../compile/ctrl_datos_micro.vhd|27
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|00897bafbdcc80780d0bc3cb6a845369bba559c084da0d788160b130957e93e30fdc6527b7da75be828d70ca72927c83
+Version/ctrl_datos_micro_arch=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|00897bafbdcc80780d0bc3cb6a845369cfcd99dc6435683f23566abdacdb47831c4e602d0e6c196190ed7fff26a17840
+
+[~U]
+control_bin_bcd_16b=11|0*0|
+ctrl_datos_micro=11|0*3872|
